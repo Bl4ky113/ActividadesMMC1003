@@ -1,0 +1,149 @@
+/* GOBAL VARIABLES */
+/* Base Colors */
+/* Blue */
+/* Darker Blue */
+/* Sky */
+/* Darker Sky */
+/* Midnight */
+/* Even Darker Midnight */
+/* General Colors */
+/* White */
+/* Smoke */
+/* Black */
+/* Grey */
+/* ----- Header Style ----- */
+.doc-header {
+  height: 80px;
+  padding: 5px;
+  background-color: #000066;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Title of the Header */
+}
+.doc-header .header-title {
+  width: 800px;
+  border: 2px solid #0000bb;
+  padding: 10px 0;
+  background-color: #0000e6;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  /* Text */
+  /* Info */
+}
+.doc-header .header-title .header-title__text {
+  color: #fff;
+  font-size: 32px;
+  /* Name of The Class */
+}
+.doc-header .header-title .header-title__text span {
+  font-size: 40px;
+}
+.doc-header .header-title .header-title--info__text {
+  color: #99ccff;
+  font-size: 12px;
+}
+
+/* Main Content of the Doc */
+.doc-main {
+  width: 95%;
+  margin: 5px auto;
+  border: 2px outset #555;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  /* Index of the Main */
+  /* Sections in the Main */
+  /* Home Section */
+  /* Articles in the Main */
+}
+.doc-main .main-nav {
+  width: 25%;
+  margin: 5px 0;
+  border: 2px solid #000066;
+  border-radius: 0.25em;
+  padding: 10px;
+  background-color: #000044;
+}
+.doc-main .main-section {
+  width: 70%;
+  margin: 5px 0;
+  border: 5px solid #0000e6;
+  border-radius: 0.25em;
+  padding: 10px;
+  background-color: #0000bb;
+}
+.doc-main .main-section--home .main-section--home__className {
+  border: 4px solid #000066;
+  border-radius: 0.25em;
+  padding: 10px;
+  padding-inline-start: 100px;
+  background-color: #000044;
+  color: #fff;
+  font-size: 32px;
+}
+.doc-main .main-section--home .home-teacherInfo {
+  width: 50%;
+  margin: 10px;
+  border: 2px solid #0000e6;
+  border-radius: 0.5em;
+  padding: 15px;
+  background-color: #fff;
+}
+.doc-main .main-section--home .home-teacherInfo .home-teacherInfo__title {
+  border-radius: 0.5em;
+  padding: 15px;
+  background-color: #0000e6;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+}
+.doc-main .main-section--home .home-teacherInfo .home-teacherInfo__category {
+  border-radius: 0.5em;
+  padding: 10px;
+  background-color: #3399ff;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+}
+.doc-main .main-section--home .home-teacherInfo .home-teacherInfo__info {
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+.doc-main .main-article {
+  width: 80%;
+  margin: 5px 0;
+  /* Content-Elements in the Article */
+}
+.doc-main .main-article .article-content {
+  /* Activities in the Articles */
+}
+.doc-main .main-article .article-content .content-activity {
+  /* Info of the Activities */
+}
+.doc-main .main-article .article-content .content-activity .activity-info {
+  /* Info of the Student */
+}
+.doc-main .main-article .article-content .content-activity .activity-info .info-table {
+  width: 80%;
+  margin: 10px auto;
+  border: 4px solid #000044;
+  border-collapse: collapse;
+  border-radius: 0.5em;
+}
+.doc-main .main-article .article-content .content-activity .activity-info .info-table .info-table__header {
+  border: 2px solid #000066;
+  padding: 5px;
+  background-color: #3399ff;
+  font-size: 18px;
+  text-align: center;
+}
+.doc-main .main-article .article-content .content-activity .activity-info .info-table .info-table__data {
+  border: 2px solid #000066;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+}
