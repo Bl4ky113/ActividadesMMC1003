@@ -218,6 +218,25 @@ $color-black2: #555; /* Grey */
     padding: 0 5px;
 
     text-align: justify;
+    font-size: 16px;
+   }
+
+   /* Titles in the Class Notes*/
+   .article-content__title {
+    margin: 10px;
+    padding: 5px;
+
+    color: $color-dark2;
+    font-size: 24px;
+    font-weight: 1000;
+   }
+
+   .article-content__semititle {
+    margin: 10px;
+
+    color: $color-dark1;
+    font-size: 20px;
+    font-weight: 800;
    }
 
    /* Images in Class Notes */
@@ -268,6 +287,15 @@ $color-black2: #555; /* Grey */
     .content-images__img {
      width: 500px;
      height: 200px;
+    }
+   }
+
+   .content-images--mm-compuertasLogicas {
+    width: 1100px;
+
+    .content-images__img {
+     width: 1100px;
+     height: 400px;
     }
    }
    

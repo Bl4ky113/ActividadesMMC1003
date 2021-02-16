@@ -157,6 +157,7 @@
 }
 .doc-main .main-article .article-content {
   /* Class Notes */
+  /* Titles in the Class Notes*/
   /* Images in Class Notes */
   /* All Images */
   /* Test Image */
@@ -172,6 +173,20 @@
   margin: 10px auto;
   padding: 0 5px;
   text-align: justify;
+  font-size: 16px;
+}
+.doc-main .main-article .article-content .article-content__title {
+  margin: 10px;
+  padding: 5px;
+  color: #000044;
+  font-size: 24px;
+  font-weight: 1000;
+}
+.doc-main .main-article .article-content .article-content__semititle {
+  margin: 10px;
+  color: #000066;
+  font-size: 20px;
+  font-weight: 800;
 }
 .doc-main .main-article .article-content .content-images {
   margin: 5px auto;
@@ -204,6 +219,13 @@
 .doc-main .main-article .article-content .content-images--lawgeex .content-images__img {
   width: 500px;
   height: 200px;
+}
+.doc-main .main-article .article-content .content-images--mm-compuertasLogicas {
+  width: 1100px;
+}
+.doc-main .main-article .article-content .content-images--mm-compuertasLogicas .content-images__img {
+  width: 1100px;
+  height: 400px;
 }
 .doc-main .main-article .article-content .content-images--right {
   float: right;
