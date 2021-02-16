@@ -31,25 +31,51 @@
  <section class="main-section main-section--home">
    <h1 class="main-section--home__className">Clase: <"Formal Class Name"> | <"Class Name"></h1>
    <!-- Teacher Info -->
-   <table class="home-teacherInfo">
+   <table class="home-table">
      <tr>
-      <th class="home-teacherInfo__title" colspan="2">Información del Profesor</th>
+      <th class="home-table__title" colspan="2">Información del Profesor</th>
      </tr>
      <tr>
-      <th class="home-teacherInfo__category">Nombre del Docente : </th>
-      <td class="home-teacherInfo__info"><"Teacher Name"></td>
+      <th class="home-table__category">Nombre del Docente : </th>
+      <td class="home-table__info"><"Teacher Name"></td>
      </tr>
      <tr>
-      <th class="home-teacherInfo__title" colspan="2">Contactos del Docente : </th>
+      <th class="home-table__title" colspan="2">Contactos del Docente : </th>
      </tr>
      <tr>
-      <th class="home-teacherInfo__category">Número de Contacto : </th>
-      <td class="home-teacherInfo__info"><"Teacher Number"></td>
+      <th class="home-table__category">Número de Contacto : </th>
+      <td class="home-table__info"><"Teacher Number"></td>
      </tr>
      <tr>
-      <th class="home-teacherInfo__category">Correo Institucional : </th>
-      <td class="home-teacherInfo__info"><"Teacher Institucional Mail"></td>
+      <th class="home-table__category">Correo Institucional : </th>
+      <td class="home-table__info"><"Teacher Institucional Mail"></td>
      </tr>
+     <tr>
+      <th class="home-table__category">Correo Personal : </th>
+      <td class="home-table__info"><"Teacher Personal Mail"></td>
+     </tr>
+   </table>
+
+   <!-- Class Info -->
+
+   <table class="home-table">
+    <tr>
+     <th class="home-table__title" colspan="2">Información de la Clase</th>
+    </tr>
+    <tr>
+     <th class="home-table__category">Nombre de la Clase : </th>
+     <td class="home-table__info"><"Class Name"></td>
+    </tr>
+    <tr>
+     <th class="home-table__category" rowspan="3">Competencias a desarrollar :</th>
+     <td class="home-table__info home-table--large__info"><"SABER"></td>
+    </tr>
+    <tr>
+     <td class="home-table__info home-table--large__info"><"HACER"></td>
+    </tr>
+    <tr>
+     <td class="home-table__info home-table--large__info"><"SER"></td>
+    </tr>
    </table>
  </section>
  <!-- Articles -->
@@ -57,8 +83,32 @@
    <h3 class="main-article__title"><"Class Title"></h3>
    <span class="main-article__date"><"Class Date"></span>
    <div class="article-content">
-    <!-- Info de Actividades -->
+
+    <p class="article-content__paragraph">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus rerum aliquid nobis consectetur, reiciendis, cumque reprehenderit eligendi qui ab minima neque molestias. Quis doloremque tenetur dignissimos deleniti fugiat reprehenderit perspiciatis sint! Ut, obcaecati nobis? Obcaecati libero odit consequuntur nobis possimus, consequatur molestias delectus quibusdam necessitatibus tenetur. Tempore repellat corrupti quaerat aspernatur ipsam illum dolor soluta in explicabo consectetur ullam doloremque dolores a, fugit voluptatibus, mollitia corporis at qui iusto officia. Deserunt voluptatem aut sit ab, optio iure neque a dolores facere qui voluptate labore deleniti ipsum iusto consequatur odio rem aperiam culpa commodi velit possimus quis. Laborum, maiores? Cum?
+    </p>
+
+    <div class="content-images content-images--test content-images--left">
+     <picture>
+       <img class="content-images__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F11%2FTest-Logo.svg%2F1200px-Test-Logo.svg.png&f=1&nofb=1" alt="TEST">
+     </picture>
+     <span class="content-images__quote">
+      <cite>TEST</cite> from Wikimedia Commons.
+     </span>
+    </div>
+
+    <p class="aticle-content__paragraph">
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit obcaecati accusantium accusamus ad cumque ipsam repudiandae doloremque esse aspernatur impedit maiores dolorem eveniet tempora dolore, ducimus quae eaque tempore numquam molestiae sit vero nesciunt ex? Quasi ex adipisci illo vitae in obcaecati quia, maxime dolorum, veritatis ipsum reprehenderit. Officia, unde.
+    </p>
+
+    <!-- Actividades -->
     <div class="content-activity">
+     <h3 class="content-activity__title"><"Activity Title"></h3>
+     <p class="content-activity__task">
+      <"Activity Tasks">, will have a number to organize them.
+     </p>
+
+     <!-- Info de Actividades -->
      <div class="activity-info">
       <table class="info-table">
        <tr class="info-table__row">
@@ -72,7 +122,8 @@
         </tr>
        </table>
      </div>
-     </div>
+
+    </div>
     </div>
  </article>
 </main>

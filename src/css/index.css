@@ -75,24 +75,29 @@
   padding: 10px;
   background-color: #0000bb;
 }
+.doc-main .main-section--home {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
 .doc-main .main-section--home .main-section--home__className {
+  margin: 5px;
   border: 4px solid #000066;
   border-radius: 0.25em;
   padding: 10px;
-  padding-inline-start: 100px;
   background-color: #000044;
   color: #fff;
   font-size: 32px;
 }
-.doc-main .main-section--home .home-teacherInfo {
-  width: 50%;
-  margin: 10px;
+.doc-main .main-section--home .home-table {
+  width: 45%;
   border: 2px solid #0000e6;
   border-radius: 0.5em;
   padding: 15px;
   background-color: #fff;
+  flex: 1 0;
 }
-.doc-main .main-section--home .home-teacherInfo .home-teacherInfo__title {
+.doc-main .main-section--home .home-table .home-table__title {
   border-radius: 0.5em;
   padding: 15px;
   background-color: #0000e6;
@@ -100,7 +105,7 @@
   font-size: 24px;
   font-weight: 800;
 }
-.doc-main .main-section--home .home-teacherInfo .home-teacherInfo__category {
+.doc-main .main-section--home .home-table .home-table__category {
   border-radius: 0.5em;
   padding: 10px;
   background-color: #3399ff;
@@ -108,18 +113,82 @@
   font-size: 18px;
   text-align: center;
 }
-.doc-main .main-section--home .home-teacherInfo .home-teacherInfo__info {
+.doc-main .main-section--home .home-table .home-table__info {
   color: #000;
   font-size: 16px;
   text-align: center;
 }
+.doc-main .main-section--home .home-table .home-table--large__info {
+  font-size: 10px;
+}
 .doc-main .main-article {
-  width: 80%;
+  width: 90%;
   margin: 5px 0;
+  /* Class Title */
+  /* Date of the Class */
   /* Content-Elements in the Article */
 }
+.doc-main .main-article .main-article__title {
+  width: 80%;
+  height: 60px;
+  border-top-right-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  background-color: #000066;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32px;
+}
+.doc-main .main-article .main-article__date {
+  width: 50%;
+  height: 30px;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  background-color: #0000e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}
 .doc-main .main-article .article-content {
+  /* Class Notes */
+  /* Images in Class Notes */
+  /* All Images */
+  /* Test Images */
+  /* Float Images */
   /* Activities in the Articles */
+}
+.doc-main .main-article .article-content .article-content__paragraph {
+  width: 95%;
+  margin: 10px auto;
+  padding: 0 5px;
+  text-align: justify;
+}
+.doc-main .main-article .article-content .content-images {
+  margin: 5px auto;
+  padding: 5px;
+  border: 2px solid #0000e6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.doc-main .main-article .article-content .content-images--test {
+  width: 500px;
+}
+.doc-main .main-article .article-content .content-images--test .content-images__img {
+  width: 500px;
+  height: 200px;
+}
+.doc-main .main-article .article-content .content-images--right {
+  float: right;
+  margin: 10px;
+}
+.doc-main .main-article .article-content .content-images--left {
+  float: left;
+  margin: 10px;
 }
 .doc-main .main-article .article-content .content-activity {
   /* Info of the Activities */

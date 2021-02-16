@@ -100,11 +100,15 @@ $color-black2: #555; /* Grey */
  /* Home Section */
  .main-section--home {
 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
   .main-section--home__className {
+   margin: 5px;
    border: 4px solid $color-dark1;
    border-radius: 0.25em;
    padding: 10px;
-   padding-inline-start: 100px;
 
    background-color: $color-dark2;
 
@@ -112,17 +116,18 @@ $color-black2: #555; /* Grey */
    font-size: 32px;
   }
 
-  .home-teacherInfo {
-   width: 50%;
+  .home-table {
+   width: 45%;
 
-   margin: 10px;
    border: 2px solid $color-base1;
    border-radius: 0.5em;
    padding: 15px;
 
    background-color: $color-white1;
 
-   .home-teacherInfo__title {
+   flex: 1 0;
+
+   .home-table__title {
     border-radius: 0.5em;
     padding: 15px;
 
@@ -133,7 +138,7 @@ $color-black2: #555; /* Grey */
     font-weight: 800;
    }
 
-   .home-teacherInfo__category {
+   .home-table__category {
     border-radius: 0.5em;
     padding: 10px;
 
@@ -144,11 +149,13 @@ $color-black2: #555; /* Grey */
     text-align: center;
    }
    
-   .home-teacherInfo__info {
+   .home-table__info {
     color: $color-black1;
     font-size: 16px;
     text-align: center;
    }
+
+   .home-table--large__info {font-size: 10px;}
   }
  }
 
@@ -156,13 +163,92 @@ $color-black2: #555; /* Grey */
  /* Articles in the Main */
 
  .main-article {
-  width: 80%;
+  width: 90%;
 
   margin: 5px 0;
 
+  /* Class Title */
+  .main-article__title {
+   width: 80%;
+   height: 60px;
+
+   border-top-right-radius: 0.25em;
+   border-top-left-radius: 0.25em;
+   border-bottom-right-radius: 0.25em;
+
+   background-color: $color-dark1;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   color: $color-white1;
+   font-size: 32px;
+  }
+
+  /* Date of the Class */
+  .main-article__date {
+   width: 50%;
+   height: 30px;
+
+   border-bottom-left-radius: 0.25em;
+   border-bottom-right-radius: 0.25em;
+
+   background-color: $color-base1;
+
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+
+   color: $color-white1;
+   font-size: 24px;
+  }
+
   /* Content-Elements in the Article */
   .article-content {
+
+   /* Class Notes */
+   .article-content__paragraph {
+    width: 95%;
+
+    margin: 10px auto;
+    padding: 0 5px;
+
+    text-align: justify;
+   }
+
+   /* Images in Class Notes */
+
+   /* All Images */
+   .content-images {
+    margin: 5px auto;
+    padding: 5px;
+
+    border: 2px solid $color-base1;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .content-images__quote {
+     
+    }
+
+   }
    
+   /* Test Images */
+   .content-images--test {
+    width: 500px;
+
+    .content-images__img {
+     width: 500px;
+     height: 200px;
+    }
+   }
+
+   /* Float Images */
+   .content-images--right {float: right; margin: 10px;}
+   .content-images--left {float: left; margin: 10px;}
    /* Activities in the Articles */
    .content-activity {
 
