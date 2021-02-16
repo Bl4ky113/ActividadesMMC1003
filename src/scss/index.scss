@@ -225,18 +225,29 @@ $color-black2: #555; /* Grey */
     padding: 5px;
 
     border: 2px solid $color-base1;
+    border-radius: 0.25em;
+
+    background-color: $color-base2;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 
     .content-images__quote {
-     
+     width: 80%;
+
+     border: 2px solid $color-base1;
+     border-radius: 0.5em;
+
+     background-color: $color-white1;
+
+     text-align: center;
+     font-size: 12px;
     }
 
    }
    
-   /* Test Images */
+   /* Test Image */
    .content-images--test {
     width: 500px;
 
@@ -247,8 +258,142 @@ $color-black2: #555; /* Grey */
    }
 
    /* Float Images */
-   .content-images--right {float: right; margin: 10px;}
-   .content-images--left {float: left; margin: 10px;}
+   .content-images--right {
+    float: right; 
+    margin: 10px;
+   }
+   .content-images--left {
+    float: left; 
+    margin: 10px;
+   }
+
+   /* Asides in the Article */
+
+   .content-aside {
+    width: 30%;
+
+    border: 5px solid $color-base2;
+    border-radius: 0.25em;
+    padding: 10px;
+
+    background-color: $color-dark2;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+
+    /* Title of the Aside */
+    .content-aside__title {
+     width: 85%;
+
+     margin: 5px;
+     border: 2px solid $color-base1;
+     border-radius: 0.5em;
+     padding: 5px;
+
+     background-color: $color-base2;
+
+     color: $color-white1;
+     font-size: 18px;
+    }
+
+    /* Paragraphs in the Aside */ 
+    .content-aside__paragraph {
+     width: 95%;
+
+     margin: 5px;
+     border: 2px solid $color-base1;
+     border-radius: 0.25em;
+     padding: 5px;
+
+     background-color: $color-white1;
+
+     font-size: 16px;
+    }
+
+    /* Images in the Aside */
+    .aside-image {
+     margin: 5px auto;
+     padding: 5px;
+ 
+     border: 2px solid $color-base1;
+     border-radius: 0.25em;
+
+     background-color: $color-base2;
+ 
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+
+     .aside-image__quote {
+      width: 90%;
+
+      border: 2px solid $color-base1;
+      border-radius: 0.5em;
+
+      background-color: $color-white1;
+
+      text-align: center;
+      font-size: 12px;
+     }
+    }
+
+    /* TEST image */
+    .aside-image--test {
+     width: 300px;
+
+     .aside-image__img {
+      width: 300px;
+      height: 150px;
+     }
+    }
+
+    /* Tables in the Aside */
+    .aside-table {
+     border: 5px solid $color-base1;
+     border-collapse: collapse;
+     padding: 5px;
+
+     background-color: $color-white1;
+
+     .aside-table__header {
+      border: 2px solid $color-dark1;
+      padding: 5px;
+
+      background-color: $color-light1;
+
+      text-align: center;
+     }
+
+     .aside-table--long__header {
+      background-color: $color-base2;
+
+      color: $color-white1;
+      font-size: 20px;
+      font-weight: 800;
+     }
+
+     .aside-table__data {
+      border: 2px solid $color-dark1;
+      padding: 2px;
+
+      text-align: center;
+     }
+    }
+   }
+
+   /* Aside Floats */
+   .content-aside--right {
+    float: right;
+    margin: 10px;
+   }
+
+   .content-aside--left {
+    float: left;
+    margin: 10px;
+   }
+
    /* Activities in the Articles */
    .content-activity {
 

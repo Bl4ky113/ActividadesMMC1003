@@ -157,8 +157,10 @@
   /* Class Notes */
   /* Images in Class Notes */
   /* All Images */
-  /* Test Images */
+  /* Test Image */
   /* Float Images */
+  /* Asides in the Article */
+  /* Aside Floats */
   /* Activities in the Articles */
 }
 .doc-main .main-article .article-content .article-content__paragraph {
@@ -171,9 +173,19 @@
   margin: 5px auto;
   padding: 5px;
   border: 2px solid #0000e6;
+  border-radius: 0.25em;
+  background-color: #0000bb;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+.doc-main .main-article .article-content .content-images .content-images__quote {
+  width: 80%;
+  border: 2px solid #0000e6;
+  border-radius: 0.5em;
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
 }
 .doc-main .main-article .article-content .content-images--test {
   width: 500px;
@@ -187,6 +199,97 @@
   margin: 10px;
 }
 .doc-main .main-article .article-content .content-images--left {
+  float: left;
+  margin: 10px;
+}
+.doc-main .main-article .article-content .content-aside {
+  width: 30%;
+  border: 5px solid #0000bb;
+  border-radius: 0.25em;
+  padding: 10px;
+  background-color: #000044;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  /* Title of the Aside */
+  /* Paragraphs in the Aside */
+  /* Images in the Aside */
+  /* TEST image */
+  /* Tables in the Aside */
+}
+.doc-main .main-article .article-content .content-aside .content-aside__title {
+  width: 85%;
+  margin: 5px;
+  border: 2px solid #0000e6;
+  border-radius: 0.5em;
+  padding: 5px;
+  background-color: #0000bb;
+  color: #fff;
+  font-size: 18px;
+}
+.doc-main .main-article .article-content .content-aside .content-aside__paragraph {
+  width: 95%;
+  margin: 5px;
+  border: 2px solid #0000e6;
+  border-radius: 0.25em;
+  padding: 5px;
+  background-color: #fff;
+  font-size: 16px;
+}
+.doc-main .main-article .article-content .content-aside .aside-image {
+  margin: 5px auto;
+  padding: 5px;
+  border: 2px solid #0000e6;
+  border-radius: 0.25em;
+  background-color: #0000bb;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.doc-main .main-article .article-content .content-aside .aside-image .aside-image__quote {
+  width: 90%;
+  border: 2px solid #0000e6;
+  border-radius: 0.5em;
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+.doc-main .main-article .article-content .content-aside .aside-image--test {
+  width: 300px;
+}
+.doc-main .main-article .article-content .content-aside .aside-image--test .aside-image__img {
+  width: 300px;
+  height: 150px;
+}
+.doc-main .main-article .article-content .content-aside .aside-table {
+  border: 5px solid #0000e6;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: #fff;
+}
+.doc-main .main-article .article-content .content-aside .aside-table .aside-table__header {
+  border: 2px solid #000066;
+  padding: 5px;
+  background-color: #99ccff;
+  text-align: center;
+}
+.doc-main .main-article .article-content .content-aside .aside-table .aside-table--long__header {
+  background-color: #0000bb;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+.doc-main .main-article .article-content .content-aside .aside-table .aside-table__data {
+  border: 2px solid #000066;
+  padding: 2px;
+  text-align: center;
+}
+.doc-main .main-article .article-content .content-aside--right {
+  float: right;
+  margin: 10px;
+}
+.doc-main .main-article .article-content .content-aside--left {
   float: left;
   margin: 10px;
 }
