@@ -105,6 +105,8 @@ $color-black2: #555; /* Grey */
   justify-content: space-evenly;
 
   .main-section--home__className {
+   min-width: 80%;
+
    margin: 5px;
    border: 4px solid $color-dark1;
    border-radius: 0.25em;
@@ -114,6 +116,7 @@ $color-black2: #555; /* Grey */
 
    color: $color-white1;
    font-size: 32px;
+   text-align: center;
   }
 
   .home-table {
@@ -250,13 +253,24 @@ $color-black2: #555; /* Grey */
    /* Test Image */
    .content-images--test {
     width: 500px;
+    
+    .content-images__img {
+     width: 500px;
+     height: 200px;
+    }
+
+   }
+
+   /* LawGexx image */
+   .content-images--lawgeex {
+    width: 500px;
 
     .content-images__img {
      width: 500px;
      height: 200px;
     }
    }
-
+   
    /* Float Images */
    .content-images--right {
     float: right; 
@@ -361,7 +375,7 @@ $color-black2: #555; /* Grey */
       border: 2px solid $color-dark1;
       padding: 5px;
 
-      background-color: $color-light1;
+      background-color: $color-light2;
 
       text-align: center;
      }
@@ -392,6 +406,55 @@ $color-black2: #555; /* Grey */
    .content-aside--left {
     float: left;
     margin: 10px;
+   }
+
+   /* Tables in the Article */
+
+   .content-table {
+    width: 70%;
+
+    margin: 10px auto;
+    border: 5px solid $color-dark2;
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    padding: 5px;
+
+    .content-table__header {
+     border: 2px solid $color-dark1;
+     padding: 10px;
+
+     background-color: $color-light2;
+
+     text-align: center;
+     font-size: 20px;
+     font-weight: 600;
+    }
+
+    .content-table--long__header {
+     padding: 15px;
+
+     background-color: $color-base2;
+
+     color: $color-white1;
+     font-size: 28px;
+     font-weight: 1000;
+    }
+
+    .content-table--question__header {
+     padding: 5px;
+
+     background-color: $color-white1;
+
+     font-size: 18px;
+    }
+
+    .content-table__data {
+     border: 2px solid $color-dark1;
+     padding: 5px;
+
+     text-align: center;
+    }
+
    }
 
    /* Activities in the Articles */
