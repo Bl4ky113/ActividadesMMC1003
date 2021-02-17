@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* GOBAL VARIABLES */
 /* Base Colors */
 /* Blue */
@@ -109,7 +110,7 @@
   font-weight: 800;
 }
 .doc-main .main-section--home .home-table .home-table__category {
-  max-width: 80px;
+  width: 95px;
   border-radius: 0.5em;
   padding: 10px;
   background-color: #3399ff;
@@ -164,6 +165,8 @@
   /* All Images */
   /* Test Image */
   /* LawGexx image */
+  /* MapaMental Compuertas Lógicas */
+  /* MapaMental "dormir" Lideres Sociales */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -175,19 +178,19 @@
   margin: 10px auto;
   padding: 0 5px;
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
 }
 .doc-main .main-article .article-content .article-content__title {
   margin: 10px;
   padding: 5px;
   color: #000044;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 1000;
 }
 .doc-main .main-article .article-content .article-content__semititle {
   margin: 10px;
   color: #000066;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
 }
 .doc-main .main-article .article-content .content-images {
@@ -226,6 +229,10 @@
   width: 1100px;
 }
 .doc-main .main-article .article-content .content-images--mm-compuertasLogicas .content-images__img {
+  width: 1100px;
+  height: 400px;
+}
+.doc-main .main-article .article-content .content-images--mm-lideresSociales .content-images__img {
   width: 1100px;
   height: 400px;
 }
@@ -362,7 +369,27 @@
   text-align: center;
 }
 .doc-main .main-article .article-content .content-activity {
+  /* Reset the Number of the Tasks */
+  counter-reset: section;
+  list-style-type: none;
+  /* Title of the Activities */
   /* Info of the Activities */
+  /* Activities Taks, To Do List, Etc */
+}
+.doc-main .main-article .article-content .content-activity .content-activity__title {
+  width: 100%;
+  height: 60px;
+  margin: 5px auto;
+  border: 2px solid #000066;
+  border-radius: 0.25em;
+  padding: 5px;
+  background-color: #000044;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .doc-main .main-article .article-content .content-activity .activity-info {
   /* Info of the Student */
@@ -386,4 +413,16 @@
   padding: 5px;
   font-size: 18px;
   text-align: center;
+}
+.doc-main .main-article .article-content .content-activity .content-activity__task {
+  margin: 5px;
+  border: 2px solid #0000e6;
+  border-radius: 0.25em;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.doc-main .main-article .article-content .content-activity .content-activity__task::before {
+  counter-increment: section;
+  content: "Punto N°" counter(section) ". ";
 }
