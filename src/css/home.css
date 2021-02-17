@@ -1,0 +1,190 @@
+/* GOBAL VARIABLES */
+/* Base Colors */
+/* Blue */
+/* Darker Blue */
+/* Sky */
+/* Darker Sky */
+/* Midnight */
+/* Even Darker Midnight */
+/* General Colors */
+/* White */
+/* Smoke */
+/* Black */
+/* Dark Grey */
+/* Home/Inicio Style Sheet */
+/* The Header */
+.doc-header {
+  height: 80px;
+  padding: 5px;
+  background-color: #000066;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Title of the Header */
+}
+.doc-header .header-title {
+  width: 800px;
+  border: 2px solid #0000bb;
+  padding: 10px 0;
+  background-color: #0000e6;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  /* Text */
+  /* Info */
+}
+.doc-header .header-title .header-title__text {
+  color: #fff;
+  font-size: 32px;
+  /* Name of The Class */
+}
+.doc-header .header-title .header-title__text span {
+  font-size: 40px;
+}
+.doc-header .header-title .header-title--info__text {
+  color: #99ccff;
+  font-size: 12px;
+}
+
+/* Main of the Home */
+.doc-main {
+  margin-right: 5px;
+  margin-left: 5px;
+  border-right: 2px outset #353535;
+  border-left: 2px outset #353535;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* Sections in the Main */
+  /* Wellcome Section */
+  /* Alerts in the Main */
+}
+.doc-main .main-section {
+  max-width: 50%;
+  margin: 10px;
+  border-radius: 0;
+  padding: 5px;
+  /* Title of the section */
+  /* Content of the section */
+}
+.doc-main .main-section .main-section__title {
+  width: 90%;
+  height: 60px;
+  margin: 10px;
+  border: 5px solid #0000bb;
+  border-radius: 0.1em;
+  padding-inline-start: 30px;
+  background-color: #0000bb;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 1000;
+}
+.doc-main .main-section .section-content {
+  display: flex;
+  flex-flow: column wrap;
+  /* Alerts in the Sections */
+  /* Lists in the Sections */
+  /* Unorder Lists */
+}
+.doc-main .main-section .section-content .section-content__paragraph {
+  width: 85%;
+  margin: 0 auto;
+  border-right: 1px solid #353535;
+  border-left: 1px solid #353535;
+  padding: 10px;
+  font-size: 18px;
+}
+.doc-main .main-section .section-content .section-content__link {
+  width: 60%;
+  margin: 10px;
+  margin-inline-start: 30px;
+  border: 2px solid #000066;
+  border-radius: 0.25em;
+  padding: 5px;
+  padding-inline-start: 25px;
+  background-color: #0000e6;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transition-property: width, color, background-color;
+}
+.doc-main .main-section .section-content .section-content__link:hover {
+  width: 80%;
+  background-color: #000066;
+  color: #99ccff;
+  text-decoration: underline #99ccff;
+}
+.doc-main .main-section .section-content .section-content__alert {
+  width: 7 0%;
+  border: 5px solid #700;
+  border-radius: 1em;
+  padding: 15px;
+  background-color: #fff;
+  color: #000;
+}
+.doc-main .main-section .section-content .content-ulist {
+  width: 70%;
+  margin: 10px;
+  margin-inline-start: 20px;
+  padding: 10px;
+  list-style-position: inside;
+}
+.doc-main .main-section .section-content .content-ulist .ulist-object {
+  margin: 5px;
+  border: 2px outset #99ccff;
+  padding: 10px;
+  background-color: #0000bb;
+  color: #fff;
+}
+.doc-main .main-section--wellcome {
+  width: 45%;
+  border: 2px solid #3399ff;
+  border-radius: 0.5em;
+  background-color: #99ccff;
+}
+.doc-main .main-section--wellcome .section-images {
+  margin: 10px;
+  border-radius: 0.5em;
+  padding: 5px;
+}
+.doc-main .main-section--wellcome .section-images .section-images__img {
+  width: 100%;
+  height: 300px;
+}
+.doc-main .main-section--wellcome .section-content {
+  margin: 5px;
+  border: 2px outset #3399ff;
+  border-radius: 1em;
+  padding: 10px;
+  background-color: #fff;
+}
+.doc-main .main-section--wellcome .section-content .section-content__paragraph {
+  width: 95%;
+  border: none;
+  padding: 5px;
+  color: #000;
+  font-size: 18px;
+}
+.doc-main .main-section--wellcome .section-content .section-content__paragraph .saludo {
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: underline #0000bb;
+}
+.doc-main .main-section--wellcome .section-content .section-content__paragraph .Bl4ky113 {
+  color: #0000bb;
+  text-decoration: underline #0000bb;
+  text-shadow: 1px 1px 1px #000;
+}
+.doc-main .main-section--wellcome .section-content .section-content__paragraph .commentary {
+  color: #353535;
+  font-size: 12px;
+}
+.doc-main .main-section--wellcome .section-content .section-content__paragraph em {
+  padding: 0 5px;
+  background-color: #3399ff;
+}
