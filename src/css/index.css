@@ -10,14 +10,14 @@
 /* White */
 /* Smoke */
 /* Black */
-/* Grey */
+/* Dark Grey */
 /* ----- Header Style ----- */
 .doc-header {
   height: 80px;
   padding: 5px;
   background-color: #000066;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   /* Title of the Header */
 }
@@ -49,7 +49,7 @@
 .doc-main {
   width: 95%;
   margin: 5px auto;
-  border: 2px outset #555;
+  border: 2px outset #353535;
   padding: 5px 10px;
   display: flex;
   justify-content: space-evenly;
@@ -82,6 +82,7 @@
 }
 .doc-main .main-section--home .main-section--home__className {
   min-width: 80%;
+  max-width: 100%;
   margin: 5px;
   border: 4px solid #000066;
   border-radius: 0.25em;
@@ -108,6 +109,7 @@
   font-weight: 800;
 }
 .doc-main .main-section--home .home-table .home-table__category {
+  max-width: 80px;
   border-radius: 0.5em;
   padding: 10px;
   background-color: #3399ff;
