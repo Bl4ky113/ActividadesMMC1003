@@ -151,8 +151,9 @@ $color-black2: #353535; /* Dark Grey */
    /* Alerts in the Sections */
 
    .section-content__alert {
-    width: 7 0%;
+    width: 70%;
 
+    margin: 0 auto;
     border: 5px solid #700;
     border-radius: 1em;
     padding: 15px;
@@ -160,6 +161,21 @@ $color-black2: #353535; /* Dark Grey */
     background-color: $color-white1;
 
     color: $color-black1;
+
+    span {
+     width: 60%;
+
+     border: 2px solid #700;
+     border-radius: 0.25em;
+     padding: 5px;
+
+     background-color: #f33;
+
+     color: $color-white1;
+     font-size: 20px;
+
+     display: block;
+    }
    }
 
    /* Lists in the Sections */

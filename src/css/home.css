@@ -120,12 +120,23 @@
   text-decoration: underline #99ccff;
 }
 .doc-main .main-section .section-content .section-content__alert {
-  width: 7 0%;
+  width: 70%;
+  margin: 0 auto;
   border: 5px solid #700;
   border-radius: 1em;
   padding: 15px;
   background-color: #fff;
   color: #000;
+}
+.doc-main .main-section .section-content .section-content__alert span {
+  width: 60%;
+  border: 2px solid #700;
+  border-radius: 0.25em;
+  padding: 5px;
+  background-color: #f33;
+  color: #fff;
+  font-size: 20px;
+  display: block;
 }
 .doc-main .main-section .section-content .content-ulist {
   width: 70%;
