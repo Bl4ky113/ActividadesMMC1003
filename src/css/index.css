@@ -80,6 +80,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  /* List on the home section */
 }
 .doc-main .main-section--home .main-section--home__className {
   min-width: 80%;
@@ -95,11 +96,10 @@
 }
 .doc-main .main-section--home .home-table {
   width: 45%;
-  border: 2px solid #0000e6;
+  border: 2px outset #0000e6;
   border-radius: 0.5em;
   padding: 15px;
   background-color: #fff;
-  flex: 1 0;
 }
 .doc-main .main-section--home .home-table .home-table__title {
   border-radius: 0.5em;
@@ -115,16 +115,51 @@
   padding: 10px;
   background-color: #3399ff;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 }
 .doc-main .main-section--home .home-table .home-table__info {
   color: #000;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
 }
-.doc-main .main-section--home .home-table .home-table--large__info {
-  font-size: 10px;
+.doc-main .main-section--home .home-ulist {
+  width: 45%;
+  border: 2px outset #0000e6;
+  border-radius: 0.5em;
+  padding: 15px;
+  background-color: #fff;
+  flex-grow: 1;
+  list-style-type: square;
+}
+.doc-main .main-section--home .home-ulist .home-ulist__title {
+  border-radius: 0.5em;
+  padding: 5px;
+  background-color: #0000e6;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+}
+.doc-main .main-section--home .home-ulist .home-ulist--semi__title {
+  max-width: 80%;
+  margin: 2px;
+  margin-inline-start: 15px;
+  border-radius: 0.5em;
+  padding: 5px;
+  background-color: #3399ff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.doc-main .main-section--home .home-ulist .ulist-object {
+  margin-inline-start: 20px;
+  padding: 2px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: justify;
+}
+.doc-main .main-section--home .home-ulist .ulist-object::marker {
+  color: #3399ff;
 }
 .doc-main .main-article {
   width: 90%;
@@ -167,6 +202,8 @@
   /* LawGexx image */
   /* MapaMental Compuertas Lógicas */
   /* MapaMental "dormir" Lideres Sociales */
+  /* Angles on Matematic */
+  /* "Angulos de 90°" que duelen */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -246,6 +283,13 @@
 .doc-main .main-article .article-content .content-images--angles .content-images__img {
   width: 400px;
   height: 250px;
+}
+.doc-main .main-article .article-content .content-images--angulosqueduelen {
+  width: 800px;
+}
+.doc-main .main-article .article-content .content-images--angulosqueduelen .content-images__img {
+  width: 800px;
+  height: 400px;
 }
 .doc-main .main-article .article-content .content-images--right {
   float: right;
@@ -434,10 +478,11 @@
 }
 .doc-main .main-article .article-content .content-activity .content-activity__task {
   margin: 5px;
-  border: 2px solid #0000e6;
+  border-right: 3px solid #0000e6;
+  border-left: 3px solid #0000e6;
   border-radius: 0.25em;
   padding: 5px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
 }
 .doc-main .main-article .article-content .content-activity .content-activity__task::before {

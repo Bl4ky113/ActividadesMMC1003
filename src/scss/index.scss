@@ -123,13 +123,11 @@ $color-black2: #353535; /* Dark Grey */
   .home-table {
    width: 45%;
 
-   border: 2px solid $color-base1;
+   border: 2px outset $color-base1;
    border-radius: 0.5em;
    padding: 15px;
 
    background-color: $color-white1;
-
-   flex: 1 0;
 
    .home-table__title {
     border-radius: 0.5em;
@@ -151,17 +149,70 @@ $color-black2: #353535; /* Dark Grey */
     background-color: $color-light2;
 
     color: $color-black1;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
    }
    
    .home-table__info {
     color: $color-black1;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
    }
+  }
 
-   .home-table--large__info {font-size: 10px;}
+  /* List on the home section */
+
+  .home-ulist {
+   width: 45%;
+
+   border: 2px outset $color-base1;
+   border-radius: 0.5em;
+   padding: 15px;
+
+   background-color: $color-white1;
+
+   flex-grow: 1;
+
+   list-style-type: square;
+
+   .home-ulist__title {
+    border-radius: 0.5em;
+    padding: 5px;
+
+    background-color: $color-base1;
+    
+    color: $color-white1;
+    font-size: 24px;
+    font-weight: 800;
+   }
+
+   .home-ulist--semi__title {
+    max-width: 80%;
+
+    margin: 2px;
+    margin-inline-start: 15px;
+    border-radius: 0.5em;
+    padding: 5px;
+
+    background-color: $color-light2;
+
+    color: $color-black1;
+    font-size: 16px;
+    font-weight: 600;
+   }
+
+   .ulist-object {
+    margin-inline-start: 20px;
+    padding: 2px;
+
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+
+    &::marker{
+     color: $color-light2; 
+    }
+   }
   }
  }
 
@@ -313,12 +364,23 @@ $color-black2: #353535; /* Dark Grey */
     }
    }
 
+   /* Angles on Matematic */
    .content-images--angles {
     width: 400px;
 
     .content-images__img {
      width: 400px;
      height: 250px;
+    }
+   }
+
+   /* "Angulos de 90°" que duelen */
+   .content-images--angulosqueduelen {
+    width: 800px;
+
+    .content-images__img {
+     width: 800px;
+     height: 400px;
     }
    }
    
@@ -579,11 +641,12 @@ $color-black2: #353535; /* Dark Grey */
     /* Activities Taks, To Do List, Etc */
     .content-activity__task {
      margin: 5px;
-     border: 2px solid $color-base1;
+     border-right: 3px solid $color-base1;
+     border-left: 3px solid $color-base1;
      border-radius: 0.25em;
      padding: 5px;
 
-     font-size: 24px;
+     font-size: 18px;
      font-weight: 600;
 
      &::before {
