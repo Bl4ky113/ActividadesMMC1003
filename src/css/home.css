@@ -9,6 +9,7 @@
 /* General Colors */
 /* White */
 /* Smoke */
+/* A little bit dark White */
 /* Black */
 /* Dark Grey */
 /* Home/Inicio Style Sheet */
@@ -57,12 +58,12 @@
   justify-content: space-between;
   /* Sections in the Main */
   /* Wellcome Section */
-  /* Alerts in the Main */
+  /* Schedule Section */
 }
 .doc-main .main-section {
   max-width: 50%;
   margin: 10px;
-  border-radius: 0;
+  border-radius: 0.25em;
   padding: 5px;
   /* Title of the section */
   /* Content of the section */
@@ -120,9 +121,9 @@
   text-decoration: underline #99ccff;
 }
 .doc-main .main-section .section-content .section-content__alert {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
-  border: 5px solid #700;
+  border: 5px solid #0000bb;
   border-radius: 1em;
   padding: 15px;
   background-color: #fff;
@@ -130,10 +131,10 @@
 }
 .doc-main .main-section .section-content .section-content__alert span {
   width: 60%;
-  border: 2px solid #700;
+  border: 2px solid #000066;
   border-radius: 0.25em;
   padding: 5px;
-  background-color: #f33;
+  background-color: #0000bb;
   color: #fff;
   font-size: 20px;
   display: block;
@@ -198,4 +199,90 @@
 .doc-main .main-section--wellcome .section-content .section-content__paragraph em {
   padding: 0 5px;
   background-color: #3399ff;
+}
+.doc-main .main-section--schedule {
+  max-width: 95%;
+  width: 100%;
+  margin: 10px auto;
+}
+.doc-main .main-section--schedule .section-calendar {
+  margin: 5px auto;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar__header {
+  padding: 20px;
+  background-color: #0000e6;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--day__header {
+  width: 200px;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar__time {
+  padding: 10px;
+  background-color: #99ccff;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar__data {
+  padding: 5px;
+  border-radius: 0.25em;
+  background-color: #f0f0f0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar__data[rowspan="2"] {
+  font-size: 24px;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--quimica__data {
+  border: 1px outset #4c0080;
+  background-color: #90f;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--artes__data {
+  border: 1px outset #ff0080;
+  background-color: #ff66b3;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--ingles__data {
+  border: 1px outset #ffcc00;
+  background-color: #ffdb4d;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--religion__data {
+  border: 1px outset #ff99ff;
+  background-color: #ffccff;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--tecnologia__data {
+  border: 1px outset #666666;
+  background-color: #999999;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--filosofia__data {
+  border: 1px outset #4d004d;
+  background-color: #990099;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--gestion__data {
+  border: 1px outset #cc5200;
+  background-color: #ff6600;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--edfisica__data {
+  border: 1px outset #00ee00;
+  background-color: #22ff22;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--matematicas__data {
+  border: 1px outset #000080;
+  background-color: #0000e6;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--espanol__data {
+  border: 1px outset #a00;
+  background-color: #ff3232;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--politicaeconomia__data {
+  border: 1px outset #0077b3;
+  background-color: #66ccff;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--fisica__data {
+  border: 1px outset #800080;
+  background-color: #ff00ff;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--etica__data {
+  border: 1px outset #b3e6ff;
+  background-color: #b3e6ff;
+}
+.doc-main .main-section--schedule .section-calendar .section-calendar--articulacion__data {
+  border: 1px outset #002b80;
+  background-color: #1a66ff;
 }

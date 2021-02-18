@@ -11,6 +11,7 @@ $color-dark2: #000044; /* Even Darker Midnight */
 /* General Colors */
 $color-white1: #fff; /* White */
 $color-white2: #cfcfcf; /* Smoke */
+$color-white3: #f0f0f0; /* A little bit dark White */
 
 $color-black1: #000; /* Black */
 $color-black2: #353535; /* Dark Grey */
@@ -77,7 +78,7 @@ $color-black2: #353535; /* Dark Grey */
   max-width: 50%;
 
   margin: 10px;
-  border-radius: 0;
+  border-radius: 0.25em;
   padding: 5px;
 
   
@@ -151,10 +152,10 @@ $color-black2: #353535; /* Dark Grey */
    /* Alerts in the Sections */
 
    .section-content__alert {
-    width: 70%;
+    width: 90%;
 
     margin: 0 auto;
-    border: 5px solid #700;
+    border: 5px solid $color-base2;
     border-radius: 1em;
     padding: 15px;
 
@@ -165,11 +166,11 @@ $color-black2: #353535; /* Dark Grey */
     span {
      width: 60%;
 
-     border: 2px solid #700;
+     border: 2px solid $color-dark1;
      border-radius: 0.25em;
      padding: 5px;
 
-     background-color: #f33;
+     background-color: $color-base2;
 
      color: $color-white1;
      font-size: 20px;
@@ -265,8 +266,131 @@ $color-black2: #353535; /* Dark Grey */
   }
  }
 
- /* Alerts in the Main */
- .main-section__alert {
-  
+ /* Schedule Section */
+
+ .main-section--schedule {
+  max-width: 95%;
+  width: 100%;
+
+  margin: 10px auto;
+
+  .section-calendar {
+   margin: 5px auto;
+
+   .section-calendar__header {
+    padding: 20px;
+
+    background-color: $color-base1;
+   }
+
+   .section-calendar--day__header {width: 200px;}
+
+   .section-calendar__time {
+    padding: 10px;
+
+    background-color: $color-light1;
+   }
+
+   .section-calendar__data {
+    padding: 5px;
+
+    border-radius: 0.25em;
+
+    background-color: $color-white3;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+   }
+
+   .section-calendar__data[rowspan="2"] {
+     font-size: 24px;
+   }
+
+   .section-calendar--quimica__data {
+    border: 1px outset #4c0080;
+
+    background-color: #90f;
+   }
+
+   .section-calendar--artes__data {
+    border: 1px outset #ff0080;
+
+    background-color: #ff66b3;
+   }
+
+   .section-calendar--ingles__data {
+    border: 1px outset #ffcc00;
+
+    background-color: #ffdb4d;
+   }
+
+   .section-calendar--religion__data {
+    border: 1px outset #ff99ff;
+
+    background-color: #ffccff;
+   }
+
+   .section-calendar--tecnologia__data {
+    border: 1px outset #666666;
+    
+    background-color: #999999;
+   }
+   
+   .section-calendar--filosofia__data {
+    border: 1px outset #4d004d;
+
+    background-color: #990099;
+   }
+
+   .section-calendar--gestion__data {
+    border: 1px outset #cc5200;
+
+    background-color: #ff6600;
+   }
+
+   .section-calendar--edfisica__data {
+    border: 1px outset #00ee00;
+
+    background-color: #22ff22;
+   }
+
+   .section-calendar--matematicas__data {
+    border: 1px outset #000080;
+
+    background-color: #0000e6;
+    ;
+   }
+
+   .section-calendar--espanol__data {
+    border: 1px outset #a00;
+
+    background-color: #ff3232;
+   }
+
+   .section-calendar--politicaeconomia__data {
+    border: 1px outset #0077b3;
+
+    background-color: #66ccff;
+   }
+
+   .section-calendar--fisica__data {
+    border: 1px outset #800080;
+
+    background-color: #ff00ff;
+   }
+
+   .section-calendar--etica__data {
+    border: 1px outset #b3e6ff;
+
+    background-color: #b3e6ff;
+   }
+
+   .section-calendar--articulacion__data {
+     border: 1px outset #002b80;
+
+     background-color: #1a66ff;
+   }
+  }
  }
 }
