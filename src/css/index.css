@@ -12,6 +12,23 @@
 /* Smoke */
 /* Black */
 /* Dark Grey */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,200;1,300&family=Newsreader:ital,wght@1,400;1,500&family=Oswald:wght@300;500;700&display=swap");
+/*  
+ - Oswald [Bold | 700] (Titles), sans-serif
+
+ - Oswald [Medium | 500] (Small Titles), sans-serif
+
+ - Oswald [Light | 300] (Semi Titles), sans-serif
+
+ - Montserrat [Medium | 500] (Paragraphs), sans-serif
+
+ - Montserrat [Regular | 400] (Small Paragraphs), sans-serif
+
+ - Newsreader [Medium, Regular | 500, 400 | italic] (Italic Spans), serif
+
+ - Montserrat [Light, Extralight | 300, 200 | italic] (Emphrased Spans), sans-serif
+*/
 /* ----- Header Style ----- */
 .doc-header {
   height: 80px;
@@ -35,15 +52,15 @@
 }
 .doc-header .header-title .header-title__text {
   color: #fff;
-  font-size: 32px;
+  font: 700 32px "Oswald", sans-serif;
   /* Name of The Class */
 }
 .doc-header .header-title .header-title__text span {
-  font-size: 40px;
+  font-size: 36px;
 }
 .doc-header .header-title .header-title--info__text {
   color: #99ccff;
-  font-size: 12px;
+  font: italic 200 12px "Montserrat", sans-serif;
 }
 
 /* Main Content of the Doc */
@@ -91,7 +108,7 @@
   padding: 10px;
   background-color: #000044;
   color: #fff;
-  font-size: 32px;
+  font: 700 26px "Oswald", sans-serif;
   text-align: center;
 }
 .doc-main .main-section--home .home-table {
@@ -106,8 +123,7 @@
   padding: 15px;
   background-color: #0000e6;
   color: #fff;
-  font-size: 24px;
-  font-weight: 800;
+  font: 500 24px "Oswald", sans-serif;
 }
 .doc-main .main-section--home .home-table .home-table__category {
   width: 95px;
@@ -115,12 +131,12 @@
   padding: 10px;
   background-color: #3399ff;
   color: #000;
-  font-size: 16px;
+  font: 500 16px "Oswald", sans-serif;
   text-align: center;
 }
 .doc-main .main-section--home .home-table .home-table__info {
   color: #000;
-  font-size: 15px;
+  font: 400 15px "Montserrat", sans-serif;
   text-align: center;
 }
 .doc-main .main-section--home .home-ulist {
@@ -137,7 +153,7 @@
   padding: 5px;
   background-color: #0000e6;
   color: #fff;
-  font-size: 24px;
+  font: 500 24px "Oswald", sans-serif;
   font-weight: 800;
 }
 .doc-main .main-section--home .home-ulist .home-ulist--semi__title {
@@ -148,14 +164,12 @@
   padding: 5px;
   background-color: #3399ff;
   color: #000;
-  font-size: 16px;
-  font-weight: 600;
+  font: 500 15px "Oswald", sans-serif;
 }
 .doc-main .main-section--home .home-ulist .ulist-object {
   margin-inline-start: 20px;
   padding: 2px;
-  font-size: 14px;
-  font-weight: 300;
+  font: 400 14px "Montserrat", sans-serif;
   text-align: justify;
 }
 .doc-main .main-section--home .home-ulist .ulist-object::marker {
@@ -179,7 +193,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 32px;
+  font: 700 32px "Oswald", sans-serif;
 }
 .doc-main .main-article .main-article__date {
   width: 50%;
@@ -191,7 +205,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 24px;
+  font: 300 24px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content {
   /* Class Notes */
@@ -216,20 +230,24 @@
   margin: 10px auto;
   padding: 0 5px;
   text-align: justify;
-  font-size: 18px;
+  font: 500 18px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .article-content__paragraph em {
+  font: italic 400 18px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .article-content__paragraph i {
+  font: italic 500 18px "Newsreader", serif;
 }
 .doc-main .main-article .article-content .article-content__title {
   margin: 10px;
   padding: 5px;
   color: #000044;
-  font-size: 28px;
-  font-weight: 1000;
+  font: 500 28px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .article-content__semititle {
   margin: 10px;
   color: #000066;
-  font-size: 24px;
-  font-weight: 800;
+  font: 300 22px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .content-images {
   margin: 5px auto;
@@ -247,7 +265,10 @@
   border-radius: 0.5em;
   background-color: #fff;
   text-align: center;
-  font-size: 12px;
+  font: 400 12px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .content-images .content-images__quote cite {
+  font: italic 300 12px "Newsreader", serif;
 }
 .doc-main .main-article .article-content .content-images--test {
   width: 500px;
@@ -323,7 +344,7 @@
   padding: 5px;
   background-color: #0000bb;
   color: #fff;
-  font-size: 18px;
+  font: 300 18px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .content-aside .content-aside__paragraph {
   width: 95%;
@@ -332,7 +353,7 @@
   border-radius: 0.25em;
   padding: 5px;
   background-color: #fff;
-  font-size: 16px;
+  font: 400 16px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .content-aside .aside-image {
   margin: 5px auto;
@@ -350,7 +371,7 @@
   border-radius: 0.5em;
   background-color: #fff;
   text-align: center;
-  font-size: 12px;
+  font: 400 15px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .content-aside .aside-image--test {
   width: 300px;
@@ -447,8 +468,7 @@
   padding: 5px;
   background-color: #000044;
   color: #fff;
-  font-size: 32px;
-  font-weight: 800;
+  font: 700 32px "Oswald", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -482,8 +502,7 @@
   border-left: 3px solid #0000e6;
   border-radius: 0.25em;
   padding: 5px;
-  font-size: 18px;
-  font-weight: 600;
+  font: 300 20px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .content-activity .content-activity__task::before {
   counter-increment: section;

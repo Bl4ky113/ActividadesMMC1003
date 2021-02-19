@@ -15,6 +15,25 @@ $color-white2: #cfcfcf; /* Smoke */
 $color-black1: #000; /* Black */
 $color-black2: #353535; /* Dark Grey */
 
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,200;1,300&family=Newsreader:ital,wght@1,400;1,500&family=Oswald:wght@300;500;700&display=swap');
+/*  
+ - Oswald [Bold | 700] (Titles), sans-serif
+ 
+ - Oswald [Medium | 500] (Small Titles), sans-serif
+
+ - Oswald [Light | 300] (Semi Titles), sans-serif
+
+ - Montserrat [Medium | 500] (Paragraphs), sans-serif
+
+ - Montserrat [Regular | 400] (Small Paragraphs), sans-serif
+
+ - Newsreader [Medium, Regular | 500, 400 | italic] (Italic Spans), serif
+
+ - Montserrat [Light, Extralight | 300, 200 | italic] (Emphrased Spans), sans-serif
+*/
+
 /* ----- Header Style ----- */
 
 .doc-header {
@@ -44,16 +63,16 @@ $color-black2: #353535; /* Dark Grey */
   /* Text */
   .header-title__text {
    color: $color-white1;
-   font-size: 32px;
+   font: 700 32px 'Oswald', sans-serif;
 
    /* Name of The Class */
-   span {font-size: 40px;}
+   span {font-size: 36px;}
   }
 
   /* Info */
   .header-title--info__text {
    color: $color-light1;
-   font-size: 12px;
+   font: italic 200 12px 'Montserrat', sans-serif;
   }
  }
 }
@@ -116,7 +135,7 @@ $color-black2: #353535; /* Dark Grey */
    background-color: $color-dark2;
 
    color: $color-white1;
-   font-size: 32px;
+   font: 700 26px 'Oswald', sans-serif;
    text-align: center;
   }
 
@@ -136,8 +155,7 @@ $color-black2: #353535; /* Dark Grey */
     background-color: $color-base1;
     
     color: $color-white1;
-    font-size: 24px;
-    font-weight: 800;
+    font: 500 24px 'Oswald', sans-serif;
    }
 
    .home-table__category {
@@ -149,13 +167,13 @@ $color-black2: #353535; /* Dark Grey */
     background-color: $color-light2;
 
     color: $color-black1;
-    font-size: 16px;
+    font: 500 16px 'Oswald', sans-serif;
     text-align: center;
    }
    
    .home-table__info {
     color: $color-black1;
-    font-size: 15px;
+    font: 400 15px 'Montserrat', sans-serif;
     text-align: center;
    }
   }
@@ -182,7 +200,7 @@ $color-black2: #353535; /* Dark Grey */
     background-color: $color-base1;
     
     color: $color-white1;
-    font-size: 24px;
+    font: 500 24px 'Oswald', sans-serif;
     font-weight: 800;
    }
 
@@ -197,16 +215,14 @@ $color-black2: #353535; /* Dark Grey */
     background-color: $color-light2;
 
     color: $color-black1;
-    font-size: 16px;
-    font-weight: 600;
+    font: 500 15px 'Oswald', sans-serif;
    }
 
    .ulist-object {
     margin-inline-start: 20px;
     padding: 2px;
 
-    font-size: 14px;
-    font-weight: 300;
+    font: 400 14px 'Montserrat', sans-serif;
     text-align: justify;
 
     &::marker{
@@ -240,7 +256,7 @@ $color-black2: #353535; /* Dark Grey */
    justify-content: center;
 
    color: $color-white1;
-   font-size: 32px;
+   font: 700 32px 'Oswald', sans-serif;
   }
 
   /* Date of the Class */
@@ -258,7 +274,7 @@ $color-black2: #353535; /* Dark Grey */
    justify-content: center; 
 
    color: $color-white1;
-   font-size: 24px;
+   font: 300 24px 'Oswald', sans-serif;
   }
 
   /* Content-Elements in the Article */
@@ -272,7 +288,15 @@ $color-black2: #353535; /* Dark Grey */
     padding: 0 5px;
 
     text-align: justify;
-    font-size: 18px;
+    font: 500 18px 'Montserrat', sans-serif;
+
+    em {
+     font: italic 400 18px 'Montserrat', sans-serif;
+    }
+
+    i {
+     font: italic 500 18px 'Newsreader', serif;
+    }
    }
 
    /* Titles in the Class Notes*/
@@ -281,16 +305,14 @@ $color-black2: #353535; /* Dark Grey */
     padding: 5px;
 
     color: $color-dark2;
-    font-size: 28px;
-    font-weight: 1000;
+    font: 500 28px 'Oswald', sans-serif;
    }
 
    .article-content__semititle {
     margin: 10px;
 
     color: $color-dark1;
-    font-size: 24px;
-    font-weight: 800;
+    font: 300 22px 'Oswald', sans-serif;
    }
 
    /* Images in Class Notes */
@@ -318,7 +340,11 @@ $color-black2: #353535; /* Dark Grey */
      background-color: $color-white1;
 
      text-align: center;
-     font-size: 12px;
+     font: 400 12px 'Montserrat', sans-serif;
+
+     cite {
+      font: italic 300 12px 'Newsreader', serif;
+     }
     }
 
    }
@@ -422,7 +448,7 @@ $color-black2: #353535; /* Dark Grey */
      background-color: $color-base2;
 
      color: $color-white1;
-     font-size: 18px;
+     font: 300 18px 'Oswald', sans-serif;
     }
 
     /* Paragraphs in the Aside */ 
@@ -436,7 +462,7 @@ $color-black2: #353535; /* Dark Grey */
 
      background-color: $color-white1;
 
-     font-size: 16px;
+     font: 400 16px 'Montserrat', sans-serif;
     }
 
     /* Images in the Aside */
@@ -462,7 +488,7 @@ $color-black2: #353535; /* Dark Grey */
       background-color: $color-white1;
 
       text-align: center;
-      font-size: 12px;
+      font: 400 15px 'Montserrat', sans-serif;
      }
     }
 
@@ -599,8 +625,7 @@ $color-black2: #353535; /* Dark Grey */
      background-color: $color-dark2;
 
      color: $color-white1;
-     font-size: 32px;
-     font-weight: 800;
+     font: 700 32px 'Oswald', sans-serif;
 
      display: flex;
      align-items: center;
@@ -646,8 +671,7 @@ $color-black2: #353535; /* Dark Grey */
      border-radius: 0.25em;
      padding: 5px;
 
-     font-size: 18px;
-     font-weight: 600;
+     font: 300 20px 'Oswald', sans-serif;
 
      &::before {
       counter-increment: section;
