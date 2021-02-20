@@ -622,6 +622,11 @@ $color-black2: #353535; /* Dark Grey */
 
      color: $color-black1;
      font: 400 16px 'Montserrat', sans-serif;
+
+     &::marker {
+      color: $color-light2;
+      font: 700 20px 'Oswald', sans-serif;
+     }
     }
    }
 
@@ -632,11 +637,7 @@ $color-black2: #353535; /* Dark Grey */
 
     .list-object {
 
-     &::marker {
-      color: $color-light2;
-      content: '>>>';
-      font: 500 15px 'Oswald', sans-serif;
-     }
+     &::marker {content: '>>>';}
     }
    }
 
@@ -645,11 +646,7 @@ $color-black2: #353535; /* Dark Grey */
 
     .list-object {
 
-     &::marker {
-      color: $color-light2;
-      content: "---->";
-      font: 500 15px 'Oswald', sans-serif;
-     }
+     &::marker {content: "---->";}
     }
    }
 
@@ -658,11 +655,16 @@ $color-black2: #353535; /* Dark Grey */
 
     .list-object {
 
-     &::marker {
-      color: $color-light2;
-      content: '---';
-      font: 800 15px 'Oswald', sans-serif;
-     }
+     &::marker {content: '---';}
+    }
+   }
+
+   /* Diamond "<>" */
+   .content-ulist--diamond {
+
+    .list-object {
+
+     &::marker {content: '<>'}
     }
    }
    /* Ordered */

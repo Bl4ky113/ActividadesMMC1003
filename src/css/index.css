@@ -227,6 +227,7 @@
   /* Arrows ">>>" */
   /* long Arrow "---->" */
   /* Lines "---" */
+  /* Diamond "<>" */
   /* Ordered */
   /* Ordered Alphabetical */
   /* GeoGebra iFrames */
@@ -473,20 +474,21 @@
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-ulist--arrows .list-object::marker {
+.doc-main .main-article .article-content .content-ulist .list-object::marker {
   color: #3399ff;
+  font: 700 20px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-ulist--arrows .list-object::marker {
   content: ">>>";
-  font: 500 15px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .content-ulist--longarrow .list-object::marker {
-  color: #3399ff;
   content: "---->";
-  font: 500 15px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .content-ulist--lines .list-object::marker {
-  color: #3399ff;
   content: "---";
-  font: 800 15px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-ulist--diamond .list-object::marker {
+  content: "<>";
 }
 .doc-main .main-article .article-content .content-olist {
   margin: 10px;
