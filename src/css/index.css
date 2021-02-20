@@ -494,9 +494,39 @@
   margin: 10px;
   margin-inline-start: 25px;
 }
+.doc-main .main-article .article-content .content-olist .content-list__title {
+  margin: 5px;
+  padding-inline-start: 15px;
+  color: #000044;
+  font: 500 24px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-olist .content-list--semi__title {
+  margin: 5px;
+  padding-inline-start: 15px;
+  color: #000066;
+  font: 500 18px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-olist .list-object {
+  margin: 5px;
+  padding-inline-start: 10px;
+  color: #000;
+  font: 400 16px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .content-olist .list-object::marker {
+  padding: 2px 5px;
+  color: #3399ff;
+  font: 700 18px "Oswald", sans-serif;
+}
 .doc-main .main-article .article-content .content-olist[type=a], .doc-main .main-article .article-content .content-olist[type=A] {
   margin: 10px;
   margin-inline-start: 25px;
+}
+.doc-main .main-article .article-content .content-olist[type=a] .list-object mark, .doc-main .main-article .article-content .content-olist[type=A] .list-object mark {
+  padding: 2px 10px;
+  border-radius: 0.25em;
+  background-color: #3399ff;
+  color: #000;
+  font: italic 300 16px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .content-geogebra {
   width: 800px;

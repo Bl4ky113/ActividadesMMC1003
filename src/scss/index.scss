@@ -667,16 +667,61 @@ $color-black2: #353535; /* Dark Grey */
      &::marker {content: '<>'}
     }
    }
+
    /* Ordered */
    .content-olist {
     margin: 10px;
     margin-inline-start: 25px;
+
+    .content-list__title {
+     margin: 5px;
+     padding-inline-start: 15px;
+
+     color: $color-dark2;
+     font: 500 24px 'Oswald', sans-serif;
+    }
+
+    .content-list--semi__title {
+     margin: 5px;
+     padding-inline-start: 15px;
+     
+     color: $color-dark1;
+     font: 500 18px 'Oswald', sans-serif;
+    }
+
+    .list-object {
+     margin: 5px;
+     padding-inline-start: 10px ;
+
+     color: $color-black1;
+     font: 400 16px 'Montserrat', sans-serif;
+
+     &::marker {
+      padding: 2px 5px;
+
+      color: $color-light2;
+      font: 700 18px 'Oswald', sans-serif;
+     }
+    }
    }
 
    /* Ordered Alphabetical */
    .content-olist[type="a"], .content-olist[type="A"] {
     margin: 10px;
     margin-inline-start: 25px;
+
+    .list-object {
+
+     mark {
+      padding: 2px 10px;
+      border-radius: 0.25em;
+
+      background-color: $color-light2;
+
+      color: $color-black1;
+      font: italic 300 16px 'Montserrat', sans-serif;
+     }
+    }
    }
    
    /* GeoGebra iFrames */
