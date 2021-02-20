@@ -508,6 +508,36 @@ $color-black2: #353535; /* Dark Grey */
      background-color: $color-white1;
 
      font: 400 16px 'Montserrat', sans-serif;
+
+     strong {
+      font: 700 16px 'Montserrat', sans-serif;
+     }
+ 
+     em {
+      font: italic 400 16px 'Montserrat', sans-serif;
+     }
+ 
+     i {
+      font: italic 300 16px 'Newsreader', serif;
+     }
+ 
+     abbr {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-dark1;
+ 
+      color: $color-white1;
+      font: italic 200 16px 'Montserrat', sans-serif;
+      text-decoration: underline $color-light1;
+     }
+ 
+     mark {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-light1;
+     }
     }
 
     /* Images in the Aside */
@@ -668,6 +698,36 @@ $color-black2: #353535; /* Dark Grey */
 
       color: $color-black1;
       font: 400 16px 'Montserrat', sans-serif;
+
+      strong {
+       font: 700 14px 'Montserrat', sans-serif;
+      }
+  
+      em {
+       font: italic 400 14px 'Montserrat', sans-serif;
+      }
+  
+      i {
+       font: italic 300 14px 'Newsreader', serif;
+      }
+  
+      abbr {
+       border-radius: 0.25em;
+       padding: 2px 5px;
+  
+       background-color: $color-dark1;
+  
+       color: $color-white1;
+       font: italic 200 14px 'Montserrat', sans-serif;
+       text-decoration: underline $color-light1;
+      }
+  
+      mark {
+       border-radius: 0.25em;
+       padding: 2px 5px;
+  
+       background-color: $color-light1;
+      }
      } 
 
      .table-content--row1 {background-color: $color-white3;}
@@ -714,12 +774,34 @@ $color-black2: #353535; /* Dark Grey */
       font: 700 20px 'Oswald', sans-serif;
      }
 
-     em {
-      font: italic 300 16px 'Montserrat', sans-serif;
+     strong {
+      font: 700 16px 'Montserrat', sans-serif;
      }
-     
+ 
+     em {
+      font: italic 400 16px 'Montserrat', sans-serif;
+     }
+ 
      i {
-      font: italic 300 16px 'Newsreader', sans-serif;
+      font: italic 300 16px 'Newsreader', serif;
+     }
+ 
+     abbr {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-dark1;
+ 
+      color: $color-white1;
+      font: italic 200 16px 'Montserrat', sans-serif;
+      text-decoration: underline $color-light1;
+     }
+ 
+     mark {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-light1;
      }
     }
    }
@@ -797,12 +879,34 @@ $color-black2: #353535; /* Dark Grey */
       font: 700 18px 'Oswald', sans-serif;
      }
      
-     em {
-      font: italic 300 16px 'Montserrat', sans-serif;
+     strong {
+      font: 700 16px 'Montserrat', sans-serif;
      }
-     
+ 
+     em {
+      font: italic 400 16px 'Montserrat', sans-serif;
+     }
+ 
      i {
-      font: italic 300 16px 'Newsreader', sans-serif;
+      font: italic 300 16px 'Newsreader', serif;
+     }
+ 
+     abbr {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-dark1;
+ 
+      color: $color-white1;
+      font: italic 200 1px 'Montserrat', sans-serif;
+      text-decoration: underline $color-light1;
+     }
+ 
+     mark {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-light1;
      }
     }
    }
