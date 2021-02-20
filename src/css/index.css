@@ -409,15 +409,27 @@
   height: 150px;
 }
 .doc-main .main-article .article-content .content-aside .aside-table {
-  border: 5px solid #0000e6;
-  border-collapse: collapse;
-  padding: 5px;
   background-color: #fff;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .aside-table__header {
-  border: 2px solid #000066;
-  padding: 5px;
+.doc-main .main-article .article-content .content-aside .aside-table .table-header .table-header__title {
+  padding: 20px;
+  background-color: #0000e6;
+  color: #fff;
+  font: 500 24px "Oswald", sans-serif;
+  text-align: center;
+}
+.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content__header {
+  padding: 10px;
   background-color: #3399ff;
+  color: #000;
+  font: 500 20px "Oswald", sans-serif;
+  text-align: center;
+}
+.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content__data {
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #000;
+  font: 400 16px "Montserrat", sans-serif;
   text-align: center;
 }
 .doc-main .main-article .article-content .content-aside .aside-table .aside-table--long__header {

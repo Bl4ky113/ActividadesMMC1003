@@ -521,19 +521,42 @@ $color-black2: #353535; /* Dark Grey */
 
     /* Tables in the Aside */
     .aside-table {
-     border: 5px solid $color-base1;
-     border-collapse: collapse;
-     padding: 5px;
-
      background-color: $color-white1;
 
-     .aside-table__header {
-      border: 2px solid $color-dark1;
-      padding: 5px;
+     .table-header {
+      
+      .table-header__title {
+       padding: 20px;
 
-      background-color: $color-light2;
+       background-color: $color-base1;
 
-      text-align: center;
+       color: $color-white1;
+       font: 500 24px 'Oswald', sans-serif;
+       text-align: center;
+      }
+     }
+
+     .table-content {
+
+      .table-content__header {
+       padding: 10px;
+
+       background-color: $color-light2;
+
+       color: $color-black1;
+       font: 500 20px 'Oswald', sans-serif;
+       text-align: center;
+      }
+
+      .table-content__data {
+       padding: 10px;
+
+       background-color: $color-white3;
+
+       color: $color-black1;
+       font: 400 16px 'Montserrat', sans-serif;
+       text-align: center;
+      }
      }
 
      .aside-table--long__header {
