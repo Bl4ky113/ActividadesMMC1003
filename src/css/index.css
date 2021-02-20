@@ -412,6 +412,7 @@
   background-color: #fff;
 }
 .doc-main .main-article .article-content .content-aside .aside-table .table-header .table-header__title {
+  border-radius: 0.5em;
   padding: 20px;
   background-color: #0000e6;
   color: #fff;
@@ -419,6 +420,7 @@
   text-align: center;
 }
 .doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content__header {
+  border-radius: 0.25em;
   padding: 10px;
   background-color: #3399ff;
   color: #000;
@@ -426,22 +428,17 @@
   text-align: center;
 }
 .doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content__data {
+  border-radius: 0.25em;
   padding: 10px;
-  background-color: #f0f0f0;
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
   text-align: center;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .aside-table--long__header {
-  background-color: #0000bb;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 800;
+.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content--row1 {
+  background-color: #f0f0f0;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .aside-table__data {
-  border: 2px solid #000066;
-  padding: 2px;
-  text-align: center;
+.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content--row2 {
+  background-color: #cfcfcf;
 }
 .doc-main .main-article .article-content .content-aside--right {
   float: right;
@@ -498,10 +495,10 @@
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content--1__row {
+.doc-main .main-article .article-content .content-table .table-content .table-content--row1 {
   background-color: #f0f0f0;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content--2__row {
+.doc-main .main-article .article-content .content-table .table-content .table-content--row2 {
   background-color: #cfcfcf;
 }
 .doc-main .main-article .article-content .content-table--right {
