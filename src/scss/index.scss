@@ -607,7 +607,7 @@ $color-black2: #353535; /* Dark Grey */
      color: $color-dark2;
      font: 500 24px 'Oswald', sans-serif;
     }
- 
+
     .content-list--semi__title {
      margin: 5px;
      padding-inline-start: 15px;
@@ -640,6 +640,18 @@ $color-black2: #353535; /* Dark Grey */
     }
    }
 
+   /* Limes "---" */
+   .content-ulist--lines {
+
+    .list-object {
+
+     &::marker {
+      color: $color-light2;
+      content: '---';
+      font: 800 15px 'Oswald', sans-serif;
+     }
+    }
+   }
    /* Ordered */
    .content-olist {
     margin: 10px;

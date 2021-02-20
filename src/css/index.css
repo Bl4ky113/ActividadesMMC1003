@@ -225,6 +225,7 @@
   /* Unordered */
   /* Diferent Markers for the Ulist */
   /* Arrows ">>>" */
+  /* Limes "---" */
   /* Ordered */
   /* Ordered Alphabetical */
   /* GeoGebra iFrames */
@@ -475,6 +476,11 @@
   color: #3399ff;
   content: ">>>";
   font: 500 15px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-ulist--lines .list-object::marker {
+  color: #3399ff;
+  content: "---";
+  font: 800 15px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .content-olist {
   margin: 10px;
