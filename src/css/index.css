@@ -14,19 +14,37 @@
 /* Dark Grey */
 /* Google Fonts */
 /*  
- - Oswald [Bold | 700] (Titles), sans-serif
+ - Montserrat {
+  Medium 500 : Medium or big texts. 
+  Regular 400 : Medium-small or small texts.
+  light 300 : short and small texts. 
 
- - Oswald [Medium | 500] (Small Titles), sans-serif
+  Semantics {
+   Bold 700 : <strong>s on Medium or big texts.
+   Medium 500 : <strong>s on Medium-small or small texts.
 
- - Oswald [Light | 300] (Semi Titles), sans-serif
+   italic | Regular 400 : <em>s, <mark>s in Medium or big texts.
+   italic | light 300 : <em>s, <mark>s in Medium-small or small texts.
+  }
 
- - Montserrat [Medium | 500] (Paragraphs), sans-serif
+  --Other uses {
+   italic | extra-light 200 : other uses.
+   thin 100 : other uses.
+   italic | thin 100 : other uses.
+  }
+ }
 
- - Montserrat [Regular | 400] (Small Paragraphs), sans-serif
+ - Oswald {
+  Bold 700 : Medium or big titles.
+  Medium 500 : Medium, small, not important titles.
+  light 300 : Questions in activities, links.
+ }
 
- - Newsreader [Medium, Regular | 300, 200 | italic] (Italic Spans), serif
+ - Newsreader {
+  light 300 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
+  extra-light 200 : the same than the other, but on Medium-small, small objects.
+ }
 
- - Montserrat [Light, Extralight | 300, 200 | italic] (Emphrased Spans), sans-serif
 */
 /* ----- Header Style ----- */
 .doc-header {
