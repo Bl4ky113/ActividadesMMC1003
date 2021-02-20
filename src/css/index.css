@@ -261,11 +261,27 @@
   font: 500 18px "Montserrat", sans-serif;
   clear: both;
 }
+.doc-main .main-article .article-content .article-content__paragraph strong {
+  font: 700 18px "Montserrat", sans-serif;
+}
 .doc-main .main-article .article-content .article-content__paragraph em {
   font: italic 400 18px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .article-content__paragraph i {
   font: italic 300 18px "Newsreader", serif;
+}
+.doc-main .main-article .article-content .article-content__paragraph abbr {
+  border-radius: 0.25em;
+  padding: 2px 5px;
+  background-color: #000066;
+  color: #fff;
+  font: italic 200 18px "Montserrat", sans-serif;
+  text-decoration: underline #99ccff;
+}
+.doc-main .main-article .article-content .article-content__paragraph mark {
+  border-radius: 0.25em;
+  padding: 2px 5px;
+  background-color: #99ccff;
 }
 .doc-main .main-article .article-content .article-content--unclear__paragraph {
   clear: none;

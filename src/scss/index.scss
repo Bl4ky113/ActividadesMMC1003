@@ -309,12 +309,34 @@ $color-black2: #353535; /* Dark Grey */
 
     clear: both;
 
+    strong {
+     font: 700 18px 'Montserrat', sans-serif;
+    }
+
     em {
      font: italic 400 18px 'Montserrat', sans-serif;
     }
 
     i {
      font: italic 300 18px 'Newsreader', serif;
+    }
+
+    abbr {
+     border-radius: 0.25em;
+     padding: 2px 5px;
+
+     background-color: $color-dark1;
+
+     color: $color-white1;
+     font: italic 200 18px 'Montserrat', sans-serif;
+     text-decoration: underline $color-light1;
+    }
+
+    mark {
+     border-radius: 0.25em;
+     padding: 2px 5px;
+
+     background-color: $color-light1;
     }
    }
 
