@@ -10,6 +10,7 @@
 /* General Colors */
 /* White */
 /* Smoke */
+/* A little bit dark White */
 /* Black */
 /* Dark Grey */
 /* Google Fonts */
@@ -239,6 +240,7 @@
   /* Asides in the Article */
   /* Aside Floats */
   /* Tables in the Article */
+  /* Tables Floats */
   /* Lists in the Articles */
   /* Unordered */
   /* Diferent Markers for the Ulist */
@@ -438,37 +440,65 @@
   margin: 10px;
 }
 .doc-main .main-article .article-content .content-table {
-  width: 70%;
+  max-width: 95%;
   margin: 10px auto;
-  border: 5px solid #000044;
-  border-collapse: collapse;
-  border-radius: 0.5em;
-  padding: 5px;
-}
-.doc-main .main-article .article-content .content-table .content-table__header {
-  border: 2px solid #000066;
-  padding: 10px;
-  background-color: #3399ff;
   text-align: center;
-  font-size: 20px;
-  font-weight: 600;
 }
-.doc-main .main-article .article-content .content-table .content-table--long__header {
-  padding: 15px;
+.doc-main .main-article .article-content .content-table .table-header .table-header__title {
+  border-radius: 0.2em;
+  padding: 20px;
   background-color: #0000bb;
   color: #fff;
-  font-size: 28px;
-  font-weight: 1000;
+  font: 700 30px "Oswald", sans-serif;
+  text-transform: capitalize;
 }
-.doc-main .main-article .article-content .content-table .content-table--question__header {
-  padding: 5px;
-  background-color: #fff;
-  font-size: 18px;
+.doc-main .main-article .article-content .content-table .table-header .table-header__header {
+  border-radius: 0.5em;
+  padding: 10px;
+  background-color: #3399ff;
+  color: #000;
+  font: 500 18px "Oswald", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .content-table__data {
-  border: 2px solid #000066;
+.doc-main .main-article .article-content .content-table .table-header .table-header__data {
+  border-radius: 0.25em;
   padding: 5px;
-  text-align: center;
+  background-color: #f0f0f0;
+  color: #000;
+  font: 400 14px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .content-table .table-header .table-header--col1__data {
+  background-color: #f0f0f0;
+}
+.doc-main .main-article .article-content .content-table .table-header .table-header--col2__data {
+  background-color: #cfcfcf;
+}
+.doc-main .main-article .article-content .content-table .table-content .table-content__header {
+  border: 2px outset #99ccff;
+  border-radius: 0.25em;
+  padding: 10px;
+  background-color: #3399ff;
+  color: #000;
+  font: 500 18px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-table .table-content .table-content__data {
+  border-radius: 0.5em;
+  padding: 5px;
+  color: #000;
+  font: 400 16px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .content-table .table-content .table-content--1__row {
+  background-color: #f0f0f0;
+}
+.doc-main .main-article .article-content .content-table .table-content .table-content--2__row {
+  background-color: #cfcfcf;
+}
+.doc-main .main-article .article-content .content-table--right {
+  float: right;
+  margin: 10px;
+}
+.doc-main .main-article .article-content .content-table--left {
+  float: left;
+  margin: 10px;
 }
 .doc-main .main-article .article-content .content-ulist {
   margin: 10px;

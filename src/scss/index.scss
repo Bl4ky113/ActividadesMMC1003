@@ -11,6 +11,7 @@ $color-dark2: #000044; /* Even Darker Midnight */
 /* General Colors */
 $color-white1: #fff; /* White */
 $color-white2: #cfcfcf; /* Smoke */
+$color-white3: #f0f0f0; /* A little bit dark White */
 
 $color-black1: #000; /* Black */
 $color-black2: #353535; /* Dark Grey */
@@ -566,50 +567,77 @@ $color-black2: #353535; /* Dark Grey */
    /* Tables in the Article */
 
    .content-table {
-    width: 70%;
+    max-width: 95%;
 
     margin: 10px auto;
-    border: 5px solid $color-dark2;
-    border-collapse: collapse;
-    border-radius: 0.5em;
-    padding: 5px;
+    
+    text-align: center; 
+    
+    .table-header {
+    
+     .table-header__title {
+      border-radius: 0.2em;
+      padding: 20px;
 
-    .content-table__header {
-     border: 2px solid $color-dark1;
-     padding: 10px;
+      background-color: $color-base2;
 
-     background-color: $color-light2;
+      color: $color-white1;
+      font: 700 30px 'Oswald', sans-serif;
+      text-transform: capitalize;
+     }
 
-     text-align: center;
-     font-size: 20px;
-     font-weight: 600;
+     .table-header__header {
+      border-radius: 0.5em;
+      padding: 10px;
+
+      background-color: $color-light2;
+
+      color: $color-black1;
+      font: 500 18px 'Oswald', sans-serif;
+     }
+
+     .table-header__data {
+      border-radius: 0.25em;
+      padding: 5px;
+
+      background-color: $color-white3;
+
+      color: $color-black1;
+      font: 400 14px 'Montserrat', sans-serif;
+     }
+
+     .table-header--col1__data {background-color: $color-white3;}
+     .table-header--col2__data {background-color: $color-white2;}
     }
 
-    .content-table--long__header {
-     padding: 15px;
+    .table-content {
 
-     background-color: $color-base2;
+     .table-content__header {
+      border: 2px outset $color-light1;
+      border-radius: 0.25em;
+      padding: 10px;
 
-     color: $color-white1;
-     font-size: 28px;
-     font-weight: 1000;
-    }
+      background-color: $color-light2;
 
-    .content-table--question__header {
-     padding: 5px;
+      color: $color-black1;
+      font: 500 18px 'Oswald', sans-serif;
+     }
+     .table-content__data {
+      border-radius: 0.5em;
+      padding: 5px;
 
-     background-color: $color-white1;
+      color: $color-black1;
+      font: 400 16px 'Montserrat', sans-serif;
+     } 
 
-     font-size: 18px;
-    }
-
-    .content-table__data {
-     border: 2px solid $color-dark1;
-     padding: 5px;
-
-     text-align: center;
+     .table-content--1__row {background-color: $color-white3;}
+     .table-content--2__row {background-color: $color-white2;}
     }
    }
+
+   /* Tables Floats */
+   .content-table--right {float: right; margin: 10px;} 
+   .content-table--left {float: left; margin: 10px;}
 
    /* Lists in the Articles */
 
