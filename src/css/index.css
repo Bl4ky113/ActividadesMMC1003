@@ -13,7 +13,6 @@
 /* Black */
 /* Dark Grey */
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,200;1,300&family=Newsreader:ital,wght@1,400;1,500&family=Oswald:wght@300;500;700&display=swap");
 /*  
  - Oswald [Bold | 700] (Titles), sans-serif
 
@@ -25,7 +24,7 @@
 
  - Montserrat [Regular | 400] (Small Paragraphs), sans-serif
 
- - Newsreader [Medium, Regular | 500, 400 | italic] (Italic Spans), serif
+ - Newsreader [Medium, Regular | 300, 200 | italic] (Italic Spans), serif
 
  - Montserrat [Light, Extralight | 300, 200 | italic] (Emphrased Spans), sans-serif
 */
@@ -222,6 +221,12 @@
   /* Asides in the Article */
   /* Aside Floats */
   /* Tables in the Article */
+  /* Lists in the Articles */
+  /* Unordered */
+  /* Diferent Markers for the Ulist */
+  /* Arrows ">>>" */
+  /* Ordered */
+  /* Ordered Alphabetical */
   /* GeoGebra iFrames */
   /* Activities in the Articles */
 }
@@ -443,6 +448,41 @@
   border: 2px solid #000066;
   padding: 5px;
   text-align: center;
+}
+.doc-main .main-article .article-content .content-ulist {
+  margin: 10px;
+  margin-inline-start: 25px;
+}
+.doc-main .main-article .article-content .content-ulist .content-list__title {
+  margin: 5px;
+  padding-inline-start: 15px;
+  color: #000044;
+  font: 500 24px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-ulist .content-list--semi__title {
+  margin: 5px;
+  padding-inline-start: 15px;
+  color: #000066;
+  font: 500 18px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-ulist .list-object {
+  margin: 5px;
+  padding-inline-start: 10px;
+  color: #000;
+  font: 400 16px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .content-ulist--arrows .list-object::marker {
+  color: #3399ff;
+  content: ">>>";
+  font: 500 15px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-olist {
+  margin: 10px;
+  margin-inline-start: 25px;
+}
+.doc-main .main-article .article-content .content-olist[type=a], .doc-main .main-article .article-content .content-olist[type=A] {
+  margin: 10px;
+  margin-inline-start: 25px;
 }
 .doc-main .main-article .article-content .content-geogebra {
   width: 800px;
