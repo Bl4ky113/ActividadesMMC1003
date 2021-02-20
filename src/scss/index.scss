@@ -640,7 +640,20 @@ $color-black2: #353535; /* Dark Grey */
     }
    }
 
-   /* Limes "---" */
+   /* long Arrow "---->" */
+   .content-ulist--longarrow {
+
+    .list-object {
+
+     &::marker {
+      color: $color-light2;
+      content: "---->";
+      font: 500 15px 'Oswald', sans-serif;
+     }
+    }
+   }
+
+   /* Lines "---" */
    .content-ulist--lines {
 
     .list-object {
