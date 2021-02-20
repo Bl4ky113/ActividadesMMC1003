@@ -293,7 +293,7 @@ $color-black2: #353535; /* Dark Grey */
     }
 
     i {
-     font: italic 500 18px 'Newsreader', serif;
+     font: italic 300 18px 'Newsreader', serif;
     }
    }
 
@@ -627,6 +627,14 @@ $color-black2: #353535; /* Dark Grey */
       color: $color-light2;
       font: 700 20px 'Oswald', sans-serif;
      }
+
+     em {
+      font: italic 300 16px 'Montserrat', sans-serif;
+     }
+     
+     i {
+      font: italic 300 16px 'Newsreader', sans-serif;
+     }
     }
    }
 
@@ -701,6 +709,14 @@ $color-black2: #353535; /* Dark Grey */
 
       color: $color-light2;
       font: 700 18px 'Oswald', sans-serif;
+     }
+     
+     em {
+      font: italic 300 16px 'Montserrat', sans-serif;
+     }
+     
+     i {
+      font: italic 300 16px 'Newsreader', sans-serif;
      }
     }
    }

@@ -244,7 +244,7 @@
   font: italic 400 18px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .article-content__paragraph i {
-  font: italic 500 18px "Newsreader", serif;
+  font: italic 300 18px "Newsreader", serif;
 }
 .doc-main .main-article .article-content .article-content__title {
   margin: 10px;
@@ -478,6 +478,12 @@
   color: #3399ff;
   font: 700 20px "Oswald", sans-serif;
 }
+.doc-main .main-article .article-content .content-ulist .list-object em {
+  font: italic 300 16px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .content-ulist .list-object i {
+  font: italic 300 16px "Newsreader", sans-serif;
+}
 .doc-main .main-article .article-content .content-ulist--arrows .list-object::marker {
   content: ">>>";
 }
@@ -516,6 +522,12 @@
   padding: 2px 5px;
   color: #3399ff;
   font: 700 18px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .content-olist .list-object em {
+  font: italic 300 16px "Montserrat", sans-serif;
+}
+.doc-main .main-article .article-content .content-olist .list-object i {
+  font: italic 300 16px "Newsreader", sans-serif;
 }
 .doc-main .main-article .article-content .content-olist[type=a], .doc-main .main-article .article-content .content-olist[type=A] {
   margin: 10px;
