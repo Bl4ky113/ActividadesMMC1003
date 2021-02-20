@@ -35,7 +35,7 @@
  }
 
  - Oswald {
-  Bold 700 : Medium or big titles.
+  Bold 700 : Medium or big titles and Lists Icons.
   Medium 500 : Medium, small, not important titles.
   light 300 : Questions in activities, links.
  }
@@ -135,14 +135,14 @@
   padding: 15px;
   background-color: #fff;
 }
-.doc-main .main-section--home .home-table .home-table__title {
+.doc-main .main-section--home .home-table .home-table--long__header {
   border-radius: 0.5em;
   padding: 15px;
   background-color: #0000e6;
   color: #fff;
   font: 500 24px "Oswald", sans-serif;
 }
-.doc-main .main-section--home .home-table .home-table__category {
+.doc-main .main-section--home .home-table .home-table__header {
   width: 95px;
   border-radius: 0.5em;
   padding: 10px;
@@ -151,7 +151,7 @@
   font: 500 16px "Oswald", sans-serif;
   text-align: center;
 }
-.doc-main .main-section--home .home-table .home-table__info {
+.doc-main .main-section--home .home-table .home-table__data {
   color: #000;
   font: 400 15px "Montserrat", sans-serif;
   text-align: center;
@@ -165,7 +165,7 @@
   flex-grow: 1;
   list-style-type: square;
 }
-.doc-main .main-section--home .home-ulist .home-ulist__title {
+.doc-main .main-section--home .home-ulist .home-list__title {
   border-radius: 0.5em;
   padding: 5px;
   background-color: #0000e6;
@@ -173,7 +173,7 @@
   font: 500 24px "Oswald", sans-serif;
   font-weight: 800;
 }
-.doc-main .main-section--home .home-ulist .home-ulist--semi__title {
+.doc-main .main-section--home .home-ulist .home-list--semi__title {
   max-width: 80%;
   margin: 2px;
   margin-inline-start: 15px;
@@ -183,13 +183,13 @@
   color: #000;
   font: 500 15px "Oswald", sans-serif;
 }
-.doc-main .main-section--home .home-ulist .ulist-object {
+.doc-main .main-section--home .home-ulist .list-object {
   margin-inline-start: 20px;
   padding: 2px;
   font: 400 14px "Montserrat", sans-serif;
   text-align: justify;
 }
-.doc-main .main-section--home .home-ulist .ulist-object::marker {
+.doc-main .main-section--home .home-ulist .list-object::marker {
   color: #3399ff;
 }
 .doc-main .main-article {
@@ -291,7 +291,7 @@
   border-radius: 0.5em;
   background-color: #fff;
   text-align: center;
-  font: 400 12px "Montserrat", sans-serif;
+  font: 300 12px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .content-images .content-images__quote cite {
   font: italic 300 12px "Newsreader", serif;
@@ -397,7 +397,7 @@
   border-radius: 0.5em;
   background-color: #fff;
   text-align: center;
-  font: 400 15px "Montserrat", sans-serif;
+  font: 300 15px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .content-aside .aside-image--test {
   width: 300px;
@@ -484,7 +484,7 @@
   margin: 5px;
   padding-inline-start: 15px;
   color: #000066;
-  font: 500 18px "Oswald", sans-serif;
+  font: 300 18px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .content-ulist .list-object {
   margin: 5px;
@@ -528,7 +528,7 @@
   margin: 5px;
   padding-inline-start: 15px;
   color: #000066;
-  font: 500 18px "Oswald", sans-serif;
+  font: 300 18px "Oswald", sans-serif;
 }
 .doc-main .main-article .article-content .content-olist .list-object {
   margin: 5px;
