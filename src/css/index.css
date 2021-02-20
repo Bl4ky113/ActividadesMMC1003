@@ -259,12 +259,16 @@
   padding: 0 5px;
   text-align: justify;
   font: 500 18px "Montserrat", sans-serif;
+  clear: both;
 }
 .doc-main .main-article .article-content .article-content__paragraph em {
   font: italic 400 18px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .article-content__paragraph i {
   font: italic 300 18px "Newsreader", serif;
+}
+.doc-main .main-article .article-content .article-content--unclear__paragraph {
+  clear: none;
 }
 .doc-main .main-article .article-content .article-content__title {
   margin: 10px;

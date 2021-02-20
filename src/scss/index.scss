@@ -307,6 +307,8 @@ $color-black2: #353535; /* Dark Grey */
     text-align: justify;
     font: 500 18px 'Montserrat', sans-serif;
 
+    clear: both;
+
     em {
      font: italic 400 18px 'Montserrat', sans-serif;
     }
@@ -314,6 +316,10 @@ $color-black2: #353535; /* Dark Grey */
     i {
      font: italic 300 18px 'Newsreader', serif;
     }
+   }
+
+   .article-content--unclear__paragraph {
+    clear: none;
    }
 
    /* Titles in the Class Notes*/
