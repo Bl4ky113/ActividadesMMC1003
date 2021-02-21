@@ -99,111 +99,123 @@
 
     <section class="main-section main-section--schedule">
       <h3 class="main-section__title">Calendario Escolar</h3>
-      <table class="section-calendar">
-        <tr>
-          <th class="section-calendar__header">Hora</th>
-          <th class="section-calendar__header section-calendar--day__header">Lunes</th>
-          <th class="section-calendar__header section-calendar--day__header">Martes</th>
-          <th class="section-calendar__header section-calendar--day__header">Miercoles</th>
-          <th class="section-calendar__header section-calendar--day__header">Jueves</th>
-          <th class="section-calendar__header section-calendar--day__header">Viernes</th>
-        </tr>
-        <tr>
-          <th class="section-calendar__time">10:00</th>
-          <td class="calendar-data"></td>
-          <td class="calendar-data calendar-data--programacion">
-            <a class="calendar-data__link" href="./programacion.html">Programación Básica</a>
-          </td>
-          <td class="calendar-data"></td>
-          <td class="calendar-data"></td>
-          <td class="calendar-data"></td>
-        </tr>
-        <tr>
-          <th class="section-calendar__time">11:00</th>
-          <td class="calendar-data calendar-data--excel">
-            <a class="calendar-data__link" href="./excel.html">Excel Básico y Avanzado</a>
-          </td>
-          <td class="calendar-data calendar-data--electronica">
-            <a class="calendar-data__link" href="./electronica.html">Electrónica Digital</a>
-          </td>
-          <td class="calendar-data calendar-data--gestioninformatica">
-            <a class="calendar-data__link" href="./gestion-tecnologia.html">Gestión de la Informatíca</a>
-          </td>
-          <td class="calendar-data calendar-data--investigacion">
-            <a class="calendar-data__link" href="./investigacion.html">Investigación</a>
-          </td>
-          <td class="calendar-data"></td>
-        </tr>
-        <tr>
-          <th class="section-calendar__time">12:00</th>
-          <td class="calendar-data calendar-data--quimica" rowspan="2">
-            <a class="calendar-data__link" href="./quimica.html">Química</a>
-          </td>
-          <td class="calendar-data calendar-data--religion">
-            <a class="calendar-data__link" href="./religion.html">Religión</a>
-          </td>
-          <td class="calendar-data calendar-data--gestion" rowspan="2">
-            <a class="calendar-data__link" href="./gestion.html">Gestión Social</a>
-          </td>        
-          <td class="calendar-data calendar-data--espanol" rowspan="2">
-            <a class="calendar-data__link" href="./espanol.html">Español</a>
-          </td>
-          <td class="calendar-data calendar-data--ingles">
-            <a class="calendar-data__link" href="./ingles.html">Inglés</a>
-          </td>
-        </tr>
-        <tr>
-          <th class="section-calendar__time">13:00</th>
-          <td class="calendar-data calendar-data--quimica">
-            <a class="calendar-data__link" href="./quimica.html">Química</a>
-          </td>
-          <td class="calendar-data calendar-data--fisica" rowspan="2">
-            <a class="calendar-data__link" href="./fisica.html">Física</a>
-          </td>
-        </tr>
-        <tr>
-          <th class="section-calendar__time">14:00</th>
-          <td class="calendar-data calendar-data--artes" rowspan="2">
-            <a class="calendar-data__link" href="./artes.html">Artes</a>
-          </td>
-          <td class="calendar-data calendar-data--tecnologia" rowspan="2">
-            <a class="calendar-data__link" href="./tecnologia.html">Tecnología</a>
-          </td>
-          <td class="calendar-data calendar-data--edfisica" rowspan="2">
-            <a class="calendar-data__link" href="./ed-fisica.html">Educación Física</a>
-          </td>
-          <td class="calendar-data calendar-data--matematicas" rowspan="2">
-            <a class="calendar-data__link" href="./matematicas.html">Matemáticas</a>
-          </td>
-        </tr>
-        <tr>
-          <th class="section-calendar__time">15:00</th>
-          <td class="calendar-data calendar-data--etica">
-            <a class="calendar-data__link" href="./etica.html">Ética</a>
-          </td>
-        </tr>
-        <tr>
-          <th class="section-calendar__time">16:00</th>
-          <td class="calendar-data calendar-data--ingles" rowspan="2">
-            <a class="calendar-data__link" href="./ingles.html">Inglés</a>
-          </td>
-          <td class="calendar-data calendar-data--filosofia" rowspan="2">
-            <a class="calendar-data__link" href="./filosofia.html">Filosofía</a>
-          </td>
-          <td class="calendar-data calendar-data--matematicas" rowspan="2">
-            <a class="calendar-data__link" href="./matematicas.html">Matemáticas</a>
-          </td>
-          <td class="calendar-data calendar-data--economia" rowspan="2">
-            <a class="calendar-data__link" href="./economia.html">Política y Economía</a>
-          </td>
-          <td class="calendar-data calendar-data--espanol" rowspan="2">
-            <a class="calendar-data__link" href="./espanol.html">Español</a>
-          </td>
-        </tr>
-        <tr>
-          <th class="section-calendar__time">17:00</th>
-        </tr>
-      </table>
+      <div class="section-content">
+        <!-- Consejo de links -->
+        <div class="content-advise">
+          <span class="content-advise__text">Consejo</span>
+          <div class="advise-content">
+            <p class="advise-content__paragraph">
+              Se puede dar <i>"click"</i> en las materias, para ir a su respectiva página web.
+            </p>
+          </div>
+        </div>
+        <!-- Calendario -->
+        <table class="content-calendar">
+          <tr>
+            <th class="content-calendar__time">Hora</th>
+            <th class="content-calendar__day">Lunes</th>
+            <th class="content-calendar__day">Martes</th>
+            <th class="content-calendar__day">Miercoles</th>
+            <th class="content-calendar__day">Jueves</th>
+            <th class="content-calendar__day">Viernes</th>
+          </tr>
+          <tr>
+            <th class="content-calendar__time">10:00</th>
+            <td class="calendar-data"></td>
+            <td class="calendar-data calendar-data--programacion">
+              <a class="calendar-data__link" href="./programacion.html">Programación Básica</a>
+            </td>
+            <td class="calendar-data"></td>
+            <td class="calendar-data"></td>
+            <td class="calendar-data"></td>
+          </tr>
+          <tr>
+            <th class="content-calendar__time">11:00</th>
+            <td class="calendar-data calendar-data--excel">
+              <a class="calendar-data__link" href="./excel.html">Excel Básico y Avanzado</a>
+            </td>
+            <td class="calendar-data calendar-data--electronica">
+              <a class="calendar-data__link" href="./electronica.html">Electrónica Digital</a>
+            </td>
+            <td class="calendar-data calendar-data--gestioninformatica">
+              <a class="calendar-data__link" href="./gestion-tecnologia.html">Gestión de la Informatíca</a>
+            </td>
+            <td class="calendar-data calendar-data--investigacion">
+              <a class="calendar-data__link" href="./investigacion.html">Investigación</a>
+            </td>
+            <td class="calendar-data"></td>
+          </tr>
+          <tr>
+            <th class="content-calendar__time">12:00</th>
+            <td class="calendar-data calendar-data--quimica" rowspan="2">
+              <a class="calendar-data__link" href="./quimica.html">Química</a>
+            </td>
+            <td class="calendar-data calendar-data--religion">
+              <a class="calendar-data__link" href="./religion.html">Religión</a>
+            </td>
+            <td class="calendar-data calendar-data--gestion" rowspan="2">
+              <a class="calendar-data__link" href="./gestion.html">Gestión Social</a>
+            </td>        
+            <td class="calendar-data calendar-data--espanol" rowspan="2">
+              <a class="calendar-data__link" href="./espanol.html">Español</a>
+            </td>
+            <td class="calendar-data calendar-data--ingles">
+              <a class="calendar-data__link" href="./ingles.html">Inglés</a>
+            </td>
+          </tr>
+          <tr>
+            <th class="content-calendar__time">13:00</th>
+            <td class="calendar-data calendar-data--quimica">
+              <a class="calendar-data__link" href="./quimica.html">Química</a>
+            </td>
+            <td class="calendar-data calendar-data--fisica" rowspan="2">
+              <a class="calendar-data__link" href="./fisica.html">Física</a>
+            </td>
+          </tr>
+          <tr>
+            <th class="content-calendar__time">14:00</th>
+            <td class="calendar-data calendar-data--artes" rowspan="2">
+              <a class="calendar-data__link" href="./artes.html">Artes</a>
+            </td>
+            <td class="calendar-data calendar-data--tecnologia" rowspan="2">
+              <a class="calendar-data__link" href="./tecnologia.html">Tecnología</a>
+            </td>
+            <td class="calendar-data calendar-data--edfisica" rowspan="2">
+              <a class="calendar-data__link" href="./ed-fisica.html">Educación Física</a>
+            </td>
+            <td class="calendar-data calendar-data--matematicas" rowspan="2">
+              <a class="calendar-data__link" href="./matematicas.html">Matemáticas</a>
+            </td>
+          </tr>
+          <tr>
+            <th class="content-calendar__time">15:00</th>
+            <td class="calendar-data calendar-data--etica">
+              <a class="calendar-data__link" href="./etica.html">Ética</a>
+            </td>
+          </tr>
+          <tr>
+            <th class="content-calendar__time">16:00</th>
+            <td class="calendar-data calendar-data--ingles" rowspan="2">
+              <a class="calendar-data__link" href="./ingles.html">Inglés</a>
+            </td>
+            <td class="calendar-data calendar-data--filosofia" rowspan="2">
+              <a class="calendar-data__link" href="./filosofia.html">Filosofía</a>
+            </td>
+            <td class="calendar-data calendar-data--matematicas" rowspan="2">
+              <a class="calendar-data__link" href="./matematicas.html">Matemáticas</a>
+            </td>
+            <td class="calendar-data calendar-data--economia" rowspan="2">
+              <a class="calendar-data__link" href="./economia.html">Política y Economía</a>
+            </td>
+            <td class="calendar-data calendar-data--espanol" rowspan="2">
+              <a class="calendar-data__link" href="./espanol.html">Español</a>
+            </td>
+          </tr>
+          <tr>
+            <th class="content-calendar__time">17:00</th>
+          </tr>
+        </table>
+      </div>
     </section>
   </main>
 
