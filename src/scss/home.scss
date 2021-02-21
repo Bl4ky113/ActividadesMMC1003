@@ -528,6 +528,10 @@ $color-ins-dark: #8c8c8c;
      border-radius: 0.5em;
    
      background-color: $color-white3;
+
+     transition-duration: 500ms;
+     transition-timing-function: ease-in-out;
+     transition-property: background-color, color, border-color, width;
  
      .calendar-data__link {
       height: 60%;
@@ -545,6 +549,8 @@ $color-ins-dark: #8c8c8c;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      transition: inherit;
      }
     }
  
@@ -566,6 +572,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-qui-dark;
      }
+
+     &:hover {
+      background-color: $color-qui-light;
+
+      .calendar-data__link {
+       border-color: $color-qui-base;
+
+       background-color: $color-qui-base;
+
+       color: $color-qui-light;
+      }
+     }
     }
  
     .calendar-data--artes {
@@ -577,6 +595,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-art-light;
  
       color: $color-art-dark;
+     }
+
+     &:hover {
+      background-color: $color-art-light;
+
+      .calendar-data__link {
+       border-color: $color-art-base;
+
+       background-color: $color-art-base;
+
+       color: $color-art-light;
+      }
      }
     }
  
@@ -590,6 +620,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-ing-dark;
      }
+
+     &:hover {
+      background-color: $color-ing-light;
+
+      .calendar-data__link {
+       border-color: $color-ing-base;
+
+       background-color: $color-ing-base;
+
+       color: $color-ing-light;
+      }
+     }
     }
  
     .calendar-data--religion {
@@ -601,6 +643,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-reli-light;
  
       color: $color-reli-dark;
+     }
+
+     &:hover {
+      background-color: $color-reli-light;
+
+      .calendar-data__link {
+       border-color: $color-reli-base;
+
+       background-color: $color-reli-base;
+
+       color: $color-reli-light;
+      }
      }
     }
  
@@ -614,6 +668,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-tecno-dark;
      }
+
+     &:hover {
+      background-color: $color-tecno-light;
+
+      .calendar-data__link {
+       border-color: $color-tecno-base;
+
+       background-color: $color-tecno-base;
+
+       color: $color-tecno-light;
+      }
+     }
     }
     
     .calendar-data--filosofia {
@@ -625,6 +691,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-filo-light;
  
       color: $color-filo-dark;
+     }
+
+     &:hover {
+      background-color: $color-filo-light;
+
+      .calendar-data__link {
+       border-color: $color-filo-base;
+
+       background-color: $color-filo-base;
+
+       color: $color-filo-light;
+      }
      }
     }
  
@@ -638,6 +716,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-gest-dark;
      }
+
+     &:hover {
+      background-color: $color-gest-light;
+
+      .calendar-data__link {
+       border-color: $color-gest-base;
+
+       background-color: $color-gest-base;
+
+       color: $color-gest-light;
+      }
+     }
     }
  
     .calendar-data--edfisica {
@@ -649,6 +739,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-edf-light;
  
       color: $color-edf-dark;
+     }
+
+     &:hover {
+      background-color: $color-edf-light;
+
+      .calendar-data__link {
+       border-color: $color-edf-base;
+
+       background-color: $color-edf-base;
+
+       color: $color-edf-light;
+      }
      }
     }
  
@@ -662,6 +764,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-mat-dark;
      }
+
+     &:hover {
+      background-color: $color-mat-light;
+
+      .calendar-data__link {
+       border-color: $color-mat-base;
+
+       background-color: $color-mat-base;
+
+       color: $color-mat-light;
+      }
+     }
     }
  
     .calendar-data--espanol {
@@ -673,6 +787,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-esp-light;
  
       color: $color-esp-dark;
+     }
+
+     &:hover {
+      background-color: $color-esp-light;
+
+      .calendar-data__link {
+       border-color: $color-esp-base;
+
+       background-color: $color-esp-base;
+
+       color: $color-esp-light;
+      }
      }
     }
  
@@ -686,6 +812,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-eco-dark;
      }
+
+     &:hover {
+      background-color: $color-eco-light;
+
+      .calendar-data__link {
+       border-color: $color-eco-base;
+
+       background-color: $color-eco-base;
+
+       color: $color-eco-light;
+      }
+     }
     }
  
     .calendar-data--fisica {
@@ -697,6 +835,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-fis-light;
  
       color: $color-fis-dark;
+     }
+
+     &:hover {
+      background-color: $color-fis-light;
+
+      .calendar-data__link {
+       border-color: $color-fis-base;
+
+       background-color: $color-fis-base;
+
+       color: $color-fis-light;
+      }
      }
     }
  
@@ -710,6 +860,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-eti-dark;
      }
+
+     &:hover {
+      background-color: $color-eti-light;
+
+      .calendar-data__link {
+       border-color: $color-eti-base;
+
+       background-color: $color-eti-base;
+
+       color: $color-eti-light;
+      }
+     }
     }
  
     .calendar-data--excel {
@@ -721,6 +883,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-exc-light;
  
       color: $color-exc-dark;
+     }
+
+     &:hover {
+      background-color: $color-exc-light;
+
+      .calendar-data__link {
+       border-color: $color-exc-base;
+
+       background-color: $color-exc-base;
+
+       color: $color-exc-light;
+      }
      }
     }
  
@@ -734,6 +908,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-pro-dark;
      }
+
+     &:hover {
+      background-color: $color-pro-light;
+
+      .calendar-data__link {
+       border-color: $color-pro-base;
+
+       background-color: $color-pro-base;
+
+       color: $color-pro-light;
+      }
+     }
     }
  
     .calendar-data--electronica {
@@ -745,6 +931,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-elec-light;
  
       color: $color-elec-dark;
+     }
+
+     &:hover {
+      background-color: $color-elec-light;
+
+      .calendar-data__link {
+       border-color: $color-elec-base;
+
+       background-color: $color-elec-base;
+
+       color: $color-elec-light;
+      }
      }
     }
  
@@ -758,6 +956,18 @@ $color-ins-dark: #8c8c8c;
  
       color: $color-gbi-dark;
      }
+
+     &:hover {
+      background-color: $color-gbi-light;
+
+      .calendar-data__link {
+       border-color: $color-gbi-base;
+
+       background-color: $color-gbi-base;
+
+       color: $color-gbi-light;
+      }
+     }
     }
  
     .calendar-data--investigacion {
@@ -769,6 +979,18 @@ $color-ins-dark: #8c8c8c;
       background-color: $color-ins-light;
  
       color: $color-ins-dark;
+     }
+
+     &:hover {
+      background-color: $color-ins-light;
+
+      .calendar-data__link {
+       border-color: $color-ins-base;
+
+       background-color: $color-ins-base;
+
+       color: $color-ins-light;
+      }
      }
     }
    }
