@@ -295,14 +295,12 @@
 }
 .doc-main .main-section--schedule {
   max-width: 95%;
-  width: 100%;
   margin: 10px auto;
 }
 .doc-main .main-section--schedule .section-calendar {
   margin: 5px auto;
 }
 .doc-main .main-section--schedule .section-calendar .section-calendar__header {
-  height: 40px;
   padding: 20px;
   background-color: #0000e6;
   font: 700 32px "Oswald", sans-serif;
@@ -311,75 +309,176 @@
   width: 200px;
 }
 .doc-main .main-section--schedule .section-calendar .section-calendar__time {
-  height: 40px;
   padding: 10px;
   background-color: #99ccff;
   font: 300 20px "Oswald", sans-serif;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar__data {
-  height: 40px;
-  padding: 2px;
-  border-radius: 0.25em;
+.doc-main .main-section--schedule .section-calendar .calendar-data {
+  height: 65px;
+  border-radius: 0.5em;
   background-color: #f0f0f0;
-  text-align: center;
-  font: 500 18px "Montserrat", sans-serif;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar__data[rowspan="2"] {
+.doc-main .main-section--schedule .section-calendar .calendar-data .calendar-data__link {
+  height: 60%;
+  width: 70%;
+  margin: 0 auto;
+  border: 2px outset transparent;
+  border-radius: 0.5em;
+  padding: 5px;
+  font: 500 20px "Montserrat", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data[rowspan="2"] {
+  height: 130px;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data[rowspan="2"] .calendar-data__link {
   font-size: 24px;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--quimica__data {
-  border: 1px outset #4c0080;
-  background-color: #90f;
+.doc-main .main-section--schedule .section-calendar .calendar-data--quimica {
+  background-color: #944dff;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--artes__data {
-  border: 1px outset #ff0080;
+.doc-main .main-section--schedule .section-calendar .calendar-data--quimica .calendar-data__link {
+  border-color: #8533ff;
+  background-color: #d1b3ff;
+  color: #8533ff;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--artes {
+  background-color: #ff66cc;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--artes .calendar-data__link {
+  border-color: #cc0088;
+  background-color: #ffb3e6;
+  color: #cc0088;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--ingles {
+  background-color: #ffcc00;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--ingles .calendar-data__link {
+  border-color: #e6b800;
+  background-color: #ffe680;
+  color: #e6b800;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--religion {
+  background-color: #ff99ff;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--religion .calendar-data__link {
+  border-color: #ff33ff;
+  background-color: #ffccff;
+  color: #ff33ff;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--tecnologia {
+  background-color: #b3d9ff;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--tecnologia .calendar-data__link {
+  border-color: #3396ff;
+  background-color: #e6f2ff;
+  color: #3396ff;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--filosofia {
+  background-color: #cc00cc;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--filosofia .calendar-data__link {
+  border-color: #800080;
+  background-color: #ff00ff;
+  color: #800080;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--gestion {
+  background-color: #ff751a;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--gestion .calendar-data__link {
+  border-color: #cc5200;
+  background-color: #ff944d;
+  color: #cc5200;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--edfisica {
+  background-color: #66ff66;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--edfisica .calendar-data__link {
+  border-color: #00e600;
+  background-color: #b3ffb3;
+  color: #00e600;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--matematicas {
+  background-color: #4d4dff;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--matematicas .calendar-data__link {
+  border-color: #000099;
+  background-color: #9999ff;
+  color: #000099;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--espanol {
+  background-color: #ff704d;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--espanol .calendar-data__link {
+  border-color: #e62e00;
+  background-color: #ffad99;
+  color: #e62e00;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--economia {
+  background-color: #00a3cc;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--economia .calendar-data__link {
+  border-color: #008fb3;
+  background-color: #1ad1ff;
+  color: #008fb3;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--fisica {
   background-color: #ff66b3;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--ingles__data {
-  border: 1px outset #ffcc00;
-  background-color: #ffdb4d;
+.doc-main .main-section--schedule .section-calendar .calendar-data--fisica .calendar-data__link {
+  border-color: #e60073;
+  background-color: #ffb3d9;
+  color: #e60073;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--religion__data {
-  border: 1px outset #ff99ff;
-  background-color: #ffccff;
+.doc-main .main-section--schedule .section-calendar .calendar-data--etica {
+  background-color: #99ccff;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--tecnologia__data {
-  border: 1px outset #666666;
-  background-color: #999999;
+.doc-main .main-section--schedule .section-calendar .calendar-data--etica .calendar-data__link {
+  border-color: #3396ff;
+  background-color: #cce5ff;
+  color: #3396ff;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--filosofia__data {
-  border: 1px outset #4d004d;
-  background-color: #990099;
+.doc-main .main-section--schedule .section-calendar .calendar-data--excel {
+  background-color: #009933;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--gestion__data {
-  border: 1px outset #cc5200;
-  background-color: #ff6600;
+.doc-main .main-section--schedule .section-calendar .calendar-data--excel .calendar-data__link {
+  border-color: #006622;
+  background-color: #00e64d;
+  color: #006622;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--edfisica__data {
-  border: 1px outset #00ee00;
-  background-color: #22ff22;
+.doc-main .main-section--schedule .section-calendar .calendar-data--programacion {
+  background-color: #3366ff;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--matematicas__data {
-  border: 1px outset #000080;
-  background-color: #0000e6;
+.doc-main .main-section--schedule .section-calendar .calendar-data--programacion .calendar-data__link {
+  border-color: #001a66;
+  background-color: #99b3ff;
+  color: #001a66;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--espanol__data {
-  border: 1px outset #a00;
-  background-color: #ff3232;
+.doc-main .main-section--schedule .section-calendar .calendar-data--electronica {
+  background-color: #f9f900;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--politicaeconomia__data {
-  border: 1px outset #0077b3;
-  background-color: #66ccff;
+.doc-main .main-section--schedule .section-calendar .calendar-data--electronica .calendar-data__link {
+  border-color: #999900;
+  background-color: #ffff99;
+  color: #999900;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--fisica__data {
-  border: 1px outset #800080;
-  background-color: #ff00ff;
+.doc-main .main-section--schedule .section-calendar .calendar-data--gestioninformatica {
+  background-color: #4dc3ff;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--etica__data {
-  border: 1px outset #b3e6ff;
+.doc-main .main-section--schedule .section-calendar .calendar-data--gestioninformatica .calendar-data__link {
+  border-color: #006699;
   background-color: #b3e6ff;
+  color: #006699;
 }
-.doc-main .main-section--schedule .section-calendar .section-calendar--articulacion__data {
-  border: 1px outset #002b80;
-  background-color: #1a66ff;
+.doc-main .main-section--schedule .section-calendar .calendar-data--investigacion {
+  background-color: #a6a6a6;
+}
+.doc-main .main-section--schedule .section-calendar .calendar-data--investigacion .calendar-data__link {
+  border-color: #8c8c8c;
+  background-color: #ccc;
+  color: #8c8c8c;
 }

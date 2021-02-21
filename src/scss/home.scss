@@ -19,9 +19,9 @@ $color-black2: #353535; /* Dark Grey */
 /* Class Colors */
 
 /* Química */
-$color-qui-base: #6600ff;
-$color-qui-light: #a366ff;
-$color-qui-dark: #3d0099;
+$color-qui-base: #944dff;
+$color-qui-light: #d1b3ff;
+$color-qui-dark: #8533ff;
 
 /* Artes */
 $color-art-base: #ff66cc;
@@ -58,56 +58,56 @@ $color-edf-light: #b3ffb3;
 $color-edf-dark: #00e600;
 
 /* Matemáticas */
-$color--base: #4d4dff;
-$color--ligh: #9999ff;
-$color--dark: #000099;
+$color-mat-base: #4d4dff;
+$color-mat-light: #9999ff;
+$color-mat-dark: #000099;
 
 /* Español */
-$color--base: #ff704d;
-$color--ligh: #ffad99;
-$color--dark: #e62e00;
+$color-esp-base: #ff704d;
+$color-esp-light: #ffad99;
+$color-esp-dark: #e62e00;
 
 /* Política y Economía */
-$color--base: #00a3cc;
-$color--ligh: #1ad1ff;
-$color--dark: #008fb3;
+$color-eco-base: #00a3cc;
+$color-eco-light: #1ad1ff;
+$color-eco-dark: #008fb3;
 
 /* Física */
-$color--base: #ff66b3;
-$color--ligh: #ffb3d9;
-$color--dark: #e60073;
+$color-fis-base: #ff66b3;
+$color-fis-light: #ffb3d9;
+$color-fis-dark: #e60073;
 
 /* Ética */
-$color--base: #99ccff;
-$color--ligh: #cce5ff;
-$color--dark: #3396ff;
+$color-eti-base: #99ccff;
+$color-eti-light: #cce5ff;
+$color-eti-dark: #3396ff;
 
 /* Articulación */
 
 /* Excel */
-$color--base: #009933;
-$color--ligh: #00e64d;
-$color--dark: #006622;
+$color-exc-base: #009933;
+$color-exc-light: #00e64d;
+$color-exc-dark: #006622;
 
 /* Programación Básica */
-$color--base: #3366ff;
-$color--ligh: #99b3ff;
-$color--dark: #001a66;
+$color-pro-base: #3366ff;
+$color-pro-light: #99b3ff;
+$color-pro-dark: #001a66;
 
 /* Electrónica Digital */
-$color--base: #f9f900;
-$color--ligh: #ffff99;
-$color--dark: #999900;
+$color-elec-base: #f9f900;
+$color-elec-light: #ffff99;
+$color-elec-dark: #999900;
 
 /* Gestión Básica de la Informatíca */
-$color--base: #4dc3ff;
-$color--ligh: #b3e6ff;
-$color--dark: #006699;
+$color-gbi-base: #4dc3ff;
+$color-gbi-light: #b3e6ff;
+$color-gbi-dark: #006699;
 
 /* Investigación */
-$color--base: #a6a6a6;
-$color--ligh: #ccc;
-$color--dark: #8c8c8c;
+$color-ins-base: #a6a6a6;
+$color-ins-light: #ccc;
+$color-ins-dark: #8c8c8c;
 
 /* Google Fonts */
 /*  
@@ -449,7 +449,6 @@ $color--dark: #8c8c8c;
 
  .main-section--schedule {
   max-width: 95%;
-  width: 100%;
 
   margin: 10px auto;
 
@@ -457,8 +456,6 @@ $color--dark: #8c8c8c;
    margin: 5px auto;
 
    .section-calendar__header {
-    height: 40px;
-
     padding: 20px;
 
     background-color: $color-base1;
@@ -469,8 +466,6 @@ $color--dark: #8c8c8c;
    .section-calendar--day__header {width: 200px;}
 
    .section-calendar__time {
-    height: 40px;
-
     padding: 10px;
 
     background-color: $color-light1;
@@ -478,106 +473,254 @@ $color--dark: #8c8c8c;
     font: 300 20px 'Oswald', sans-serif;
    }
 
-   .section-calendar__data {
-    height: 40px;
+   .calendar-data {
+    height: 65px;
 
-    padding: 2px;
-
-    border-radius: 0.25em;
-
+    border-radius: 0.5em;
+  
     background-color: $color-white3;
 
-    text-align: center;
-    font: 500 18px 'Montserrat', sans-serif;
+    .calendar-data__link {
+     height: 60%;
+     width: 70%;
+
+     margin: 0 auto;
+     border: 2px outset transparent;
+     border-radius: 0.5em;
+     padding: 5px;
+     
+     font: 500 20px 'Montserrat', sans-serif;
+     text-align: center;
+     text-decoration: none;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
    }
 
-   .section-calendar__data[rowspan="2"] {
+   .calendar-data[rowspan="2"] {
+    height: 130px;
+
+    .calendar-data__link {
      font-size: 24px;
+    }
    }
 
-   .section-calendar--quimica__data {
-    border: 1px outset #4c0080;
+   .calendar-data--quimica {
+    background-color: $color-qui-base;
 
-    background-color: #90f;
+    .calendar-data__link {
+     border-color: $color-qui-dark;
+
+     background-color: $color-qui-light;
+
+     color: $color-qui-dark;
+    }
    }
 
-   .section-calendar--artes__data {
-    border: 1px outset #ff0080;
+   .calendar-data--artes {
+    background-color: $color-art-base;
 
-    background-color: #ff66b3;
+    .calendar-data__link {
+     border-color: $color-art-dark;
+
+     background-color: $color-art-light;
+
+     color: $color-art-dark;
+    }
    }
 
-   .section-calendar--ingles__data {
-    border: 1px outset #ffcc00;
+   .calendar-data--ingles {
+    background-color: $color-ing-base;
 
-    background-color: #ffdb4d;
+    .calendar-data__link {
+     border-color: $color-ing-dark;
+
+     background-color: $color-ing-light;
+
+     color: $color-ing-dark;
+    }
    }
 
-   .section-calendar--religion__data {
-    border: 1px outset #ff99ff;
+   .calendar-data--religion {
+    background-color: $color-reli-base;
 
-    background-color: #ffccff;
+    .calendar-data__link {
+     border-color: $color-reli-dark;
+
+     background-color: $color-reli-light;
+
+     color: $color-reli-dark;
+    }
    }
 
-   .section-calendar--tecnologia__data {
-    border: 1px outset #666666;
-    
-    background-color: #999999;
+   .calendar-data--tecnologia {
+    background-color: $color-tecno-base;
+
+    .calendar-data__link {
+     border-color: $color-tecno-dark;
+
+     background-color: $color-tecno-light;
+
+     color: $color-tecno-dark;
+    }
    }
    
-   .section-calendar--filosofia__data {
-    border: 1px outset #4d004d;
+   .calendar-data--filosofia {
+    background-color: $color-filo-base;
 
-    background-color: #990099;
+    .calendar-data__link {
+     border-color: $color-filo-dark;
+
+     background-color: $color-filo-light;
+
+     color: $color-filo-dark;
+    }
    }
 
-   .section-calendar--gestion__data {
-    border: 1px outset #cc5200;
+   .calendar-data--gestion {
+    background-color: $color-gest-base;
 
-    background-color: #ff6600;
+    .calendar-data__link {
+     border-color: $color-gest-dark;
+
+     background-color: $color-gest-light;
+
+     color: $color-gest-dark;
+    }
    }
 
-   .section-calendar--edfisica__data {
-    border: 1px outset #00ee00;
+   .calendar-data--edfisica {
+    background-color: $color-edf-base;
 
-    background-color: #22ff22;
+    .calendar-data__link {
+     border-color: $color-edf-dark;
+
+     background-color: $color-edf-light;
+
+     color: $color-edf-dark;
+    }
    }
 
-   .section-calendar--matematicas__data {
-    border: 1px outset #000080;
+   .calendar-data--matematicas {
+    background-color: $color-mat-base;
 
-    background-color: #0000e6;
-    ;
+    .calendar-data__link {
+     border-color: $color-mat-dark;
+
+     background-color: $color-mat-light;
+
+     color: $color-mat-dark;
+    }
    }
 
-   .section-calendar--espanol__data {
-    border: 1px outset #a00;
+   .calendar-data--espanol {
+    background-color: $color-esp-base;
 
-    background-color: #ff3232;
+    .calendar-data__link {
+     border-color: $color-esp-dark;
+
+     background-color: $color-esp-light;
+
+     color: $color-esp-dark;
+    }
    }
 
-   .section-calendar--politicaeconomia__data {
-    border: 1px outset #0077b3;
+   .calendar-data--economia {
+    background-color: $color-eco-base;
 
-    background-color: #66ccff;
+    .calendar-data__link {
+     border-color: $color-eco-dark;
+
+     background-color: $color-eco-light;
+
+     color: $color-eco-dark;
+    }
    }
 
-   .section-calendar--fisica__data {
-    border: 1px outset #800080;
+   .calendar-data--fisica {
+    background-color: $color-fis-base;
 
-    background-color: #ff00ff;
+    .calendar-data__link {
+     border-color: $color-fis-dark;
+     
+     background-color: $color-fis-light;
+
+     color: $color-fis-dark;
+    }
    }
 
-   .section-calendar--etica__data {
-    border: 1px outset #b3e6ff;
+   .calendar-data--etica {
+    background-color: $color-eti-base;
 
-    background-color: #b3e6ff;
+    .calendar-data__link {
+     border-color: $color-eti-dark;
+     
+     background-color: $color-eti-light;
+
+     color: $color-eti-dark;
+    }
    }
 
-   .section-calendar--articulacion__data {
-     border: 1px outset #002b80;
+   .calendar-data--excel {
+    background-color: $color-exc-base;
 
-     background-color: #1a66ff;
+    .calendar-data__link {
+     border-color: $color-exc-dark;
+
+     background-color: $color-exc-light;
+
+     color: $color-exc-dark;
+    }
+   }
+
+   .calendar-data--programacion {
+    background-color: $color-pro-base;
+
+    .calendar-data__link {
+     border-color: $color-pro-dark;
+
+     background-color: $color-pro-light;
+
+     color: $color-pro-dark;
+    }
+   }
+
+   .calendar-data--electronica {
+    background-color: $color-elec-base;
+
+    .calendar-data__link {
+     border-color: $color-elec-dark;
+
+     background-color: $color-elec-light;
+
+     color: $color-elec-dark;
+    }
+   }
+
+   .calendar-data--gestioninformatica {
+    background-color: $color-gbi-base;
+
+    .calendar-data__link {
+     border-color: $color-gbi-dark;
+
+     background-color: $color-gbi-light;
+
+     color: $color-gbi-dark;
+    }
+   }
+
+   .calendar-data--investigacion {
+    background-color: $color-ins-base;
+
+    .calendar-data__link {
+     border-color: $color-ins-dark;
+
+     background-color: $color-ins-light;
+
+     color: $color-ins-dark;
+    }
    }
   }
  }
