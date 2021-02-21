@@ -255,7 +255,6 @@
   font: 500 16px "Montserrat", sans-serif;
 }
 .doc-main .main-section .section-content .content-advise {
-  align-self: flex-start;
   /* Content of the advise */
 }
 .doc-main .main-section .section-content .content-advise:hover .advise-content {
