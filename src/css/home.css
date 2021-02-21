@@ -12,7 +12,41 @@
 /* A little bit dark White */
 /* Black */
 /* Dark Grey */
-/* Home/Inicio Style Sheet */
+/* Class Colors */
+/* Google Fonts */
+/*  
+ - Montserrat {
+  Medium 500 : Medium or big texts. 
+  Regular 400 : Medium-small or small texts.
+  light 300 : short and small texts. 
+
+  Semantics {
+   Bold 700 : <strong>s on Medium or big texts.
+   Medium 500 : <strong>s on Medium-small or small texts.
+
+   italic | Regular 400 : <em>s, <mark>s in Medium or big texts.
+   italic | light 300 : <em>s, <mark>s in Medium-small or small texts.
+  }
+
+  --Other uses {
+   italic | extra-light 200 : other uses.
+   thin 100 : other uses.
+   italic | thin 100 : other uses.
+  }
+ }
+
+ - Oswald {
+  Bold 700 : Medium or big titles and Lists Icons.
+  Medium 500 : Medium, small, not important titles.
+  light 300 : Questions in activities, links.
+ }
+
+ - Newsreader {
+  light 300 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
+  extra-light 200 : the same than the other, but on Medium-small, small objects.
+ }
+
+*/
 /* The Header */
 .doc-header {
   height: 80px;
@@ -36,7 +70,7 @@
 }
 .doc-header .header-title .header-title__text {
   color: #fff;
-  font-size: 32px;
+  font: 700 32px "Oswald", sans-serif;
   /* Name of The Class */
 }
 .doc-header .header-title .header-title__text span {
@@ -44,7 +78,7 @@
 }
 .doc-header .header-title .header-title--info__text {
   color: #99ccff;
-  font-size: 12px;
+  font: italic 200 12px "Montserrat", sans-serif;
 }
 
 /* Main of the Home */
@@ -79,8 +113,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-  font-size: 32px;
-  font-weight: 1000;
+  font: 700 32px "Oswald", sans-serif;
 }
 .doc-main .main-section .section-content {
   display: flex;
@@ -95,7 +128,30 @@
   border-right: 1px solid #353535;
   border-left: 1px solid #353535;
   padding: 10px;
-  font-size: 18px;
+  color: #000;
+  font: 500 18px "Montserrat", sans-serif;
+}
+.doc-main .main-section .section-content .section-content__paragraph strong {
+  font: 700 18px "Montserrat", sans-serif;
+}
+.doc-main .main-section .section-content .section-content__paragraph em {
+  font: italic 400 18px "Montserrat", sans-serif;
+}
+.doc-main .main-section .section-content .section-content__paragraph i {
+  font: italic 300 18px "Newsreader", serif;
+}
+.doc-main .main-section .section-content .section-content__paragraph abbr {
+  border-radius: 0.25em;
+  padding: 2px 5px;
+  background-color: #000066;
+  color: #fff;
+  font: italic 200 18px "Montserrat", sans-serif;
+  text-decoration: underline #99ccff;
+}
+.doc-main .main-section .section-content .section-content__paragraph mark {
+  border-radius: 0.25em;
+  padding: 2px 5px;
+  background-color: #99ccff;
 }
 .doc-main .main-section .section-content .section-content__link {
   width: 60%;
@@ -107,7 +163,7 @@
   padding-inline-start: 25px;
   background-color: #0000e6;
   color: #fff;
-  font-size: 20px;
+  font: 300 20px "Oswald", sans-serif;
   text-decoration: none;
   display: block;
   transition-duration: 500ms;
@@ -128,16 +184,39 @@
   padding: 15px;
   background-color: #fff;
   color: #000;
+  font: 500 16px "Montserrat", sans-serif;
 }
-.doc-main .main-section .section-content .section-content__alert span {
+.doc-main .main-section .section-content .section-content__alert .section-content--title__alert {
   width: 60%;
   border: 2px solid #000066;
   border-radius: 0.25em;
   padding: 5px;
   background-color: #0000bb;
   color: #fff;
-  font-size: 20px;
+  font: 500 20px "Oswald", sans-serif;
   display: block;
+}
+.doc-main .main-section .section-content .section-content__alert strong {
+  font: 700 18px "Montserrat", sans-serif;
+}
+.doc-main .main-section .section-content .section-content__alert em {
+  font: italic 400 18px "Montserrat", sans-serif;
+}
+.doc-main .main-section .section-content .section-content__alert i {
+  font: italic 300 18px "Newsreader", serif;
+}
+.doc-main .main-section .section-content .section-content__alert abbr {
+  border-radius: 0.25em;
+  padding: 2px 5px;
+  background-color: #000066;
+  color: #fff;
+  font: italic 200 18px "Montserrat", sans-serif;
+  text-decoration: underline #99ccff;
+}
+.doc-main .main-section .section-content .section-content__alert mark {
+  border-radius: 0.25em;
+  padding: 2px 5px;
+  background-color: #99ccff;
 }
 .doc-main .main-section .section-content .content-ulist {
   width: 70%;
@@ -152,6 +231,7 @@
   padding: 10px;
   background-color: #0000bb;
   color: #fff;
+  font: 500 16px "Montserrat", sans-serif;
 }
 .doc-main .main-section--wellcome {
   width: 45%;
@@ -179,12 +259,9 @@
   width: 95%;
   border: none;
   padding: 5px;
-  color: #000;
-  font-size: 18px;
 }
 .doc-main .main-section--wellcome .section-content .section-content__paragraph .saludo {
-  font-size: 20px;
-  font-weight: 800;
+  font: 700 20px "Montserrat", sans-serif;
   text-decoration: underline #0000bb;
 }
 .doc-main .main-section--wellcome .section-content .section-content__paragraph .Bl4ky113 {
@@ -194,11 +271,7 @@
 }
 .doc-main .main-section--wellcome .section-content .section-content__paragraph .commentary {
   color: #353535;
-  font-size: 12px;
-}
-.doc-main .main-section--wellcome .section-content .section-content__paragraph em {
-  padding: 0 5px;
-  background-color: #3399ff;
+  font: 100 10px "Montserrat", sans-serif;
 }
 .doc-main .main-section--schedule {
   max-width: 95%;
@@ -209,23 +282,27 @@
   margin: 5px auto;
 }
 .doc-main .main-section--schedule .section-calendar .section-calendar__header {
+  height: 40px;
   padding: 20px;
   background-color: #0000e6;
+  font: 700 32px "Oswald", sans-serif;
 }
 .doc-main .main-section--schedule .section-calendar .section-calendar--day__header {
   width: 200px;
 }
 .doc-main .main-section--schedule .section-calendar .section-calendar__time {
+  height: 40px;
   padding: 10px;
   background-color: #99ccff;
+  font: 300 20px "Oswald", sans-serif;
 }
 .doc-main .main-section--schedule .section-calendar .section-calendar__data {
-  padding: 5px;
+  height: 40px;
+  padding: 2px;
   border-radius: 0.25em;
   background-color: #f0f0f0;
   text-align: center;
-  font-size: 18px;
-  font-weight: 800;
+  font: 500 18px "Montserrat", sans-serif;
 }
 .doc-main .main-section--schedule .section-calendar .section-calendar__data[rowspan="2"] {
   font-size: 24px;

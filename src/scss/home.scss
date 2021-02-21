@@ -16,7 +16,42 @@ $color-white3: #f0f0f0; /* A little bit dark White */
 $color-black1: #000; /* Black */
 $color-black2: #353535; /* Dark Grey */
 
-/* Home/Inicio Style Sheet */ 
+/* Class Colors */
+
+/* Google Fonts */
+/*  
+ - Montserrat {
+  Medium 500 : Medium or big texts. 
+  Regular 400 : Medium-small or small texts.
+  light 300 : short and small texts. 
+  
+  Semantics {
+   Bold 700 : <strong>s on Medium or big texts.
+   Medium 500 : <strong>s on Medium-small or small texts.
+
+   italic | Regular 400 : <em>s, <mark>s in Medium or big texts.
+   italic | light 300 : <em>s, <mark>s in Medium-small or small texts.
+  }
+
+  --Other uses {
+   italic | extra-light 200 : other uses.
+   thin 100 : other uses.
+   italic | thin 100 : other uses.
+  }
+ }
+
+ - Oswald {
+  Bold 700 : Medium or big titles and Lists Icons.
+  Medium 500 : Medium, small, not important titles.
+  light 300 : Questions in activities, links.
+ }
+
+ - Newsreader {
+  light 300 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
+  extra-light 200 : the same than the other, but on Medium-small, small objects.
+ }
+
+*/
 
 /* The Header */
 
@@ -47,7 +82,7 @@ $color-black2: #353535; /* Dark Grey */
   /* Text */
   .header-title__text {
    color: $color-white1;
-   font-size: 32px;
+   font: 700 32px 'Oswald', sans-serif;
 
    /* Name of The Class */
    span {font-size: 40px;}
@@ -56,7 +91,7 @@ $color-black2: #353535; /* Dark Grey */
   /* Info */
   .header-title--info__text {
    color: $color-light1;
-   font-size: 12px;
+   font: italic 200 12px 'Montserrat', sans-serif;
   }
  }
 }
@@ -98,8 +133,7 @@ $color-black2: #353535; /* Dark Grey */
    align-items: center;
    
    color: $color-white1;
-   font-size: 32px;
-   font-weight: 1000;
+   font: 700 32px 'Oswald', sans-serif;
   }
 
   /* Content of the section */
@@ -115,7 +149,38 @@ $color-black2: #353535; /* Dark Grey */
     border-left: 1px solid $color-black2;
     padding: 10px;
 
-    font-size: 18px;
+    color: $color-black1;
+    font: 500 18px 'Montserrat', sans-serif;
+
+    strong {
+      font: 700 18px 'Montserrat', sans-serif;
+     }
+ 
+     em {
+      font: italic 400 18px 'Montserrat', sans-serif;
+     }
+ 
+     i {
+      font: italic 300 18px 'Newsreader', serif;
+     }
+ 
+     abbr {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-dark1;
+ 
+      color: $color-white1;
+      font: italic 200 18px 'Montserrat', sans-serif;
+      text-decoration: underline $color-light1;
+     }
+ 
+     mark {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-light1;
+     }
    }
    
    .section-content__link {
@@ -131,7 +196,7 @@ $color-black2: #353535; /* Dark Grey */
     background-color: $color-base1;
  
     color: $color-white1;
-    font-size: 20px;
+    font: 300 20px 'Oswald', sans-serif;
     text-decoration: none;
     
     display: block;
@@ -162,8 +227,9 @@ $color-black2: #353535; /* Dark Grey */
     background-color: $color-white1;
 
     color: $color-black1;
+    font: 500 16px 'Montserrat', sans-serif;
 
-    span {
+    .section-content--title__alert {
      width: 60%;
 
      border: 2px solid $color-dark1;
@@ -173,10 +239,40 @@ $color-black2: #353535; /* Dark Grey */
      background-color: $color-base2;
 
      color: $color-white1;
-     font-size: 20px;
+     font: 500 20px 'Oswald', sans-serif;
 
      display: block;
     }
+
+    strong {
+      font: 700 18px 'Montserrat', sans-serif;
+     }
+ 
+     em {
+      font: italic 400 18px 'Montserrat', sans-serif;
+     }
+ 
+     i {
+      font: italic 300 18px 'Newsreader', serif;
+     }
+ 
+     abbr {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-dark1;
+ 
+      color: $color-white1;
+      font: italic 200 18px 'Montserrat', sans-serif;
+      text-decoration: underline $color-light1;
+     }
+ 
+     mark {
+      border-radius: 0.25em;
+      padding: 2px 5px;
+ 
+      background-color: $color-light1;
+     }
    }
 
    /* Lists in the Sections */
@@ -198,7 +294,8 @@ $color-black2: #353535; /* Dark Grey */
 
      background-color: $color-base2;
 
-     color: $color-white1
+     color: $color-white1;
+     font: 500 16px 'Montserrat', sans-serif;
     }
    }
   }
@@ -238,12 +335,8 @@ $color-black2: #353535; /* Dark Grey */
     border: none;
     padding: 5px;
 
-    color: $color-black1;
-    font-size: 18px;
-
     .saludo {
-     font-size: 20px;
-     font-weight: 800;
+     font: 700 20px 'Montserrat', sans-serif;
      text-decoration: underline $color-base2;
     }
 
@@ -255,12 +348,7 @@ $color-black2: #353535; /* Dark Grey */
 
     .commentary {
      color: $color-black2;
-     font-size: 12px;
-    }
-
-    em {
-     padding: 0 5px;
-     background-color: $color-light2;
+     font: 100 10px 'Montserrat', sans-serif;
     }
    }
   }
@@ -278,29 +366,38 @@ $color-black2: #353535; /* Dark Grey */
    margin: 5px auto;
 
    .section-calendar__header {
+    height: 40px;
+
     padding: 20px;
 
     background-color: $color-base1;
+
+    font: 700 32px 'Oswald', sans-serif;
    }
 
    .section-calendar--day__header {width: 200px;}
 
    .section-calendar__time {
+    height: 40px;
+
     padding: 10px;
 
     background-color: $color-light1;
+
+    font: 300 20px 'Oswald', sans-serif;
    }
 
    .section-calendar__data {
-    padding: 5px;
+    height: 40px;
+
+    padding: 2px;
 
     border-radius: 0.25em;
 
     background-color: $color-white3;
 
     text-align: center;
-    font-size: 18px;
-    font-weight: 800;
+    font: 500 18px 'Montserrat', sans-serif;
    }
 
    .section-calendar__data[rowspan="2"] {
