@@ -236,6 +236,7 @@
   /* MapaMental "dormir" Lideres Sociales */
   /* Angles on Matematic */
   /* "Angulos de 90°" que duelen */
+  /* Cinta de Opciones de Excel */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -359,6 +360,13 @@
 .doc-main .main-article .article-content .content-images--angulosqueduelen .content-images__img {
   width: 800px;
   height: 400px;
+}
+.doc-main .main-article .article-content .content-images--cintaexcel {
+  width: 1100px;
+}
+.doc-main .main-article .article-content .content-images--cintaexcel .content-images__img {
+  width: 1100px;
+  height: 150px;
 }
 .doc-main .main-article .article-content .content-images--right {
   float: right;
