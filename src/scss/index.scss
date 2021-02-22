@@ -464,6 +464,16 @@ $color-black2: #353535; /* Dark Grey */
      height: 150px;
     }
    }
+
+   /* Regla de las diagonales */
+   .content-images--regladiagonales {
+    width: 800px;
+
+    .content-images__img {
+     width: 800px;
+     height: 500px;
+    }
+   }
    
    /* Float Images */
    .content-images--right {
