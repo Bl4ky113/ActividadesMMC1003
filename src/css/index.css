@@ -115,6 +115,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: stretch;
   /* List on the home section */
 }
 .doc-main .main-section--home .main-section--home__className {
@@ -130,6 +131,7 @@
   text-align: center;
 }
 .doc-main .main-section--home .home-table {
+  height: 100%;
   border: 2px outset #0000e6;
   border-radius: 0.5em;
   padding: 15px;

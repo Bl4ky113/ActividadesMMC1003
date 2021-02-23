@@ -139,6 +139,7 @@ $color-black2: #353535; /* Dark Grey */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: stretch;
 
   .main-section--home__className {
    min-width: 80%;
@@ -157,6 +158,8 @@ $color-black2: #353535; /* Dark Grey */
   }
 
   .home-table {
+   height: 100%;
+
    border: 2px outset $color-base1;
    border-radius: 0.5em;
    padding: 15px;
