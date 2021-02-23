@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/index.css">
   <link rel="stylesheet" href="src/css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&family=Newsreader:ital,wght@1,200;1,300&family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
   <title>Física</title>
 </head>
 <body class="doc">
@@ -89,9 +90,9 @@
       <p class="article-content__semititle">
         Normas de clase: 
       </p>
-      <ul>
-        <li>Ser constante y perseverante en nuestro proceso formativo, en ambos formatos, presencial e a distacia.</li>
-        <li>Debemos usar el correo Institucional y las herramientas que nos brinda este.</li>
+      <ul class="content-ulist content-ulist--arrows">
+        <li class="list-object">Ser constante y perseverante en nuestro proceso formativo, en ambos formatos, presencial e a distacia.</li>
+        <li class="list-object">Debemos usar el correo Institucional y las herramientas que nos brinda este.</li>
       </ul>
       <p class="article-content__paragraph">
         Los trabajos van a ser enviados por el profesor en <em>Microsoft Teams</em>. <br>
@@ -113,21 +114,36 @@
 
       <!-- Actividades -->
       <section class="content-activity">
-        <h3 class="content-activity__title">Actividad Diagnóstico</h3>
         <!-- Info de Actividades -->
-        <div class="activity-info">
-          <table class="info-table">
-            <tr class="info-table__row">
-              <th class="info-table__header">Curso</th> <td class="info-table__data">1003 Jornada Tarde</td> <th class="info-table__header">Estudiante</th> <td class="info-table__data">Martín Steven Hernández Ortiz</td>
+        <h3 class="content-activity__title">Actividad Diagnóstico</h3>
+        <table class="content-table">
+          <thead class="table-header">
+            <tr>
+              <th class="table-header__title" colspan="4">Datos del Estudiante</th>
             </tr>
-            <tr class="info-table__row">
-              <th class="info-table__header">No. De Documento</th> <td class="info-table__data">1.013.107.870</td> <th class="info-table__header">Télefono</th> <td class="info-table__data">313 3391259</td>
+          </thead>
+          <tbody class="table-content">
+            <tr class="table-content--row1">
+              <th class="table-content__header">Curso</th>
+              <td class="table-content__data">1003 Jornada Tarde</td>
+              <th class="table-content__header">Estudiante</th>
+              <td class="table-content__data">Martín Steven Hernández Ortiz</td>
             </tr>
-            <tr class="info-table__row">
-              <th class="info-table__header">Correo Electronico</th> <td class="info-table__data">martinstevenhernandezortiz@gmail.com</td> <th class="info-table__header">Fecha de Entrega</th> <td class="info-table__data">xx/xx/xxxx</td>
+            <tr class="table-content--row2">
+              <th class="table-content__header">No. de Documento</th>
+              <td class="table-content__data">1.013.107.870</td>
+              <th class="table-content__header">Telefono</th>
+              <td class="table-content__data">313 3391259</td>
             </tr>
-          </table>
-        </div>
+            <tr class="table-content--row1">
+              <th class="table-content__header">Correo Electronico</th>
+              <td class="table-content__data">martinstevenhernandezortiz@gmail.com</td>
+              <th class="table-content__header">Fecha de Entrega</th>
+              <td class="table-content__data">02/19/2021</td>
+            </tr>
+          </tbody>
+        </table>
+        
         <p class="article-content__paragraph">
           Este video muestran el impacto negativo de la interacción del ser humano con el Medio Ambiente, teniendo esto en consideración responder las siguientes preguntas.
         </p>
