@@ -363,6 +363,28 @@ $color-black2: #353535; /* Dark Grey */
     font: 300 22px 'Oswald', sans-serif;
    }
 
+   /* Links in the Class Notes */ 
+   .article-content__link {
+    max-width: 50%;
+
+    margin: 10px 5px;
+    border-radius: 0.25em;
+    padding: 10px;
+
+    background-color: $color-base2;
+
+    color: $color-white1;
+    font: 300 24px 'Oswald', sans-serif;
+    text-decoration: none;
+    
+    transition: all 500ms ease;
+    display: block;
+
+    &:hover{
+     max-width: 70%;
+    }
+   }
+
    /* Images in Class Notes */
 
    /* All Images */

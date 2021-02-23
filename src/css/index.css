@@ -230,6 +230,7 @@
 .doc-main .main-article .article-content {
   /* Class Notes */
   /* Titles in the Class Notes*/
+  /* Links in the Class Notes */
   /* Images in Class Notes */
   /* All Images */
   /* Test Image */
@@ -301,6 +302,21 @@
   margin: 10px;
   color: #000066;
   font: 300 22px "Oswald", sans-serif;
+}
+.doc-main .main-article .article-content .article-content__link {
+  max-width: 50%;
+  margin: 10px 5px;
+  border-radius: 0.25em;
+  padding: 10px;
+  background-color: #0000bb;
+  color: #fff;
+  font: 300 24px "Oswald", sans-serif;
+  text-decoration: none;
+  transition: all 500ms ease;
+  display: block;
+}
+.doc-main .main-article .article-content .article-content__link:hover {
+  max-width: 70%;
 }
 .doc-main .main-article .article-content .content-images {
   margin: 5px auto;
