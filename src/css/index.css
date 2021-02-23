@@ -232,6 +232,7 @@
   /* All Images */
   /* Test Image */
   /* LawGexx image */
+  /* Chinesse Cameras */
   /* MapaMental Compuertas Lógicas */
   /* MapaMental "dormir" Lideres Sociales */
   /* Angles on Matematic */
@@ -333,6 +334,13 @@
 .doc-main .main-article .article-content .content-images--lawgeex .content-images__img {
   width: 500px;
   height: 200px;
+}
+.doc-main .main-article .article-content .content-images--chicameras {
+  width: 700px;
+}
+.doc-main .main-article .article-content .content-images--chicameras .content-images__img {
+  width: 700px;
+  height: 400px;
 }
 .doc-main .main-article .article-content .content-images--mm-compuertasLogicas {
   width: 1100px;
