@@ -157,13 +157,13 @@ $color-black2: #353535; /* Dark Grey */
   }
 
   .home-table {
-   width: 45%;
-
    border: 2px outset $color-base1;
    border-radius: 0.5em;
    padding: 15px;
 
    background-color: $color-white1;
+
+   flex: 1 0;
 
    .home-table--long__header {
     border-radius: 0.5em;

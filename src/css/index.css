@@ -130,11 +130,11 @@
   text-align: center;
 }
 .doc-main .main-section--home .home-table {
-  width: 45%;
   border: 2px outset #0000e6;
   border-radius: 0.5em;
   padding: 15px;
   background-color: #fff;
+  flex: 1 0;
 }
 .doc-main .main-section--home .home-table .home-table--long__header {
   border-radius: 0.5em;
