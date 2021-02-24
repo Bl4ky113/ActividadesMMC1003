@@ -509,6 +509,16 @@ $color-black2: #353535; /* Dark Grey */
      height: 500px;
     }
    }
+
+   /* Mapa mental del Parkour */
+   .content-images--mm-parkour {
+    width: 1100px;
+
+    .content-images__img {
+     width: 1100px;
+     height: 450px;
+    }
+   }
    
    /* Float Images */
    .content-images--right {

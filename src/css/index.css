@@ -242,6 +242,7 @@
   /* "Angulos de 90°" que duelen */
   /* Cinta de Opciones de Excel */
   /* Regla de las diagonales */
+  /* Mapa mental del Parkour */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -401,6 +402,13 @@
 .doc-main .main-article .article-content .content-images--regladiagonales .content-images__img {
   width: 800px;
   height: 500px;
+}
+.doc-main .main-article .article-content .content-images--mm-parkour {
+  width: 1100px;
+}
+.doc-main .main-article .article-content .content-images--mm-parkour .content-images__img {
+  width: 1100px;
+  height: 450px;
 }
 .doc-main .main-article .article-content .content-images--right {
   float: right;
