@@ -519,6 +519,16 @@ $color-black2: #353535; /* Dark Grey */
      height: 500px;
     }
    }
+
+   /* Mapa Mental del circuito Electronico */
+   .content-images--mm-circuitoelectronico {
+    width: 1100px;
+    
+    .content-images__img {
+     width: 1100px;
+     height: 600px;
+    } 
+   }
    
    /* Float Images */
    .content-images--right {
