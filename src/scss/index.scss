@@ -549,6 +549,27 @@ $color-black2: #353535; /* Dark Grey */
      height: auto;
     }
    }
+
+   /* foto de changua */
+   .content-images--changua {
+    width: 600px;
+
+    .content-images__img {
+     width: 600px;
+     height: auto;
+    }
+   }
+
+   /* DFD Como hacer una changua */
+   .content-images--comohacerchangua {
+    width: 90%;
+
+    .content-images__img {
+     width: 100%;
+     height: auto; 
+    }
+   }
+
    
    /* Float Images */
    .content-images--right {

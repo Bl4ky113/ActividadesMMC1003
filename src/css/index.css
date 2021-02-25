@@ -246,6 +246,8 @@
   /* Mapa Mental del circuito Electronico */
   /* Icono de 2048 */
   /* UI de 2048 */
+  /* foto de changua */
+  /* DFD Como hacer una changua */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -432,6 +434,20 @@
 }
 .doc-main .main-article .article-content .content-images--2048-ui .content-images__img {
   width: 400px;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--changua {
+  width: 600px;
+}
+.doc-main .main-article .article-content .content-images--changua .content-images__img {
+  width: 600px;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--comohacerchangua {
+  width: 90%;
+}
+.doc-main .main-article .article-content .content-images--comohacerchangua .content-images__img {
+  width: 100%;
   height: auto;
 }
 .doc-main .main-article .article-content .content-images--right {
