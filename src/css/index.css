@@ -244,6 +244,8 @@
   /* Regla de las diagonales */
   /* Mapa mental del Parkour */
   /* Mapa Mental del circuito Electronico */
+  /* Icono de 2048 */
+  /* UI de 2048 */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -417,6 +419,20 @@
 .doc-main .main-article .article-content .content-images--mm-circuitoelectronico .content-images__img {
   width: 1100px;
   height: 600px;
+}
+.doc-main .main-article .article-content .content-images--2048-icon {
+  width: 400px;
+}
+.doc-main .main-article .article-content .content-images--2048-icon .content-images__img {
+  width: 400px;
+  height: 400px;
+}
+.doc-main .main-article .article-content .content-images--2048-ui {
+  width: 400px;
+}
+.doc-main .main-article .article-content .content-images--2048-ui .content-images__img {
+  width: 400px;
+  height: auto;
 }
 .doc-main .main-article .article-content .content-images--right {
   float: right;

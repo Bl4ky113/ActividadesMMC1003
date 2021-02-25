@@ -149,6 +149,149 @@
         </div>
       </div>
    </article>
+
+   <article class="main-article">
+    <h3 class="main-article__title">Notas de la actividad</h3>
+    <span class="main-article__date">Jueves | 02/25/2021</span>
+    <div class="article-content">
+
+      <p class="article-content__paragraph">
+
+      </p>
+
+      <section class="content-activity">
+        <!-- Info de Actividades -->
+        <h3 class="content-activity__title">1ra Actividad del Modulo</h3>
+        <table class="content-table">
+          <thead class="table-header">
+            <tr>
+              <th class="table-header__title" colspan="4">Datos del Estudiante</th>
+            </tr>
+          </thead>
+          <tbody class="table-content">
+            <tr class="table-content--row1">
+              <th class="table-content__header">Curso</th>
+              <td class="table-content__data">1003 Jornada Tarde</td>
+              <th class="table-content__header">Estudiante</th>
+              <td class="table-content__data">Martín Steven Hernández Ortiz</td>
+            </tr>
+            <tr class="table-content--row2">
+              <th class="table-content__header">No. de Documento</th>
+              <td class="table-content__data">1.013.107.870</td>
+              <th class="table-content__header">Telefono</th>
+              <td class="table-content__data">313 3391259</td>
+            </tr>
+            <tr class="table-content--row1">
+              <th class="table-content__header">Correo Electronico</th>
+              <td class="table-content__data">martinstevenhernandezortiz@gmail.com</td>
+              <th class="table-content__header">Fecha de Entrega</th>
+              <td class="table-content__data">02/25/2021</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content-activity__task">
+          Escoge un juego de tu preferencia y trata de explicar detalladamente (reglas y condiciones) 
+          a otras personas, incluyendo graficas o dibujos de cómo debe jugar, para este ejercicio debes 
+          pensar que las otras personas no saben nada del juego. Puedes graficar.
+        </p>
+
+        <p class="article-content__title">2048</p>
+        <div class="content-images content-images--2048-icon content-images--right">
+          <picture>
+            <img class="content-images__img" src="./src/img/programacionbasica/2048_icon.png" alt="Icono del juego 2048">
+          </picture>
+          <span class="content-images__quote">
+            <cite>Icono de 2048</cite>
+          </span>
+        </div>
+
+        <p class="article-content__semititle">Descripción General del Juego</p>
+        <p class="article-content__paragraph article-content--unclear__paragraph">
+          2048 es un juego muy sencillo en cuanto a mecanicas, pero es un juego divertido y bueno 
+          para el aprendizaje de las potencias de 2. <br>
+          Este juego fue hecho por Grabiele Cirulli, un desarrollador web, italiano. Este juego fue 
+          publicado en GitHub, ya que es un proyecto de <em>free and open-source software</em>, este esta hecho 
+          con JavaScript y CSS, además fue hecho en solo fin de semana. <br>
+          Este juego es totalmente multiplataforma, ya que el juego al ser tan sencillo, puede ser 
+          jugado en celulares, computadores, e inclusive terminales. 
+        </p>
+
+        <p class="article-content__semititle">Concepto del Juego</p>
+        <p class="article-content__paragraph article-content--unclear__paragraph">
+          2048 es un juego de <em>Puzzle</em> o rompecabezas, en donde debemos sumar unos cuadrados que contienen
+          las potencias de 2 (2, 4, 8, 16, 32, 64, 128, 256...). Estos cuadrados estan en una cuadricula de 4x4, 
+          aún que se puede cambiar para obtener diferentes modos de juego. <br>
+          Con estos cuadrados, debemos sumarlos hasta que uno de ellos sea igual a 2048. Esto se debe lograr al 
+          sumar los cuadrados con las mismas potencias (2 + 2 = 4; 4 + 4 = 8; 8 + 8 = 16;). <br>
+          Estos cuadrados van a ir apareciendo poco a poco en la cuadricula, generalmente de valores bajos como 2 y 4.
+        </p>
+
+        <p class="article-content__semititle">Como Jugar 2048</p>
+        <p class="article-content__paragraph">
+          Para jugar, solo debemos usar las teclas direccionales de nuestro teclado o las equivalentes en la plataforma 
+          en que estes jugando. Vamos a usar estas teclas para mover todos los cuadrados con un solo movimiento hacia el
+          lado prefierido (derecha, izquierda, arriba o abajo). Cuando movamos los cuadrados, estos se pueden sumar, las
+          condiciones para que estos se sumen deben ser:
+        </p>
+
+        <ul class="content-ulist content-ulist--arrows">
+          <li class="list-object">Deben ser del mismo valor</li>
+          <li class="list-object">Deben estar uno junto a el otro</li>
+          <li class="list-object">Deben estar alineados en la dirreción que se haya movido</li>
+        </ul>
+
+        <p class="article-content__paragraph">
+          Esta suma va a convertir a ambos cuadrados en la potencia que suman y te sumaran el valor de la suma a tu puntaje,
+          este puntaje se rellena con cualquier suma que ocurra, este si es suficientemente alto podra ser guardado como el 
+          mejor puntaje o mejores puntajes, cosa que podras competir contra cada vez que inicies una nueva partida.
+        </p>
+
+        <p class="article-content__paragraph">
+          Además algunas veces cuando hagamos movimientos, en la cuadricula, especialmente en espacios vacios, van a aparecer 
+          cudrados con valores bajos, como 2 y 4, estos los debemos usar para crear cuadrados con valores más altos, pero toca tener 
+          cuidado, ya que se pueden volver un fatidio por varias razones como:
+        </p>
+
+        <ul class="content-ulist content-ulist--longarrow">
+          <li class="list-object">Ocupan espacios no deseados</li>
+          <li class="list-object">Interrumpen la suma de otros cuadrados</li>
+          <li class="list-object">Pueden ocupar todo el espacio de la cuadricula</li>
+          <li class="list-object">Son una de las formas más sencillas para perder</li>
+          <li class="list-object">Pueden bloquear la cuadricula, al llenar totalmente una parte de la cuadricula</li>
+        </ul>
+
+        <div class="content-images content-images--2048-ui">
+          <picture>
+            <img class="content-images__img" src="./src/img/programacionbasica/2048_ui.png" alt="Foto de la interfaz de Usuario de 2048">
+          </picture>
+          <span class="content-images__quote">
+            <cite>Interfaz de Usuario de 2048</cite>
+          </span>
+        </div>
+
+        <p class="article-content__semititle">Como Ganar o Perder</p>
+        <p class="article-content__paragraph">
+          Ahora como en todo juego podemos perder y ganar, para ganar debemos sumar todas las potencias hasta llegar a 2048, al momento 
+          de sumar hasta 2048 ganamos, pero no termina el juego, ya que podemos seguir sumando los cuadrados con las potencias de 2, hasta 
+          llegar a 131,072, que es el valor máximo de potencia que te permite tener el juego. <br>
+          Pero para perder debemos tener toda la cuadricula llena de cuadrados, pero sin que estos se puedan sumar entre ellos. Ya que 
+          como van apareciendo más y nuevos cuadrados, estos pueden llenar facilmente tu cuadricula en unos pocos movimientos. Pero 
+          ojo que se puede llenar la cuadricula y no perder, esto pasa porque aún entre alguno de esos cuadrados, algunos se pueden sumar, buscalos
+          y intenta salir de esa situación.
+        </p>
+
+        <a class="article-content__link" href="https://play2048.co/" target="_blank">Link para jugar 2048 Online</a>
+
+        <p class="content-activity__task">
+          Crea un algoritmo de un plato típico colombiano (Sancocho, ajiaco, bandeja paisa, 
+          chuleta valluna, etc.) donde describe cada uno de los pasos para preparar alguno de 
+          los platos que escogiste.
+        </p>
+
+      </section>
+    </div>
+  </article>
 </main>
  
 </body>
