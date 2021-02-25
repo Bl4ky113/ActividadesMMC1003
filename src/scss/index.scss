@@ -570,6 +570,25 @@ $color-black2: #353535; /* Dark Grey */
     }
    }
 
+   /* cifras de los paramilitares */
+   .content-images--cifrasparamilitares {
+    width: 80%;
+
+    .content-images__img{
+     width: 100%;
+     height: auto;
+    }
+   }
+
+   .content-images--caricaturaparamilitares {
+    width: 40%;
+
+    .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+   }
+
    
    /* Float Images */
    .content-images--right {
