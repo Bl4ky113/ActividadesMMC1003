@@ -249,6 +249,8 @@
   /* foto de changua */
   /* DFD Como hacer una changua */
   /* cifras de los paramilitares */
+  /* Caricatura de los paramilitares */
+  /* Screen Shot de la bateria del celular */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -462,6 +464,13 @@
   width: 40%;
 }
 .doc-main .main-article .article-content .content-images--caricaturaparamilitares .content-images__img {
+  width: 100%;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--ss-bateria100 {
+  width: 30%;
+}
+.doc-main .main-article .article-content .content-images--ss-bateria100 .content-images__img {
   width: 100%;
   height: auto;
 }

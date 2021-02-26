@@ -580,8 +580,19 @@ $color-black2: #353535; /* Dark Grey */
     }
    }
 
+   /* Caricatura de los paramilitares */
    .content-images--caricaturaparamilitares {
     width: 40%;
+
+    .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+   }
+
+   /* Screen Shot de la bateria del celular */
+   .content-images--ss-bateria100 {
+    width: 30%;
 
     .content-images__img {
      width: 100%;
