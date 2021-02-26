@@ -382,11 +382,11 @@
   height: 400px;
 }
 .doc-main .main-article .article-content .content-images--angles {
-  width: 400px;
+  width: 50%;
 }
 .doc-main .main-article .article-content .content-images--angles .content-images__img {
-  width: 400px;
-  height: 250px;
+  width: 100%;
+  height: auto;
 }
 .doc-main .main-article .article-content .content-images--angulosqueduelen {
   width: 800px;
