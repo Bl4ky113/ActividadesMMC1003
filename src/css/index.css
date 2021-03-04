@@ -251,6 +251,9 @@
   /* cifras de los paramilitares */
   /* Caricatura de los paramilitares */
   /* Screen Shot de la bateria del celular */
+  /* Imagen del concepto de Ciencia */
+  /* Imagen del Concepto de Técnica */
+  /* Imagen del Concepto de tenologia */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -471,6 +474,27 @@
   width: 35%;
 }
 .doc-main .main-article .article-content .content-images--ss-bateria100 .content-images__img {
+  width: 100%;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--cience {
+  width: 30%;
+}
+.doc-main .main-article .article-content .content-images--cience .content-images__img {
+  width: 100%;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--tecnica {
+  width: 30%;
+}
+.doc-main .main-article .article-content .content-images--tecnica .content-images__img {
+  width: 100%;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--tecnologia {
+  width: 30%;
+}
+.doc-main .main-article .article-content .content-images--tecnologia .content-images__img {
   width: 100%;
   height: auto;
 }

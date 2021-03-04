@@ -600,6 +600,35 @@ $color-black2: #353535; /* Dark Grey */
     }
    }
 
+   /* Imagen del concepto de Ciencia */
+   .content-images--cience {
+    width: 30%;
+
+    .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+   }
+
+   /* Imagen del Concepto de Técnica */
+   .content-images--tecnica {
+    width: 30%;
+
+    .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+   }
+
+   /* Imagen del Concepto de tenologia */
+   .content-images--tecnologia {
+    width: 30%; 
+
+    .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+   }
    
    /* Float Images */
    .content-images--right {
