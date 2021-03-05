@@ -831,6 +831,12 @@
   color: #000;
   font: italic 300 16px "Montserrat", sans-serif;
 }
+.doc-main .main-article .article-content .content-list--right {
+  float: right;
+}
+.doc-main .main-article .article-content .content-list--left {
+  float: left;
+}
 .doc-main .main-article .article-content .content-geogebra {
   width: 800px;
   height: 400px;
@@ -866,6 +872,7 @@
   border-radius: 0.25em;
   padding: 5px;
   font: 300 20px "Oswald", sans-serif;
+  clear: both;
 }
 .doc-main .main-article .article-content .content-activity .content-activity__task::before {
   counter-increment: section;
