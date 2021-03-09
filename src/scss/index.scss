@@ -369,15 +369,22 @@ $color-black2: #353535; /* Dark Grey */
     clear: both;
    }
 
+   .article-content--unclear__title {
+    clear: none;
+   }
+   
    .article-content__semititle {
     margin: 10px;
-
+    
     color: $color-dark1;
     font: 300 22px 'Oswald', sans-serif;
-
+    
     clear: both;
    }
-
+   
+   .article-content--unclear__semititle {
+    clear: none;
+   }
    /* Links in the Class Notes */ 
    .article-content__link {
     max-width: 50%;
