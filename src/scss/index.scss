@@ -341,6 +341,17 @@ $color-black2: #353535; /* Dark Grey */
 
      background-color: $color-light1;
     }
+
+    span.conf-ele {
+     padding: 5px;
+     border: 2px solid $color-dark2;
+     border-radius: 0.5em;
+
+     background-color: $color-light1;
+     font: 800 20px 'Montserrat', sans-serif;
+
+     display: inline-block;
+    }
    }
 
    .article-content--unclear__paragraph {

@@ -301,6 +301,14 @@
   padding: 2px 5px;
   background-color: #99ccff;
 }
+.doc-main .main-article .article-content .article-content__paragraph span.conf-ele {
+  padding: 5px;
+  border: 2px solid #000044;
+  border-radius: 0.5em;
+  background-color: #99ccff;
+  font: 800 20px "Montserrat", sans-serif;
+  display: inline-block;
+}
 .doc-main .main-article .article-content .article-content--unclear__paragraph {
   clear: none;
 }
