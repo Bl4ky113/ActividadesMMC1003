@@ -365,6 +365,8 @@ $color-black2: #353535; /* Dark Grey */
 
     color: $color-dark2;
     font: 500 28px 'Oswald', sans-serif;
+
+    clear: both;
    }
 
    .article-content__semititle {
@@ -372,6 +374,8 @@ $color-black2: #353535; /* Dark Grey */
 
     color: $color-dark1;
     font: 300 22px 'Oswald', sans-serif;
+
+    clear: both;
    }
 
    /* Links in the Class Notes */ 
@@ -636,6 +640,16 @@ $color-black2: #353535; /* Dark Grey */
     width: 30%; 
 
     .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+   }
+
+   /* Compuertas Logicas en Tecnologia */
+   .content-images--compuerta {
+    width: 25%;
+
+    .content-images__img{
      width: 100%;
      height: auto;
     }

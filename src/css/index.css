@@ -254,6 +254,7 @@
   /* Imagen del concepto de Ciencia */
   /* Imagen del Concepto de Técnica */
   /* Imagen del Concepto de tenologia */
+  /* Compuertas Logicas en Tecnologia */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -317,11 +318,13 @@
   padding: 5px;
   color: #000044;
   font: 500 28px "Oswald", sans-serif;
+  clear: both;
 }
 .doc-main .main-article .article-content .article-content__semititle {
   margin: 10px;
   color: #000066;
   font: 300 22px "Oswald", sans-serif;
+  clear: both;
 }
 .doc-main .main-article .article-content .article-content__link {
   max-width: 50%;
@@ -503,6 +506,13 @@
   width: 30%;
 }
 .doc-main .main-article .article-content .content-images--tecnologia .content-images__img {
+  width: 100%;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--compuerta {
+  width: 25%;
+}
+.doc-main .main-article .article-content .content-images--compuerta .content-images__img {
   width: 100%;
   height: auto;
 }
