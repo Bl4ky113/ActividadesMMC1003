@@ -255,6 +255,8 @@
   /* Imagen del Concepto de Técnica */
   /* Imagen del Concepto de tenologia */
   /* Compuertas Logicas en Tecnologia */
+  /* Triangulo usado en 1ra ACtividad*/
+  /* mm de la Realidad Social y sus formas */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -526,6 +528,13 @@
   width: 25%;
 }
 .doc-main .main-article .article-content .content-images--trianguloRosa .content-images__img {
+  width: 100%;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--mm-realidadSocial {
+  width: 80%;
+}
+.doc-main .main-article .article-content .content-images--mm-realidadSocial .content-images__img {
   width: 100%;
   height: auto;
 }

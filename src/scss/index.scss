@@ -662,8 +662,19 @@ $color-black2: #353535; /* Dark Grey */
     }
    }
 
+   /* Triangulo usado en 1ra ACtividad*/
    .content-images--trianguloRosa {
     width: 25%;
+
+    .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+   }
+
+   /* mm de la Realidad Social y sus formas */
+   .content-images--mm-realidadSocial {
+    width: 80%;
 
     .content-images__img {
      width: 100%;
