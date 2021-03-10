@@ -522,6 +522,13 @@
   width: 100%;
   height: auto;
 }
+.doc-main .main-article .article-content .content-images--trianguloRosa {
+  width: 25%;
+}
+.doc-main .main-article .article-content .content-images--trianguloRosa .content-images__img {
+  width: 100%;
+  height: auto;
+}
 .doc-main .main-article .article-content .content-images--right {
   float: right;
   margin: 10px;
