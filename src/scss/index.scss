@@ -681,6 +681,16 @@ $color-black2: #353535; /* Dark Grey */
      height: auto;
     }
    }
+
+   /* Cuento ilustrado de Tecnología */
+   .content-images--cuento-ilustrado {
+    width: 80%;
+
+    .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+   }
    
    /* Float Images */
    .content-images--right {

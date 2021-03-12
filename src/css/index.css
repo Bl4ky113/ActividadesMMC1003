@@ -257,6 +257,7 @@
   /* Compuertas Logicas en Tecnologia */
   /* Triangulo usado en 1ra ACtividad*/
   /* mm de la Realidad Social y sus formas */
+  /* Cuento ilustrado de Tecnología */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -535,6 +536,13 @@
   width: 80%;
 }
 .doc-main .main-article .article-content .content-images--mm-realidadSocial .content-images__img {
+  width: 100%;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--cuento-ilustrado {
+  width: 80%;
+}
+.doc-main .main-article .article-content .content-images--cuento-ilustrado .content-images__img {
   width: 100%;
   height: auto;
 }
