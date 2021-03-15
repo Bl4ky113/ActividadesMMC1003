@@ -1180,6 +1180,16 @@ $color-black2: #353535; /* Dark Grey */
     border-radius: 0.5em;
    }
 
+   /* Youtube Videos iFrames */
+   .content-ytvideo {
+    width: 80%;
+    height: 500px;
+    
+    margin: 5px auto;
+    border: 2px outset $color-light2;
+    border-radius: 0.25em;
+   }
+
    /* Activities in the Articles */
    .content-activity {
 

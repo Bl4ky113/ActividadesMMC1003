@@ -273,6 +273,7 @@
   /* Ordered */
   /* Ordered Alphabetical */
   /* GeoGebra iFrames */
+  /* Youtube Videos iFrames */
   /* Activities in the Articles */
 }
 .doc-main .main-article .article-content .article-content__paragraph {
@@ -891,6 +892,13 @@
   margin: 5px auto;
   border: 2px outset #3399ff;
   border-radius: 0.5em;
+}
+.doc-main .main-article .article-content .content-ytvideo {
+  width: 80%;
+  height: 500px;
+  margin: 5px auto;
+  border: 2px outset #3399ff;
+  border-radius: 0.25em;
 }
 .doc-main .main-article .article-content .content-activity {
   /* Reset the Number of the Tasks */
