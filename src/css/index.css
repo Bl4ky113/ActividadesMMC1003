@@ -258,6 +258,7 @@
   /* Triangulo usado en 1ra ACtividad*/
   /* mm de la Realidad Social y sus formas */
   /* Cuento ilustrado de Tecnología */
+  /* mm del gobierno escolar */
   /* Float Images */
   /* Asides in the Article */
   /* Aside Floats */
@@ -544,6 +545,13 @@
   width: 80%;
 }
 .doc-main .main-article .article-content .content-images--cuento-ilustrado .content-images__img {
+  width: 100%;
+  height: auto;
+}
+.doc-main .main-article .article-content .content-images--mm-gobiernoEscolar {
+  width: 80%;
+}
+.doc-main .main-article .article-content .content-images--mm-gobiernoEscolar .content-images__img {
   width: 100%;
   height: auto;
 }
