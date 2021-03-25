@@ -11,8 +11,100 @@
   min-height: 400px;
 
   margin: 20px auto;
+  border: 5px outset $color-light2;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 2.5em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 2.5em;
   padding: 1cm;
   
   background-color: $color-light1;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  /* Header de la ficha bibliografica */
+  .activity-header {
+   width: 90%;
+
+   padding: 10px;
+   border-radius: 0.25em;
+   margin: 0 auto;
+
+   background-color: $color-light2;
+
+   .activity-header__title {
+    font: 700 24px 'Oswald', sans-serif;
+    text-align: center;
+    text-decoration: underline solid $color-base2 5px;
+    text-transform: capitalize;
+   }
+  }
+  
+  /* Cuerpo de la ficha biblio grafica */
+  .activity-content {
+   width: 95%;
+
+   padding: 25px;
+   border-radius: 0.5em;
+   margin: 10px auto;
+
+   background-color: $color-light3;
+   .activity-content__title {
+    padding-left: 5px;
+
+    color: $color-dark2;
+    font: 500 20px 'Oswald', sans-serif;
+    text-transform: capitalize;
+    text-decoration: underline solid $color-dark2 2px;
+   }
+  
+   .activity-content__paragraph {
+    padding-left: 10px;
+
+    color: $color-black1;
+    font: 500 15px 'Montserrat', sans-serif;
+   }
+
+   .activity-content__picture {
+     width: 30%;
+     height: auto;
+
+     margin-right: 10px;
+     margin-bottom: 10px; 
+
+     float: left;
+   }
+  }
+
+  /* Footer de la ficha bibliografica */
+  .activity-footer {
+   width: 100%;
+
+   padding: 5px 10px;
+   border-radius: 0.5em;
+   margin: 10px auto;
+
+   background-color: $color-base1;
+
+   align-self: flex-end;
+   
+   display: flex;
+   justify-content: center;
+   align-content: baseline;
+
+   .activity-footer__label {
+    padding: 0 5px;
+
+    color: $color-white1;
+    font: 700 18px 'Oswald', sans-serif;
+   }
+   
+   .activity-footer__content {
+    color: $color-white1;
+    font: 500 16px 'MontSerrat', sans-serif;
+    text-decoration: underline solid $color-white1 2px;
+   }
+  }
  }
 }

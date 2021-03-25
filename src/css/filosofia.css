@@ -12,6 +12,7 @@
 /* Darker Blue */
 /* Sky */
 /* Darker Sky */
+/* Even More light Sky*/
 /* Midnight */
 /* Even Darker Midnight */
 /* -- Classes Colors -- */
@@ -80,6 +81,76 @@
   width: 80%;
   min-height: 400px;
   margin: 20px auto;
+  border: 5px outset #3399ff;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 2.5em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 2.5em;
   padding: 1cm;
   background-color: #99ccff;
+  display: flex;
+  flex-flow: row wrap;
+  /* Header de la ficha bibliografica */
+  /* Cuerpo de la ficha biblio grafica */
+  /* Footer de la ficha bibliografica */
+}
+.content-activity .activity-fichaFilosofos .activity-header {
+  width: 90%;
+  padding: 10px;
+  border-radius: 0.25em;
+  margin: 0 auto;
+  background-color: #3399ff;
+}
+.content-activity .activity-fichaFilosofos .activity-header .activity-header__title {
+  font: 700 24px "Oswald", sans-serif;
+  text-align: center;
+  text-decoration: underline solid #0000bb 5px;
+  text-transform: capitalize;
+}
+.content-activity .activity-fichaFilosofos .activity-content {
+  width: 95%;
+  padding: 25px;
+  border-radius: 0.5em;
+  margin: 10px auto;
+  background-color: #cce5ff;
+}
+.content-activity .activity-fichaFilosofos .activity-content .activity-content__title {
+  padding-left: 5px;
+  color: #000044;
+  font: 500 20px "Oswald", sans-serif;
+  text-transform: capitalize;
+  text-decoration: underline solid #000044 2px;
+}
+.content-activity .activity-fichaFilosofos .activity-content .activity-content__paragraph {
+  padding-left: 10px;
+  color: #000;
+  font: 500 15px "Montserrat", sans-serif;
+}
+.content-activity .activity-fichaFilosofos .activity-content .activity-content__picture {
+  width: 30%;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+.content-activity .activity-fichaFilosofos .activity-footer {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 0.5em;
+  margin: 10px auto;
+  background-color: #0000e6;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+}
+.content-activity .activity-fichaFilosofos .activity-footer .activity-footer__label {
+  padding: 0 5px;
+  color: #fff;
+  font: 700 18px "Oswald", sans-serif;
+}
+.content-activity .activity-fichaFilosofos .activity-footer .activity-footer__content {
+  color: #fff;
+  font: 500 16px "MontSerrat", sans-serif;
+  text-decoration: underline solid #fff 2px;
 }
