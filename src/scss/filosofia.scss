@@ -1,0 +1,18 @@
+/* /-------- Styles para objects Unicos de Filosofia --------\ */
+
+/* Variables */
+@import "./master";
+
+.content-activity {
+
+ /* Fichas Bibliograficas de los filosofos */
+ .activity-fichaFilosofos {
+  width: 80%;
+  min-height: 400px;
+
+  margin: 20px auto;
+  padding: 1cm;
+  
+  background-color: $color-light1;
+ }
+}

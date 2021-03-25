@@ -1,55 +1,5 @@
-/* GOBAL VARIABLES */
-
-/* Base Colors */
-$color-base1: #0000e6; /* Blue */
-$color-base2: #0000bb; /* Darker Blue */
-$color-light1: #99ccff; /* Sky */
-$color-light2: #3399ff; /* Darker Sky */
-$color-dark1: #000066; /* Midnight */
-$color-dark2: #000044; /* Even Darker Midnight */
-
-/* General Colors */
-$color-white1: #fff; /* White */
-$color-white2: #cfcfcf; /* Smoke */
-$color-white3: #f0f0f0; /* A little bit dark White */
-
-$color-black1: #000; /* Black */
-$color-black2: #353535; /* Dark Grey */
-
-/* Google Fonts */
-/*  
- - Montserrat {
-  Medium 500 : Medium or big texts. 
-  Regular 400 : Medium-small or small texts.
-  light 300 : short and small texts. 
-  
-  Semantics {
-   Bold 700 : <strong>s on Medium or big texts.
-   Medium 500 : <strong>s on Medium-small or small texts.
-
-   italic | Regular 400 : <em>s, <mark>s in Medium or big texts.
-   italic | light 300 : <em>s, <mark>s in Medium-small or small texts.
-  }
-
-  --Other uses {
-   italic | extra-light 200 : other uses.
-   thin 100 : other uses.
-   italic | thin 100 : other uses.
-  }
- }
-
- - Oswald {
-  Bold 700 : Medium or big titles and Lists Icons.
-  Medium 500 : Medium, small, not important titles.
-  light 300 : Questions in activities, links.
- }
-
- - Newsreader {
-  light 300 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
-  extra-light 200 : the same than the other, but on Medium-small, small objects.
- }
-
-*/
+/* Variables */
+@import "./master";
 
 /* ----- Header Style ----- */
 

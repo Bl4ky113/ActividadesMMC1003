@@ -1,19 +1,19 @@
 @charset "UTF-8";
-/* GOBAL VARIABLES */
-/* Base Colors */
+/* Variables */
+/* 
+ /-----------------------------------------------------------------------\
+ /In this file I'll set variables, write info and others of the SCSS code\
+ /-----------------------------------------------------------------------\
+*/
+/* --- Variables Globales --- */
+/* -- Base Colors -- */
 /* Blue */
 /* Darker Blue */
 /* Sky */
 /* Darker Sky */
 /* Midnight */
 /* Even Darker Midnight */
-/* General Colors */
-/* White */
-/* Smoke */
-/* A little bit dark White */
-/* Black */
-/* Dark Grey */
-/* Class Colors */
+/* -- Classes Colors -- */
 /* Química */
 /* Artes */
 /* Inglés */
@@ -33,7 +33,13 @@
 /* Electrónica Digital */
 /* Gestión Básica de la Informatíca */
 /* Investigación */
-/* Google Fonts */
+/* -- General Colors -- */
+/* White */
+/* Smoke */
+/* A little bit dark White */
+/* Black */
+/* Dark Grey */
+/* Google Fonts Documentation */
 /*  
  - Montserrat {
   Medium 500 : Medium or big texts. 
@@ -65,7 +71,6 @@
   light 300 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
   extra-light 200 : the same than the other, but on Medium-small, small objects.
  }
-
 */
 /* The Header */
 .doc-header {
