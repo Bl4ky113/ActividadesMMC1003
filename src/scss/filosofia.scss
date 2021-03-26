@@ -50,6 +50,7 @@
    margin: 10px auto;
 
    background-color: $color-light3;
+   
    .activity-content__title {
     padding-left: 5px;
 
@@ -64,6 +65,16 @@
 
     color: $color-black1;
     font: 500 15px 'Montserrat', sans-serif;
+   }
+
+   .activity-content__list {
+    font: 500 15px 'Montserrrat', sans-serif;
+
+    list-style-position: inside;
+
+    li::marker {
+     color: $color-light2;
+    }
    }
 
    .activity-content__picture {

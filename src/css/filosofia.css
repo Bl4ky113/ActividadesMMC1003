@@ -126,6 +126,13 @@
   color: #000;
   font: 500 15px "Montserrat", sans-serif;
 }
+.content-activity .activity-fichaFilosofos .activity-content .activity-content__list {
+  font: 500 15px "Montserrrat", sans-serif;
+  list-style-position: inside;
+}
+.content-activity .activity-fichaFilosofos .activity-content .activity-content__list li::marker {
+  color: #3399ff;
+}
 .content-activity .activity-fichaFilosofos .activity-content .activity-content__picture {
   width: 30%;
   height: auto;
