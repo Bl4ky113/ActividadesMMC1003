@@ -11,6 +11,7 @@
 /* Darker Blue */
 /* Sky */
 /* Darker Sky */
+/* Even More light Sky*/
 /* Midnight */
 /* Even Darker Midnight */
 /* -- Classes Colors -- */
@@ -258,7 +259,16 @@
   /* Links in the Class Notes */
   /* Images in Class Notes */
   /* All Images */
-  /* Test Image */
+  /* Image's Sizes */
+  /* Smallest */
+  /* Very Small */
+  /* Small */
+  /* Medium */
+  /* Medium Big */
+  /* Medium Large */
+  /* Large */
+  /* Very Large */
+  /* Max Size */
   /* LawGexx image */
   /* Chinesse Cameras */
   /* MapaMental Compuertas Lógicas */
@@ -387,6 +397,10 @@
   flex-flow: row wrap;
   justify-content: center;
 }
+.doc-main .main-article .article-content .content-images .content-images__img {
+  width: 100%;
+  height: auto;
+}
 .doc-main .main-article .article-content .content-images .content-images__quote {
   width: 80%;
   border: 2px solid #0000e6;
@@ -398,12 +412,32 @@
 .doc-main .main-article .article-content .content-images .content-images__quote cite {
   font: italic 300 12px "Newsreader", serif;
 }
-.doc-main .main-article .article-content .content-images--test {
-  width: 500px;
+.doc-main .main-article .article-content .content-images--s {
+  width: 20%;
 }
-.doc-main .main-article .article-content .content-images--test .content-images__img {
-  width: 500px;
-  height: 200px;
+.doc-main .main-article .article-content .content-images--xs {
+  width: 30%;
+}
+.doc-main .main-article .article-content .content-images--xxs {
+  width: 40%;
+}
+.doc-main .main-article .article-content .content-images--m {
+  width: 50%;
+}
+.doc-main .main-article .article-content .content-images--xm {
+  width: 60%;
+}
+.doc-main .main-article .article-content .content-images--xxm {
+  width: 70%;
+}
+.doc-main .main-article .article-content .content-images--l {
+  width: 80%;
+}
+.doc-main .main-article .article-content .content-images--xl {
+  width: 90%;
+}
+.doc-main .main-article .article-content .content-images--xxl {
+  width: 100%;
 }
 .doc-main .main-article .article-content .content-images--lawgeex {
   width: 500px;

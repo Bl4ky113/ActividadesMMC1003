@@ -373,6 +373,11 @@
     flex-flow: row wrap;
     justify-content: center;
 
+    .content-images__img {
+     width: 100%;
+     height: auto;
+    }
+
     .content-images__quote {
      width: 80%;
 
@@ -391,17 +396,19 @@
 
    }
    
-   /* Test Image */
-   .content-images--test {
-    width: 500px;
-    
-    .content-images__img {
-     width: 500px;
-     height: 200px;
-    }
+   /* Image's Sizes */
+   .content-images--s {width: 20%;} /* Smallest */
+   .content-images--xs {width: 30%;} /* Very Small */
+   .content-images--xxs {width: 40%;} /* Small */
 
-   }
+   .content-images--m {width: 50%;} /* Medium */
+   .content-images--xm {width: 60%;} /* Medium Big */
+   .content-images--xxm {width: 70%;} /* Medium Large */
 
+   .content-images--l {width: 80%;} /* Large */
+   .content-images--xl {width: 90%;} /* Very Large */
+   .content-images--xxl {width: 100%;} /* Max Size */
+   
    /* LawGexx image */
    .content-images--lawgeex {
     width: 500px;
