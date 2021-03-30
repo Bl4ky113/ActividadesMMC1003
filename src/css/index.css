@@ -129,6 +129,59 @@
   padding: 10px;
   background-color: #000044;
 }
+.doc-main .main-nav .main-nav__title {
+  color: #fff;
+  font: 500 24px "Oswald", sans-serif;
+}
+.doc-main .main-nav .nav-list {
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px dashed #0000e6;
+  background-color: #000066;
+  list-style-position: inside;
+}
+.doc-main .main-nav .nav-list .nav-list__link {
+  font: 400 16px "Montserrat", sans-serif;
+}
+.doc-main .main-nav .nav-list .nav-list__link::marker {
+  color: #0000e6;
+}
+.doc-main .main-nav .nav-list .nav-list__link a {
+  color: #cfcfcf;
+  text-decoration: none;
+}
+.doc-main .main-nav .nav-list .nav-list__link:hover::marker {
+  color: #99ccff;
+}
+.doc-main .main-nav .nav-list .nav-list__link:hover a {
+  color: #fff;
+  text-decoration: underline dashed #99ccff 2px;
+}
+.doc-main .main-nav .nav-sublist {
+  padding: 5px;
+  padding-left: 15px;
+  background-color: #000066;
+  list-style-position: inside;
+}
+.doc-main .main-nav .nav-sublist .nav-sublist__link {
+  padding-left: 5px;
+  border-left: 2px solid #0000e6;
+  font: 400 16px "Montserrat", sans-serif;
+}
+.doc-main .main-nav .nav-sublist .nav-sublist__link::marker {
+  color: #0000e6;
+}
+.doc-main .main-nav .nav-sublist .nav-sublist__link a {
+  color: #cfcfcf;
+  text-decoration: none;
+}
+.doc-main .main-nav .nav-sublist .nav-sublist__link:hover::marker {
+  color: #99ccff;
+}
+.doc-main .main-nav .nav-sublist .nav-sublist__link:hover a {
+  color: #fff;
+  text-decoration: underline dashed #99ccff 2px;
+}
 .doc-main .main-section {
   width: 70%;
   margin: 5px 0;
