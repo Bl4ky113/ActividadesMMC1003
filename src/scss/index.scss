@@ -410,7 +410,7 @@
    .content-images--l {width: 80%;} /* Large */
    .content-images--xl {width: 90%;} /* Very Large */
    .content-images--xxl {width: 100%;} /* Max Size */
-   
+
    /* Float Images */
    .content-images--right {
     float: right; 
@@ -951,6 +951,52 @@
      &::before {
       counter-increment: section;
       content: "Punto N°" counter(section) ". ";
+     }
+    }
+
+    /* Reference in the Activities */
+    .activity-ref {
+     width: 90%;
+     
+     padding: 10px 20px; 
+     border-left: 5px solid $color-base1;
+     border-top-right-radius: 1em;
+     border-top-left-radius: 0.25em;
+     border-bottom-right-radius: 1em;
+     border-bottom-left-radius: 0.25em;
+     margin: 5px auto;
+
+     background-color: $color-light3;
+
+     .activity-ref__title {
+      margin: 5px;
+
+      color: $color-dark1;
+      font: 800 20px 'Oswald', sans-serif;
+      text-decoration: underline solid $color-base1 1px;
+     }
+
+     .activity-ref__link {
+      padding: 2px 5px;
+      border-left: 2px solid $color-base1;
+
+      color: $color-black1;
+      font: 500 12px 'Montserrat', sans-serif;
+      text-decoration: none;
+
+      display: inline-block;
+
+      &::before {
+       content: "O";
+       color: $color-base2;
+       font-weight: bolder;
+      }
+
+      cite {color: $color-dark1;}
+
+      &:hover {
+       cite {text-decoration: underline dashed $color-base2 1px;}
+      }
      }
     }
    }

@@ -775,6 +775,7 @@
   list-style-type: none;
   /* Title of the Activities */
   /* Activities Taks, To Do List, Etc */
+  /* Reference in the Activities */
 }
 .doc-main .main-article .article-content .content-activity .content-activity__title {
   width: 100%;
@@ -802,4 +803,40 @@
 .doc-main .main-article .article-content .content-activity .content-activity__task::before {
   counter-increment: section;
   content: "Punto N°" counter(section) ". ";
+}
+.doc-main .main-article .article-content .content-activity .activity-ref {
+  width: 90%;
+  padding: 10px 20px;
+  border-left: 5px solid #0000e6;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 0.25em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 0.25em;
+  margin: 5px auto;
+  background-color: #cce5ff;
+}
+.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__title {
+  margin: 5px;
+  color: #000066;
+  font: 800 20px "Oswald", sans-serif;
+  text-decoration: underline solid #0000e6 1px;
+}
+.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link {
+  padding: 2px 5px;
+  border-left: 2px solid #0000e6;
+  color: #000;
+  font: 500 12px "Montserrat", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link::before {
+  content: "O";
+  color: #0000bb;
+  font-weight: bolder;
+}
+.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link cite {
+  color: #000066;
+}
+.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link:hover cite {
+  text-decoration: underline dashed #0000bb 1px;
 }
