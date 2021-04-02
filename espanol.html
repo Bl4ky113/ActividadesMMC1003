@@ -26,6 +26,22 @@
 <main class="doc-main">
   <!-- Index -->
   <nav class="main-nav">
+    <h3 class="main-nav__title">1ra Entrega del Módulo</h3>
+    <ul class="nav-list">
+      <li class="nav-list__link"><a href="#clase-primeraClase">Primera Clase 2021 <em>(02/18/21)</em></a></li>
+      <ul class="nav-sublist">
+        <li class="nav-sublist__link"><a href="#act-diagnostico">Actividad de Diagnóstico <em>(02/19/21)</em></a></li>
+        <li class="nav-sublist__link"><a href="#act-elementosCocina">Elementos de la Cocina <em>(02/19/21)</em></a></li>
+      </ul>
+      <li class="nav-list__link"><a href="#clase-notas1raActividadModulo">Notas 1ra Actividad del Módulo <em>(03/05/21)</em></a></li>
+      <ul class="nav-sublist">
+        <li class="nav-sublist__link"><a href="#act-1raActividadModulo">1ra Actividad del Módulo <em>(03/08/21)</em></a></li>
+      </ul>
+      <li class="nav-list__link"><a href="#clase-cuentosDibujados">Cuentos Dibujados <em>(03/11/21)</em></a></li>
+      <ul class="nav-sublist">
+        <li class="nav-sublist__link"><a href="#act-cuentosDibujados">Actividad en Clase Cuento Dibujado <em>(03/11/21)</em></a></li>
+      </ul>
+    </ul>
   </nav>
   <!-- Home -->
   <section class="main-section main-section--home">
@@ -87,11 +103,10 @@
       <h5 class="home-list--semi__title">Ser</h5>
       <li class="list-object">Participa en los encuentros virtuales o de alternancia mostrando una actitud de respeto tanto con el profesor como con los compañeros.</li>
     </ul>
-
   </section>
-  <!-- Articles -->
+
   <article class="main-article">
-    <h3 class="main-article__title">Primera Clase 2021</h3>
+    <h3 id="clase-primeraClase" class="main-article__title">Primera Clase 2021</h3>
     <span class="main-article__date">Jueves | 02/18/2021</span>
     <div class="article-content">
 
@@ -102,7 +117,7 @@
 
       <!-- Actividades -->
       <section class="content-activity">
-        <h3 class="content-activity__title">Actividad de Diagnóstico</h3>
+        <h3 id="act-diagnostico" class="content-activity__title">Actividad de Diagnóstico</h3>
         <!-- Info de Actividades -->
         <table class="content-table">
           <thead class="table-header">
@@ -549,13 +564,19 @@
           </tbody>
         </table>
 
-        <hr>
+        <div class="activity-ref">
+          <h4 class="activity-ref__title">Referencias del Trabajo</h4>
+          <a href="https://www.youtube.com/watch?v=VIg5HkyauoY" class="activity-ref__link">
+            <cite>The Invention of Blue</cite>
+            El Color que no existía. Vsauce2.
+          </a>
+          <a href="https://www.youtube.com/watch?v=wSd_fKzrCsw" class="activity-ref__link">
+            <cite>¿Que tan Poderoso es el Efecto Placebo?</cite>
+            El efecto placebo y en parte el nocebo. Curiosamente.
+          </a>
+        </div>
 
-        <p class="article-content__semititle">Links Mencionados Anteriormente</p>
-        <a class="article-content__link" href="https://www.youtube.com/watch?v=VIg5HkyauoY" target="_blank">El Color que no Existía</a>
-        <a class="article-content__link" href="https://www.youtube.com/watch?v=wSd_fKzrCsw" target="_blank">El Efecto Placebo (y parte del Nocebo)</a>
-        
-        <p class="article-content__title">Elementos de la Cocina</p>
+        <p id="act-elementosCocina" class="article-content__title">Elementos de la Cocina</p>
         <p class="article-content__paragraph">
           La Profesora, como actividad nos dijo que buscaramos diferentes elementos de nuestra cocina, 
           la lista de elementos que dijo la profesora y que yo tenía son:
@@ -619,14 +640,13 @@
     </div>
   </article>
 
-  <!-- Articles -->
   <article class="main-article">
-    <h3 class="main-article__title">Notas de la 1ra Actividad del Módulo</h3>
+    <h3 id="clase-notas1raActividadModulo" class="main-article__title">Notas de la 1ra Actividad del Módulo</h3>
     <span class="main-article__date">Viernes | 03/05/2021</span>
     <div class="article-content">
       <section class="content-activity">
         <!-- Info de Actividades -->
-        <h3 class="content-activity__title">1ra Actividad del Módulo</h3>
+        <h3 id="act-1raActividadModulo" class="content-activity__title">1ra Actividad del Módulo</h3>
         <table class="content-table">
           <thead class="table-header">
             <tr>
@@ -717,10 +737,25 @@
           <li class="list-object">Entre Otros...</li>
         </ul>
 
-        <a class="article-content__link" href="https://concepto.de/lectura-critica/">Definición por Concepto.de</a>
-        <a class="article-content__link" href="https://www.significados.com/lectura-critica/">Definición por Significados.com</a>
-        <a class="article-content__link" href="https://definicion.de/lectura-critica/">Definición por Definición.de</a>
-        <a class="article-content__link" href="https://definicion.mx/lectura-critica/">Definición por Definición.mx</a>
+        <div class="activity-ref">
+          <p class="activity-ref__title">Referencias del Trabajo</p>
+          <a href="https://concepto.de/lectura-critica/" class="activity-ref__link">
+            <cite>Concepto de Lectura Crítica</cite>.
+            Concepte.de.
+          </a>
+          <a href="https://www.significados.com/lectura-critica/" class="activity-ref__link">
+          <cite>Significado de Lectura Crítica</cite>.
+            significados.com.
+        </a>
+          <a href="https://definicion.de/lectura-critica/" class="activity-ref__link">
+            <cite>Definición de Lectura Crítica</cite>
+            definicion.de.
+          </a>
+          <a href="https://definicion.mx/lectura-critica/" class="activity-ref__link">
+            <cite>Definición de Lectura Crítica</cite>
+            definicion.mx.
+          </a>
+        </div>
 
         <p class="content-activity__task">
           Averigua qué es un texto continuo y qué es un texto discontinuo. Escribe ejemplos de cada uno.
@@ -800,8 +835,9 @@
       </section>
     </div>
   </article>
+
   <article class="main-article">
-    <h3 class="main-article__title">Cuentos Dibujados</h3>
+    <h3 id="clase-cuentosDibujados" class="main-article__title">Cuentos Dibujados</h3>
     <span class="main-article__date">Jueves | 03/11/2021</span>
     <div class="article-content">
 
@@ -812,7 +848,7 @@
 
       <section class="content-activity">
         <!-- Info de Actividades -->
-        <h3 class="content-activity__title">Actividad en Clase</h3>
+        <h3 id="act-cuentosDibujados" class="content-activity__title">Actividad en Clase</h3>
         <table class="content-table">
           <thead class="table-header">
             <tr>
