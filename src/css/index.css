@@ -829,6 +829,8 @@
   /* Title of the Activities */
   /* Activities Taks, To Do List, Etc */
   /* Reference in the Activities */
+  /* Labels in JavaScript Activities */
+  /* Inputs in JavaScript Activities */
 }
 .doc-main .main-article .article-content .content-activity .content-activity__title {
   width: 100%;
@@ -892,4 +894,33 @@
 }
 .doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link:hover cite {
   text-decoration: underline dashed #0000bb 1px;
+}
+.doc-main .main-article .article-content .content-activity .content-activity__label {
+  margin: 5px;
+  padding: 10px;
+  font: 500 16px "Montserrat", sans-serif;
+  color: #000066;
+  display: inline-block;
+}
+.doc-main .main-article .article-content .content-activity .content-activity__input {
+  margin: 5px;
+  border: 1px solid #000;
+  border-radius: 0.25em;
+  padding: 10px;
+  background-color: #fff;
+  font: 500 16px "Montserrat", sans-serif;
+  display: inline-block;
+}
+.doc-main .main-article .article-content .content-activity .content-activity__input:hover, .doc-main .main-article .article-content .content-activity .content-activity__input:focus {
+  border: 1px solid #000066;
+  background-color: #cce5ff;
+}
+.doc-main .main-article .article-content .content-activity .content-activity--button__input {
+  margin: 10px;
+  padding: 10px 40px;
+  font-size: 20px;
+  background-color: #cce5ff;
+}
+.doc-main .main-article .article-content .content-activity .content-activity--button__input:hover, .doc-main .main-article .article-content .content-activity .content-activity--button__input:focus {
+  background-color: #99ccff;
 }

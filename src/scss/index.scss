@@ -1066,6 +1066,49 @@
       }
      }
     }
+
+    /* Labels in JavaScript Activities */
+    .content-activity__label {
+     margin: 5px;
+     padding: 10px;
+
+     font: 500 16px 'Montserrat', sans-serif;
+     color: $color-dark1;
+
+     display: inline-block;
+    }
+
+    /* Inputs in JavaScript Activities */
+    .content-activity__input {
+     margin: 5px;
+     border: 1px solid $color-black1;
+     border-radius: 0.25em;
+     padding: 10px;
+
+     background-color: $color-white1;
+
+     font: 500 16px 'Montserrat', sans-serif;
+     display: inline-block;
+
+     &:hover, &:focus {
+      border: 1px solid $color-dark1;
+
+      background-color: $color-light3;
+     } 
+    }
+
+    .content-activity--button__input {
+     margin: 10px;
+     padding: 10px 40px;
+
+     font-size: 20px;
+     
+     background-color: $color-light3;
+
+     &:hover, &:focus {
+      background-color: $color-light1;
+     }
+    }
    }
   }
  }
