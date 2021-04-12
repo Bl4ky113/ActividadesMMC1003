@@ -29,9 +29,13 @@
         <li class="nav-sublist__link"><a href="#act-convertirBinario">Convertir a Binario <em>(03/01/21)</em></a></li>
       </ul>
       <li class="nav-list__link"><a href="#clase-conceptosElectronica">Conceptos Electrónica <em>(03/02/21)</em></a></li>
-      <li class="nav-list__link"><a href="#clase-basesNumericas">Bases Númericas</a></li>
+      <li class="nav-list__link"><a href="#clase-basesNumericas">Bases Númericas <em>(03/16/21)</em></a></li>
       <ul class="nav-sublist">
         <li class="nav-sublist__link"><a href="#act-convertirHexadecimal">Convertir a Hexadecimal <em>(03/16/21)</em></a></li>
+      </ul>
+      <li class="nav-list__link"><a href="#clase-tablasVerdad">Tablas de la Verdad <em>(04/06/21)</em></a></li>
+      <ul class="nav-sublist">
+        <li class="nav-sublist__link"><a href="#act-3raActividadModulo">3ra Actividad del Módulo <em>(04/11/21)</em></a></li>
       </ul>
     </ul>
   </nav>
@@ -606,6 +610,368 @@
           1 * 16777216 = 16777216;
 
           22 + 3840 = 3862 + 8192 = 12054 + 655360 = 667414 + 8388608 = 9056022 + 16777216 = 25833238;
+        </pre>
+      </section>
+    </div>
+  </article>
+
+  <article class="main-article">
+    <h3 id="clase-tablasVerdad" class="main-article__title">Tablas de la Verdad</h3>
+    <span class="main-article__date">Martes | 04/06/2021</span>
+    <div class="article-content">
+
+      <p class="article-content__paragraph">
+        Las tablas de la verdad, son tablas que continen la información de un circuito. Estos tienen diferentes operadoes booleanos, 
+        estos operadores nos permite interactuar, modificar y hacer diferentes acciones con los valores de <em>True</em> y <em>False</em>.
+      </p>
+      <p class="article-content__paragraph">
+        Estos operadores pueden ser:
+      </p>
+      <ul class="content-ulist content-ulist--arrows">
+        <li class="list-object">Conjunción &and;</li>
+        <li class="list-object">Disyunción &or;</li>
+        <li class="list-object">Negación &not;</li>
+        <li class="list-object">Entonces &rarr;</li>
+        <li class="list-object">Si y solo Si &harr;</li>
+      </ul>
+
+      <p class="article-content__semititle">Conjunción &and;</p>
+      <p class="article-content__paragraph">
+        Su uso y funcionalidad, es dar <em>True</em> cuando ambos de sus valores son <em>True</em>, y dar <em>False</em> cuando uno de 
+        estos no es <em>True</em>.
+      </p>
+      <table class="content-table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-header__header">p</th>
+            <th class="table-header__header">q</th>
+            <th class="table-header__header">p &and; q</th>
+          </tr>
+        </thead>
+        <tbody class="table-content">
+          <tr class="table-content--row1">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">0</td>
+          </tr>
+          <tr class="table-content--row1">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="article-content__semititle">Disyunción &or;</p>
+      <p class="article-content__paragraph">
+        Su uso y funcionalidad, es de dar <em>True</em> cuando algumo de sus valores son <em>True</em>, solo va a dar <em>False</em> cuando 
+        ambos de estos sean <em>False</em> también.
+      </p>
+      <table class="content-table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-header__header">p</th>
+            <th class="table-header__header">q</th>
+            <th class="table-header__header">p &or; q</th>
+          </tr>
+        </thead>
+        <tbody class="table-content">
+          <tr class="table-content--row1">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+          </tr>
+          <tr class="table-content--row1">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">1</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="article-content__semititle">Negación &not;</p>
+      <p class="article-content__paragraph">
+        Su uso y funcionalidad, es de dar el negar valor de su unica entrada. Es decir, pasar de <em>True</em> a <em>False</em> o de <em>False</em> 
+        a <em>True</em>
+      </p>
+      <table class="content-table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-header__header">p</th>
+            <th class="table-header__header">&not;p</th>
+          </tr>
+        </thead>
+        <tbody class="table-content">
+          <tr class="table-content--row1">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">1</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">0</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="article-content__semititle">Entonces &rarr;</p>
+      <p class="article-content__paragraph">
+        Su uso y funcion, es el de intentar adividar una entrada con el valor de la otra. Es decir, si la 1ra entrada es <em>True</em> por 
+        ende la 2da entrada va a ser <em>True</em> también, si la 2da entrada es <em>True</em> nos va a dar el valor de <em>True</em>, pero si 
+        esta es <em>false</em>, nos va a dar <em>False</em>. Ojo que viene lo complicado. Pero si intentamos adivinar, si la 1ra entrada es <em>False</em>
+        por ende la 2da entrada va a ser <em>True</em> o <em>False</em>, en ambos de estos casos me va a dar <em>True</em>. Esto ocurre ya que 
+        se puede puede hacer la misma tabla de verdad con otra formula lógica. &not;p &or; q, esta nos va a dar la misma tabla de verdad 
+        que p &rarr; q.
+      </p>
+      <table class="content-table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-header__header">p</th>
+            <th class="table-header__header">q</th>
+            <th class="table-header__header">p &rarr; q</th>
+            <th class="table-header__header">&not;p &or; q</th>
+          </tr>
+        </thead>
+        <tbody class="table-content">
+          <tr class="table-content--row1">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+          </tr>
+          <tr class="table-content--row1">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="article-content__semititle">Si y solo Si &harr;</p>
+      <p class="article-content__paragraph">
+        Su usoy funcionalidad, es de dar <em>True</em> cuando en ambas entradas de datos, ambos datos estan en el mismo estado, es decir 
+        solo cuando sus entradas esten en <em>True</em> o <em>False</em> ambas, va a dar <em>True</em>. Y va a devolver <em>False</em> 
+        si esto no se cumple.
+      </p>
+      <table class="content-table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-header__header">p</th>
+            <th class="table-header__header">q</th>
+            <th class="table-header__header">p &harr; q</th>
+          </tr>
+        </thead>
+        <tbody class="table-content">
+          <tr class="table-content--row1">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">1</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">0</td>
+          </tr>
+          <tr class="table-content--row1">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">0</td>
+            <td class="table-content__data">0</td>
+          </tr>
+          <tr class="table-content--row2">
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+            <td class="table-content__data">1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <section class="content-activity">
+        <!-- Info de Actividades -->
+        <h3 id="act-3raActividadModulo" class="content-activity__title">3ra Actividad del Módulo</h3>
+        <table class="content-table">
+          <thead class="table-header">
+            <tr>
+              <th class="table-header__title" colspan="4">Datos del Estudiante</th>
+            </tr>
+          </thead>
+          <tbody class="table-content">
+            <tr class="table-content--row1">
+              <th class="table-content__header">Curso</th>
+              <td class="table-content__data">1003 Jornada Tarde</td>
+              <th class="table-content__header">Estudiante</th>
+              <td class="table-content__data">Martín Steven Hernández Ortiz</td>
+            </tr>
+            <tr class="table-content--row2">
+              <th class="table-content__header">No. de Documento</th>
+              <td class="table-content__data">1.013.107.870</td>
+              <th class="table-content__header">Telefono</th>
+              <td class="table-content__data">313 3391259</td>
+            </tr>
+            <tr class="table-content--row1">
+              <th class="table-content__header">Correo Electronico</th>
+              <td class="table-content__data">martinstevenhernandezortiz@gmail.com</td>
+              <th class="table-content__header">Fecha de Entrega</th>
+              <td class="table-content__data">04/11/2021</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content-activity__task">
+          Desarrolle las siguientes tablas de verdad
+        </p>
+
+        <table class="content-table">
+          <thead class="table-header">
+            <tr>
+              <th class="table-header__title" colspan="4">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="table-header__header">p</th>
+              <th class="table-header__header">q</th>
+              <th class="table-header__header">p &and; q</th>
+              <th class="table-header__header">( p &and; q ) &rightarrow; p</th>
+            </tr>
+          </thead>
+          <tbody class="table-content">
+            <tr class="table-content--row1">
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+            </tr>
+            <tr class="table-content--row2">
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+            </tr>
+            <tr class="table-content--row1">
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+            </tr>
+            <tr class="table-content--row2">
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">1</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        
+        <table class="content-table">
+          <thead class="table-header">
+            <tr>
+              <th class="table-header__title" colspan="4">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="table-header__header">p</th>
+              <th class="table-header__header">q</th>
+              <th class="table-header__header">¬( p &rightarrow; q )</th>
+              <th class="table-header__header">¬q &rightarrow; ¬p</th>
+            </tr>
+          </thead>
+          <tbody class="table-content">
+            <tr class="table-content--row1">
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+            </tr>
+            <tr class="table-content--row2">
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">0</td>
+            </tr>
+            <tr class="table-content--row1">
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+            </tr>
+            <tr class="table-content--row2">
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">1</td>
+              <td class="table-content__data">0</td>
+              <td class="table-content__data">1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="content-activity__task">
+          Si p y r son proposiciones verdaderas y q es falsa, determine el valor de verdad de:
+
+          <p class="article-content__paragraph">
+            p = 1; r = 1; q = 0;
+          </p>
+        
+          <ol class="content-olist" type="a">
+            <li class="list-object">[(p &and; &not;q) &or; &not;r] &rarr; q = 0</li>
+            <li class="list-object">[(&not;r &or; q) &and; (r &or; &not;p)] &harr; &not;r = 1</li>
+            <li class="list-object">[(&not;p &rarr; q) &rarr; &not;r] &or; [&not;q &rarr; r] = 1</li>
+          </ol>
+        </div>
+
+        <p class="article-content__semititle">[(p &and; &not;q) &or; &not;r] &rarr; q = <strong>0</strong></p>
+        <pre>
+          [(1 &and; &not;0) &or; &not;1] &rarr; 0
+          [(1 &and; 1) &or; 0] &rarr; 0
+          [1 &or; 0] &rarr; 0
+          1 &rarr; 0
+          0
+        </pre>
+
+        <p class="article-content__semititle">[(&not;r &or; q) &and; (r &or; &not;p)] &harr; &not;r = <strong>1</strong></p>
+        <pre>
+          [(&not;1 &or; 0) &and; (1 &or; &not;1)] &harr; &not;1
+          [(0 &or; 0) &and; (1 &or; 0)] &harr; 0
+          [0 &and; 1] &harr; 0
+          0 &harr; 0 
+          1
+        </pre>
+
+        <p class="article-content__semititle">[(&not;p &rarr; q) &rarr; &not;r] &or; [&not;q &rarr; r] = <strong>1</strong></p>
+        <pre>
+          [(&not;1 &rarr; 0) &rarr; &not;1] &or; [&not;0 &rarr; 1]
+          [(0 &rarr; 0) &rarr; 0] &or; [1 &rarr; 1]
+          [1 &rarr; 0] &or; [1 &rarr; 1]
+          0 &or; 1
+          1
         </pre>
       </section>
     </div>
