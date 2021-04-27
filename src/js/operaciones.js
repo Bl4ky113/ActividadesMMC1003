@@ -48,10 +48,10 @@ function showData_op (finalResults, resultsNumber) {
 
   let modNum = i % 2;
   if (modNum == 1) {
-   tableRow.className = "table-content--row2";
+   tableRow.className = "table-content--row";
   }
   else {
-   tableRow.className = "table-content--row1";
+   tableRow.className = "table-content--row";
   }
 
   // Crear las celdas con los datos
@@ -62,7 +62,7 @@ function showData_op (finalResults, resultsNumber) {
   
   switch (i) {
    case 0: // Agregar los Resultados de la Suma a la Tabla
-    tableInfo.title.className = "table-content__header";
+    tableInfo.title.className = "table-content__category";
     tableInfo.title.innerHTML = "Suma";
 
     tableInfo.data.className = "table-content__data";
@@ -70,7 +70,7 @@ function showData_op (finalResults, resultsNumber) {
     break;
 
    case 1: // Agregar los Resultados de la Resta a la Tabla
-    tableInfo.title.className = "table-content__header";
+    tableInfo.title.className = "table-content__category";
     tableInfo.title.innerHTML = "Resta";
 
     tableInfo.data.className = "table-content__data";
@@ -78,7 +78,7 @@ function showData_op (finalResults, resultsNumber) {
     break;
 
    case 2: // Agregar los Resultados de la Multiplicacion a la Tabla
-    tableInfo.title.className = "table-content__header";
+    tableInfo.title.className = "table-content__category";
     tableInfo.title.innerHTML = "Multiplicación";
 
     tableInfo.data.className = "table-content__data";
@@ -86,7 +86,7 @@ function showData_op (finalResults, resultsNumber) {
     break;
 
    case 3: // Agregar los Resultados de la Division a la Tabla
-    tableInfo.title.className = "table-content__header";
+    tableInfo.title.className = "table-content__category";
     tableInfo.title.innerHTML = "División";
 
     tableInfo.data.className = "table-content__data";

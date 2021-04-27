@@ -580,7 +580,7 @@
   font: 500 24px "Oswald", sans-serif;
   text-align: center;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content__header {
+.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content__category {
   border-radius: 0.25em;
   padding: 10px;
   background-color: #3399ff;
@@ -595,10 +595,10 @@
   font: 400 16px "Montserrat", sans-serif;
   text-align: center;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content--row1 {
+.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content--row {
   background-color: #f0f0f0;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content--row2 {
+.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content--row {
   background-color: #cfcfcf;
 }
 .doc-main .main-article .article-content .content-aside--right {
@@ -622,7 +622,7 @@
   font: 700 30px "Oswald", sans-serif;
   text-transform: capitalize;
 }
-.doc-main .main-article .article-content .content-table .table-header .table-header__header {
+.doc-main .main-article .article-content .content-table .table-header .table-header__category {
   border-radius: 0.5em;
   padding: 10px;
   background-color: #3399ff;
@@ -636,13 +636,13 @@
   color: #000;
   font: 400 14px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .table-header .table-header--col1__data {
+.doc-main .main-article .article-content .content-table .table-header .table-header__data:nth-child(odd) {
   background-color: #f0f0f0;
 }
-.doc-main .main-article .article-content .content-table .table-header .table-header--col2__data {
+.doc-main .main-article .article-content .content-table .table-header .table-header__data:nth-child(even) {
   background-color: #cfcfcf;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content__header {
+.doc-main .main-article .article-content .content-table .table-content .table-content__category {
   border: 2px outset #99ccff;
   border-radius: 0.25em;
   padding: 10px;
@@ -678,10 +678,10 @@
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content--row1 {
+.doc-main .main-article .article-content .content-table .table-content tr:nth-child(odd) {
   background-color: #f0f0f0;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content--row2 {
+.doc-main .main-article .article-content .content-table .table-content tr:nth-child(even) {
   background-color: #cfcfcf;
 }
 .doc-main .main-article .article-content .content-table--right {

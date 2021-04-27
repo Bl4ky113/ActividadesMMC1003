@@ -1,1 +1,4 @@
+# Visual Studio Files
 vsc/
+# JavaScript "cache" Files
+src/js/dist/

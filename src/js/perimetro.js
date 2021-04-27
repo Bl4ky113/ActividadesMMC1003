@@ -62,10 +62,10 @@ function outputDatos (num, lenght, coordenadas) {
  // Cambiar el color de las filas según su número
  modNum = num % 2;
  if (modNum == 1) {
-  newRow.className = "table-content--row2";
+  newRow.className = "table-content--row";
  }
  else {
-  newRow.className = "table-content--row1";
+  newRow.className = "table-content--row";
  }
 
  // Creo la Celda de los Datos
