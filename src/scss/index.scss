@@ -764,30 +764,34 @@
 
    /* Lists in the Articles */
 
-   /* Unordered */
-   .content-ulist {
+   ul.content-list,
+   ol.content-list {
     margin: 10px;
-    margin-inline-start: 25px;
+    border-left: 1px solid $color-base1;
+    padding-left: 20px;
+    
 
     .content-list__title {
-     margin: 5px;
-     padding-inline-start: 15px;
+     margin: 2px;
+     padding-inline-start: 5px;
 
      color: $color-dark2;
-     font: 500 24px 'Oswald', sans-serif;
+     font: 500 28px 'Oswald', sans-serif;
+     text-decoration: underline solid $color-dark2 1px;
     }
-
+    
     .content-list--semi__title {
-     margin: 5px;
-     padding-inline-start: 15px;
+     margin: 2px;
+     padding-inline-start: 5px;
      
      color: $color-dark1;
-     font: 300 18px 'Oswald', sans-serif;
+     font: 300 22px 'Oswald', sans-serif;
+     text-decoration: underline solid $color-dark1 1px;
     }
 
     .list-object {
      margin: 5px;
-     padding-inline-start: 10px ;
+     padding-left: 10px;
 
      color: $color-black1;
      font: 500 18px 'Montserrat', sans-serif;
@@ -832,124 +836,38 @@
    /* Diferent Markers for the Ulist */
 
    /* Arrows ">>>" */
-   .content-ulist--arrows {
+   .content-list--arrows {
 
     .list-object {
 
-     &::marker {content: '>>>';}
+     &::marker {content: '>>';}
     }
    }
 
    /* long Arrow "---->" */
-   .content-ulist--longarrow {
+   .content-list--longarrow {
 
     .list-object {
 
-     &::marker {content: "---->";}
+     &::marker {content: "->";}
     }
    }
 
    /* Lines "---" */
-   .content-ulist--lines {
+   .content-list--lines {
 
     .list-object {
 
-     &::marker {content: '---';}
+     &::marker {content: '--';}
     }
    }
 
    /* Diamond "<>" */
-   .content-ulist--diamond {
+   .content-list--diamond {
 
     .list-object {
 
      &::marker {content: '<>'}
-    }
-   }
-
-   /* Ordered */
-   .content-olist {
-    margin: 10px;
-    margin-inline-start: 25px;
-
-    .content-list__title {
-     margin: 5px;
-     padding-inline-start: 15px;
-
-     color: $color-dark2;
-     font: 500 24px 'Oswald', sans-serif;
-    }
-
-    .content-list--semi__title {
-     margin: 5px;
-     padding-inline-start: 15px;
-     
-     color: $color-dark1;
-     font: 300 18px 'Oswald', sans-serif;
-    }
-
-    .list-object {
-     margin: 5px;
-     padding-inline-start: 10px ;
-
-     color: $color-black1;
-     font: 500 18px 'Montserrat', sans-serif;
-
-     &::marker {
-      padding: 2px 5px;
-
-      color: $color-light2;
-      font: 700 18px 'Oswald', sans-serif;
-     }
-     
-     strong {
-      font: 700 18px 'Montserrat', sans-serif;
-     }
- 
-     em {
-      font: italic 400 18px 'Montserrat', sans-serif;
-     }
- 
-     i {
-      font: italic 300 18px 'Newsreader', serif;
-     }
- 
-     abbr {
-      border-radius: 0.25em;
-      padding: 2px 5px;
- 
-      background-color: $color-dark1;
- 
-      color: $color-white1;
-      font: italic 200 18px 'Montserrat', sans-serif;
-      text-decoration: underline $color-light1;
-     }
- 
-     mark {
-      border-radius: 0.25em;
-      padding: 2px 5px;
- 
-      background-color: $color-light1;
-     }
-    }
-   }
-
-   /* Ordered Alphabetical */
-   .content-olist[type="a"], .content-olist[type="A"] {
-    margin: 10px;
-    margin-inline-start: 25px;
-
-    .list-object {
-
-     mark {
-      padding: 2px 10px;
-      border-radius: 0.25em;
-
-      background-color: $color-light2;
-
-      color: $color-black1;
-      font: italic 300 16px 'Montserrat', sans-serif;
-     }
     }
    }
 
