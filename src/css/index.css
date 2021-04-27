@@ -333,6 +333,7 @@
   /* long Arrow "---->" */
   /* Lines "---" */
   /* Diamond "<>" */
+  /* Flat Lists */
   /* GeoGebra iFrames */
   /* Youtube Videos iFrames */
   /* Activities in the Articles */
@@ -683,7 +684,7 @@
 .doc-main .main-article .article-content ol.content-list {
   margin: 10px;
   border-left: 1px solid #0000e6;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 .doc-main .main-article .article-content ul.content-list .content-list__title,
 .doc-main .main-article .article-content ol.content-list .content-list__title {
@@ -751,6 +752,25 @@
 }
 .doc-main .main-article .article-content .content-list--diamond .list-object::marker {
   content: "<>";
+}
+.doc-main .main-article .article-content ul.content-list--flat,
+.doc-main .main-article .article-content ol.content-list--flat {
+  border-right: 1px solid #0000e6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.doc-main .main-article .article-content ul.content-list--flat .content-list__title,
+.doc-main .main-article .article-content ol.content-list--flat .content-list__title {
+  width: 100%;
+}
+.doc-main .main-article .article-content ul.content-list--flat .content-list--semi__title,
+.doc-main .main-article .article-content ol.content-list--flat .content-list--semi__title {
+  width: 100%;
+}
+.doc-main .main-article .article-content ul.content-list--flat .list-object,
+.doc-main .main-article .article-content ol.content-list--flat .list-object {
+  margin: 5px 20px;
 }
 .doc-main .main-article .article-content .content-list--right {
   float: right;
