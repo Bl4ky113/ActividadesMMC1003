@@ -11,6 +11,7 @@
 /* Darker Blue */
 /* Sky */
 /* Darker Sky */
+/* Even More light Sky*/
 /* Midnight */
 /* Even Darker Midnight */
 /* -- Classes Colors -- */
@@ -244,14 +245,14 @@
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.doc-main .main-section .section-content .content-ulist {
+.doc-main .main-section .section-content .content-list {
   width: 70%;
   margin: 10px;
   margin-inline-start: 20px;
   padding: 10px;
   list-style-position: inside;
 }
-.doc-main .main-section .section-content .content-ulist .ulist-object {
+.doc-main .main-section .section-content .content-list .ulist-object {
   margin: 5px;
   border: 2px outset #99ccff;
   padding: 10px;
