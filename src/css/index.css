@@ -422,23 +422,29 @@
 }
 .doc-main .main-article .article-content .content-images {
   margin: 5px auto;
-  padding: 5px;
-  border: 2px solid #0000e6;
   border-radius: 0.25em;
-  background-color: #0000bb;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
+.doc-main .main-article .article-content .content-images picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .doc-main .main-article .article-content .content-images .content-images__img {
   width: 100%;
   height: auto;
+  border: 2px solid #0000e6;
+  border-radius: 0.2em;
 }
 .doc-main .main-article .article-content .content-images .content-images__quote {
   width: 80%;
   padding: 5px 0;
-  border: 2px solid #0000e6;
-  border-radius: 0.5em;
+  border-right: 2px solid #0000e6;
+  border-left: 2px solid #0000e6;
+  border-bottom: 1px solid #0000e6;
+  border-radius: 0.2em;
   background-color: #fff;
   text-align: center;
   font: 400 16px "Montserrat", sans-serif;

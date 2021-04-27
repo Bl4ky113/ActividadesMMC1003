@@ -441,28 +441,35 @@
    /* All Images */
    .content-images {
     margin: 5px auto;
-    padding: 5px;
-
-    border: 2px solid $color-base1;
     border-radius: 0.25em;
-
-    background-color: $color-base2;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 
+    picture {
+     display: flex;
+
+     justify-content: center;
+     align-items: center;
+    }
+
     .content-images__img {
      width: 100%;
      height: auto;
+
+     border: 2px solid $color-base1;
+     border-radius: 0.2em;
     }
 
     .content-images__quote {
      width: 80%;
 
      padding: 5px 0;
-     border: 2px solid $color-base1;
-     border-radius: 0.5em;
+     border-right: 2px solid $color-base1;
+     border-left: 2px solid $color-base1;
+     border-bottom: 1px solid $color-base1;
+     border-radius: 0.2em;
 
      background-color: $color-white1;
 
