@@ -338,7 +338,7 @@
     }
 
     i {
-     font: italic 300 20px 'Newsreader', serif;
+     font: italic 500 20px 'Newsreader', serif;
     }
 
     abbr {
@@ -370,6 +370,17 @@
 
      display: inline-block;
     }
+   }
+
+   /* Pre Texts */
+   pre {
+    max-width: 100%;
+
+    margin: 5px;
+
+    font: 400 15px 'Roboto Mono', monospace;
+    overflow: hidden;
+    text-overflow: ellipsis;
    }
 
    .article-content--unclear__paragraph {
@@ -541,7 +552,7 @@
      }
  
      i {
-      font: italic 300 16px 'Newsreader', serif;
+      font: italic 500 16px 'Newsreader', serif;
      }
  
      abbr {
@@ -731,7 +742,7 @@
       }
   
       i {
-       font: italic 300 14px 'Newsreader', serif;
+       font: italic 500 14px 'Newsreader', serif;
       }
   
       abbr {
@@ -810,7 +821,7 @@
      }
  
      i {
-      font: italic 300 18px 'Newsreader', serif;
+      font: italic 500 18px 'Newsreader', serif;
      }
  
      abbr {

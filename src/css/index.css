@@ -54,12 +54,6 @@
    italic | Regular 400 : <em>s, <mark>s in Medium or big texts.
    italic | light 300 : <em>s, <mark>s in Medium-small or small texts.
   }
-
-  --Other uses {
-   italic | extra-light 200 : other uses.
-   thin 100 : other uses.
-   italic | thin 100 : other uses.
-  }
  }
 
  - Oswald {
@@ -69,8 +63,12 @@
  }
 
  - Newsreader {
-  light 300 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
-  extra-light 200 : the same than the other, but on Medium-small, small objects.
+  Medium 500 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
+  Regular 400 : the same than the other, but on Medium-small, small objects.
+ }
+
+ - Roboto Mono {
+  Regular 400: <pre> tags
  }
 */
 /* ----- Header Style ----- */
@@ -308,6 +306,7 @@
 }
 .doc-main .main-article .article-content {
   /* Class Notes */
+  /* Pre Texts */
   /* Titles in the Class Notes*/
   /* Links in the Class Notes */
   /* Images in Class Notes */
@@ -354,7 +353,7 @@
   font: italic 300 20px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .article-content__paragraph i {
-  font: italic 300 20px "Newsreader", serif;
+  font: italic 500 20px "Newsreader", serif;
 }
 .doc-main .main-article .article-content .article-content__paragraph abbr {
   border-radius: 0.25em;
@@ -376,6 +375,13 @@
   background-color: #99ccff;
   font: 800 20px "Montserrat", sans-serif;
   display: inline-block;
+}
+.doc-main .main-article .article-content pre {
+  max-width: 100%;
+  margin: 5px;
+  font: 400 15px "Roboto Mono", monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .doc-main .main-article .article-content .article-content--unclear__paragraph {
   clear: none;
@@ -517,7 +523,7 @@
   font: italic 400 16px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .content-aside .content-aside__paragraph i {
-  font: italic 300 16px "Newsreader", serif;
+  font: italic 500 16px "Newsreader", serif;
 }
 .doc-main .main-article .article-content .content-aside .content-aside__paragraph abbr {
   border-radius: 0.25em;
@@ -651,7 +657,7 @@
   font: italic 400 14px "Montserrat", sans-serif;
 }
 .doc-main .main-article .article-content .content-table .table-content .table-content__data i {
-  font: italic 300 14px "Newsreader", serif;
+  font: italic 500 14px "Newsreader", serif;
 }
 .doc-main .main-article .article-content .content-table .table-content .table-content__data abbr {
   border-radius: 0.25em;
@@ -724,7 +730,7 @@
 }
 .doc-main .main-article .article-content ul.content-list .list-object i,
 .doc-main .main-article .article-content ol.content-list .list-object i {
-  font: italic 300 18px "Newsreader", serif;
+  font: italic 500 18px "Newsreader", serif;
 }
 .doc-main .main-article .article-content ul.content-list .list-object abbr,
 .doc-main .main-article .article-content ol.content-list .list-object abbr {
