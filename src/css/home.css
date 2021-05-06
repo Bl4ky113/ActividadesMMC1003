@@ -54,12 +54,6 @@
    italic | Regular 400 : <em>s, <mark>s in Medium or big texts.
    italic | light 300 : <em>s, <mark>s in Medium-small or small texts.
   }
-
-  --Other uses {
-   italic | extra-light 200 : other uses.
-   thin 100 : other uses.
-   italic | thin 100 : other uses.
-  }
  }
 
  - Oswald {
@@ -69,8 +63,12 @@
  }
 
  - Newsreader {
-  light 300 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
-  extra-light 200 : the same than the other, but on Medium-small, small objects.
+  Medium 500 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
+  Regular 400 : the same than the other, but on Medium-small, small objects.
+ }
+
+ - Roboto Mono {
+  Regular 400: <pre> tags
  }
 */
 /* The Header */

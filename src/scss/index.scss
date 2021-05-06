@@ -153,15 +153,12 @@
  /* Home Section */
  .main-section--home {
 
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: stretch;
+  display: grid;
+
+  grid-template: repeat(2, auto) / repeat(2, 1fr);
+
 
   .main-section--home__className {
-   min-width: 80%;
-   max-width: 100%;
-
    margin: 5px;
    border: 4px solid $color-dark1;
    border-radius: 0.25em;
@@ -169,25 +166,27 @@
 
    background-color: $color-dark2;
 
+   grid-column: span 2;
+   grid-row: span 1;
+   
    color: $color-white1;
    font: 700 26px 'Oswald', sans-serif;
    text-align: center;
   }
 
   .home-table {
-   height: 100%;
-
    border: 2px outset $color-base1;
    border-radius: 0.5em;
    padding: 15px;
 
    background-color: $color-white1;
 
-   flex: 1 0;
+   grid-column: span 2;
+   grid-row: span 1;
 
    .home-table--long__header {
     border-radius: 0.5em;
-    padding: 15px;
+    padding: 8px;
 
     background-color: $color-base1;
     
@@ -196,10 +195,8 @@
    }
 
    .home-table__header {
-    width: 95px;
-
     border-radius: 0.5em;
-    padding: 10px;
+    padding: 8px;
 
     background-color: $color-light2;
 
@@ -209,6 +206,11 @@
    }
    
    .home-table__data {
+    border-radius: 0.5em;
+    padding: 5px;
+    
+    background-color: $color-white3;
+    
     color: $color-black1;
     font: 400 15px 'Montserrat', sans-serif;
     text-align: center;
@@ -218,17 +220,16 @@
   /* List on the home section */
 
   .home-ulist {
-   width: 45%;
-
    border: 2px outset $color-base1;
    border-radius: 0.5em;
    padding: 15px;
 
    background-color: $color-white1;
 
-   flex-grow: 1;
-
    list-style-type: square;
+
+   grid-column: span 1;
+   grid-row: span 1;
 
    .home-list__title {
     border-radius: 0.5em;
