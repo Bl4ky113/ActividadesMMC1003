@@ -190,8 +190,9 @@
 }
 .doc-main .main-section--home {
   display: grid;
-  grid-template: repeat(2, auto)/repeat(2, 1fr);
-  /* List on the home section */
+  grid-template: repeat(2, auto) 1fr/repeat(2, 1fr);
+  grid-gap: 0.5em;
+  /* Class Info */
 }
 .doc-main .main-section--home .main-section--home__className {
   margin: 5px;
@@ -236,41 +237,53 @@
   font: 400 15px "Montserrat", sans-serif;
   text-align: center;
 }
-.doc-main .main-section--home .home-ulist {
+.doc-main .main-section--home .home-classinfo {
   border: 2px outset #0000e6;
   border-radius: 0.5em;
   padding: 15px;
   background-color: #fff;
-  list-style-type: square;
-  grid-column: span 1;
+  grid-column: span 2;
   grid-row: span 1;
 }
-.doc-main .main-section--home .home-ulist .home-list__title {
+.doc-main .main-section--home .home-classinfo .home-classinfo__title {
+  margin: 5px;
   border-radius: 0.5em;
-  padding: 5px;
+  padding: 8px;
   background-color: #0000e6;
   color: #fff;
-  font: 500 24px "Oswald", sans-serif;
-  font-weight: 800;
+  font: 500 20px "Oswald", sans-serif;
+  text-align: center;
 }
-.doc-main .main-section--home .home-ulist .home-list--semi__title {
-  max-width: 80%;
-  margin: 2px;
-  margin-inline-start: 15px;
+.doc-main .main-section--home .home-classinfo .home-classinfo__subtitle {
+  max-width: 75%;
+  margin: 5px;
   border-radius: 0.5em;
   padding: 5px;
   background-color: #3399ff;
   color: #000;
-  font: 500 15px "Oswald", sans-serif;
+  font: 500 18px "Oswald", sans-serif;
+  text-align: center;
 }
-.doc-main .main-section--home .home-ulist .list-object {
-  margin-inline-start: 20px;
-  padding: 2px;
-  font: 400 14px "Montserrat", sans-serif;
-  text-align: justify;
+.doc-main .main-section--home .home-classinfo .home-classinfo__paragraph {
+  width: 90%;
+  border-left: 1px solid #0000e6;
+  padding: 10px;
+  color: #000;
+  font: 500 16px "Montserrat", sans-serif;
 }
-.doc-main .main-section--home .home-ulist .list-object::marker {
-  color: #3399ff;
+.doc-main .main-section--home .home-classinfo .classinfo-list {
+  border-left: 1px solid #0000e6;
+  padding: 10px;
+  list-style-position: inside;
+}
+.doc-main .main-section--home .home-classinfo .classinfo-list .classinfo-list__object {
+  margin-left: 10px;
+  color: #000;
+  font: 500 16px "Montserrat", sans-serif;
+}
+.doc-main .main-section--home .home-classinfo .classinfo-list .classinfo-list__object::marker {
+  color: #0000e6;
+  font-size: 18px;
 }
 .doc-main .main-article {
   width: 90%;
