@@ -46,7 +46,7 @@
 
 /* Main Content of the Doc */
 
-.doc-main {
+.main {
  width: 95%;
 
  margin: 5px auto; 
@@ -59,7 +59,7 @@
 
  /* Index of the Main */
 
- .main-nav {
+ .nav {
   width: 25%;
 
   margin: 5px 0;
@@ -69,7 +69,7 @@
 
   background-color: $color-dark2;
 
-  .main-nav__title {
+  .nav__title {
    color: $color-white1;
    font: 500 24px 'Oswald', sans-serif;
   }
@@ -139,7 +139,7 @@
  
  /* Sections in the Main */
 
- .main-section { 
+ .section { 
   width: 70%;
 
   margin: 5px 0;
@@ -148,10 +148,6 @@
   padding: 10px;
 
   background-color: $color-base2;
- }
-
- /* Home Section */
- .main-section--home {
 
   display: grid;
 
@@ -159,7 +155,7 @@
   grid-gap: 0.5em;
 
 
-  .main-section--home__className {
+  .section__className {
    margin: 5px;
    border: 4px solid $color-dark1;
    border-radius: 0.25em;
@@ -175,7 +171,7 @@
    text-align: center;
   }
 
-  .home-table {
+  .table {
    border: 2px outset $color-base1;
    border-radius: 0.5em;
    padding: 15px;
@@ -185,7 +181,7 @@
    grid-column: span 2;
    grid-row: span 1;
 
-   .home-table--long__header {
+   .table--long__header {
     border-radius: 0.5em;
     padding: 8px;
 
@@ -195,7 +191,7 @@
     font: 500 24px 'Oswald', sans-serif;
    }
 
-   .home-table__header {
+   .table__header {
     border-radius: 0.5em;
     padding: 8px;
 
@@ -206,7 +202,7 @@
     text-align: center;
    }
    
-   .home-table__data {
+   .table__data {
     border-radius: 0.5em;
     padding: 5px;
     
@@ -220,7 +216,7 @@
 
   /* Class Info */
 
-  .home-classinfo {
+  .classinfo {
    border: 2px outset $color-base1;
    border-radius: 0.5em;
    padding: 15px;
@@ -230,7 +226,7 @@
    grid-column: span 2;
    grid-row: span 1;
 
-   .home-classinfo__title {
+   .classinfo__title {
     margin: 5px;
     border-radius: 0.5em;
     padding: 8px;
@@ -242,7 +238,7 @@
     text-align: center;
    }
    
-   .home-classinfo__subtitle {
+   .classinfo__subtitle {
     max-width: 75%;
 
     margin: 5px;
@@ -256,7 +252,7 @@
     text-align: center;
    }
 
-   .home-classinfo__paragraph {
+   .classinfo__paragraph {
     width: 90%;
 
     border-left: 1px solid $color-base1;

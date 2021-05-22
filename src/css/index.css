@@ -70,7 +70,7 @@
 }
 
 /* Main Content of the Doc */
-.doc-main {
+.main {
   width: 95%;
   margin: 5px auto;
   border: 2px outset #353535;
@@ -80,10 +80,9 @@
   flex-flow: row wrap;
   /* Index of the Main */
   /* Sections in the Main */
-  /* Home Section */
   /* Articles in the Main */
 }
-.doc-main .main-nav {
+.main .nav {
   width: 25%;
   margin: 5px 0;
   border: 2px solid #000066;
@@ -91,74 +90,72 @@
   padding: 10px;
   background-color: #000044;
 }
-.doc-main .main-nav .main-nav__title {
+.main .nav .nav__title {
   color: #fff;
   font: 500 24px "Oswald", sans-serif;
 }
-.doc-main .main-nav .nav-list {
+.main .nav .nav-list {
   padding: 5px;
   padding-left: 10px;
   border: 1px dashed #0000e6;
   background-color: #000066;
   list-style-position: inside;
 }
-.doc-main .main-nav .nav-list .nav-list__link {
+.main .nav .nav-list .nav-list__link {
   font: 400 16px "Montserrat", sans-serif;
 }
-.doc-main .main-nav .nav-list .nav-list__link::marker {
+.main .nav .nav-list .nav-list__link::marker {
   color: #0000e6;
 }
-.doc-main .main-nav .nav-list .nav-list__link a {
+.main .nav .nav-list .nav-list__link a {
   color: #cfcfcf;
   text-decoration: none;
 }
-.doc-main .main-nav .nav-list .nav-list__link:hover::marker {
+.main .nav .nav-list .nav-list__link:hover::marker {
   color: #99ccff;
 }
-.doc-main .main-nav .nav-list .nav-list__link:hover a {
+.main .nav .nav-list .nav-list__link:hover a {
   color: #fff;
   text-decoration: underline dashed #99ccff 2px;
 }
-.doc-main .main-nav .nav-sublist {
+.main .nav .nav-sublist {
   padding: 5px;
   padding-left: 15px;
   background-color: #000066;
   list-style-position: inside;
 }
-.doc-main .main-nav .nav-sublist .nav-sublist__link {
+.main .nav .nav-sublist .nav-sublist__link {
   padding-left: 5px;
   border-left: 2px solid #0000e6;
   font: 400 16px "Montserrat", sans-serif;
 }
-.doc-main .main-nav .nav-sublist .nav-sublist__link::marker {
+.main .nav .nav-sublist .nav-sublist__link::marker {
   color: #0000e6;
 }
-.doc-main .main-nav .nav-sublist .nav-sublist__link a {
+.main .nav .nav-sublist .nav-sublist__link a {
   color: #cfcfcf;
   text-decoration: none;
 }
-.doc-main .main-nav .nav-sublist .nav-sublist__link:hover::marker {
+.main .nav .nav-sublist .nav-sublist__link:hover::marker {
   color: #99ccff;
 }
-.doc-main .main-nav .nav-sublist .nav-sublist__link:hover a {
+.main .nav .nav-sublist .nav-sublist__link:hover a {
   color: #fff;
   text-decoration: underline dashed #99ccff 2px;
 }
-.doc-main .main-section {
+.main .section {
   width: 70%;
   margin: 5px 0;
   border: 5px solid #0000e6;
   border-radius: 0.25em;
   padding: 10px;
   background-color: #0000bb;
-}
-.doc-main .main-section--home {
   display: grid;
   grid-template: repeat(2, auto) 1fr/repeat(2, 1fr);
   grid-gap: 0.5em;
   /* Class Info */
 }
-.doc-main .main-section--home .main-section--home__className {
+.main .section .section__className {
   margin: 5px;
   border: 4px solid #000066;
   border-radius: 0.25em;
@@ -170,7 +167,7 @@
   font: 700 26px "Oswald", sans-serif;
   text-align: center;
 }
-.doc-main .main-section--home .home-table {
+.main .section .table {
   border: 2px outset #0000e6;
   border-radius: 0.5em;
   padding: 15px;
@@ -178,14 +175,14 @@
   grid-column: span 2;
   grid-row: span 1;
 }
-.doc-main .main-section--home .home-table .home-table--long__header {
+.main .section .table .table--long__header {
   border-radius: 0.5em;
   padding: 8px;
   background-color: #0000e6;
   color: #fff;
   font: 500 24px "Oswald", sans-serif;
 }
-.doc-main .main-section--home .home-table .home-table__header {
+.main .section .table .table__header {
   border-radius: 0.5em;
   padding: 8px;
   background-color: #3399ff;
@@ -193,7 +190,7 @@
   font: 500 16px "Oswald", sans-serif;
   text-align: center;
 }
-.doc-main .main-section--home .home-table .home-table__data {
+.main .section .table .table__data {
   border-radius: 0.5em;
   padding: 5px;
   background-color: #f0f0f0;
@@ -201,7 +198,7 @@
   font: 400 15px "Montserrat", sans-serif;
   text-align: center;
 }
-.doc-main .main-section--home .home-classinfo {
+.main .section .classinfo {
   border: 2px outset #0000e6;
   border-radius: 0.5em;
   padding: 15px;
@@ -209,7 +206,7 @@
   grid-column: span 2;
   grid-row: span 1;
 }
-.doc-main .main-section--home .home-classinfo .home-classinfo__title {
+.main .section .classinfo .classinfo__title {
   margin: 5px;
   border-radius: 0.5em;
   padding: 8px;
@@ -218,7 +215,7 @@
   font: 500 20px "Oswald", sans-serif;
   text-align: center;
 }
-.doc-main .main-section--home .home-classinfo .home-classinfo__subtitle {
+.main .section .classinfo .classinfo__subtitle {
   max-width: 75%;
   margin: 5px;
   border-radius: 0.5em;
@@ -228,35 +225,35 @@
   font: 500 18px "Oswald", sans-serif;
   text-align: center;
 }
-.doc-main .main-section--home .home-classinfo .home-classinfo__paragraph {
+.main .section .classinfo .classinfo__paragraph {
   width: 90%;
   border-left: 1px solid #0000e6;
   padding: 10px;
   color: #000;
   font: 500 16px "Montserrat", sans-serif;
 }
-.doc-main .main-section--home .home-classinfo .classinfo-list {
+.main .section .classinfo .classinfo-list {
   border-left: 1px solid #0000e6;
   padding: 10px;
   list-style-position: inside;
 }
-.doc-main .main-section--home .home-classinfo .classinfo-list .classinfo-list__object {
+.main .section .classinfo .classinfo-list .classinfo-list__object {
   margin-left: 10px;
   color: #000;
   font: 500 16px "Montserrat", sans-serif;
 }
-.doc-main .main-section--home .home-classinfo .classinfo-list .classinfo-list__object::marker {
+.main .section .classinfo .classinfo-list .classinfo-list__object::marker {
   color: #0000e6;
   font-size: 18px;
 }
-.doc-main .main-article {
+.main .main-article {
   width: 90%;
   margin: 5px 0;
   /* Class Title */
   /* Date of the Class */
   /* Content-Elements in the Article */
 }
-.doc-main .main-article .main-article__title {
+.main .main-article .main-article__title {
   width: 80%;
   height: 60px;
   border-top-right-radius: 0.25em;
@@ -269,7 +266,7 @@
   color: #fff;
   font: 700 32px "Oswald", sans-serif;
 }
-.doc-main .main-article .main-article__date {
+.main .main-article .main-article__date {
   width: 50%;
   height: 30px;
   border-bottom-left-radius: 0.25em;
@@ -281,7 +278,7 @@
   color: #fff;
   font: 300 24px "Oswald", sans-serif;
 }
-.doc-main .main-article .article-content {
+.main .main-article .article-content {
   /* Class Notes */
   /* Pre Texts */
   /* Titles in the Class Notes*/
@@ -314,7 +311,7 @@
   /* Youtube Videos iFrames */
   /* Activities in the Articles */
 }
-.doc-main .main-article .article-content .article-content__paragraph {
+.main .main-article .article-content .article-content__paragraph {
   width: 95%;
   margin: 10px auto;
   padding: 0 5px;
@@ -323,16 +320,16 @@
   clear: both;
   /* Electronic Configuration Quimica */
 }
-.doc-main .main-article .article-content .article-content__paragraph strong {
+.main .main-article .article-content .article-content__paragraph strong {
   font: 700 18px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .article-content__paragraph em {
+.main .main-article .article-content .article-content__paragraph em {
   font: italic 300 20px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .article-content__paragraph i {
+.main .main-article .article-content .article-content__paragraph i {
   font: italic 500 20px "Newsreader", serif;
 }
-.doc-main .main-article .article-content .article-content__paragraph abbr {
+.main .main-article .article-content .article-content__paragraph abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -340,12 +337,12 @@
   font: italic 200 18px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.doc-main .main-article .article-content .article-content__paragraph mark {
+.main .main-article .article-content .article-content__paragraph mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.doc-main .main-article .article-content .article-content__paragraph span.conf-ele {
+.main .main-article .article-content .article-content__paragraph span.conf-ele {
   padding: 5px;
   border: 2px solid #000044;
   border-radius: 0.5em;
@@ -353,36 +350,36 @@
   font: 800 20px "Montserrat", sans-serif;
   display: inline-block;
 }
-.doc-main .main-article .article-content pre {
+.main .main-article .article-content pre {
   max-width: 100%;
   margin: 5px;
   font: 400 15px "Roboto Mono", monospace;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.doc-main .main-article .article-content .article-content--unclear__paragraph {
+.main .main-article .article-content .article-content--unclear__paragraph {
   clear: none;
 }
-.doc-main .main-article .article-content .article-content__title {
+.main .main-article .article-content .article-content__title {
   margin: 10px;
   padding: 5px;
   color: #000044;
   font: 500 28px "Oswald", sans-serif;
   clear: both;
 }
-.doc-main .main-article .article-content .article-content--unclear__title {
+.main .main-article .article-content .article-content--unclear__title {
   clear: none;
 }
-.doc-main .main-article .article-content .article-content__semititle {
+.main .main-article .article-content .article-content__semititle {
   margin: 10px;
   color: #000066;
   font: 300 22px "Oswald", sans-serif;
   clear: both;
 }
-.doc-main .main-article .article-content .article-content--unclear__semititle {
+.main .main-article .article-content .article-content--unclear__semititle {
   clear: none;
 }
-.doc-main .main-article .article-content .article-content__link {
+.main .main-article .article-content .article-content__link {
   max-width: 50%;
   margin: 10px 5px;
   border-radius: 0.25em;
@@ -394,28 +391,28 @@
   transition: all 500ms ease;
   display: block;
 }
-.doc-main .main-article .article-content .article-content__link:hover {
+.main .main-article .article-content .article-content__link:hover {
   max-width: 70%;
 }
-.doc-main .main-article .article-content .content-images {
+.main .main-article .article-content .content-images {
   margin: 5px auto;
   border-radius: 0.25em;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.doc-main .main-article .article-content .content-images picture {
+.main .main-article .article-content .content-images picture {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.doc-main .main-article .article-content .content-images .content-images__img {
+.main .main-article .article-content .content-images .content-images__img {
   width: 100%;
   height: auto;
   border: 2px solid #0000e6;
   border-radius: 0.2em;
 }
-.doc-main .main-article .article-content .content-images .content-images__quote {
+.main .main-article .article-content .content-images .content-images__quote {
   width: 80%;
   padding: 5px 0;
   border-right: 2px solid #0000e6;
@@ -426,45 +423,45 @@
   text-align: center;
   font: 400 16px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-images .content-images__quote cite {
+.main .main-article .article-content .content-images .content-images__quote cite {
   font: italic 400 16px "Newsreader", serif;
 }
-.doc-main .main-article .article-content .content-images--s {
+.main .main-article .article-content .content-images--s {
   width: 20%;
 }
-.doc-main .main-article .article-content .content-images--xs {
+.main .main-article .article-content .content-images--xs {
   width: 30%;
 }
-.doc-main .main-article .article-content .content-images--xxs {
+.main .main-article .article-content .content-images--xxs {
   width: 40%;
 }
-.doc-main .main-article .article-content .content-images--m {
+.main .main-article .article-content .content-images--m {
   width: 50%;
 }
-.doc-main .main-article .article-content .content-images--xm {
+.main .main-article .article-content .content-images--xm {
   width: 60%;
 }
-.doc-main .main-article .article-content .content-images--xxm {
+.main .main-article .article-content .content-images--xxm {
   width: 70%;
 }
-.doc-main .main-article .article-content .content-images--l {
+.main .main-article .article-content .content-images--l {
   width: 80%;
 }
-.doc-main .main-article .article-content .content-images--xl {
+.main .main-article .article-content .content-images--xl {
   width: 90%;
 }
-.doc-main .main-article .article-content .content-images--xxl {
+.main .main-article .article-content .content-images--xxl {
   width: 100%;
 }
-.doc-main .main-article .article-content .content-images--right {
+.main .main-article .article-content .content-images--right {
   float: right;
   margin: 10px;
 }
-.doc-main .main-article .article-content .content-images--left {
+.main .main-article .article-content .content-images--left {
   float: left;
   margin: 10px;
 }
-.doc-main .main-article .article-content .content-aside {
+.main .main-article .article-content .content-aside {
   width: 30%;
   border: 5px solid #0000bb;
   border-radius: 0.25em;
@@ -480,7 +477,7 @@
   /* TEST image */
   /* Tables in the Aside */
 }
-.doc-main .main-article .article-content .content-aside .content-aside__title {
+.main .main-article .article-content .content-aside .content-aside__title {
   width: 85%;
   margin: 5px;
   border: 2px solid #0000e6;
@@ -490,7 +487,7 @@
   color: #fff;
   font: 300 18px "Oswald", sans-serif;
 }
-.doc-main .main-article .article-content .content-aside .content-aside__paragraph {
+.main .main-article .article-content .content-aside .content-aside__paragraph {
   width: 95%;
   margin: 5px;
   border: 2px solid #0000e6;
@@ -499,16 +496,16 @@
   background-color: #fff;
   font: 400 16px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-aside .content-aside__paragraph strong {
+.main .main-article .article-content .content-aside .content-aside__paragraph strong {
   font: 700 16px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-aside .content-aside__paragraph em {
+.main .main-article .article-content .content-aside .content-aside__paragraph em {
   font: italic 400 16px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-aside .content-aside__paragraph i {
+.main .main-article .article-content .content-aside .content-aside__paragraph i {
   font: italic 500 16px "Newsreader", serif;
 }
-.doc-main .main-article .article-content .content-aside .content-aside__paragraph abbr {
+.main .main-article .article-content .content-aside .content-aside__paragraph abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -516,12 +513,12 @@
   font: italic 200 16px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.doc-main .main-article .article-content .content-aside .content-aside__paragraph mark {
+.main .main-article .article-content .content-aside .content-aside__paragraph mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.doc-main .main-article .article-content .content-aside .aside-image {
+.main .main-article .article-content .content-aside .aside-image {
   margin: 5px auto;
   padding: 5px;
   border: 2px solid #0000e6;
@@ -531,7 +528,7 @@
   flex-flow: row wrap;
   justify-content: center;
 }
-.doc-main .main-article .article-content .content-aside .aside-image .aside-image__quote {
+.main .main-article .article-content .content-aside .aside-image .aside-image__quote {
   width: 90%;
   border: 2px solid #0000e6;
   border-radius: 0.5em;
@@ -539,17 +536,17 @@
   text-align: center;
   font: 300 15px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-aside .aside-image--test {
+.main .main-article .article-content .content-aside .aside-image--test {
   width: 300px;
 }
-.doc-main .main-article .article-content .content-aside .aside-image--test .aside-image__img {
+.main .main-article .article-content .content-aside .aside-image--test .aside-image__img {
   width: 300px;
   height: 150px;
 }
-.doc-main .main-article .article-content .content-aside .aside-table {
+.main .main-article .article-content .content-aside .aside-table {
   background-color: #0000bb;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .table-header .table-header__title {
+.main .main-article .article-content .content-aside .aside-table .table-header .table-header__title {
   border-radius: 0.5em;
   padding: 20px;
   background-color: #0000e6;
@@ -557,7 +554,7 @@
   font: 500 24px "Oswald", sans-serif;
   text-align: center;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content__category {
+.main .main-article .article-content .content-aside .aside-table .table-content .table-content__category {
   border-radius: 0.25em;
   padding: 10px;
   background-color: #3399ff;
@@ -565,33 +562,33 @@
   font: 500 20px "Oswald", sans-serif;
   text-align: center;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content__data {
+.main .main-article .article-content .content-aside .aside-table .table-content .table-content__data {
   border-radius: 0.25em;
   padding: 10px;
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
   text-align: center;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content--row {
+.main .main-article .article-content .content-aside .aside-table .table-content .table-content--row {
   background-color: #f0f0f0;
 }
-.doc-main .main-article .article-content .content-aside .aside-table .table-content .table-content--row {
+.main .main-article .article-content .content-aside .aside-table .table-content .table-content--row {
   background-color: #cfcfcf;
 }
-.doc-main .main-article .article-content .content-aside--right {
+.main .main-article .article-content .content-aside--right {
   float: right;
   margin: 10px;
 }
-.doc-main .main-article .article-content .content-aside--left {
+.main .main-article .article-content .content-aside--left {
   float: left;
   margin: 10px;
 }
-.doc-main .main-article .article-content .content-table {
+.main .main-article .article-content .content-table {
   max-width: 95%;
   margin: 10px auto;
   text-align: center;
 }
-.doc-main .main-article .article-content .content-table .table-header .table-header__title {
+.main .main-article .article-content .content-table .table-header .table-header__title {
   border-radius: 0.2em;
   padding: 20px;
   background-color: #0000bb;
@@ -599,27 +596,27 @@
   font: 700 30px "Oswald", sans-serif;
   text-transform: capitalize;
 }
-.doc-main .main-article .article-content .content-table .table-header .table-header__category {
+.main .main-article .article-content .content-table .table-header .table-header__category {
   border-radius: 0.5em;
   padding: 10px;
   background-color: #3399ff;
   color: #000;
   font: 500 18px "Oswald", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .table-header .table-header__data {
+.main .main-article .article-content .content-table .table-header .table-header__data {
   border-radius: 0.25em;
   padding: 5px;
   background-color: #f0f0f0;
   color: #000;
   font: 400 14px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .table-header .table-header__data:nth-child(odd) {
+.main .main-article .article-content .content-table .table-header .table-header__data:nth-child(odd) {
   background-color: #f0f0f0;
 }
-.doc-main .main-article .article-content .content-table .table-header .table-header__data:nth-child(even) {
+.main .main-article .article-content .content-table .table-header .table-header__data:nth-child(even) {
   background-color: #cfcfcf;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content__category {
+.main .main-article .article-content .content-table .table-content .table-content__category {
   border: 2px outset #99ccff;
   border-radius: 0.25em;
   padding: 10px;
@@ -627,22 +624,22 @@
   color: #000;
   font: 500 18px "Oswald", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content__data {
+.main .main-article .article-content .content-table .table-content .table-content__data {
   border-radius: 0.5em;
   padding: 5px;
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content__data strong {
+.main .main-article .article-content .content-table .table-content .table-content__data strong {
   font: 700 14px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content__data em {
+.main .main-article .article-content .content-table .table-content .table-content__data em {
   font: italic 400 14px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content__data i {
+.main .main-article .article-content .content-table .table-content .table-content__data i {
   font: italic 500 14px "Newsreader", serif;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content__data abbr {
+.main .main-article .article-content .content-table .table-content .table-content__data abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -650,73 +647,73 @@
   font: italic 200 14px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.doc-main .main-article .article-content .content-table .table-content .table-content__data mark {
+.main .main-article .article-content .content-table .table-content .table-content__data mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.doc-main .main-article .article-content .content-table .table-content tr:nth-child(odd) {
+.main .main-article .article-content .content-table .table-content tr:nth-child(odd) {
   background-color: #f0f0f0;
 }
-.doc-main .main-article .article-content .content-table .table-content tr:nth-child(even) {
+.main .main-article .article-content .content-table .table-content tr:nth-child(even) {
   background-color: #cfcfcf;
 }
-.doc-main .main-article .article-content .content-table--right {
+.main .main-article .article-content .content-table--right {
   float: right;
   margin: 10px;
 }
-.doc-main .main-article .article-content .content-table--left {
+.main .main-article .article-content .content-table--left {
   float: left;
   margin: 10px;
 }
-.doc-main .main-article .article-content ul.content-list,
-.doc-main .main-article .article-content ol.content-list {
+.main .main-article .article-content ul.content-list,
+.main .main-article .article-content ol.content-list {
   margin: 10px;
   border-left: 1px solid #0000e6;
   padding-left: 25px;
 }
-.doc-main .main-article .article-content ul.content-list .content-list__title,
-.doc-main .main-article .article-content ol.content-list .content-list__title {
+.main .main-article .article-content ul.content-list .content-list__title,
+.main .main-article .article-content ol.content-list .content-list__title {
   margin: 2px;
   padding-inline-start: 5px;
   color: #000044;
   font: 500 28px "Oswald", sans-serif;
   text-decoration: underline solid #000044 1px;
 }
-.doc-main .main-article .article-content ul.content-list .content-list--semi__title,
-.doc-main .main-article .article-content ol.content-list .content-list--semi__title {
+.main .main-article .article-content ul.content-list .content-list--semi__title,
+.main .main-article .article-content ol.content-list .content-list--semi__title {
   margin: 2px;
   padding-inline-start: 5px;
   color: #000066;
   font: 300 22px "Oswald", sans-serif;
   text-decoration: underline solid #000066 1px;
 }
-.doc-main .main-article .article-content ul.content-list .list-object,
-.doc-main .main-article .article-content ol.content-list .list-object {
+.main .main-article .article-content ul.content-list .list-object,
+.main .main-article .article-content ol.content-list .list-object {
   margin: 5px;
   padding-left: 10px;
   color: #000;
   font: 500 18px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content ul.content-list .list-object::marker,
-.doc-main .main-article .article-content ol.content-list .list-object::marker {
+.main .main-article .article-content ul.content-list .list-object::marker,
+.main .main-article .article-content ol.content-list .list-object::marker {
   color: #3399ff;
   font: 700 20px "Oswald", sans-serif;
 }
-.doc-main .main-article .article-content ul.content-list .list-object strong,
-.doc-main .main-article .article-content ol.content-list .list-object strong {
+.main .main-article .article-content ul.content-list .list-object strong,
+.main .main-article .article-content ol.content-list .list-object strong {
   font: 700 18px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content ul.content-list .list-object em,
-.doc-main .main-article .article-content ol.content-list .list-object em {
+.main .main-article .article-content ul.content-list .list-object em,
+.main .main-article .article-content ol.content-list .list-object em {
   font: italic 400 18px "Montserrat", sans-serif;
 }
-.doc-main .main-article .article-content ul.content-list .list-object i,
-.doc-main .main-article .article-content ol.content-list .list-object i {
+.main .main-article .article-content ul.content-list .list-object i,
+.main .main-article .article-content ol.content-list .list-object i {
   font: italic 500 18px "Newsreader", serif;
 }
-.doc-main .main-article .article-content ul.content-list .list-object abbr,
-.doc-main .main-article .article-content ol.content-list .list-object abbr {
+.main .main-article .article-content ul.content-list .list-object abbr,
+.main .main-article .article-content ol.content-list .list-object abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -724,64 +721,64 @@
   font: italic 200 18px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.doc-main .main-article .article-content ul.content-list .list-object mark,
-.doc-main .main-article .article-content ol.content-list .list-object mark {
+.main .main-article .article-content ul.content-list .list-object mark,
+.main .main-article .article-content ol.content-list .list-object mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.doc-main .main-article .article-content .content-list--arrows .list-object::marker {
+.main .main-article .article-content .content-list--arrows .list-object::marker {
   content: ">>";
 }
-.doc-main .main-article .article-content .content-list--longarrow .list-object::marker {
+.main .main-article .article-content .content-list--longarrow .list-object::marker {
   content: "->";
 }
-.doc-main .main-article .article-content .content-list--lines .list-object::marker {
+.main .main-article .article-content .content-list--lines .list-object::marker {
   content: "--";
 }
-.doc-main .main-article .article-content .content-list--diamond .list-object::marker {
+.main .main-article .article-content .content-list--diamond .list-object::marker {
   content: "<>";
 }
-.doc-main .main-article .article-content ul.content-list--flat,
-.doc-main .main-article .article-content ol.content-list--flat {
+.main .main-article .article-content ul.content-list--flat,
+.main .main-article .article-content ol.content-list--flat {
   border-right: 1px solid #0000e6;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
-.doc-main .main-article .article-content ul.content-list--flat .content-list__title,
-.doc-main .main-article .article-content ol.content-list--flat .content-list__title {
+.main .main-article .article-content ul.content-list--flat .content-list__title,
+.main .main-article .article-content ol.content-list--flat .content-list__title {
   width: 100%;
 }
-.doc-main .main-article .article-content ul.content-list--flat .content-list--semi__title,
-.doc-main .main-article .article-content ol.content-list--flat .content-list--semi__title {
+.main .main-article .article-content ul.content-list--flat .content-list--semi__title,
+.main .main-article .article-content ol.content-list--flat .content-list--semi__title {
   width: 100%;
 }
-.doc-main .main-article .article-content ul.content-list--flat .list-object,
-.doc-main .main-article .article-content ol.content-list--flat .list-object {
+.main .main-article .article-content ul.content-list--flat .list-object,
+.main .main-article .article-content ol.content-list--flat .list-object {
   margin: 5px 20px;
 }
-.doc-main .main-article .article-content .content-list--right {
+.main .main-article .article-content .content-list--right {
   float: right;
 }
-.doc-main .main-article .article-content .content-list--left {
+.main .main-article .article-content .content-list--left {
   float: left;
 }
-.doc-main .main-article .article-content .content-geogebra {
+.main .main-article .article-content .content-geogebra {
   width: 800px;
   height: 400px;
   margin: 5px auto;
   border: 2px outset #3399ff;
   border-radius: 0.5em;
 }
-.doc-main .main-article .article-content .content-ytvideo {
+.main .main-article .article-content .content-ytvideo {
   width: 80%;
   height: 500px;
   margin: 5px auto;
   border: 2px outset #3399ff;
   border-radius: 0.25em;
 }
-.doc-main .main-article .article-content .content-activity {
+.main .main-article .article-content .content-activity {
   /* Reset the Number of the Tasks */
   counter-reset: section;
   list-style-type: none;
@@ -791,7 +788,7 @@
   /* Labels in JavaScript Activities */
   /* Inputs in JavaScript Activities */
 }
-.doc-main .main-article .article-content .content-activity .content-activity__title {
+.main .main-article .article-content .content-activity .content-activity__title {
   width: 100%;
   height: 60px;
   margin: 5px auto;
@@ -805,7 +802,7 @@
   align-items: center;
   justify-content: center;
 }
-.doc-main .main-article .article-content .content-activity .content-activity__task {
+.main .main-article .article-content .content-activity .content-activity__task {
   margin: 5px;
   border-right: 3px solid #0000e6;
   border-left: 3px solid #0000e6;
@@ -814,11 +811,11 @@
   font: 300 20px "Oswald", sans-serif;
   clear: both;
 }
-.doc-main .main-article .article-content .content-activity .content-activity__task::before {
+.main .main-article .article-content .content-activity .content-activity__task::before {
   counter-increment: section;
   content: "Punto N°" counter(section) ". ";
 }
-.doc-main .main-article .article-content .content-activity .activity-ref {
+.main .main-article .article-content .content-activity .activity-ref {
   width: 90%;
   padding: 10px 20px;
   border-left: 5px solid #0000e6;
@@ -829,13 +826,13 @@
   margin: 5px auto;
   background-color: #cce5ff;
 }
-.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__title {
+.main .main-article .article-content .content-activity .activity-ref .activity-ref__title {
   margin: 5px;
   color: #000066;
   font: 800 20px "Oswald", sans-serif;
   text-decoration: underline solid #0000e6 1px;
 }
-.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link {
+.main .main-article .article-content .content-activity .activity-ref .activity-ref__link {
   padding: 2px 5px;
   border-left: 2px solid #0000e6;
   color: #000;
@@ -843,25 +840,25 @@
   text-decoration: none;
   display: block;
 }
-.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link::before {
+.main .main-article .article-content .content-activity .activity-ref .activity-ref__link::before {
   content: "O";
   color: #0000bb;
   font-weight: bolder;
 }
-.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link cite {
+.main .main-article .article-content .content-activity .activity-ref .activity-ref__link cite {
   color: #000066;
 }
-.doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link:hover cite {
+.main .main-article .article-content .content-activity .activity-ref .activity-ref__link:hover cite {
   text-decoration: underline dashed #0000bb 1px;
 }
-.doc-main .main-article .article-content .content-activity .content-activity__label {
+.main .main-article .article-content .content-activity .content-activity__label {
   margin: 5px;
   padding: 10px;
   font: 500 16px "Montserrat", sans-serif;
   color: #000066;
   display: inline-block;
 }
-.doc-main .main-article .article-content .content-activity .content-activity__input {
+.main .main-article .article-content .content-activity .content-activity__input {
   margin: 5px;
   border: 1px solid #000;
   border-radius: 0.25em;
@@ -870,16 +867,16 @@
   font: 500 16px "Montserrat", sans-serif;
   display: inline-block;
 }
-.doc-main .main-article .article-content .content-activity .content-activity__input:hover, .doc-main .main-article .article-content .content-activity .content-activity__input:focus {
+.main .main-article .article-content .content-activity .content-activity__input:hover, .main .main-article .article-content .content-activity .content-activity__input:focus {
   border: 1px solid #000066;
   background-color: #cce5ff;
 }
-.doc-main .main-article .article-content .content-activity .content-activity--button__input {
+.main .main-article .article-content .content-activity .content-activity--button__input {
   margin: 10px;
   padding: 10px 40px;
   font-size: 20px;
   background-color: #cce5ff;
 }
-.doc-main .main-article .article-content .content-activity .content-activity--button__input:hover, .doc-main .main-article .article-content .content-activity .content-activity--button__input:focus {
+.main .main-article .article-content .content-activity .content-activity--button__input:hover, .main .main-article .article-content .content-activity .content-activity--button__input:focus {
   background-color: #99ccff;
 }
