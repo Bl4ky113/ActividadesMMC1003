@@ -1929,6 +1929,55 @@
         Para resolverlo no debemos recurrir a grandes metodos, solo debemos buscar el valor del lado que comparten ambos triángulos y despues encontrar el lado especificado 
         con el valor de esté.
       </p>
+      <p class="article-content__paragraph">
+        Pero que pasa cuando uno de estos lados es incompleto, digamos entre un gran triángulo rectangulo hay otro triángulo rectangulo más pequeño en su ancho, pero comparten mismo alto.
+        Todo estaría bién, pero el ejercicio solo se nos da la medida de un cateto a medias, incompleta, por ejemplo se nos puede dar la medida del final del triángulo rectangulo pequeño 
+        hasta el final del triángulo rectangulo grande. Dejando un valor inconcluso un valor + una variable. <strong>Un valor + "X"</strong>.
+      </p>
+      <p class="article-content__semititle">Dos Triángulos con Medidas a "Medias"</p>
+      <p class="article-content__paragraph">
+        Para referirnos a una medida a medias, es por ejemplo la porción de toda una medida, digamos un ejemplo: Yo tengo un carro más largo que el del vecino, 
+        entre el tope del carro mío y el de mi vecino hay 65 céntimetros. En este ejemplo se nos plantea que el carro es más grande y que tanto, sí pero cuanto miden 
+        cada uno? Ese es el principal problema que se puede dar en diferentes ejercicios, simplemente reemplazamos carros por triángulos y largo por catetos o hipotenusas y empezamos a solucionar.
+      </p>
+      <p class="article-content__paragraph">
+        Vamos a inciar tomando la distancia entre cada cateto o hipotenusa del triángulo más grande y le agregamos un valor o variable <em>"X"</em>, esta misma variable la vamos a 
+        poner como distancia o medida del cateto o hipotenusa del triángulo más pequeño. Listo ahora tenemos los valores """definidos""", ahora tendremos que encontrar alguno de los otros valores del 
+        tríangulo.
+      </p>
+      <pre>
+        Triangulo Grande: ca = 80 + x
+        Triangulo Pequeño: ca = x</pre>
+
+      <p class="article-content__paragraph">
+        Para encontrar otro valor del triángulo, preferiblemente el valor que sea necesario en el problema, vamos a solucionar primero la ecuación en el triángulo más pequeño. 
+        Pero para solucionarla de una forma correcta, simplemente vamos a mover <em>"X"</em> y la función trigonométrica a un lado, siendo esta la respuesta o el valor del lado que estamos buscando.
+      </p>
+      <pre>
+        tan(45) = co / x
+        x * tan(45) = co / x * x
+        x * tan(45) = co</pre>
+
+      <p class="article-content__paragraph">
+        Listo, ahora si le mostramos este valor, que generalmente se va a ver así: "x * tan(°)", <mark>Wilson nos va a regañar y mandar a la fila espacial</mark>. Para evitar esto, 
+        vamos a usar este valor para reemplazar a el valor a buscar, pero en el triángulo grande, eliminando principalmente las <em>"X"</em> y despues resolviendo todo. 
+        Despejando la <em>"X"</em>:
+      </p>
+      <pre>
+        tan(30) = Co / 80 + x 
+        tan(30) = x * tan(45) / 80 + x //Reemplazamos "Co" por el valor obtenido  
+        (80 + x) * tan(30) = x * tan(45)  // Pasamos la X a el otro lado (forma más sencilla)
+        80*tan(30) + x*tan(30) = x * tan(45) // Resolvemos el lado para volver a pasarlo
+        80*tan(30) = x * tan(45) - x * tan(30)  // Volvemos a pasar a X
+        80*tan(30) = x[tan(45) - tan(30)]  // Ahora, solo restamos las tangentes y lo multipliacamos por X
+        80*tan(30) / tan(45) - tan(30) = x  // Volvemos a pasar los valores, pero ahora sin la X, dejandola sola
+        46.18 / 1 - 0.57 = x  // Solucionamos las tangentes
+        46.18 / 0.43 = x  // Solucionamos las operaciones
+        109.2820323 = x  // Felicidades, has completado el infierno
+      </pre>
+      <p class="article-content__paragraph">
+        Listo!!! lo hemos solucionado, ahora el siguiente ejercicio...
+      </p>
 
       <p class="article-content__title">Truco para Memorizar <i>Seno</i>, <i>Coseno</i> y <i>Tangente</i> de grados Imporantes</p>
       <p class="article-content__paragraph">
@@ -2776,6 +2825,45 @@
         <p class="content-activity__task">
           En un triángulo rectángulo uno de los catetos mide 9 cm y el ángulo adyacente a este cateto mide 32°. ¿Cuáles son las medidas de los demás elementos del triángulo?  
         </p>
+        <pre>
+          <i>cos 32</i> = 9 / h 
+          0.8480 = 9 / h 
+          9 / 0.8480 = h 
+          10.6126 = h 
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: 5.6238,
+              cateto-adyacente: 9,
+              hipotenusa: 10.6126
+            },
+            angulos: {
+              angulo_1: 32,
+              angulo_2: 58,
+              angulo_90: 90
+            } 
+          }
+        </pre>
+        <ul class="content-list content-list--arrows content-list--flat">
+          <li class="list-object">
+            <i>sen &empty;</i> = 5.6238 / 10.6126 = 0.5299
+          </li>
+          <li class="list-object">
+            <i>cos &empty;</i> = 9 / 10.6126 = 0.8480
+          </li>
+          <li class="list-object">
+            <i>tan &empty;</i> = 5.6238 / 9 = 0.6248
+          </li>
+          <li class="list-object">
+            <i>csc &empty;</i> = 10.6126 / 5.6238 = 1.8870
+          </li>
+          <li class="list-object">
+            <i>sec &empty;</i> = 10.6126 / 9 = 1.1791
+          </li>
+          <li class="list-object">
+            <i>cot &empty;</i> = 9 / 5.6238 = 1.6003
+          </li>
+        </ul>
 
         <p class="content-activity__task">
           Calcula la altura de un edificio si tienes la siguiente información
@@ -2785,6 +2873,54 @@
             <img src="./src/img/matematicas/altura-edificio.png" alt="Altura del Edificio" class="content-images__img">
           </picture>
         </div>
+        <pre>
+          Triángulo pequeño: 
+
+          <i>tan 70</i> = co / x 
+          x * <i>tan 70</i> = co 
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: x * <i>tan 70</i>,
+              cateto-adyacente: x,
+              hipotenusa: 
+            },
+            angulos: {
+              angulo_1: 70,
+              angulo_2: 20,
+              angulo_90: 90
+            } 
+          }
+
+          Triángulo grande:
+
+          <i>tan 50</i> = x<i>tan 70</i> / 10 + x
+          (10 + x)<i>tan 50</i> = x<i>tan 70</i>
+          x<i>tan 50</i> + 10<i>tan 50</i> = x<i>tan 70</i>
+          <i>10tan50</i> = x<i>tan 70</i> - x<i>tan 50</i>
+          <i>10tan50</i> = x(<i>tan 70</i> - <i>tan 50</i>)
+          <i>10tan50</i> / <i>tan 70</i> - <i>tan 50</i> = x
+          10 * 1.19 / 2.74 - 1.19 = x
+          11.91 / 2.74 - 1.19 = x
+          11.91 / 1.55 = x
+          7.6838 = x
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: 7.6838,
+              cateto-adyacente: 10 + x,
+              hipotenusa: 
+            },
+            angulos: {
+              angulo_1: 50,
+              angulo_2: 40,
+              angulo_90: 90
+            } 
+          }
+        </pre>
+        <p class="article-content__paragraph">
+          La altura del Edificio es de 7.6838 aprox metros.
+        </p>
 
         <p class="content-activity__task">
           El piloto de un avión observa un punto del terreno con un ángulo de depresión de 30°. Dieciocho segundos más tarde, el ángulo 
@@ -2795,6 +2931,54 @@
             <img src="./src/img/matematicas/altura-avion.png" alt="Altura del Avión" class="content-images__img">
           </picture>
         </div>
+        <pre>
+          Triángulo Pequeño:
+
+          tan 55 = co / x
+          xtan 55 = co
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: xtan 55,
+              cateto-adyacente: x,
+              hipotenusa: 
+            },
+            angulos: {
+              angulo_1: 55,
+              angulo_2: 35,
+              angulo_90: 90
+            } 
+          }
+
+          Triángulo Grande:
+
+          tan 30 = xtan 55 / 2 + x
+          2 + x * tan 30 = xtan 55
+          2tan30 + xtan 30 = xtan 55
+          2tan30 = xtan 55 + xtan 30
+          2tan30 = x(tan 55 + tan 30)
+          2tan30 / tan 55 + tan 30 = x
+          1.1547 / 1.4281 + 0.5773 = x
+          1.1547 / 0.8507 = x
+          1.3571 = x
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: ,
+              cateto-adyacente: 2 + x,
+              hipotenusa: 
+            },
+            angulos: {
+              angulo_1: 30,
+              angulo_2: 60,
+              angulo_90: 90
+            } 
+          }
+        </pre>
+        <p class="article-content__paragraph">
+          La altura del vuelo es de 1.3571 millas (?). La verdad no creo que lo sea, ya que no use las variables de velocidad y que tanto se demoro en llegar a el segundo 
+          triángulo, pero de los errores se aprende.
+        </p>
 
         <p class="content-activity__task">
           La longitud del hilo que sujeta una cometa es de 15 m. Si el ángulo de elevación de la cometa es de 30°, ¿qué altura alcanza?
@@ -2804,6 +2988,23 @@
             <img src="./src/img/matematicas/altura-cometa.png" alt="Altura del Cometa" class="content-images__img">
           </picture>
         </div>
+        <pre>
+          sen 30 = co / 15
+          7.5 = co
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: 7.5,
+              cateto-adyacente: ,
+              hipotenusa: 15
+            },
+            angulos: {
+              angulo_1: 30,
+              angulo_2: 60,
+              angulo_90: 90
+            } 
+          }
+        </pre>
 
         <p class="content-activity__task">
           Encontrar la altura a la que se encuentra el avión de la figura.
@@ -2813,10 +3014,77 @@
             <img src="./src/img/matematicas/altura-avion_2.png" alt="Altura del Avión Part II" class="content-images__img">
           </picture>
         </div>
+        <pre>
+          tan 36 = co / 200
+          200 * tan 36 = co
+          145.3085 = co
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: 145.3085,
+              cateto-adyacente: 200,
+              hipotenusa: 
+            },
+            angulos: {
+              angulo_1: 36,
+              angulo_2: 54,
+              angulo_90: 90
+            } 
+          }</pre>
+
+        <p class="article-content__paragraph">
+          El Avión se encuentra a 145.3085 metros de altura.
+        </p>
 
         <p class="content-activity__task">
           Desde un acantilado, situado a 32 metros sobre el nivel del mar, se divisan dos embarcaciones. Halla la distancia entre
           estas, si los ángulos de depresión respectivos son de 36°’ y 25°
+        </p>
+        <pre>
+          Triángulo Pequeño:
+
+          tan 36 = 32 / ca
+          32 / tan 36 = ca
+          44.044 = ca
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: 32,
+              cateto-adyacente: 44.044,
+              hipotenusa: 
+            },
+            angulos: {
+              angulo_1: 36,
+              angulo_2: 54,
+              angulo_90: 90
+            } 
+          }
+
+          Triángulo Grande:
+
+          tan 22 = 32 / ca
+          32 / tan 22 = ca
+          79.202 = ca
+
+          partesTriangulo = {
+            lados: {
+              cateto-opuesto: 32,
+              cateto-adyacente: ,
+              hipotenusa: 
+            },
+            angulos: {
+              angulo_1: 25,
+              angulo_2: 65,
+              angulo_90: 90
+            } 
+          }
+
+              79.202
+              44.044
+              35.158
+        </pre>
+        <p class="article-content__paragraph">
+          La distancia entre las embarcaciones es de 32.158 metros, entre cada una.
         </p>
 
         <p class="content-activity__task">
@@ -2865,7 +3133,7 @@
             <cite>Razones Trigonométricas | Aplicación con dos triángulos | Ejemplo 1</cite>. Matemáticas Profe Alex
           </a>
           <a href="https://www.youtube.com/watch?v=yVTQ0oJBGag&list=PLeySRPnY35dEAIFYvOhtD2cztVuq15qw1&index=15" class="activity-ref__link">
-            <cite>Razones Trigonométricas | Aplicación con dos triángulo | Ejemplo 1</cite>. Matemáticas Profe Alex
+            <cite>Razones Trigonométricas | Aplicación con dos triángulo | Ejemplo 2</cite>. Matemáticas Profe Alex
           </a>
           <a href="https://www.youtube.com/watch?v=yVTQ0oJBGag&list=PLeySRPnY35dEAIFYvOhtD2cztVuq15qw1&index=16" class="activity-ref__link">
             <cite>Seno, coseno y tangente de 30° 45° 60° | Sin Calculadora</cite>. Matemáticas Profe Alex
