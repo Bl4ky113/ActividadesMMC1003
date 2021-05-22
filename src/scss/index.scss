@@ -3,7 +3,7 @@
 
 /* ----- Header Style ----- */
 
-.doc-header {
+.header {
  height: 80px;
 
  padding: 5px;
@@ -15,7 +15,7 @@
  align-items: center;
 
  /* Title of the Header */
- .header-title {
+ .title {
   width: 800px;
 
   border: 2px solid $color-base2;
@@ -28,7 +28,7 @@
   justify-content: space-evenly;
 
   /* Text */
-  .header-title__text {
+  .title__text {
    color: $color-white1;
    font: 700 32px 'Oswald', sans-serif;
 
@@ -37,7 +37,7 @@
   }
 
   /* Info */
-  .header-title--info__text {
+  .title--info__text {
    color: $color-light1;
    font: italic 200 12px 'Montserrat', sans-serif;
   }
