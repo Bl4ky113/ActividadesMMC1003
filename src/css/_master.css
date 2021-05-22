@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/* 
- /-----------------------------------------------------------------------\
- /In this file I'll set variables, write info and others of the SCSS code\
- /-----------------------------------------------------------------------\
-*/
 /* --- Variables Globales --- */
 /* -- Base Colors -- */
 /* Blue */
@@ -39,34 +34,3 @@
 /* A little bit dark White */
 /* Black */
 /* Dark Grey */
-/* Google Fonts Documentation */
-/*  
- - Montserrat {
-  Medium 500 : Medium or big texts. 
-  Regular 400 : Medium-small or small texts.
-  light 300 : short and small texts. 
-
-  Semantics {
-   Bold 700 : <strong>s on Medium or big texts.
-   Medium 500 : <strong>s on Medium-small or small texts.
-
-   italic | Regular 400 : <em>s, <mark>s in Medium or big texts.
-   italic | light 300 : <em>s, <mark>s in Medium-small or small texts.
-  }
- }
-
- - Oswald {
-  Bold 700 : Medium or big titles and Lists Icons.
-  Medium 500 : Medium, small, not important titles.
-  light 300 : Questions in activities, links.
- }
-
- - Newsreader {
-  Medium 500 : <i>s, <q>s, <cite>s, <blockquote>s, <abbr>s, <sub>s, <sup>s on Medium, Medium-large or Large objects
-  Regular 400 : the same than the other, but on Medium-small, small objects.
- }
-
- - Roboto Mono {
-  Regular 400: <pre> tags
- }
-*/
