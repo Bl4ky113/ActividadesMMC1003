@@ -877,7 +877,7 @@
   color: #000;
   font: 500 12px "Montserrat", sans-serif;
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 .doc-main .main-article .article-content .content-activity .activity-ref .activity-ref__link::before {
   content: "O";
