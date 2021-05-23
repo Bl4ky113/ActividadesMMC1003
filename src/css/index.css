@@ -583,12 +583,12 @@
   float: left;
   margin: 10px;
 }
-.main .article .content .content-table {
+.main .article .content .table {
   max-width: 95%;
   margin: 10px auto;
   text-align: center;
 }
-.main .article .content .content-table .table-header .table-header__title {
+.main .article .content .table .theader .theader__title {
   border-radius: 0.2em;
   padding: 20px;
   background-color: #0000bb;
@@ -596,27 +596,27 @@
   font: 700 30px "Oswald", sans-serif;
   text-transform: capitalize;
 }
-.main .article .content .content-table .table-header .table-header__category {
+.main .article .content .table .theader .theader__category {
   border-radius: 0.5em;
   padding: 10px;
   background-color: #3399ff;
   color: #000;
   font: 500 18px "Oswald", sans-serif;
 }
-.main .article .content .content-table .table-header .table-header__data {
+.main .article .content .table .theader .theader__data {
   border-radius: 0.25em;
   padding: 5px;
   background-color: #f0f0f0;
   color: #000;
   font: 400 14px "Montserrat", sans-serif;
 }
-.main .article .content .content-table .table-header .table-header__data:nth-child(odd) {
+.main .article .content .table .theader .theader__data:nth-child(odd) {
   background-color: #f0f0f0;
 }
-.main .article .content .content-table .table-header .table-header__data:nth-child(even) {
+.main .article .content .table .theader .theader__data:nth-child(even) {
   background-color: #cfcfcf;
 }
-.main .article .content .content-table .table-content .table-content__category {
+.main .article .content .table .tcontent .tcontent__category {
   border: 2px outset #99ccff;
   border-radius: 0.25em;
   padding: 10px;
@@ -624,22 +624,22 @@
   color: #000;
   font: 500 18px "Oswald", sans-serif;
 }
-.main .article .content .content-table .table-content .table-content__data {
+.main .article .content .table .tcontent .tcontent__data {
   border-radius: 0.5em;
   padding: 5px;
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
 }
-.main .article .content .content-table .table-content .table-content__data strong {
+.main .article .content .table .tcontent .tcontent__data strong {
   font: 700 14px "Montserrat", sans-serif;
 }
-.main .article .content .content-table .table-content .table-content__data em {
+.main .article .content .table .tcontent .tcontent__data em {
   font: italic 400 14px "Montserrat", sans-serif;
 }
-.main .article .content .content-table .table-content .table-content__data i {
+.main .article .content .table .tcontent .tcontent__data i {
   font: italic 500 14px "Newsreader", serif;
 }
-.main .article .content .content-table .table-content .table-content__data abbr {
+.main .article .content .table .tcontent .tcontent__data abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -647,73 +647,64 @@
   font: italic 200 14px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.main .article .content .content-table .table-content .table-content__data mark {
+.main .article .content .table .tcontent .tcontent__data mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.main .article .content .content-table .table-content tr:nth-child(odd) {
+.main .article .content .table .tcontent tr:nth-child(odd) {
   background-color: #f0f0f0;
 }
-.main .article .content .content-table .table-content tr:nth-child(even) {
+.main .article .content .table .tcontent tr:nth-child(even) {
   background-color: #cfcfcf;
 }
-.main .article .content .content-table--right {
+.main .article .content .table--right {
   float: right;
   margin: 10px;
 }
-.main .article .content .content-table--left {
+.main .article .content .table--left {
   float: left;
   margin: 10px;
 }
-.main .article .content ul.content-list,
-.main .article .content ol.content-list {
+.main .article .content .list {
   margin: 10px;
   border-left: 1px solid #0000e6;
   padding-left: 25px;
 }
-.main .article .content ul.content-list .content-list__title,
-.main .article .content ol.content-list .content-list__title {
+.main .article .content .list .list__title {
   margin: 2px;
   padding-inline-start: 5px;
   color: #000044;
   font: 500 28px "Oswald", sans-serif;
   text-decoration: underline solid #000044 1px;
 }
-.main .article .content ul.content-list .content-list--semi__title,
-.main .article .content ol.content-list .content-list--semi__title {
+.main .article .content .list .list--semi__title {
   margin: 2px;
   padding-inline-start: 5px;
   color: #000066;
   font: 300 22px "Oswald", sans-serif;
   text-decoration: underline solid #000066 1px;
 }
-.main .article .content ul.content-list .list-object,
-.main .article .content ol.content-list .list-object {
+.main .article .content .list .list__object {
   margin: 5px;
   padding-left: 10px;
   color: #000;
   font: 500 18px "Montserrat", sans-serif;
 }
-.main .article .content ul.content-list .list-object::marker,
-.main .article .content ol.content-list .list-object::marker {
+.main .article .content .list .list__object::marker {
   color: #3399ff;
   font: 700 20px "Oswald", sans-serif;
 }
-.main .article .content ul.content-list .list-object strong,
-.main .article .content ol.content-list .list-object strong {
+.main .article .content .list .list__object strong {
   font: 700 18px "Montserrat", sans-serif;
 }
-.main .article .content ul.content-list .list-object em,
-.main .article .content ol.content-list .list-object em {
+.main .article .content .list .list__object em {
   font: italic 400 18px "Montserrat", sans-serif;
 }
-.main .article .content ul.content-list .list-object i,
-.main .article .content ol.content-list .list-object i {
+.main .article .content .list .list__object i {
   font: italic 500 18px "Newsreader", serif;
 }
-.main .article .content ul.content-list .list-object abbr,
-.main .article .content ol.content-list .list-object abbr {
+.main .article .content .list .list__object abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -721,47 +712,42 @@
   font: italic 200 18px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.main .article .content ul.content-list .list-object mark,
-.main .article .content ol.content-list .list-object mark {
+.main .article .content .list .list__object mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.main .article .content .content-list--arrows .list-object::marker {
+.main .article .content .list--arrows .list__object::marker {
   content: ">>";
 }
-.main .article .content .content-list--longarrow .list-object::marker {
+.main .article .content .list--longarrow .list__object::marker {
   content: "->";
 }
-.main .article .content .content-list--lines .list-object::marker {
+.main .article .content .list--lines .list__object::marker {
   content: "--";
 }
-.main .article .content .content-list--diamond .list-object::marker {
+.main .article .content .list--diamond .list__object::marker {
   content: "<>";
 }
-.main .article .content ul.content-list--flat,
-.main .article .content ol.content-list--flat {
+.main .article .content .list--flat {
   border-right: 1px solid #0000e6;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
-.main .article .content ul.content-list--flat .content-list__title,
-.main .article .content ol.content-list--flat .content-list__title {
+.main .article .content .list--flat .list__title {
   width: 100%;
 }
-.main .article .content ul.content-list--flat .content-list--semi__title,
-.main .article .content ol.content-list--flat .content-list--semi__title {
+.main .article .content .list--flat .list--semi__title {
   width: 100%;
 }
-.main .article .content ul.content-list--flat .list-object,
-.main .article .content ol.content-list--flat .list-object {
+.main .article .content .list--flat .list__object {
   margin: 5px 20px;
 }
-.main .article .content .content-list--right {
+.main .article .content .list--right {
   float: right;
 }
-.main .article .content .content-list--left {
+.main .article .content .list--left {
   float: left;
 }
 .main .article .content .content-geogebra {

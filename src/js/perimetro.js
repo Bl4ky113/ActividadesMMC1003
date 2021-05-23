@@ -62,10 +62,10 @@ function outputDatos (num, lenght, coordenadas) {
  // Cambiar el color de las filas según su número
  modNum = num % 2;
  if (modNum == 1) {
-  newRow.className = "table-content--row";
+  newRow.className = "tcontent--row";
  }
  else {
-  newRow.className = "table-content--row";
+  newRow.className = "tcontent--row";
  }
 
  // Creo la Celda de los Datos
@@ -75,9 +75,9 @@ function outputDatos (num, lenght, coordenadas) {
  }
  
  // Lleno los datos de las celdas y les doy un Style
- tableInfo.cellCoordenada.className = "table-content__data";
+ tableInfo.cellCoordenada.className = "tcontent__data";
  tableInfo.cellCoordenada.innerHTML = coordenadas;
- tableInfo.cellLength.className = "table-content__data";
+ tableInfo.cellLength.className = "tcontent__data";
  tableInfo.cellLength.innerHTML = lenght;
 }
 

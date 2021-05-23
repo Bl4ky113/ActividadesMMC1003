@@ -48,10 +48,10 @@ function showData_op (finalResults, resultsNumber) {
 
   let modNum = i % 2;
   if (modNum == 1) {
-   tableRow.className = "table-content--row";
+   tableRow.className = "tcontent--row";
   }
   else {
-   tableRow.className = "table-content--row";
+   tableRow.className = "tcontent--row";
   }
 
   // Crear las celdas con los datos
@@ -62,34 +62,34 @@ function showData_op (finalResults, resultsNumber) {
   
   switch (i) {
    case 0: // Agregar los Resultados de la Suma a la Tabla
-    tableInfo.title.className = "table-content__category";
+    tableInfo.title.className = "tcontent__category";
     tableInfo.title.innerHTML = "Suma";
 
-    tableInfo.data.className = "table-content__data";
+    tableInfo.data.className = "tcontent__data";
     tableInfo.data.innerHTML = finalResults.add;
     break;
 
    case 1: // Agregar los Resultados de la Resta a la Tabla
-    tableInfo.title.className = "table-content__category";
+    tableInfo.title.className = "tcontent__category";
     tableInfo.title.innerHTML = "Resta";
 
-    tableInfo.data.className = "table-content__data";
+    tableInfo.data.className = "tcontent__data";
     tableInfo.data.innerHTML = finalResults.subtraction[0] + " | " + finalResults.subtraction[1];
     break;
 
    case 2: // Agregar los Resultados de la Multiplicacion a la Tabla
-    tableInfo.title.className = "table-content__category";
+    tableInfo.title.className = "tcontent__category";
     tableInfo.title.innerHTML = "Multiplicación";
 
-    tableInfo.data.className = "table-content__data";
+    tableInfo.data.className = "tcontent__data";
     tableInfo.data.innerHTML = finalResults.multiplication;
     break;
 
    case 3: // Agregar los Resultados de la Division a la Tabla
-    tableInfo.title.className = "table-content__category";
+    tableInfo.title.className = "tcontent__category";
     tableInfo.title.innerHTML = "División";
 
-    tableInfo.data.className = "table-content__data";
+    tableInfo.data.className = "tcontent__data";
     tableInfo.data.innerHTML = finalResults.division[0] + " | " + finalResults.division[1];
     break;
 

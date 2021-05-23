@@ -688,16 +688,16 @@
 
    /* Tables in the Article */
 
-   .content-table {
+   .table {
     max-width: 95%;
 
     margin: 10px auto;
     
     text-align: center; 
     
-    .table-header {
+    .theader {
     
-     .table-header__title {
+     .theader__title {
       border-radius: 0.2em;
       padding: 20px;
 
@@ -708,7 +708,7 @@
       text-transform: capitalize;
      }
 
-     .table-header__category {
+     .theader__category {
       border-radius: 0.5em;
       padding: 10px;
 
@@ -718,7 +718,7 @@
       font: 500 18px 'Oswald', sans-serif;
      }
 
-     .table-header__data {
+     .theader__data {
       border-radius: 0.25em;
       padding: 5px;
 
@@ -728,13 +728,13 @@
       font: 400 14px 'Montserrat', sans-serif;
      }
 
-     .table-header__data:nth-child(odd) {background-color: $color-white3;}
-     .table-header__data:nth-child(even) {background-color: $color-white2;}
+     .theader__data:nth-child(odd) {background-color: $color-white3;}
+     .theader__data:nth-child(even) {background-color: $color-white2;}
     }
 
-    .table-content {
+    .tcontent {
 
-     .table-content__category {
+     .tcontent__category {
       border: 2px outset $color-light1;
       border-radius: 0.25em;
       padding: 10px;
@@ -744,7 +744,7 @@
       color: $color-black1;
       font: 500 18px 'Oswald', sans-serif;
      }
-     .table-content__data {
+     .tcontent__data {
       border-radius: 0.5em;
       padding: 5px;
 
@@ -787,19 +787,18 @@
    }
 
    /* Tables Floats */
-   .content-table--right {float: right; margin: 10px;} 
-   .content-table--left {float: left; margin: 10px;}
+   .table--right {float: right; margin: 10px;} 
+   .table--left {float: left; margin: 10px;}
 
    /* Lists in the Articles */
 
-   ul.content-list,
-   ol.content-list {
+   .list {
     margin: 10px;
     border-left: 1px solid $color-base1;
     padding-left: 25px;
     
 
-    .content-list__title {
+    .list__title {
      margin: 2px;
      padding-inline-start: 5px;
 
@@ -808,7 +807,7 @@
      text-decoration: underline solid $color-dark2 1px;
     }
     
-    .content-list--semi__title {
+    .list--semi__title {
      margin: 2px;
      padding-inline-start: 5px;
      
@@ -817,7 +816,7 @@
      text-decoration: underline solid $color-dark1 1px;
     }
 
-    .list-object {
+    .list__object {
      margin: 5px;
      padding-left: 10px;
 
@@ -864,57 +863,56 @@
    /* Diferent Markers for the Ulist */
 
    /* Arrows ">>>" */
-   .content-list--arrows {
+   .list--arrows {
 
-    .list-object {
+    .list__object {
 
      &::marker {content: '>>';}
     }
    }
 
    /* long Arrow "---->" */
-   .content-list--longarrow {
+   .list--longarrow {
 
-    .list-object {
+    .list__object {
 
      &::marker {content: "->";}
     }
    }
 
    /* Lines "---" */
-   .content-list--lines {
+   .list--lines {
 
-    .list-object {
+    .list__object {
 
      &::marker {content: '--';}
     }
    }
 
    /* Diamond "<>" */
-   .content-list--diamond {
+   .list--diamond {
 
-    .list-object {
+    .list__object {
 
      &::marker {content: '<>'}
     }
    }
 
    /* Flat Lists */
-   ul.content-list--flat, 
-   ol.content-list--flat {
+   .list--flat {
     border-right: 1px solid $color-base1;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 
-    .content-list__title {width: 100%;}
-    .content-list--semi__title {width: 100%;}
-    .list-object {margin: 5px 20px;}
+    .list__title {width: 100%;}
+    .list--semi__title {width: 100%;}
+    .list__object {margin: 5px 20px;}
    }
 
-   .content-list--right {float: right;}
-   .content-list--left {float: left;}
+   .list--right {float: right;}
+   .list--left {float: left;}
    
    /* GeoGebra iFrames */
    .content-geogebra {
