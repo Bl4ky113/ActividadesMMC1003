@@ -913,6 +913,96 @@
 
    .list--right {float: right;}
    .list--left {float: left;}
+
+   /* Reference */
+
+   .ref {
+    width: 90%;
+    
+    padding: 10px 20px; 
+    border-left: 5px solid $color-base1;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 0.25em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 0.25em;
+    margin: 5px auto;
+
+    background-color: $color-light3;
+
+    .ref__title {
+     margin: 5px;
+
+     color: $color-dark1;
+     font: 800 20px 'Oswald', sans-serif;
+     text-decoration: underline solid $color-base1 1px;
+    }
+
+    .ref__link {
+     padding: 2px 5px;
+     border-left: 2px solid $color-base1;
+
+     color: $color-black1;
+     font: 500 12px 'Montserrat', sans-serif;
+     text-decoration: none;
+
+     display: block;
+
+     &::before {
+      content: "O";
+      color: $color-base2;
+      font-weight: bolder;
+     }
+
+     cite {color: $color-dark1;}
+
+     &:hover {
+      cite {text-decoration: underline dashed $color-base2 1px;}
+     }
+    }
+   }
+
+   /* Labels in JavaScript Uses */
+   .label {
+    margin: 5px;
+    padding: 10px;
+
+    font: 500 16px 'Montserrat', sans-serif;
+    color: $color-dark1;
+
+    display: inline-block;
+   }
+
+   /* Inputs in JavaScript Uses */
+   .input {
+    margin: 5px;
+    border: 1px solid $color-black1;
+    border-radius: 0.25em;
+    padding: 10px;
+
+    background-color: $color-white1;
+
+    font: 500 16px 'Montserrat', sans-serif;
+    display: inline-block;
+
+    &:hover, &:focus {
+     border: 1px solid $color-dark1;
+
+     background-color: $color-light3;
+    } 
+   }
+
+   .input--button {
+    margin: 10px;
+    padding: 10px 40px;
+
+    font-size: 20px;
+    
+    background-color: $color-light3;
+
+    &:hover, &:focus {
+     background-color: $color-light1;
+    }
+   }
    
    /* GeoGebra iFrames */
    .content-geogebra {
@@ -935,14 +1025,14 @@
    }
 
    /* Activities in the Articles */
-   .content-activity {
+   .activity {
 
     /* Reset the Number of the Tasks */
     counter-reset: section;
     list-style-type: none;
 
     /* Title of the Activities */
-    .content-activity__title {
+    .activity__title {
      width: 100%;
      height: 60px;
 
@@ -962,7 +1052,7 @@
     }
 
     /* Activities Taks, To Do List, Etc */
-    .content-activity__task {
+    .activity__task {
      margin: 5px;
      border-right: 3px solid $color-base1;
      border-left: 3px solid $color-base1;
@@ -976,95 +1066,6 @@
      &::before {
       counter-increment: section;
       content: "Punto N°" counter(section) ". ";
-     }
-    }
-
-    /* Reference in the Activities */
-    .activity-ref {
-     width: 90%;
-     
-     padding: 10px 20px; 
-     border-left: 5px solid $color-base1;
-     border-top-right-radius: 1em;
-     border-top-left-radius: 0.25em;
-     border-bottom-right-radius: 1em;
-     border-bottom-left-radius: 0.25em;
-     margin: 5px auto;
-
-     background-color: $color-light3;
-
-     .activity-ref__title {
-      margin: 5px;
-
-      color: $color-dark1;
-      font: 800 20px 'Oswald', sans-serif;
-      text-decoration: underline solid $color-base1 1px;
-     }
-
-     .activity-ref__link {
-      padding: 2px 5px;
-      border-left: 2px solid $color-base1;
-
-      color: $color-black1;
-      font: 500 12px 'Montserrat', sans-serif;
-      text-decoration: none;
-
-      display: block;
-
-      &::before {
-       content: "O";
-       color: $color-base2;
-       font-weight: bolder;
-      }
-
-      cite {color: $color-dark1;}
-
-      &:hover {
-       cite {text-decoration: underline dashed $color-base2 1px;}
-      }
-     }
-    }
-
-    /* Labels in JavaScript Activities */
-    .content-activity__label {
-     margin: 5px;
-     padding: 10px;
-
-     font: 500 16px 'Montserrat', sans-serif;
-     color: $color-dark1;
-
-     display: inline-block;
-    }
-
-    /* Inputs in JavaScript Activities */
-    .content-activity__input {
-     margin: 5px;
-     border: 1px solid $color-black1;
-     border-radius: 0.25em;
-     padding: 10px;
-
-     background-color: $color-white1;
-
-     font: 500 16px 'Montserrat', sans-serif;
-     display: inline-block;
-
-     &:hover, &:focus {
-      border: 1px solid $color-dark1;
-
-      background-color: $color-light3;
-     } 
-    }
-
-    .content-activity--button__input {
-     margin: 10px;
-     padding: 10px 40px;
-
-     font-size: 20px;
-     
-     background-color: $color-light3;
-
-     &:hover, &:focus {
-      background-color: $color-light1;
      }
     }
    }

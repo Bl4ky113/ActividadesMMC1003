@@ -307,6 +307,9 @@
   /* Lines "---" */
   /* Diamond "<>" */
   /* Flat Lists */
+  /* Reference */
+  /* Labels in JavaScript Uses */
+  /* Inputs in JavaScript Uses */
   /* GeoGebra iFrames */
   /* Youtube Videos iFrames */
   /* Activities in the Articles */
@@ -750,6 +753,71 @@
 .main .article .content .list--left {
   float: left;
 }
+.main .article .content .ref {
+  width: 90%;
+  padding: 10px 20px;
+  border-left: 5px solid #0000e6;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 0.25em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 0.25em;
+  margin: 5px auto;
+  background-color: #cce5ff;
+}
+.main .article .content .ref .ref__title {
+  margin: 5px;
+  color: #000066;
+  font: 800 20px "Oswald", sans-serif;
+  text-decoration: underline solid #0000e6 1px;
+}
+.main .article .content .ref .ref__link {
+  padding: 2px 5px;
+  border-left: 2px solid #0000e6;
+  color: #000;
+  font: 500 12px "Montserrat", sans-serif;
+  text-decoration: none;
+  display: block;
+}
+.main .article .content .ref .ref__link::before {
+  content: "O";
+  color: #0000bb;
+  font-weight: bolder;
+}
+.main .article .content .ref .ref__link cite {
+  color: #000066;
+}
+.main .article .content .ref .ref__link:hover cite {
+  text-decoration: underline dashed #0000bb 1px;
+}
+.main .article .content .label {
+  margin: 5px;
+  padding: 10px;
+  font: 500 16px "Montserrat", sans-serif;
+  color: #000066;
+  display: inline-block;
+}
+.main .article .content .input {
+  margin: 5px;
+  border: 1px solid #000;
+  border-radius: 0.25em;
+  padding: 10px;
+  background-color: #fff;
+  font: 500 16px "Montserrat", sans-serif;
+  display: inline-block;
+}
+.main .article .content .input:hover, .main .article .content .input:focus {
+  border: 1px solid #000066;
+  background-color: #cce5ff;
+}
+.main .article .content .input--button {
+  margin: 10px;
+  padding: 10px 40px;
+  font-size: 20px;
+  background-color: #cce5ff;
+}
+.main .article .content .input--button:hover, .main .article .content .input--button:focus {
+  background-color: #99ccff;
+}
 .main .article .content .content-geogebra {
   width: 800px;
   height: 400px;
@@ -764,17 +832,14 @@
   border: 2px outset #3399ff;
   border-radius: 0.25em;
 }
-.main .article .content .content-activity {
+.main .article .content .activity {
   /* Reset the Number of the Tasks */
   counter-reset: section;
   list-style-type: none;
   /* Title of the Activities */
   /* Activities Taks, To Do List, Etc */
-  /* Reference in the Activities */
-  /* Labels in JavaScript Activities */
-  /* Inputs in JavaScript Activities */
 }
-.main .article .content .content-activity .content-activity__title {
+.main .article .content .activity .activity__title {
   width: 100%;
   height: 60px;
   margin: 5px auto;
@@ -788,7 +853,7 @@
   align-items: center;
   justify-content: center;
 }
-.main .article .content .content-activity .content-activity__task {
+.main .article .content .activity .activity__task {
   margin: 5px;
   border-right: 3px solid #0000e6;
   border-left: 3px solid #0000e6;
@@ -797,72 +862,7 @@
   font: 300 20px "Oswald", sans-serif;
   clear: both;
 }
-.main .article .content .content-activity .content-activity__task::before {
+.main .article .content .activity .activity__task::before {
   counter-increment: section;
   content: "Punto N°" counter(section) ". ";
-}
-.main .article .content .content-activity .activity-ref {
-  width: 90%;
-  padding: 10px 20px;
-  border-left: 5px solid #0000e6;
-  border-top-right-radius: 1em;
-  border-top-left-radius: 0.25em;
-  border-bottom-right-radius: 1em;
-  border-bottom-left-radius: 0.25em;
-  margin: 5px auto;
-  background-color: #cce5ff;
-}
-.main .article .content .content-activity .activity-ref .activity-ref__title {
-  margin: 5px;
-  color: #000066;
-  font: 800 20px "Oswald", sans-serif;
-  text-decoration: underline solid #0000e6 1px;
-}
-.main .article .content .content-activity .activity-ref .activity-ref__link {
-  padding: 2px 5px;
-  border-left: 2px solid #0000e6;
-  color: #000;
-  font: 500 12px "Montserrat", sans-serif;
-  text-decoration: none;
-  display: block;
-}
-.main .article .content .content-activity .activity-ref .activity-ref__link::before {
-  content: "O";
-  color: #0000bb;
-  font-weight: bolder;
-}
-.main .article .content .content-activity .activity-ref .activity-ref__link cite {
-  color: #000066;
-}
-.main .article .content .content-activity .activity-ref .activity-ref__link:hover cite {
-  text-decoration: underline dashed #0000bb 1px;
-}
-.main .article .content .content-activity .content-activity__label {
-  margin: 5px;
-  padding: 10px;
-  font: 500 16px "Montserrat", sans-serif;
-  color: #000066;
-  display: inline-block;
-}
-.main .article .content .content-activity .content-activity__input {
-  margin: 5px;
-  border: 1px solid #000;
-  border-radius: 0.25em;
-  padding: 10px;
-  background-color: #fff;
-  font: 500 16px "Montserrat", sans-serif;
-  display: inline-block;
-}
-.main .article .content .content-activity .content-activity__input:hover, .main .article .content .content-activity .content-activity__input:focus {
-  border: 1px solid #000066;
-  background-color: #cce5ff;
-}
-.main .article .content .content-activity .content-activity--button__input {
-  margin: 10px;
-  padding: 10px 40px;
-  font-size: 20px;
-  background-color: #cce5ff;
-}
-.main .article .content .content-activity .content-activity--button__input:hover, .main .article .content .content-activity .content-activity--button__input:focus {
-  background-color: #99ccff;
 }
