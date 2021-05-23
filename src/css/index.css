@@ -246,14 +246,14 @@
   color: #0000e6;
   font-size: 18px;
 }
-.main .main-article {
+.main .article {
   width: 90%;
   margin: 5px 0;
   /* Class Title */
   /* Date of the Class */
   /* Content-Elements in the Article */
 }
-.main .main-article .main-article__title {
+.main .article .article__title {
   width: 80%;
   height: 60px;
   border-top-right-radius: 0.25em;
@@ -266,7 +266,7 @@
   color: #fff;
   font: 700 32px "Oswald", sans-serif;
 }
-.main .main-article .main-article__date {
+.main .article .article__date {
   width: 50%;
   height: 30px;
   border-bottom-left-radius: 0.25em;
@@ -278,7 +278,7 @@
   color: #fff;
   font: 300 24px "Oswald", sans-serif;
 }
-.main .main-article .article-content {
+.main .article .content {
   /* Class Notes */
   /* Pre Texts */
   /* Titles in the Class Notes*/
@@ -311,7 +311,7 @@
   /* Youtube Videos iFrames */
   /* Activities in the Articles */
 }
-.main .main-article .article-content .article-content__paragraph {
+.main .article .content .content__paragraph {
   width: 95%;
   margin: 10px auto;
   padding: 0 5px;
@@ -320,16 +320,16 @@
   clear: both;
   /* Electronic Configuration Quimica */
 }
-.main .main-article .article-content .article-content__paragraph strong {
+.main .article .content .content__paragraph strong {
   font: 700 18px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .article-content__paragraph em {
+.main .article .content .content__paragraph em {
   font: italic 300 20px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .article-content__paragraph i {
+.main .article .content .content__paragraph i {
   font: italic 500 20px "Newsreader", serif;
 }
-.main .main-article .article-content .article-content__paragraph abbr {
+.main .article .content .content__paragraph abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -337,12 +337,12 @@
   font: italic 200 18px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.main .main-article .article-content .article-content__paragraph mark {
+.main .article .content .content__paragraph mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.main .main-article .article-content .article-content__paragraph span.conf-ele {
+.main .article .content .content__paragraph span.conf-ele {
   padding: 5px;
   border: 2px solid #000044;
   border-radius: 0.5em;
@@ -350,36 +350,36 @@
   font: 800 20px "Montserrat", sans-serif;
   display: inline-block;
 }
-.main .main-article .article-content pre {
+.main .article .content pre {
   max-width: 100%;
   margin: 5px;
   font: 400 15px "Roboto Mono", monospace;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.main .main-article .article-content .article-content--unclear__paragraph {
+.main .article .content .content--unclear__paragraph {
   clear: none;
 }
-.main .main-article .article-content .article-content__title {
+.main .article .content .content__title {
   margin: 10px;
   padding: 5px;
   color: #000044;
   font: 500 28px "Oswald", sans-serif;
   clear: both;
 }
-.main .main-article .article-content .article-content--unclear__title {
+.main .article .content .content--unclear__title {
   clear: none;
 }
-.main .main-article .article-content .article-content__semititle {
+.main .article .content .content__semititle {
   margin: 10px;
   color: #000066;
   font: 300 22px "Oswald", sans-serif;
   clear: both;
 }
-.main .main-article .article-content .article-content--unclear__semititle {
+.main .article .content .content--unclear__semititle {
   clear: none;
 }
-.main .main-article .article-content .article-content__link {
+.main .article .content .content__link {
   max-width: 50%;
   margin: 10px 5px;
   border-radius: 0.25em;
@@ -391,28 +391,28 @@
   transition: all 500ms ease;
   display: block;
 }
-.main .main-article .article-content .article-content__link:hover {
+.main .article .content .content__link:hover {
   max-width: 70%;
 }
-.main .main-article .article-content .content-images {
+.main .article .content .content-images {
   margin: 5px auto;
   border-radius: 0.25em;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.main .main-article .article-content .content-images picture {
+.main .article .content .content-images picture {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main .main-article .article-content .content-images .content-images__img {
+.main .article .content .content-images .content-images__img {
   width: 100%;
   height: auto;
   border: 2px solid #0000e6;
   border-radius: 0.2em;
 }
-.main .main-article .article-content .content-images .content-images__quote {
+.main .article .content .content-images .content-images__quote {
   width: 80%;
   padding: 5px 0;
   border-right: 2px solid #0000e6;
@@ -423,45 +423,45 @@
   text-align: center;
   font: 400 16px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-images .content-images__quote cite {
+.main .article .content .content-images .content-images__quote cite {
   font: italic 400 16px "Newsreader", serif;
 }
-.main .main-article .article-content .content-images--s {
+.main .article .content .content-images--s {
   width: 20%;
 }
-.main .main-article .article-content .content-images--xs {
+.main .article .content .content-images--xs {
   width: 30%;
 }
-.main .main-article .article-content .content-images--xxs {
+.main .article .content .content-images--xxs {
   width: 40%;
 }
-.main .main-article .article-content .content-images--m {
+.main .article .content .content-images--m {
   width: 50%;
 }
-.main .main-article .article-content .content-images--xm {
+.main .article .content .content-images--xm {
   width: 60%;
 }
-.main .main-article .article-content .content-images--xxm {
+.main .article .content .content-images--xxm {
   width: 70%;
 }
-.main .main-article .article-content .content-images--l {
+.main .article .content .content-images--l {
   width: 80%;
 }
-.main .main-article .article-content .content-images--xl {
+.main .article .content .content-images--xl {
   width: 90%;
 }
-.main .main-article .article-content .content-images--xxl {
+.main .article .content .content-images--xxl {
   width: 100%;
 }
-.main .main-article .article-content .content-images--right {
+.main .article .content .content-images--right {
   float: right;
   margin: 10px;
 }
-.main .main-article .article-content .content-images--left {
+.main .article .content .content-images--left {
   float: left;
   margin: 10px;
 }
-.main .main-article .article-content .content-aside {
+.main .article .content .content-aside {
   width: 30%;
   border: 5px solid #0000bb;
   border-radius: 0.25em;
@@ -477,7 +477,7 @@
   /* TEST image */
   /* Tables in the Aside */
 }
-.main .main-article .article-content .content-aside .content-aside__title {
+.main .article .content .content-aside .content-aside__title {
   width: 85%;
   margin: 5px;
   border: 2px solid #0000e6;
@@ -487,7 +487,7 @@
   color: #fff;
   font: 300 18px "Oswald", sans-serif;
 }
-.main .main-article .article-content .content-aside .content-aside__paragraph {
+.main .article .content .content-aside .content-aside__paragraph {
   width: 95%;
   margin: 5px;
   border: 2px solid #0000e6;
@@ -496,16 +496,16 @@
   background-color: #fff;
   font: 400 16px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-aside .content-aside__paragraph strong {
+.main .article .content .content-aside .content-aside__paragraph strong {
   font: 700 16px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-aside .content-aside__paragraph em {
+.main .article .content .content-aside .content-aside__paragraph em {
   font: italic 400 16px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-aside .content-aside__paragraph i {
+.main .article .content .content-aside .content-aside__paragraph i {
   font: italic 500 16px "Newsreader", serif;
 }
-.main .main-article .article-content .content-aside .content-aside__paragraph abbr {
+.main .article .content .content-aside .content-aside__paragraph abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -513,12 +513,12 @@
   font: italic 200 16px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.main .main-article .article-content .content-aside .content-aside__paragraph mark {
+.main .article .content .content-aside .content-aside__paragraph mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.main .main-article .article-content .content-aside .aside-image {
+.main .article .content .content-aside .aside-image {
   margin: 5px auto;
   padding: 5px;
   border: 2px solid #0000e6;
@@ -528,7 +528,7 @@
   flex-flow: row wrap;
   justify-content: center;
 }
-.main .main-article .article-content .content-aside .aside-image .aside-image__quote {
+.main .article .content .content-aside .aside-image .aside-image__quote {
   width: 90%;
   border: 2px solid #0000e6;
   border-radius: 0.5em;
@@ -536,17 +536,17 @@
   text-align: center;
   font: 300 15px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-aside .aside-image--test {
+.main .article .content .content-aside .aside-image--test {
   width: 300px;
 }
-.main .main-article .article-content .content-aside .aside-image--test .aside-image__img {
+.main .article .content .content-aside .aside-image--test .aside-image__img {
   width: 300px;
   height: 150px;
 }
-.main .main-article .article-content .content-aside .aside-table {
+.main .article .content .content-aside .aside-table {
   background-color: #0000bb;
 }
-.main .main-article .article-content .content-aside .aside-table .table-header .table-header__title {
+.main .article .content .content-aside .aside-table .table-header .table-header__title {
   border-radius: 0.5em;
   padding: 20px;
   background-color: #0000e6;
@@ -554,7 +554,7 @@
   font: 500 24px "Oswald", sans-serif;
   text-align: center;
 }
-.main .main-article .article-content .content-aside .aside-table .table-content .table-content__category {
+.main .article .content .content-aside .aside-table .table-content .table-content__category {
   border-radius: 0.25em;
   padding: 10px;
   background-color: #3399ff;
@@ -562,33 +562,33 @@
   font: 500 20px "Oswald", sans-serif;
   text-align: center;
 }
-.main .main-article .article-content .content-aside .aside-table .table-content .table-content__data {
+.main .article .content .content-aside .aside-table .table-content .table-content__data {
   border-radius: 0.25em;
   padding: 10px;
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
   text-align: center;
 }
-.main .main-article .article-content .content-aside .aside-table .table-content .table-content--row {
+.main .article .content .content-aside .aside-table .table-content .table-content--row {
   background-color: #f0f0f0;
 }
-.main .main-article .article-content .content-aside .aside-table .table-content .table-content--row {
+.main .article .content .content-aside .aside-table .table-content .table-content--row {
   background-color: #cfcfcf;
 }
-.main .main-article .article-content .content-aside--right {
+.main .article .content .content-aside--right {
   float: right;
   margin: 10px;
 }
-.main .main-article .article-content .content-aside--left {
+.main .article .content .content-aside--left {
   float: left;
   margin: 10px;
 }
-.main .main-article .article-content .content-table {
+.main .article .content .content-table {
   max-width: 95%;
   margin: 10px auto;
   text-align: center;
 }
-.main .main-article .article-content .content-table .table-header .table-header__title {
+.main .article .content .content-table .table-header .table-header__title {
   border-radius: 0.2em;
   padding: 20px;
   background-color: #0000bb;
@@ -596,27 +596,27 @@
   font: 700 30px "Oswald", sans-serif;
   text-transform: capitalize;
 }
-.main .main-article .article-content .content-table .table-header .table-header__category {
+.main .article .content .content-table .table-header .table-header__category {
   border-radius: 0.5em;
   padding: 10px;
   background-color: #3399ff;
   color: #000;
   font: 500 18px "Oswald", sans-serif;
 }
-.main .main-article .article-content .content-table .table-header .table-header__data {
+.main .article .content .content-table .table-header .table-header__data {
   border-radius: 0.25em;
   padding: 5px;
   background-color: #f0f0f0;
   color: #000;
   font: 400 14px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-table .table-header .table-header__data:nth-child(odd) {
+.main .article .content .content-table .table-header .table-header__data:nth-child(odd) {
   background-color: #f0f0f0;
 }
-.main .main-article .article-content .content-table .table-header .table-header__data:nth-child(even) {
+.main .article .content .content-table .table-header .table-header__data:nth-child(even) {
   background-color: #cfcfcf;
 }
-.main .main-article .article-content .content-table .table-content .table-content__category {
+.main .article .content .content-table .table-content .table-content__category {
   border: 2px outset #99ccff;
   border-radius: 0.25em;
   padding: 10px;
@@ -624,22 +624,22 @@
   color: #000;
   font: 500 18px "Oswald", sans-serif;
 }
-.main .main-article .article-content .content-table .table-content .table-content__data {
+.main .article .content .content-table .table-content .table-content__data {
   border-radius: 0.5em;
   padding: 5px;
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-table .table-content .table-content__data strong {
+.main .article .content .content-table .table-content .table-content__data strong {
   font: 700 14px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-table .table-content .table-content__data em {
+.main .article .content .content-table .table-content .table-content__data em {
   font: italic 400 14px "Montserrat", sans-serif;
 }
-.main .main-article .article-content .content-table .table-content .table-content__data i {
+.main .article .content .content-table .table-content .table-content__data i {
   font: italic 500 14px "Newsreader", serif;
 }
-.main .main-article .article-content .content-table .table-content .table-content__data abbr {
+.main .article .content .content-table .table-content .table-content__data abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -647,73 +647,73 @@
   font: italic 200 14px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.main .main-article .article-content .content-table .table-content .table-content__data mark {
+.main .article .content .content-table .table-content .table-content__data mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.main .main-article .article-content .content-table .table-content tr:nth-child(odd) {
+.main .article .content .content-table .table-content tr:nth-child(odd) {
   background-color: #f0f0f0;
 }
-.main .main-article .article-content .content-table .table-content tr:nth-child(even) {
+.main .article .content .content-table .table-content tr:nth-child(even) {
   background-color: #cfcfcf;
 }
-.main .main-article .article-content .content-table--right {
+.main .article .content .content-table--right {
   float: right;
   margin: 10px;
 }
-.main .main-article .article-content .content-table--left {
+.main .article .content .content-table--left {
   float: left;
   margin: 10px;
 }
-.main .main-article .article-content ul.content-list,
-.main .main-article .article-content ol.content-list {
+.main .article .content ul.content-list,
+.main .article .content ol.content-list {
   margin: 10px;
   border-left: 1px solid #0000e6;
   padding-left: 25px;
 }
-.main .main-article .article-content ul.content-list .content-list__title,
-.main .main-article .article-content ol.content-list .content-list__title {
+.main .article .content ul.content-list .content-list__title,
+.main .article .content ol.content-list .content-list__title {
   margin: 2px;
   padding-inline-start: 5px;
   color: #000044;
   font: 500 28px "Oswald", sans-serif;
   text-decoration: underline solid #000044 1px;
 }
-.main .main-article .article-content ul.content-list .content-list--semi__title,
-.main .main-article .article-content ol.content-list .content-list--semi__title {
+.main .article .content ul.content-list .content-list--semi__title,
+.main .article .content ol.content-list .content-list--semi__title {
   margin: 2px;
   padding-inline-start: 5px;
   color: #000066;
   font: 300 22px "Oswald", sans-serif;
   text-decoration: underline solid #000066 1px;
 }
-.main .main-article .article-content ul.content-list .list-object,
-.main .main-article .article-content ol.content-list .list-object {
+.main .article .content ul.content-list .list-object,
+.main .article .content ol.content-list .list-object {
   margin: 5px;
   padding-left: 10px;
   color: #000;
   font: 500 18px "Montserrat", sans-serif;
 }
-.main .main-article .article-content ul.content-list .list-object::marker,
-.main .main-article .article-content ol.content-list .list-object::marker {
+.main .article .content ul.content-list .list-object::marker,
+.main .article .content ol.content-list .list-object::marker {
   color: #3399ff;
   font: 700 20px "Oswald", sans-serif;
 }
-.main .main-article .article-content ul.content-list .list-object strong,
-.main .main-article .article-content ol.content-list .list-object strong {
+.main .article .content ul.content-list .list-object strong,
+.main .article .content ol.content-list .list-object strong {
   font: 700 18px "Montserrat", sans-serif;
 }
-.main .main-article .article-content ul.content-list .list-object em,
-.main .main-article .article-content ol.content-list .list-object em {
+.main .article .content ul.content-list .list-object em,
+.main .article .content ol.content-list .list-object em {
   font: italic 400 18px "Montserrat", sans-serif;
 }
-.main .main-article .article-content ul.content-list .list-object i,
-.main .main-article .article-content ol.content-list .list-object i {
+.main .article .content ul.content-list .list-object i,
+.main .article .content ol.content-list .list-object i {
   font: italic 500 18px "Newsreader", serif;
 }
-.main .main-article .article-content ul.content-list .list-object abbr,
-.main .main-article .article-content ol.content-list .list-object abbr {
+.main .article .content ul.content-list .list-object abbr,
+.main .article .content ol.content-list .list-object abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -721,64 +721,64 @@
   font: italic 200 18px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.main .main-article .article-content ul.content-list .list-object mark,
-.main .main-article .article-content ol.content-list .list-object mark {
+.main .article .content ul.content-list .list-object mark,
+.main .article .content ol.content-list .list-object mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.main .main-article .article-content .content-list--arrows .list-object::marker {
+.main .article .content .content-list--arrows .list-object::marker {
   content: ">>";
 }
-.main .main-article .article-content .content-list--longarrow .list-object::marker {
+.main .article .content .content-list--longarrow .list-object::marker {
   content: "->";
 }
-.main .main-article .article-content .content-list--lines .list-object::marker {
+.main .article .content .content-list--lines .list-object::marker {
   content: "--";
 }
-.main .main-article .article-content .content-list--diamond .list-object::marker {
+.main .article .content .content-list--diamond .list-object::marker {
   content: "<>";
 }
-.main .main-article .article-content ul.content-list--flat,
-.main .main-article .article-content ol.content-list--flat {
+.main .article .content ul.content-list--flat,
+.main .article .content ol.content-list--flat {
   border-right: 1px solid #0000e6;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
-.main .main-article .article-content ul.content-list--flat .content-list__title,
-.main .main-article .article-content ol.content-list--flat .content-list__title {
+.main .article .content ul.content-list--flat .content-list__title,
+.main .article .content ol.content-list--flat .content-list__title {
   width: 100%;
 }
-.main .main-article .article-content ul.content-list--flat .content-list--semi__title,
-.main .main-article .article-content ol.content-list--flat .content-list--semi__title {
+.main .article .content ul.content-list--flat .content-list--semi__title,
+.main .article .content ol.content-list--flat .content-list--semi__title {
   width: 100%;
 }
-.main .main-article .article-content ul.content-list--flat .list-object,
-.main .main-article .article-content ol.content-list--flat .list-object {
+.main .article .content ul.content-list--flat .list-object,
+.main .article .content ol.content-list--flat .list-object {
   margin: 5px 20px;
 }
-.main .main-article .article-content .content-list--right {
+.main .article .content .content-list--right {
   float: right;
 }
-.main .main-article .article-content .content-list--left {
+.main .article .content .content-list--left {
   float: left;
 }
-.main .main-article .article-content .content-geogebra {
+.main .article .content .content-geogebra {
   width: 800px;
   height: 400px;
   margin: 5px auto;
   border: 2px outset #3399ff;
   border-radius: 0.5em;
 }
-.main .main-article .article-content .content-ytvideo {
+.main .article .content .content-ytvideo {
   width: 80%;
   height: 500px;
   margin: 5px auto;
   border: 2px outset #3399ff;
   border-radius: 0.25em;
 }
-.main .main-article .article-content .content-activity {
+.main .article .content .content-activity {
   /* Reset the Number of the Tasks */
   counter-reset: section;
   list-style-type: none;
@@ -788,7 +788,7 @@
   /* Labels in JavaScript Activities */
   /* Inputs in JavaScript Activities */
 }
-.main .main-article .article-content .content-activity .content-activity__title {
+.main .article .content .content-activity .content-activity__title {
   width: 100%;
   height: 60px;
   margin: 5px auto;
@@ -802,7 +802,7 @@
   align-items: center;
   justify-content: center;
 }
-.main .main-article .article-content .content-activity .content-activity__task {
+.main .article .content .content-activity .content-activity__task {
   margin: 5px;
   border-right: 3px solid #0000e6;
   border-left: 3px solid #0000e6;
@@ -811,11 +811,11 @@
   font: 300 20px "Oswald", sans-serif;
   clear: both;
 }
-.main .main-article .article-content .content-activity .content-activity__task::before {
+.main .article .content .content-activity .content-activity__task::before {
   counter-increment: section;
   content: "Punto N°" counter(section) ". ";
 }
-.main .main-article .article-content .content-activity .activity-ref {
+.main .article .content .content-activity .activity-ref {
   width: 90%;
   padding: 10px 20px;
   border-left: 5px solid #0000e6;
@@ -826,13 +826,13 @@
   margin: 5px auto;
   background-color: #cce5ff;
 }
-.main .main-article .article-content .content-activity .activity-ref .activity-ref__title {
+.main .article .content .content-activity .activity-ref .activity-ref__title {
   margin: 5px;
   color: #000066;
   font: 800 20px "Oswald", sans-serif;
   text-decoration: underline solid #0000e6 1px;
 }
-.main .main-article .article-content .content-activity .activity-ref .activity-ref__link {
+.main .article .content .content-activity .activity-ref .activity-ref__link {
   padding: 2px 5px;
   border-left: 2px solid #0000e6;
   color: #000;
@@ -840,25 +840,25 @@
   text-decoration: none;
   display: block;
 }
-.main .main-article .article-content .content-activity .activity-ref .activity-ref__link::before {
+.main .article .content .content-activity .activity-ref .activity-ref__link::before {
   content: "O";
   color: #0000bb;
   font-weight: bolder;
 }
-.main .main-article .article-content .content-activity .activity-ref .activity-ref__link cite {
+.main .article .content .content-activity .activity-ref .activity-ref__link cite {
   color: #000066;
 }
-.main .main-article .article-content .content-activity .activity-ref .activity-ref__link:hover cite {
+.main .article .content .content-activity .activity-ref .activity-ref__link:hover cite {
   text-decoration: underline dashed #0000bb 1px;
 }
-.main .main-article .article-content .content-activity .content-activity__label {
+.main .article .content .content-activity .content-activity__label {
   margin: 5px;
   padding: 10px;
   font: 500 16px "Montserrat", sans-serif;
   color: #000066;
   display: inline-block;
 }
-.main .main-article .article-content .content-activity .content-activity__input {
+.main .article .content .content-activity .content-activity__input {
   margin: 5px;
   border: 1px solid #000;
   border-radius: 0.25em;
@@ -867,16 +867,16 @@
   font: 500 16px "Montserrat", sans-serif;
   display: inline-block;
 }
-.main .main-article .article-content .content-activity .content-activity__input:hover, .main .main-article .article-content .content-activity .content-activity__input:focus {
+.main .article .content .content-activity .content-activity__input:hover, .main .article .content .content-activity .content-activity__input:focus {
   border: 1px solid #000066;
   background-color: #cce5ff;
 }
-.main .main-article .article-content .content-activity .content-activity--button__input {
+.main .article .content .content-activity .content-activity--button__input {
   margin: 10px;
   padding: 10px 40px;
   font-size: 20px;
   background-color: #cce5ff;
 }
-.main .main-article .article-content .content-activity .content-activity--button__input:hover, .main .main-article .article-content .content-activity .content-activity--button__input:focus {
+.main .article .content .content-activity .content-activity--button__input:hover, .main .article .content .content-activity .content-activity--button__input:focus {
   background-color: #99ccff;
 }

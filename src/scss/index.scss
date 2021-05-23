@@ -283,13 +283,13 @@
 
  /* Articles in the Main */
 
- .main-article {
+ .article {
   width: 90%;
 
   margin: 5px 0;
 
   /* Class Title */
-  .main-article__title {
+  .article__title {
    width: 80%;
    height: 60px;
 
@@ -308,7 +308,7 @@
   }
 
   /* Date of the Class */
-  .main-article__date {
+  .article__date {
    width: 50%;
    height: 30px;
 
@@ -326,10 +326,10 @@
   }
 
   /* Content-Elements in the Article */
-  .article-content {
+  .content {
 
    /* Class Notes */
-   .article-content__paragraph {
+   .content__paragraph {
     width: 95%;
 
     margin: 10px auto;
@@ -394,12 +394,12 @@
     text-overflow: ellipsis;
    }
 
-   .article-content--unclear__paragraph {
+   .content--unclear__paragraph {
     clear: none;
    }
 
    /* Titles in the Class Notes*/
-   .article-content__title {
+   .content__title {
     margin: 10px;
     padding: 5px;
 
@@ -409,11 +409,11 @@
     clear: both;
    }
 
-   .article-content--unclear__title {
+   .content--unclear__title {
     clear: none;
    }
    
-   .article-content__semititle {
+   .content__semititle {
     margin: 10px;
     
     color: $color-dark1;
@@ -422,11 +422,11 @@
     clear: both;
    }
    
-   .article-content--unclear__semititle {
+   .content--unclear__semititle {
     clear: none;
    }
    /* Links in the Class Notes */ 
-   .article-content__link {
+   .content__link {
     max-width: 50%;
 
     margin: 10px 5px;
