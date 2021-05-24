@@ -317,8 +317,6 @@
   /* Very Large */
   /* Max Size */
   /* Float Images */
-  /* Asides in the Article */
-  /* Aside Floats */
   /* Tables in the Article */
   /* Tables Floats */
   /* Lists in the Articles */
@@ -472,106 +470,6 @@
   margin: 10px;
 }
 .main .article .content .content-images--left {
-  float: left;
-  margin: 10px;
-}
-.main .article .content .content-aside {
-  width: 30%;
-  border: 5px solid #0000bb;
-  border-radius: 0.25em;
-  padding: 10px;
-  background-color: #000044;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-  /* Title of the Aside */
-  /* Paragraphs in the Aside */
-  /* Images in the Aside */
-  /* TEST image */
-  /* Tables in the Aside */
-}
-.main .article .content .content-aside .content-aside__title {
-  width: 85%;
-  margin: 5px;
-  border: 2px solid #0000e6;
-  border-radius: 0.5em;
-  padding: 5px;
-  background-color: #0000bb;
-  color: #fff;
-  font: 300 18px "Oswald", sans-serif;
-}
-.main .article .content .content-aside .content-aside__paragraph {
-  width: 95%;
-  margin: 5px;
-  border: 2px solid #0000e6;
-  border-radius: 0.25em;
-  padding: 5px;
-  background-color: #fff;
-  font: 400 16px "Montserrat", sans-serif;
-}
-.main .article .content .content-aside .aside-image {
-  margin: 5px auto;
-  padding: 5px;
-  border: 2px solid #0000e6;
-  border-radius: 0.25em;
-  background-color: #0000bb;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.main .article .content .content-aside .aside-image .aside-image__quote {
-  width: 90%;
-  border: 2px solid #0000e6;
-  border-radius: 0.5em;
-  background-color: #fff;
-  text-align: center;
-  font: 300 15px "Montserrat", sans-serif;
-}
-.main .article .content .content-aside .aside-image--test {
-  width: 300px;
-}
-.main .article .content .content-aside .aside-image--test .aside-image__img {
-  width: 300px;
-  height: 150px;
-}
-.main .article .content .content-aside .aside-table {
-  background-color: #0000bb;
-}
-.main .article .content .content-aside .aside-table .table-header .table-header__title {
-  border-radius: 0.5em;
-  padding: 20px;
-  background-color: #0000e6;
-  color: #fff;
-  font: 500 24px "Oswald", sans-serif;
-  text-align: center;
-}
-.main .article .content .content-aside .aside-table .table-content .table-content__category {
-  border-radius: 0.25em;
-  padding: 10px;
-  background-color: #3399ff;
-  color: #000;
-  font: 500 20px "Oswald", sans-serif;
-  text-align: center;
-}
-.main .article .content .content-aside .aside-table .table-content .table-content__data {
-  border-radius: 0.25em;
-  padding: 10px;
-  color: #000;
-  font: 400 16px "Montserrat", sans-serif;
-  text-align: center;
-}
-.main .article .content .content-aside .aside-table .table-content .table-content--row {
-  background-color: #f0f0f0;
-}
-.main .article .content .content-aside .aside-table .table-content .table-content--row {
-  background-color: #cfcfcf;
-}
-.main .article .content .content-aside--right {
-  float: right;
-  margin: 10px;
-}
-.main .article .content .content-aside--left {
   float: left;
   margin: 10px;
 }
