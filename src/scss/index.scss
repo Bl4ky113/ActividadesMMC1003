@@ -339,52 +339,54 @@
     font: 500 18px 'Montserrat', sans-serif;
 
     clear: both;
+   }
 
-    strong {
-     font: 700 18px 'Montserrat', sans-serif;
-    }
+   /* Semantics in the Content */
 
-    em {
-     font: italic 300 20px 'Montserrat', sans-serif;
-    }
+   strong {
+    font: 700 18px 'Montserrat', sans-serif;
+   }
 
-    i {
-     font: italic 500 20px 'Newsreader', serif;
-    }
+   em {
+    font: italic 300 20px 'Montserrat', sans-serif;
+   }
 
-    abbr {
-     border-radius: 0.25em;
-     padding: 2px 5px;
+   i {
+    font: italic 500 20px 'Newsreader', serif;
+   }
 
-     background-color: $color-dark1;
+   abbr {
+    border-radius: 0.25em;
+    padding: 2px 5px;
 
-     color: $color-white1;
-     font: italic 200 18px 'Montserrat', sans-serif;
-     text-decoration: underline $color-light1;
-    }
+    background-color: $color-dark1;
 
-    mark {
-     border-radius: 0.25em;
-     padding: 2px 5px;
+    color: $color-white1;
+    font: italic 200 18px 'Montserrat', sans-serif;
+    text-decoration: underline $color-light1;
+   }
 
-     background-color: $color-light1;
-    }
+   mark {
+    border-radius: 0.25em;
+    padding: 2px 5px;
 
-    /* Electronic Configuration Quimica */
-    span.conf-ele {
-     padding: 5px;
-     border: 2px solid $color-dark2;
-     border-radius: 0.5em;
+    background-color: $color-light1;
+   }
 
-     background-color: $color-light1;
-     font: 800 20px 'Montserrat', sans-serif;
+   /* Electronic Configuration Quimica */
+   .conf-ele {
+    padding: 5px;
+    border: 2px solid $color-dark2;
+    border-radius: 0.5em;
 
-     display: inline-block;
-    }
+    background-color: $color-light1;
+    font: 800 20px 'Montserrat', sans-serif;
+
+    display: inline-block;
    }
 
    /* Pre Texts */
-   pre {
+   .content__pre {
     max-width: 100%;
 
     margin: 5px;
@@ -392,10 +394,6 @@
     font: 400 15px 'Roboto Mono', monospace;
     overflow: hidden;
     text-overflow: ellipsis;
-   }
-
-   .content--unclear__paragraph {
-    clear: none;
    }
 
    /* Titles in the Class Notes*/
@@ -408,10 +406,6 @@
 
     clear: both;
    }
-
-   .content--unclear__title {
-    clear: none;
-   }
    
    .content__semititle {
     margin: 10px;
@@ -421,10 +415,7 @@
     
     clear: both;
    }
-   
-   .content--unclear__semititle {
-    clear: none;
-   }
+
    /* Links in the Class Notes */ 
    .content__link {
     max-width: 50%;
@@ -560,36 +551,6 @@
      background-color: $color-white1;
 
      font: 400 16px 'Montserrat', sans-serif;
-
-     strong {
-      font: 700 16px 'Montserrat', sans-serif;
-     }
- 
-     em {
-      font: italic 400 16px 'Montserrat', sans-serif;
-     }
- 
-     i {
-      font: italic 500 16px 'Newsreader', serif;
-     }
- 
-     abbr {
-      border-radius: 0.25em;
-      padding: 2px 5px;
- 
-      background-color: $color-dark1;
- 
-      color: $color-white1;
-      font: italic 200 16px 'Montserrat', sans-serif;
-      text-decoration: underline $color-light1;
-     }
- 
-     mark {
-      border-radius: 0.25em;
-      padding: 2px 5px;
- 
-      background-color: $color-light1;
-     }
     }
 
     /* Images in the Aside */
@@ -750,36 +711,6 @@
 
       color: $color-black1;
       font: 400 16px 'Montserrat', sans-serif;
-
-      strong {
-       font: 700 14px 'Montserrat', sans-serif;
-      }
-  
-      em {
-       font: italic 400 14px 'Montserrat', sans-serif;
-      }
-  
-      i {
-       font: italic 500 14px 'Newsreader', serif;
-      }
-  
-      abbr {
-       border-radius: 0.25em;
-       padding: 2px 5px;
-  
-       background-color: $color-dark1;
-  
-       color: $color-white1;
-       font: italic 200 14px 'Montserrat', sans-serif;
-       text-decoration: underline $color-light1;
-      }
-  
-      mark {
-       border-radius: 0.25em;
-       padding: 2px 5px;
-  
-       background-color: $color-light1;
-      }
      } 
      tr:nth-child(odd) {background-color: $color-white3;}
      tr:nth-child(even) {background-color: $color-white2;}
@@ -826,36 +757,6 @@
      &::marker {
       color: $color-light2;
       font: 700 20px 'Oswald', sans-serif;
-     }
-
-     strong {
-      font: 700 18px 'Montserrat', sans-serif;
-     }
- 
-     em {
-      font: italic 400 18px 'Montserrat', sans-serif;
-     }
- 
-     i {
-      font: italic 500 18px 'Newsreader', serif;
-     }
- 
-     abbr {
-      border-radius: 0.25em;
-      padding: 2px 5px;
- 
-      background-color: $color-dark1;
- 
-      color: $color-white1;
-      font: italic 200 18px 'Montserrat', sans-serif;
-      text-decoration: underline $color-light1;
-     }
- 
-     mark {
-      border-radius: 0.25em;
-      padding: 2px 5px;
- 
-      background-color: $color-light1;
      }
     }
    }
@@ -1003,6 +904,9 @@
      background-color: $color-light1;
     }
    }
+
+   /* Unclear Objects (Used in Floats) */
+   .unclear { clear: none; }
    
    /* GeoGebra iFrames */
    .content-geogebra {

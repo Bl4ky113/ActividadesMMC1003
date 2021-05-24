@@ -280,6 +280,8 @@
 }
 .main .article .content {
   /* Class Notes */
+  /* Semantics in the Content */
+  /* Electronic Configuration Quimica */
   /* Pre Texts */
   /* Titles in the Class Notes*/
   /* Links in the Class Notes */
@@ -310,6 +312,7 @@
   /* Reference */
   /* Labels in JavaScript Uses */
   /* Inputs in JavaScript Uses */
+  /* Unclear Objects (Used in Floats) */
   /* GeoGebra iFrames */
   /* Youtube Videos iFrames */
   /* Activities in the Articles */
@@ -321,18 +324,17 @@
   text-align: justify;
   font: 500 18px "Montserrat", sans-serif;
   clear: both;
-  /* Electronic Configuration Quimica */
 }
-.main .article .content .content__paragraph strong {
+.main .article .content strong {
   font: 700 18px "Montserrat", sans-serif;
 }
-.main .article .content .content__paragraph em {
+.main .article .content em {
   font: italic 300 20px "Montserrat", sans-serif;
 }
-.main .article .content .content__paragraph i {
+.main .article .content i {
   font: italic 500 20px "Newsreader", serif;
 }
-.main .article .content .content__paragraph abbr {
+.main .article .content abbr {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #000066;
@@ -340,12 +342,12 @@
   font: italic 200 18px "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.main .article .content .content__paragraph mark {
+.main .article .content mark {
   border-radius: 0.25em;
   padding: 2px 5px;
   background-color: #99ccff;
 }
-.main .article .content .content__paragraph span.conf-ele {
+.main .article .content .conf-ele {
   padding: 5px;
   border: 2px solid #000044;
   border-radius: 0.5em;
@@ -353,15 +355,12 @@
   font: 800 20px "Montserrat", sans-serif;
   display: inline-block;
 }
-.main .article .content pre {
+.main .article .content .content__pre {
   max-width: 100%;
   margin: 5px;
   font: 400 15px "Roboto Mono", monospace;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.main .article .content .content--unclear__paragraph {
-  clear: none;
 }
 .main .article .content .content__title {
   margin: 10px;
@@ -370,17 +369,11 @@
   font: 500 28px "Oswald", sans-serif;
   clear: both;
 }
-.main .article .content .content--unclear__title {
-  clear: none;
-}
 .main .article .content .content__semititle {
   margin: 10px;
   color: #000066;
   font: 300 22px "Oswald", sans-serif;
   clear: both;
-}
-.main .article .content .content--unclear__semititle {
-  clear: none;
 }
 .main .article .content .content__link {
   max-width: 50%;
@@ -499,28 +492,6 @@
   background-color: #fff;
   font: 400 16px "Montserrat", sans-serif;
 }
-.main .article .content .content-aside .content-aside__paragraph strong {
-  font: 700 16px "Montserrat", sans-serif;
-}
-.main .article .content .content-aside .content-aside__paragraph em {
-  font: italic 400 16px "Montserrat", sans-serif;
-}
-.main .article .content .content-aside .content-aside__paragraph i {
-  font: italic 500 16px "Newsreader", serif;
-}
-.main .article .content .content-aside .content-aside__paragraph abbr {
-  border-radius: 0.25em;
-  padding: 2px 5px;
-  background-color: #000066;
-  color: #fff;
-  font: italic 200 16px "Montserrat", sans-serif;
-  text-decoration: underline #99ccff;
-}
-.main .article .content .content-aside .content-aside__paragraph mark {
-  border-radius: 0.25em;
-  padding: 2px 5px;
-  background-color: #99ccff;
-}
 .main .article .content .content-aside .aside-image {
   margin: 5px auto;
   padding: 5px;
@@ -633,28 +604,6 @@
   color: #000;
   font: 400 16px "Montserrat", sans-serif;
 }
-.main .article .content .table .tcontent .tcontent__data strong {
-  font: 700 14px "Montserrat", sans-serif;
-}
-.main .article .content .table .tcontent .tcontent__data em {
-  font: italic 400 14px "Montserrat", sans-serif;
-}
-.main .article .content .table .tcontent .tcontent__data i {
-  font: italic 500 14px "Newsreader", serif;
-}
-.main .article .content .table .tcontent .tcontent__data abbr {
-  border-radius: 0.25em;
-  padding: 2px 5px;
-  background-color: #000066;
-  color: #fff;
-  font: italic 200 14px "Montserrat", sans-serif;
-  text-decoration: underline #99ccff;
-}
-.main .article .content .table .tcontent .tcontent__data mark {
-  border-radius: 0.25em;
-  padding: 2px 5px;
-  background-color: #99ccff;
-}
 .main .article .content .table .tcontent tr:nth-child(odd) {
   background-color: #f0f0f0;
 }
@@ -697,28 +646,6 @@
 .main .article .content .list .list__object::marker {
   color: #3399ff;
   font: 700 20px "Oswald", sans-serif;
-}
-.main .article .content .list .list__object strong {
-  font: 700 18px "Montserrat", sans-serif;
-}
-.main .article .content .list .list__object em {
-  font: italic 400 18px "Montserrat", sans-serif;
-}
-.main .article .content .list .list__object i {
-  font: italic 500 18px "Newsreader", serif;
-}
-.main .article .content .list .list__object abbr {
-  border-radius: 0.25em;
-  padding: 2px 5px;
-  background-color: #000066;
-  color: #fff;
-  font: italic 200 18px "Montserrat", sans-serif;
-  text-decoration: underline #99ccff;
-}
-.main .article .content .list .list__object mark {
-  border-radius: 0.25em;
-  padding: 2px 5px;
-  background-color: #99ccff;
 }
 .main .article .content .list--arrows .list__object::marker {
   content: ">>";
@@ -817,6 +744,9 @@
 }
 .main .article .content .input--button:hover, .main .article .content .input--button:focus {
   background-color: #99ccff;
+}
+.main .article .content .unclear {
+  clear: none;
 }
 .main .article .content .content-geogebra {
   width: 800px;
