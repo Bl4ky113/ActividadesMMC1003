@@ -1,6 +1,30 @@
 /* Variables */
 @import "./master";
 
+/* Scroll Bar in the document */
+
+::-webkit-scrollbar {
+ width: 1.2vw;
+ height: 1.8vh;
+
+}
+
+::-webkit-scrollbar-track {
+ border-radius: 0.25em;
+
+ background-color: $color-light3;
+}
+
+::-webkit-scrollbar-thumb {
+ border-radius: 0.25em;
+ 
+ background-color: $color-light1;
+
+ &:hover {
+  background-color: $color-light2;
+ }
+}
+
 /* ----- Header Style ----- */
 
 .header {
@@ -387,13 +411,13 @@
 
    /* Pre Texts */
    .content__pre {
-    max-width: 100%;
+    width: 100%;
 
     margin: 5px;
 
     font: 400 15px 'Roboto Mono', monospace;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
+    overflow: auto;
    }
 
    /* Titles in the Class Notes*/
@@ -653,8 +677,8 @@
     max-width: 95%;
 
     margin: 10px auto;
-    
-    text-align: center; 
+
+    overflow-x: auto;
     
     .theader {
     
@@ -666,6 +690,7 @@
 
       color: $color-white1;
       font: 700 30px 'Oswald', sans-serif;
+      text-align: center;
       text-transform: capitalize;
      }
 
@@ -677,6 +702,7 @@
 
       color: $color-black1;
       font: 500 18px 'Oswald', sans-serif;
+      text-align: center;
      }
 
      .theader__data {
@@ -687,6 +713,7 @@
 
       color: $color-black1;
       font: 400 14px 'Montserrat', sans-serif;
+      text-align: center;
      }
 
      .theader__data:nth-child(odd) {background-color: $color-white3;}
@@ -704,6 +731,7 @@
 
       color: $color-black1;
       font: 500 18px 'Oswald', sans-serif;
+      text-align: center;
      }
      .tcontent__data {
       border-radius: 0.5em;
@@ -711,6 +739,7 @@
 
       color: $color-black1;
       font: 400 16px 'Montserrat', sans-serif;
+      text-align: center;
      } 
      tr:nth-child(odd) {background-color: $color-white3;}
      tr:nth-child(even) {background-color: $color-white2;}
