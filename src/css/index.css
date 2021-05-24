@@ -56,18 +56,34 @@
 
 /* ----- Header Style ----- */
 .header {
-  height: 80px;
-  padding: 5px;
+  height: 12vh;
+  padding: 0.25em;
   background-color: #000066;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  /* Buttons in the Header */
   /* Title of the Header */
 }
+.header .button {
+  width: 5em;
+  height: 90%;
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  background-color: #0000e6;
+  display: block;
+}
+.header .button i {
+  color: #fff;
+  font-size: 4.5em;
+  text-align: center;
+}
 .header .title {
-  width: 800px;
-  border: 2px solid #0000bb;
-  padding: 10px 0;
+  width: 70vw;
+  border-radius: 0.25em;
+  padding: 0.6em 0.25em;
   background-color: #0000e6;
   display: flex;
   align-items: baseline;
@@ -77,15 +93,15 @@
 }
 .header .title .title__text {
   color: #fff;
-  font: 700 32px "Oswald", sans-serif;
+  font: 700 1.8em "Oswald", sans-serif;
   /* Name of The Class */
 }
 .header .title .title__text span {
-  font-size: 36px;
+  font-size: 1.2em;
 }
 .header .title .title--info__text {
-  color: #99ccff;
-  font: italic 200 12px "Montserrat", sans-serif;
+  color: #fff;
+  font: italic 400 1em "Montserrat", sans-serif;
 }
 
 /* Main Content of the Doc */

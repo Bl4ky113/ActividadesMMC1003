@@ -28,22 +28,43 @@
 /* ----- Header Style ----- */
 
 .header {
- height: 80px;
+ height: 12vh;
 
- padding: 5px;
+ padding: 0.25em;
 
  background-color: $color-dark1;
 
  display: flex;
- justify-content: space-around;
+ justify-content: space-evenly;
  align-items: center;
+
+ /* Buttons in the Header */
+ .button {
+  width: 5em;
+  height: 90%;
+
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.5em;
+
+  background-color: $color-base1;
+
+  display: block;
+
+  i {
+   color: $color-white1;
+   font-size: 4.5em;
+   text-align: center;
+  }
+ }
 
  /* Title of the Header */
  .title {
-  width: 800px;
+  width: 70vw;
 
-  border: 2px solid $color-base2;
-  padding: 10px 0;
+  border-radius: 0.25em;
+  padding: 0.6em 0.25em;
 
   background-color: $color-base1;
 
@@ -54,16 +75,16 @@
   /* Text */
   .title__text {
    color: $color-white1;
-   font: 700 32px 'Oswald', sans-serif;
+   font: 700 1.8em 'Oswald', sans-serif;
 
    /* Name of The Class */
-   span {font-size: 36px;}
+   span { font-size: 1.2em; }
   }
 
   /* Info */
   .title--info__text {
-   color: $color-light1;
-   font: italic 200 12px 'Montserrat', sans-serif;
+   color: $color-white1;
+   font: italic 400 1em 'Montserrat', sans-serif;
   }
  }
 }
@@ -416,7 +437,7 @@
     margin: 5px;
 
     font: 400 15px 'Roboto Mono', monospace;
-    
+
     overflow: auto;
    }
 
