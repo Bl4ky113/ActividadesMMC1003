@@ -102,36 +102,58 @@
  justify-content: space-evenly;
  flex-flow: row wrap;
 
+ /* Nav and ClassInfo Wrapper */
+
+ .nav-classinfo-wrapper {
+  width: 100%;
+  height: auto;
+
+  padding: 0.5em;
+
+  display: grid;
+
+  grid-template: repeat(1, auto) / minmax(auto, 35%) 1fr;
+  grid-gap: 0.5em;
+ }
+
  /* Index of the Main */
 
  .nav {
-  width: 25%;
-
-  margin: 5px 0;
-  border: 2px solid $color-dark1;
   border-radius: 0.25em;
-  padding: 10px;
+  padding: 0.6em;
 
   background-color: $color-dark2;
 
+  grid-column: span 1;
+  grid-row: span 1;
+
   .nav__title {
    color: $color-white1;
-   font: 500 24px 'Oswald', sans-serif;
+   font: 500 1.5em 'Oswald', sans-serif;
   }
 
   .nav-list {
-   padding: 5px;
-   padding-left: 10px;
-   border: 1px dashed $color-base1;
+   padding: 0.4em;
+   padding-left: 0.8em;
+   border: 0.125em dashed $color-base1;
 
    background-color: $color-dark1;
    
-   list-style-position: inside;
+   list-style: none;
 
    .nav-list__link {
-    font: 400 16px 'Montserrat', sans-serif;
-    
-    &::marker {color: $color-base1;}
+    font: 400 1em 'Montserrat', sans-serif;
+
+    display: flex;
+    align-items: center;
+
+    &::before { 
+     margin-right: 0.5em; 
+
+     content: "\f111";
+     color: $color-base1; 
+     font: 500 0.5em 'FontAwesome';
+    }
 
     a {
      color: $color-white2;
@@ -139,31 +161,40 @@
     }
 
     &:hover {
-     &::marker {color: $color-light1;}
+     &::before { color: $color-light1; }
      
      a {
       color: $color-white1;
-      text-decoration: underline dashed $color-light1 2px;
+      text-decoration: underline dashed $color-light1 0.15em;
      }
     }
    }
   }
 
   .nav-sublist {
-   padding: 5px;
-   padding-left: 15px;
+   padding: 0.4em;
+   padding-left: 1em;
 
    background-color: $color-dark1;
    
-   list-style-position: inside;
+   list-style: none;
 
    .nav-sublist__link {
-    padding-left: 5px;
-    border-left: 2px solid $color-base1;
+    padding-left: 0.4em;
+    border-left: 0.15em solid $color-base1;
 
-    font: 400 16px 'Montserrat', sans-serif;
+    font: 400 1em 'Montserrat', sans-serif;
+
+    display: flex;
+    align-items: center;
     
-    &::marker {color: $color-base1;}
+    &::before { 
+     margin-right: 0.5em;
+
+     content: "\f10c";
+     color: $color-base1; 
+     font: 500 0.5em 'FontAwesome';
+    }
     
     a {
      color: $color-white2;
@@ -171,11 +202,11 @@
     }
     
     &:hover {
-     &::marker {color: $color-light1;}
+     &::before { color: $color-light1; }
 
      a{
       color: $color-white1;
-      text-decoration: underline dashed $color-light1 2px;
+      text-decoration: underline dashed $color-light1 0.15em;
      }
     }
    }
@@ -185,12 +216,8 @@
  /* Sections in the Main */
 
  .section { 
-  width: 70%;
-
-  margin: 5px 0;
-  border: 5px solid $color-base1;
   border-radius: 0.25em;
-  padding: 10px;
+  padding: 0.75em;
 
   background-color: $color-base2;
 
@@ -199,12 +226,10 @@
   grid-template: repeat(2, auto) 1fr / repeat(2, 1fr);
   grid-gap: 0.5em;
 
-
   .section__className {
-   margin: 5px;
-   border: 4px solid $color-dark1;
+   margin: 0.35em;
    border-radius: 0.25em;
-   padding: 10px;
+   padding: 0.6em;
 
    background-color: $color-dark2;
 
@@ -212,49 +237,48 @@
    grid-row: span 1;
    
    color: $color-white1;
-   font: 700 26px 'Oswald', sans-serif;
+   font: 700 1.8em 'Oswald', sans-serif;
    text-align: center;
   }
 
   .table {
-   border: 2px outset $color-base1;
    border-radius: 0.5em;
-   padding: 15px;
+   padding: 0.65em;
 
    background-color: $color-white1;
 
    grid-column: span 2;
    grid-row: span 1;
 
-   .table--long__header {
+   .table__title {
     border-radius: 0.5em;
-    padding: 8px;
+    padding: 0.3em;
 
     background-color: $color-base1;
     
     color: $color-white1;
-    font: 500 24px 'Oswald', sans-serif;
+    font: 500 1.6em 'Oswald', sans-serif;
    }
 
-   .table__header {
+   .table__category {
     border-radius: 0.5em;
-    padding: 8px;
+    padding: 0.3em;
 
     background-color: $color-light2;
 
     color: $color-black1;
-    font: 500 16px 'Oswald', sans-serif;
+    font: 500 1.1em 'Oswald', sans-serif;
     text-align: center;
    }
    
    .table__data {
     border-radius: 0.5em;
-    padding: 5px;
+    padding: 0.3em;
     
     background-color: $color-white3;
     
     color: $color-black1;
-    font: 400 15px 'Montserrat', sans-serif;
+    font: 400 1em 'Montserrat', sans-serif;
     text-align: center;
    }
   }
@@ -262,9 +286,8 @@
   /* Class Info */
 
   .classinfo {
-   border: 2px outset $color-base1;
    border-radius: 0.5em;
-   padding: 15px;
+   padding: 0.9em;
 
    background-color: $color-white1;
 
@@ -272,54 +295,63 @@
    grid-row: span 1;
 
    .classinfo__title {
-    margin: 5px;
+    margin: 0.3em;
     border-radius: 0.5em;
-    padding: 8px;
+    padding: 0.3em;
     
     background-color: $color-base1;
     
     color: $color-white1;
-    font: 500 20px 'Oswald', sans-serif;
+    font: 500 1.35em 'Oswald', sans-serif;
     text-align: center;
    }
    
    .classinfo__subtitle {
     max-width: 75%;
 
-    margin: 5px;
+    margin: 0.3em;
     border-radius: 0.5em;
-    padding: 5px;
+    padding: 0.3em;
 
     background-color: $color-light2;
 
     color: $color-black1;
-    font: 500 18px 'Oswald', sans-serif;
+    font: 500 1.15em 'Oswald', sans-serif;
     text-align: center;
    }
 
    .classinfo__paragraph {
     width: 90%;
 
-    border-left: 1px solid $color-base1;
-    padding: 10px;
+    border-left: 0.15em solid $color-base1;
+    padding: 0.7em;
 
     color: $color-black1;
-    font: 500 16px 'Montserrat', sans-serif;
+    font: 500 1em 'Montserrat', sans-serif;
    }
 
    .classinfo-list {
-    border-left: 1px solid $color-base1;
-    padding: 10px;
+    border-left: 0.15em solid $color-base1;
+    padding: 0.7em;
 
-    list-style-position: inside;
+    list-style: none;
 
     .classinfo-list__object {
-     margin-left: 10px;
+     margin-left: 0.75em;
 
      color: $color-black1;
-     font: 500 16px 'Montserrat', sans-serif;
+     font: 500 1em 'Montserrat', sans-serif;
 
-     &::marker { color: $color-base1; font-size: 18px; }
+     display: flex;
+     align-items: center;
+
+     &::before { 
+      margin-right: 1em;
+
+      content: "\f111";
+      color: $color-base1;
+      font: 500 0.5em 'FontAwesome';
+     }
     }
    }
   }
