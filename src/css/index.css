@@ -824,6 +824,11 @@
   }
   .main .article .content .table .tcontent .tcontent__category {
     font-size: 1em;
+    padding: 0.2em;
+  }
+  .main .article .content .table .tcontent .tcontent__data {
+    font-size: 1em;
+    padding: 0.2em;
   }
   .main .article .content .content-images--s,
 .main .article .content .content-images--xs,
