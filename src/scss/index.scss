@@ -28,8 +28,6 @@
 /* ----- Header Style ----- */
 
 .header {
- height: 12vh;
-
  padding: 0.25em;
 
  background-color: $color-dark1;
@@ -656,8 +654,8 @@
    }
 
    /* Tables Floats */
-   .table--right { float: right; margin: 10px; } 
-   .table--left { float: left; margin: 10px; }
+   .table--right { float: right; margin: 0.65em; } 
+   .table--left { float: left; margin: 0.65em; }
 
    /* Lists in the Articles */
 
@@ -673,7 +671,7 @@
 
      color: $color-dark2;
      font: 500 1.75em 'Oswald', sans-serif;
-     text-decoration: underline solid $color-dark2 1px;
+     text-decoration: underline solid $color-dark2 0.1em;
     }
     
     .list--semi__title {
@@ -682,7 +680,7 @@
      
      color: $color-dark1;
      font: 300 1.35em 'Oswald', sans-serif;
-     text-decoration: underline solid $color-dark1 1px;
+     text-decoration: underline solid $color-dark1 0.1em;
     }
 
     .list__object {
@@ -850,22 +848,17 @@
 
     /* Reset the Number of the Tasks */
     counter-reset: section;
-    list-style-type: none;
 
     /* Title of the Activities */
     .activity__title {
-     width: 100%;
-     height: 60px;
-
-     margin: 5px auto;
-     border: 2px solid $color-dark1;
+     margin: 0.4rem auto;
      border-radius: 0.25em;
-     padding: 5px;
+     padding: 0.5em;
 
-     background-color: $color-dark2;
+     background-color: $color-dark1;
 
      color: $color-white1;
-     font: 700 32px 'Oswald', sans-serif;
+     font: 700 1.95em 'Oswald', sans-serif;
 
      display: flex;
      align-items: center;
@@ -874,13 +867,13 @@
 
     /* Activities Taks, To Do List, Etc */
     .activity__task {
-     margin: 5px;
-     border-right: 3px solid $color-base1;
-     border-left: 3px solid $color-base1;
+     margin: 0.4rem;
+     border-right: 0.2rem solid $color-base1;
+     border-left: 0.2rem solid $color-base1;
      border-radius: 0.25em;
-     padding: 5px;
+     padding: 0.5em;
 
-     font: 300 20px 'Oswald', sans-serif;
+     font: 300 1.25em 'Oswald', sans-serif;
 
      clear: both;
 

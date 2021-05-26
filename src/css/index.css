@@ -57,7 +57,6 @@
 
 /* ----- Header Style ----- */
 .header {
-  height: 12vh;
   padding: 0.25em;
   background-color: #000066;
   display: flex;
@@ -570,11 +569,11 @@
 }
 .main .article .content .table--right {
   float: right;
-  margin: 10px;
+  margin: 0.65em;
 }
 .main .article .content .table--left {
   float: left;
-  margin: 10px;
+  margin: 0.65em;
 }
 .main .article .content .list {
   margin: 0.8em;
@@ -586,14 +585,14 @@
   padding-inline-start: 0.45rem;
   color: #000044;
   font: 500 1.75em "Oswald", sans-serif;
-  text-decoration: underline solid #000044 1px;
+  text-decoration: underline solid #000044 0.1em;
 }
 .main .article .content .list .list--semi__title {
   margin: 0.1rem;
   padding-inline-start: 0.45rem;
   color: #000066;
   font: 300 1.35em "Oswald", sans-serif;
-  text-decoration: underline solid #000066 1px;
+  text-decoration: underline solid #000066 0.1em;
 }
 .main .article .content .list .list__object {
   margin: 0.25em;
@@ -726,31 +725,27 @@
 .main .article .content .activity {
   /* Reset the Number of the Tasks */
   counter-reset: section;
-  list-style-type: none;
   /* Title of the Activities */
   /* Activities Taks, To Do List, Etc */
 }
 .main .article .content .activity .activity__title {
-  width: 100%;
-  height: 60px;
-  margin: 5px auto;
-  border: 2px solid #000066;
+  margin: 0.4rem auto;
   border-radius: 0.25em;
-  padding: 5px;
-  background-color: #000044;
+  padding: 0.5em;
+  background-color: #000066;
   color: #fff;
-  font: 700 32px "Oswald", sans-serif;
+  font: 700 1.95em "Oswald", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .main .article .content .activity .activity__task {
-  margin: 5px;
-  border-right: 3px solid #0000e6;
-  border-left: 3px solid #0000e6;
+  margin: 0.4rem;
+  border-right: 0.2rem solid #0000e6;
+  border-left: 0.2rem solid #0000e6;
   border-radius: 0.25em;
-  padding: 5px;
-  font: 300 20px "Oswald", sans-serif;
+  padding: 0.5em;
+  font: 300 1.25em "Oswald", sans-serif;
   clear: both;
 }
 .main .article .content .activity .activity__task::before {
