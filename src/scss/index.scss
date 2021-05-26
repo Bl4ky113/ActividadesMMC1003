@@ -472,7 +472,7 @@
 
    /* Titles in the Class Notes*/
    .content__title {
-    margin: 0.65em;
+    margin: 0.65rem;
 
     color: $color-dark2;
     font: 500 1.75em 'Oswald', sans-serif;
@@ -481,7 +481,7 @@
    }
    
    .content__semititle {
-    margin: 0.65em;
+    margin: 0.65rem;
     
     color: $color-dark1;
     font: 300 1.35em 'Oswald', sans-serif;
@@ -662,39 +662,55 @@
    /* Lists in the Articles */
 
    .list {
-    margin: 10px;
-    border-left: 1px solid $color-base1;
-    padding-left: 25px;
+    margin: 0.8em;
+    border-left: 0.15em solid $color-base1;
+    padding-left: 0.5em;
     
 
     .list__title {
-     margin: 2px;
-     padding-inline-start: 5px;
+     margin: 0.1rem;
+     padding-inline-start: 0.45rem;
 
      color: $color-dark2;
-     font: 500 28px 'Oswald', sans-serif;
+     font: 500 1.75em 'Oswald', sans-serif;
      text-decoration: underline solid $color-dark2 1px;
     }
     
     .list--semi__title {
-     margin: 2px;
-     padding-inline-start: 5px;
+     margin: 0.1rem;
+     padding-inline-start: 0.45rem;
      
      color: $color-dark1;
-     font: 300 22px 'Oswald', sans-serif;
+     font: 300 1.35em 'Oswald', sans-serif;
      text-decoration: underline solid $color-dark1 1px;
     }
 
     .list__object {
-     margin: 5px;
-     padding-left: 10px;
+     margin: 0.25em;
+     padding-left: 0.25em;
 
      color: $color-black1;
-     font: 500 18px 'Montserrat', sans-serif;
+     font: 500 1em 'Montserrat', sans-serif;
+
+     list-style: none;
+
+     &::before {
+      margin-right: 0.5em;
+
+      color: $color-light2;
+      font: 800 1em 'FontAwesome';
+     }
+    }
+   }
+
+   ol.list {
+    .list__object {
+     list-style-type: inherit;
+     list-style-position: inside;
 
      &::marker {
       color: $color-light2;
-      font: 700 20px 'Oswald', sans-serif;
+      font: 800 1em 'Oswald', sans-serif;
      }
     }
    }
@@ -702,52 +718,28 @@
    /* Diferent Markers for the Ulist */
 
    /* Arrows ">>>" */
-   .list--arrows {
-
-    .list__object {
-
-     &::marker {content: '>>';}
-    }
-   }
+   .list--arrows { .list__object { &::before { content: "\f101"; } } }
 
    /* long Arrow "---->" */
-   .list--longarrow {
-
-    .list__object {
-
-     &::marker {content: "->";}
-    }
-   }
+   .list--longarrow { .list__object { &::before { content: "\f178"; } } }
 
    /* Lines "---" */
-   .list--lines {
-
-    .list__object {
-
-     &::marker {content: '--';}
-    }
-   }
+   .list--lines { .list__object { &::before { content: '\f141'; } } }
 
    /* Diamond "<>" */
-   .list--diamond {
-
-    .list__object {
-
-     &::marker {content: '<>'}
-    }
-   }
+   .list--diamond { .list__object { &::before { content: '\f07e' } } }
 
    /* Flat Lists */
    .list--flat {
-    border-right: 1px solid $color-base1;
+    border-right: 0.15em solid $color-base1;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 
-    .list__title {width: 100%;}
-    .list--semi__title {width: 100%;}
-    .list__object {margin: 5px 20px;}
+    .list__title { width: 100% ;}
+    .list--semi__title { width: 100%; }
+    .list__object { margin: 0.4em 1.05em; }
    }
 
    .list--right {float: right;}

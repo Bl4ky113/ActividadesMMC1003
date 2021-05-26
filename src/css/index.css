@@ -415,13 +415,13 @@
   overflow: auto;
 }
 .main .article .content .content__title {
-  margin: 0.65em;
+  margin: 0.65rem;
   color: #000044;
   font: 500 1.75em "Oswald", sans-serif;
   clear: both;
 }
 .main .article .content .content__semititle {
-  margin: 0.65em;
+  margin: 0.65rem;
   color: #000066;
   font: 300 1.35em "Oswald", sans-serif;
   clear: both;
@@ -578,48 +578,58 @@
   margin: 10px;
 }
 .main .article .content .list {
-  margin: 10px;
-  border-left: 1px solid #0000e6;
-  padding-left: 25px;
+  margin: 0.8em;
+  border-left: 0.15em solid #0000e6;
+  padding-left: 0.5em;
 }
 .main .article .content .list .list__title {
-  margin: 2px;
-  padding-inline-start: 5px;
+  margin: 0.1rem;
+  padding-inline-start: 0.45rem;
   color: #000044;
-  font: 500 28px "Oswald", sans-serif;
+  font: 500 1.75em "Oswald", sans-serif;
   text-decoration: underline solid #000044 1px;
 }
 .main .article .content .list .list--semi__title {
-  margin: 2px;
-  padding-inline-start: 5px;
+  margin: 0.1rem;
+  padding-inline-start: 0.45rem;
   color: #000066;
-  font: 300 22px "Oswald", sans-serif;
+  font: 300 1.35em "Oswald", sans-serif;
   text-decoration: underline solid #000066 1px;
 }
 .main .article .content .list .list__object {
-  margin: 5px;
-  padding-left: 10px;
+  margin: 0.25em;
+  padding-left: 0.25em;
   color: #000;
-  font: 500 18px "Montserrat", sans-serif;
+  font: 500 1em "Montserrat", sans-serif;
+  list-style: none;
 }
-.main .article .content .list .list__object::marker {
+.main .article .content .list .list__object::before {
+  margin-right: 0.5em;
   color: #3399ff;
-  font: 700 20px "Oswald", sans-serif;
+  font: 800 1em "FontAwesome";
 }
-.main .article .content .list--arrows .list__object::marker {
-  content: ">>";
+.main .article .content ol.list .list__object {
+  list-style-type: inherit;
+  list-style-position: inside;
 }
-.main .article .content .list--longarrow .list__object::marker {
-  content: "->";
+.main .article .content ol.list .list__object::marker {
+  color: #3399ff;
+  font: 800 1em "Oswald", sans-serif;
 }
-.main .article .content .list--lines .list__object::marker {
-  content: "--";
+.main .article .content .list--arrows .list__object::before {
+  content: "";
 }
-.main .article .content .list--diamond .list__object::marker {
-  content: "<>";
+.main .article .content .list--longarrow .list__object::before {
+  content: "";
+}
+.main .article .content .list--lines .list__object::before {
+  content: "";
+}
+.main .article .content .list--diamond .list__object::before {
+  content: "";
 }
 .main .article .content .list--flat {
-  border-right: 1px solid #0000e6;
+  border-right: 0.15em solid #0000e6;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -631,7 +641,7 @@
   width: 100%;
 }
 .main .article .content .list--flat .list__object {
-  margin: 5px 20px;
+  margin: 0.4em 1.05em;
 }
 .main .article .content .list--right {
   float: right;
