@@ -651,39 +651,35 @@
 }
 .main .article .content .ref {
   width: 90%;
-  padding: 10px 20px;
-  border-left: 5px solid #0000e6;
-  border-top-right-radius: 1em;
-  border-top-left-radius: 0.25em;
-  border-bottom-right-radius: 1em;
-  border-bottom-left-radius: 0.25em;
-  margin: 5px auto;
+  padding: 0.8rem 1.2rem;
+  border-left: 0.28rem solid #0000e6;
+  border-radius: 0.1em 1em 1em 0.1em;
+  margin: 0.25rem auto;
   background-color: #cce5ff;
 }
 .main .article .content .ref .ref__title {
-  margin: 5px;
+  border-bottom: 0.15rem solid #0000e6;
   color: #000066;
-  font: 800 20px "Oswald", sans-serif;
-  text-decoration: underline solid #0000e6 1px;
+  font: 800 1.35em "Oswald", sans-serif;
 }
 .main .article .content .ref .ref__link {
-  padding: 2px 5px;
-  border-left: 2px solid #0000e6;
+  padding: 0.15rem 0.4rem;
+  border-left: 0.15rem solid #0000e6;
   color: #000;
-  font: 500 12px "Montserrat", sans-serif;
+  font: 500 0.9em "Montserrat", sans-serif;
   text-decoration: none;
   display: block;
 }
 .main .article .content .ref .ref__link::before {
-  content: "O";
+  content: "";
   color: #0000bb;
-  font-weight: bolder;
+  font: 800 1em "FontAwesome";
 }
 .main .article .content .ref .ref__link cite {
   color: #000066;
 }
 .main .article .content .ref .ref__link:hover cite {
-  text-decoration: underline dashed #0000bb 1px;
+  text-decoration: underline dashed #0000bb 0.1em;
 }
 .main .article .content .label {
   margin: 5px;

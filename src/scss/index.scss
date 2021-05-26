@@ -750,45 +750,39 @@
    .ref {
     width: 90%;
     
-    padding: 10px 20px; 
-    border-left: 5px solid $color-base1;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 0.25em;
-    border-bottom-right-radius: 1em;
-    border-bottom-left-radius: 0.25em;
-    margin: 5px auto;
+    padding: 0.8rem 1.2rem; 
+    border-left: 0.28rem solid $color-base1;
+    border-radius: 0.10em 1em 1em 0.10em;
+    margin: 0.25rem auto;
 
     background-color: $color-light3;
 
     .ref__title {
-     margin: 5px;
+     border-bottom: 0.15rem solid $color-base1;
 
      color: $color-dark1;
-     font: 800 20px 'Oswald', sans-serif;
-     text-decoration: underline solid $color-base1 1px;
+     font: 800 1.35em 'Oswald', sans-serif;
     }
 
     .ref__link {
-     padding: 2px 5px;
-     border-left: 2px solid $color-base1;
+     padding: 0.15rem 0.4rem;
+     border-left: 0.15rem solid $color-base1;
 
      color: $color-black1;
-     font: 500 12px 'Montserrat', sans-serif;
+     font: 500 0.9em 'Montserrat', sans-serif;
      text-decoration: none;
 
      display: block;
 
      &::before {
-      content: "O";
+      content: "\f08e";
       color: $color-base2;
-      font-weight: bolder;
+      font: 800 1em 'FontAwesome';
      }
 
-     cite {color: $color-dark1;}
+     cite { color: $color-dark1; }
 
-     &:hover {
-      cite {text-decoration: underline dashed $color-base2 1px;}
-     }
+     &:hover { cite { text-decoration: underline dashed $color-base2 0.1em; } }
     }
    }
 
