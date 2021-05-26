@@ -366,7 +366,6 @@
   /* Labels in JavaScript Uses */
   /* Inputs in JavaScript Uses */
   /* Unclear Objects (Used in Floats) */
-  /* GeoGebra iFrames */
   /* Youtube Videos iFrames */
   /* Activities in the Articles */
 }
@@ -682,29 +681,29 @@
   text-decoration: underline dashed #0000bb 0.1em;
 }
 .main .article .content .label {
-  margin: 5px;
-  padding: 10px;
-  font: 500 16px "Montserrat", sans-serif;
+  margin: 0.4rem;
+  padding: 0.8rem;
+  font: 500 1em "Montserrat", sans-serif;
   color: #000066;
   display: inline-block;
 }
 .main .article .content .input {
-  margin: 5px;
-  border: 1px solid #000;
+  margin: 0.4em;
+  border: 0.1em solid #000;
   border-radius: 0.25em;
-  padding: 10px;
+  padding: 0.75em;
   background-color: #fff;
-  font: 500 16px "Montserrat", sans-serif;
+  font: 500 1em "Montserrat", sans-serif;
   display: inline-block;
 }
 .main .article .content .input:hover, .main .article .content .input:focus {
-  border: 1px solid #000066;
+  border: 0.1em solid #000066;
   background-color: #cce5ff;
 }
 .main .article .content .input--button {
-  margin: 10px;
-  padding: 10px 40px;
-  font-size: 20px;
+  margin: 0.75em;
+  padding: 0.75em 2em;
+  font: 500 1.25em "Montserrat", sans-serif;
   background-color: #cce5ff;
 }
 .main .article .content .input--button:hover, .main .article .content .input--button:focus {
@@ -713,19 +712,16 @@
 .main .article .content .unclear {
   clear: none;
 }
-.main .article .content .content-geogebra {
-  width: 800px;
-  height: 400px;
-  margin: 5px auto;
-  border: 2px outset #3399ff;
-  border-radius: 0.5em;
-}
-.main .article .content .content-ytvideo {
+.main .article .content .ytvideo-wrapper {
   width: 80%;
-  height: 500px;
-  margin: 5px auto;
-  border: 2px outset #3399ff;
+  height: 80vh;
+  margin: 0.4em auto;
+  border: 0.15em solid #3399ff;
   border-radius: 0.25em;
+}
+.main .article .content .ytvideo {
+  width: 100%;
+  height: 100%;
 }
 .main .article .content .activity {
   /* Reset the Number of the Tasks */

@@ -788,10 +788,10 @@
 
    /* Labels in JavaScript Uses */
    .label {
-    margin: 5px;
-    padding: 10px;
+    margin: 0.4rem;
+    padding: 0.8rem;
 
-    font: 500 16px 'Montserrat', sans-serif;
+    font: 500 1em 'Montserrat', sans-serif;
     color: $color-dark1;
 
     display: inline-block;
@@ -799,57 +799,50 @@
 
    /* Inputs in JavaScript Uses */
    .input {
-    margin: 5px;
-    border: 1px solid $color-black1;
+    margin: 0.4em;
+    border: 0.1em solid $color-black1;
     border-radius: 0.25em;
-    padding: 10px;
+    padding: 0.75em;
 
     background-color: $color-white1;
 
-    font: 500 16px 'Montserrat', sans-serif;
+    font: 500 1em 'Montserrat', sans-serif;
     display: inline-block;
 
     &:hover, &:focus {
-     border: 1px solid $color-dark1;
+     border: 0.1em solid $color-dark1;
 
      background-color: $color-light3;
     } 
    }
 
    .input--button {
-    margin: 10px;
-    padding: 10px 40px;
+    margin: 0.75em;
+    padding: 0.75em 2em;
 
-    font-size: 20px;
+    font: 500 1.25em 'Montserrat', sans-serif;
     
     background-color: $color-light3;
 
-    &:hover, &:focus {
-     background-color: $color-light1;
-    }
+    &:hover, &:focus { background-color: $color-light1; }
    }
 
    /* Unclear Objects (Used in Floats) */
    .unclear { clear: none; }
    
-   /* GeoGebra iFrames */
-   .content-geogebra {
-    width: 800px;
-    height: 400px;
+   /* Youtube Videos iFrames */
+   .ytvideo-wrapper {
+    width: 80%;
+    height: 80vh;
 
-    margin: 5px auto;
-    border: 2px outset $color-light2;
-    border-radius: 0.5em;
+    margin: 0.4em auto;
+    border: 0.15em solid $color-light2;
+    border-radius: 0.25em;
    }
 
-   /* Youtube Videos iFrames */
-   .content-ytvideo {
-    width: 80%;
-    height: 500px;
-    
-    margin: 5px auto;
-    border: 2px outset $color-light2;
-    border-radius: 0.25em;
+   .ytvideo {
+    width: 100%;
+    height: 100%;
    }
 
    /* Activities in the Articles */
