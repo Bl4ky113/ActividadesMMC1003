@@ -38,9 +38,6 @@
 
  /* Buttons in the Header */
  .button {
-  width: 5em;
-  height: 90%;
-
   margin: 0 0.5em;
   border: none;
   border-radius: 0.25em;
@@ -74,6 +71,7 @@
   .title__text {
    color: $color-white1;
    font: 700 1.8em 'Oswald', sans-serif;
+   text-align: center;
 
    /* Name of The Class */
    span { font-size: 1.2em; }
@@ -568,10 +566,6 @@
    .content-images--xl {width: 90%;} /* Very Large */
    .content-images--xxl {width: 100%;} /* Max Size */
 
-   /* Float Images */
-   .content-images--right { float: right; margin: 0.8em; }
-   .content-images--left { float: left; margin: 0.8em; }
-
    /* Table's wrapper for Responsive Tables */
 
    .table-wrapper {
@@ -596,7 +590,7 @@
       background-color: $color-base2;
       
       color: $color-white1;
-      font: 700 2.1em 'Oswald', sans-serif;
+      font: 700 1.8em 'Oswald', sans-serif;
       text-align: center;
       text-transform: capitalize;
      }
@@ -619,7 +613,7 @@
       background-color: $color-white3;
 
       color: $color-black1;
-      font: 400 0.95em 'Montserrat', sans-serif;
+      font: 400 1em 'Montserrat', sans-serif;
       text-align: center;
      }
      
@@ -644,7 +638,7 @@
       padding: 0.4em;
 
       color: $color-black1;
-      font: 400 0.9em 'Montserrat', sans-serif;
+      font: 400 1em 'Montserrat', sans-serif;
       text-align: center;
      } 
 
@@ -652,10 +646,6 @@
      tr:nth-child(even) { background-color: $color-white2; }
     }
    }
-
-   /* Tables Floats */
-   .table--right { float: right; margin: 0.65em; } 
-   .table--left { float: left; margin: 0.65em; }
 
    /* Lists in the Articles */
 
@@ -740,9 +730,6 @@
     .list__object { margin: 0.4em 1.05em; }
    }
 
-   .list--right {float: right;}
-   .list--left {float: left;}
-
    /* Reference */
 
    .ref {
@@ -825,7 +812,11 @@
     &:hover, &:focus { background-color: $color-light1; }
    }
 
-   /* Unclear Objects (Used in Floats) */
+   /* Float Objects */
+   .right { float: right; margin-left: 0.5em; margin-bottom: 0.5em; }
+   .left { float: left; margin-right: 0.5em; margin-bottom: 0.5em; }
+
+   /* Unclear Objects (Used with Floats) */
    .unclear { clear: none; }
    
    /* Youtube Videos iFrames */
@@ -881,6 +872,131 @@
       counter-increment: section;
       content: "Punto N°" counter(section) ". ";
      }
+    }
+   }
+  }
+ }
+}
+
+@media screen and (max-width: 900px) {
+ body { font-size: 14px; }
+
+ .header {
+  .button { i { font-size: 2.5em; } }
+
+  .title--info__text { display: none; }
+
+ }
+
+ .main {
+  .nav-classinfo-wrapper {
+   grid-template: repeat(2, auto) / repeat(1, 1fr);
+
+   .nav { grid-row: 2 / 3; }
+   .section { grid-row: 1 / 2; }
+  }
+
+  .article { width: 100%; }
+ }
+}
+
+@media screen and (max-width: 396px) {
+ .header {
+  .button { display: none; }
+
+  .title {
+   .title__text { font-size: 1.6em; }
+  }
+ }
+
+ .main {
+  .nav-classinfo-wrapper {
+   .section {
+    .section__className {
+     font-size: 1.35em;
+    }
+
+    .table {
+     .table__title { font-size: 1.25em; }
+     .table__category { font-size: 1em; }
+     .table__data { font-size: 0.9em; }
+    }
+
+    .classinfo {
+     .classinfo__title { 
+      width: 90%; 
+
+      margin: 0 auto;
+
+      font-size: 1.15em; 
+     }
+     .classinfo__subtitle { 
+      width: 80%; 
+
+      margin: 0 auto;
+
+      font-size: 1em; 
+     }
+    }
+   }
+  }
+
+  .article {
+   .article__title {
+    width: 100%;
+    
+    padding: 0.15em;
+
+    font-size: 1.75em;
+   }
+
+   .article__date {
+    width: 90%;
+
+    padding: 0.15em;
+
+    font-size: 1.2em;
+   }
+
+   .content {
+    .content__title { font-size: 1.5em; }
+    .content__semititle { font-size: 1.25em; }
+
+    .list {
+     .list__title { font-size: 1.5em; }
+     .list--semi__title { font-size: 1.25em; }
+    }
+    
+    .table {
+     .theader {
+      .theader__title { font-size: 1.45em; }
+      .theader__category { font-size: 1em; }
+     }
+
+     .tcontent {
+      .tcontent__category { font-size: 1em; }
+     }
+    }
+    
+    .content-images--s, 
+    .content-images--xs,
+    .content-images--xxs,
+    .content-images--m { width: 60%; }
+
+    .ref { 
+     width: 80%; 
+
+     .ref__title {
+      font-size: 1.15em;
+     }
+    }
+
+    .right, .left { float: none; margin: 0.4em auto;}
+    
+    .activity { 
+     .activity__title { font-size: 1.5em; }
+
+     .activity__task { font-size: 1em; } 
     }
    }
   }
