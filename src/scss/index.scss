@@ -25,6 +25,13 @@
  }
 }
 
+.wrapper {
+ display: grid;
+ grid-template-areas: "header "
+                      "content"
+                      "footer";
+}
+
 /* ----- Header Style ----- */
 
 .header {
@@ -35,6 +42,8 @@
  display: flex;
  justify-content: space-evenly;
  align-items: center;
+
+ grid-area: header;
 
  /* Buttons in the Header */
  .button {
@@ -100,6 +109,8 @@
  display: flex;
  justify-content: space-evenly;
  flex-flow: row wrap;
+
+ grid-area: content;
 
  /* Nav and ClassInfo Wrapper */
 
@@ -879,8 +890,16 @@
  }
 }
 
+.footer {
+ padding: 1em 1.8em;
+
+ background-color: $color-dark1;
+
+ grid-area: footer;
+}
+
 @media screen and (max-width: 900px) {
- body { font-size: 14px; }
+ .wrapper { font-size: 14px; }
 
  .header {
   .button { i { font-size: 2.5em; } }

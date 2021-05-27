@@ -55,6 +55,11 @@
   background-color: #3399ff;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-areas: "header " "content" "footer";
+}
+
 /* ----- Header Style ----- */
 .header {
   padding: 0.25em;
@@ -62,6 +67,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  grid-area: header;
   /* Buttons in the Header */
   /* Title of the Header */
 }
@@ -114,6 +120,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
+  grid-area: content;
   /* Nav and ClassInfo Wrapper */
   /* Index of the Main */
   /* Sections in the Main */
@@ -740,8 +747,14 @@
   content: "Punto N°" counter(section) ". ";
 }
 
+.footer {
+  padding: 1em 1.8em;
+  background-color: #000066;
+  grid-area: footer;
+}
+
 @media screen and (max-width: 900px) {
-  body {
+  .wrapper {
     font-size: 14px;
   }
 
