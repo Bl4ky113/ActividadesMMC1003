@@ -56,8 +56,11 @@
 }
 
 .wrapper {
+  width: 100%;
   display: grid;
-  grid-template-areas: "header " "content" "footer";
+  grid-template: auto 1fr auto/repeat(3, 1fr);
+  grid-template-areas: "header header header" "content content content" "footer footer footer";
+  overflow: hidden;
 }
 
 /* ----- Header Style ----- */
@@ -67,6 +70,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  grid-column: span 3;
+  grid-row: span 1;
   grid-area: header;
   /* Buttons in the Header */
   /* Title of the Header */
@@ -120,6 +125,8 @@
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
+  grid-column: span 3;
+  grid-row: span 1;
   grid-area: content;
   /* Nav and ClassInfo Wrapper */
   /* Index of the Main */
@@ -750,6 +757,8 @@
 .footer {
   padding: 1em 1.8em;
   background-color: #000066;
+  grid-column: span 3;
+  grid-row: span 1;
   grid-area: footer;
 }
 
@@ -789,12 +798,15 @@
   .main .nav-classinfo-wrapper .section .section__className {
     font-size: 1.35em;
   }
-  .main .nav-classinfo-wrapper .section .table,
-.main .nav-classinfo-wrapper .section .table tr,
+  .main .nav-classinfo-wrapper .section .table {
+    width: 100%;
+    display: block;
+  }
+  .main .nav-classinfo-wrapper .section .table tr,
 .main .nav-classinfo-wrapper .section .table .table__category,
 .main .nav-classinfo-wrapper .section .table .table__data {
     display: block;
-    min-width: 100%;
+    width: 100%;
   }
   .main .nav-classinfo-wrapper .section .table .table__title {
     font-size: 1.25em;
@@ -815,12 +827,12 @@
     font-size: 1em;
   }
   .main .article .article__title {
-    width: 100%;
+    width: 90%;
     padding: 0.15em;
     font-size: 1.75em;
   }
   .main .article .article__date {
-    width: 90%;
+    width: 80%;
     padding: 0.15em;
     font-size: 1.2em;
   }

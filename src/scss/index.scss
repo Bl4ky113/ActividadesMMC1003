@@ -26,10 +26,16 @@
 }
 
 .wrapper {
+ width: 100%;
+
  display: grid;
- grid-template-areas: "header "
-                      "content"
-                      "footer";
+
+ grid-template: auto 1fr auto / repeat(3, 1fr);
+
+ grid-template-areas: "header header header"
+                      "content content content"
+                      "footer footer footer";
+ overflow: hidden;
 }
 
 /* ----- Header Style ----- */
@@ -43,6 +49,8 @@
  justify-content: space-evenly;
  align-items: center;
 
+ grid-column: span 3;
+ grid-row: span 1;
  grid-area: header;
 
  /* Buttons in the Header */
@@ -110,6 +118,8 @@
  justify-content: space-evenly;
  flex-flow: row wrap;
 
+ grid-column: span 3;
+ grid-row: span 1;
  grid-area: content;
 
  /* Nav and ClassInfo Wrapper */
@@ -895,6 +905,8 @@
 
  background-color: $color-dark1;
 
+ grid-column: span 3;
+ grid-row: span 1;
  grid-area: footer;
 }
 
@@ -905,7 +917,6 @@
   .button { i { font-size: 2.5em; } }
 
   .title--info__text { display: none; }
-
  }
 
  .main {
@@ -937,10 +948,13 @@
     }
 
     .table {
-     &, 
+     width: 100%;
+
+     display: block; 
+
      tr, 
      .table__category,
-     .table__data { display: block; min-width: 100%; }
+     .table__data { display: block; width: 100%; }
 
      .table__title { font-size: 1.25em; display: none; }
 
@@ -969,7 +983,7 @@
 
   .article {
    .article__title {
-    width: 100%;
+    width: 90%;
     
     padding: 0.15em;
 
@@ -977,7 +991,7 @@
    }
 
    .article__date {
-    width: 90%;
+    width: 80%;
 
     padding: 0.15em;
 
