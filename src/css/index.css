@@ -246,6 +246,7 @@
   color: #000;
   font: 400 1em "Montserrat", sans-serif;
   text-align: center;
+  word-break: break-all;
 }
 .main .section .classinfo {
   border-radius: 0.5em;
@@ -775,13 +776,19 @@
   .main .nav-classinfo-wrapper .section .section__className {
     font-size: 1.35em;
   }
+  .main .nav-classinfo-wrapper .section .table,
+.main .nav-classinfo-wrapper .section .table tr,
+.main .nav-classinfo-wrapper .section .table .table__category,
+.main .nav-classinfo-wrapper .section .table .table__data {
+    display: block;
+    min-width: 100%;
+  }
   .main .nav-classinfo-wrapper .section .table .table__title {
     font-size: 1.25em;
+    display: none;
   }
-  .main .nav-classinfo-wrapper .section .table .table__category {
-    font-size: 1em;
-  }
-  .main .nav-classinfo-wrapper .section .table .table__data {
+  .main .nav-classinfo-wrapper .section .table .table__category,
+.main .nav-classinfo-wrapper .section .table .table__data {
     font-size: 0.9em;
   }
   .main .nav-classinfo-wrapper .section .classinfo .classinfo__title {

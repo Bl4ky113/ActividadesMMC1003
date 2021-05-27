@@ -279,6 +279,7 @@
     color: $color-black1;
     font: 400 1em 'Montserrat', sans-serif;
     text-align: center;
+    word-break: break-all;
    }
   }
 
@@ -917,8 +918,14 @@
     }
 
     .table {
-     .table__title { font-size: 1.25em; }
-     .table__category { font-size: 1em; }
+     &, 
+     tr, 
+     .table__category,
+     .table__data { display: block; min-width: 100%; }
+
+     .table__title { font-size: 1.25em; display: none; }
+
+     .table__category,
      .table__data { font-size: 0.9em; }
     }
 
