@@ -519,6 +519,7 @@
 }
 .main .article .content .table {
   width: 100%;
+  margin: 0 auto;
 }
 .main .article .content .table .theader .theader__title {
   border-radius: 0.2em;
