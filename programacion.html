@@ -50,7 +50,7 @@
       <h3 class="nav__title">2da Entrega del Módulo</h3>
       <ul class="nav-list">
         <li class="nav-list__link"><a href="#claseP2-operadoresRelacionales">Operadores Relacionales <em>(05/18/21)</em></a></li>
-        <li class="nav-list__link"><a href="#claseP2-operadoresRelacionales">Operadores Relacionales <em>(05/18/21)</em></a></li>
+        <li class="nav-list__link"><a href="#claseP2-notas1raActividadModulo">1ra Actividad Módulo <em>(05/18/21)</em></a></li>
       </ul>
     </nav>
     <!-- Home -->
@@ -903,6 +903,135 @@
       </div>
     </div>
   </article>
+
+  <article class="article">
+    <h3 id="claseP2-notas1raActividadModulo" class="article__title">Notas 1ra Actividad Módulo</h3>
+    <span class="article__date">06/02/2021 | Miercoles</span>
+    <div class="content">
+
+      <p class="content__title">Condicionales en JavaScript</p>
+      <p class="content__paragraph">
+        Las condicionales en JavaScript son partes o bloques de códigos que se ejecutan cuando una condicional o 
+        condición es <em>True</em>, estas condiciones generalmente estan hechas & formadas por los <i>Operadores Relacionales</i>.
+        Pueden ser varias condiciones en un solo <em>If</em> usando diferentes <i>Operadores Lógicos</i>. 
+      </p>
+
+      <p class="content__paragraph">
+        Los <i>Operadores Lógicos</i> son connectores de diferentes condiciones, teniendo un tipo de relación entre cada 
+        condición. Los <i>Operadores Lógicos</i> son:
+      </p>
+
+      <table class="table">
+        <thead class="theader">
+          <tr>
+            <th class="theader__title" colspan="3">Operadores Lógicos</th>
+          </tr>
+          <tr>
+            <th class="theader__category">Operador</th>
+            <th class="theader__category">Descripción</th>
+            <th class="theader__category">Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody class="tcontent">
+          <tr>
+            <td class="tcontent__data">&&</td>
+            <td class="tcontent__data">Da <em>True</em> si ambas condiciones son <em>True</em></td>
+            <td class="tcontent__data">10 > 5 && 9 > 1 => <em>True</em></td>
+          </tr>
+          <tr>
+            <td class="tcontent__data">||</td>
+            <td class="tcontent__data">Da <em>True</em> si alguna condicion es <em>True</em></td>
+            <td class="tcontent__data">10 > 12 || 10 > 9 => <em>True</em></td>
+          </tr>
+          <tr>
+            <td class="tcontent__data">!</td>
+            <td class="tcontent__data">Invierte el valor de la condición</td>
+            <td class="tcontent__data">!(10 > 12) => <em>True</em></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="content__paragraph">
+        Ahora podemos crear varias condiciones para un bloque de código, pero algunas veces necesitamos usar más de una 
+        condición. Para estos problemas debemos usar una lista de diferentes Condicionales que se usan en diferentes ocaciones.
+      </p>
+      <p class="content__semititle">Lista de Condicionales</p>
+      <ul class="list list--arrows">
+        <p class="list--semi__title">if: </p>
+        <li class="list__object">
+          Se usa como el principal condicional si solo debemos tener una condición para una situación.
+        </li>
+        <p class="list--semi__title">else if: </p>
+        <li class="list__object">
+          Se usa como otras condicionales, despues de la principal o el <em>if</em>, no es recomendado usar muchas.
+        </li>
+        <p class="list--semi__title">else: </p>
+        <li class="list__object">
+          Se usa cuando la condición tiene una situación que no esta descrita por las condicionales.
+        </li>
+        <p class="list--semi__title">Switch: </p>
+        <li class="list__object">
+          Se usa cuando debemos usar varias condicionales para un valor o condición sencilla.
+        </li>
+      </ul>
+
+      <p class="content__paragraph">
+        Y eso fue mi explicación de las condicionales de JavaScript.
+      </p>
+
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP2-1raActividadModulo" class="activity__title">Condicionales en Programación</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data">06/02/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="activity__task">
+          Construya un diagrama de flujo en DFD usando la condicional if, que tome como dato el sueldo de un trabajador que le aplica auxilio de transporte
+          de $106.454 si gana $908.526 pesos mensuales hasta $1.817.052 y si su sueldo es mayor no tiene auxilio de transporte, el programa debe indicar que
+          si se obtuvo o no dicha cantidad de acuerdo con los márgenes de dinero antes mencionados.
+        </p>
+        <label for="input-num_transporte" class="label">
+          Ingresa tu Salario, para ver si puedes recibir el <strong>Auxilio de Transporte</strong>
+        </label>
+        <input class="input" type="number" id="input-num_transporte">
+        
+        <p id="output_transporte" class="content__paragraph">
+          Ingresa primero tu salario para saber si puedes recibir el <strong>Auxilio de Transporte</strong>.
+        </p>
+
+        <p class="activity__task">
+          Construya una calculadora con las siguientes funciones (suma, resta, multiplicación, división, raíz cuadrada, potencia al cuadrado y porcentaje) 
+          en dfd usando la condicional if.
+        </p>
+      </section>
+    </div>
+  </article>
 </main>
 
 <footer class="footer">
@@ -912,7 +1041,7 @@
 <script src="./src/js/operaciones.js"></script>
 <script src="./src/js/suma20.js"></script>
 <script src="./src/js/menu_operaciones.js"></script>
-
+<script src="./src/js/auxilio_transporte.js"></script>
 </div>
 </body>
 </html>
