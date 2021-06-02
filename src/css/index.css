@@ -393,10 +393,13 @@
   font-weight: 700;
 }
 .main .article .content em {
-  font: italic 300 0.9em "Montserrat", sans-serif;
+  font: italic 300 0.95em "Montserrat", sans-serif;
 }
 .main .article .content i {
-  font: italic 500 0.9em "Newsreader", serif;
+  font: italic 500 0.95em "Newsreader", serif;
+}
+.main .article .content i.fa {
+  font: 500 1.1em "FontAwesome";
 }
 .main .article .content abbr {
   border-radius: 0.25em;
