@@ -52,7 +52,7 @@
       </ul>
       <h3 class="nav__title">2da Entrega del Módulo</h3>
       <ul class="nav-list">
-        <li class="nav-list__link"><a href="#"></a></li>
+        <li class="nav-list__link"><a href="#claseP2-functionesFinFeHoEstMath">Funciones Financieras, Fecha y hora, Estadisticas y Matemáticas</a></li>
       </ul>
     </nav>
 
@@ -635,6 +635,286 @@
 
         <a href="./src/others/almacenFrutasYVerduras.xlsx" class="content__link">Archivo Excel de la Actividad</a>
 
+      </section>
+    </div>
+  </article>
+  <article class="article">
+    <h3 id="claseP2-functionesFinFeHoEstMath" class="article__title">Funciones Financieras, Fechas Y Horas, Estadistica y Matemáticas</h3>
+    <span class="article__date">Lunes | 05/31/2021</span>
+    <div class="content">
+      <p class="content__title">Funciones Financieras</p>
+      <p class="content__paragraph">
+        Las funciones financieras de Excel, son funciones que nos facilitan el proceso de hacer diferentes calculos financieros en nuestra hoja de calculo. 
+        Hay muchas funciones desde para calcular valores de invesiones, estados de estas, conversiones de monedas y mil cosas más. Pero la verdad no logro entender 
+        bién cada una o la gran mayoria, ya que no tengo mucho conocimiento en calculo financiero.
+      </p>
+      <p class="content__paragraph">
+        Algunos de los ejemplos de Funciones Financieras:
+      </p>
+      <ul class="list list--lines">
+        <p class="list--semi__title">Función VF(tasa, num_per, pago, [va], [tipo])</p>
+        <li class="list__object">
+          <strong>VF()</strong> o <strong>Valor Futuro</strong>, es una función que nos permite calcular el valor futuro que va a tener una inversión a partir 
+          de una tasa de interes constante. La función de Valor Futuro necesita los siguientes argumentos:
+        </li>
+        <ul class="list list--arrows">
+          <li class="list__object">
+            <strong>tasa:</strong> Es la tasa de interes constante, que se va a usar o tener cada periodo. Es <mark>obligatorio</mark>.
+          </li>
+          <li class="list__object">
+            <strong>num_per:</strong> Es el número de periodos de pago que va a haber, generalmente el número de pagos en un año. Es <mark>obligatorio</mark>.
+          </li>
+          <li class="list__object">
+            <strong>pago:</strong> Es el pago que se efectua cada periodo, no puede variar en el transcurso de los periodos de pago. Si se omite el valor, debe 
+            incluir el argumento <strong>VA</strong>, siendo <mark>obligatorio</mark>.
+          </li>
+          <li class="list__object">
+            <strong>va:</strong> Es el valor actual del pago o valor total de una serie de pagos futuros. Es opcional, si se omite el valor total se considera 0.
+          </li>
+          <li class="list__object">
+            <strong>tipo:</strong> Indica cuando se vencen los pagos. Es opcional, si se omite se considera 0. 
+            (0 = al final del periodo || 1 = al inicio del periodo).
+          </li>
+        </ul>
+        <p class="list--semi__title">Función PAGO(tasa, num_per, va, vf, [tipo])</p>
+        <li class="list__object">
+          <strong>PAGO()</strong> o <strong>Pago (duh)</strong>, es una función que nos permite calcular el pago de un préstamo basándose en pagos constantes 
+          y en una tasa de interes constante. La función de Pago necesita los siguientes argumentos:
+        </li>
+        <ul class="list">
+          <li class="list__object">
+            <strong>tasa:</strong> Es el tipo de interés del prestamo. Es <mark>Obligatorio</mark>.
+          </li>
+          <li class="list__object">
+            <strong>num_per</strong> Es el número total de pagos del préstamo. Es <mark>Obligatorio</mark>.
+          </li>
+          <li class="list__object">
+            <strong>va:</strong> El valor actual o el importe total que vale una serie de futuros pagos ahora; también conocido como la entidad de seguridad. Es <mark>Obligatorio</mark>
+          </li>
+          <li class="list__object">
+            <strong>vf:</strong> Es el valor futuro que se desea lograr al teminar los pagos. Es <mark>Obligatorio</mark>, pero en caso de omitirlo el valor va a ser 0.
+          </li>
+          <li class="list__object">
+            <strong>tipo:</strong> Indica cuando se vencen los pagos. Es opcional, si se omite se considera 0. 
+            (0 = al final del periodo || 1 = al inicio del periodo).
+          </li>
+        </ul>
+        <p class="list--semi__title">Función RATE(num_per, pago, va, [vf], [tipo], [estimar])</p>
+        <li class="list__object">
+          <strong>RATE()</strong> o <strong>Tasa</strong>, es una función que nos permite calcular la tasa de interes que se puede obtener de un prestamo sencillo. 
+          La función del Tasa necesita de los siguientes argumentos:
+        </li>
+        <ul class="list">
+          <li class="list__object">
+            <strong>num_per:</strong> Es el número total de periodos de pago, generalmente dentro de un año. Es <mark>Obligatorio</mark>.
+          </li>
+          <li class="list__object">
+            <strong>pago:</strong> Es el pago efectuado cada periodo, no puede variar entre cada uno. Es <mark>Obligatorio</mark>, pero si omite se debe incluir el argumento <strong>vf</strong>.
+          </li>
+          <li class="list__object">
+            <strong>va:</strong> Es el valor actual, es decir, el valor total que tiene actualmente una serie de pagos futuros; también conocido como la entidad de seguirodad. Es <mark>Obligatorio</mark>.
+          </li>
+          <li class="list__object">
+            <strong>vf:</strong>: Es el valor futuro que se desea lograr al terminar los pagos. No es Obligatorio, pero es necesario tenerlo en caso de no tener el argumento <strong>pago</strong>.
+          </li>
+          <li class="list__object">
+            <strong>tipo:</strong> Indica cuando se vencen los pagos. Es opcional, si se omite se considera 0. 
+            (0 = al final del periodo || 1 = al inicio del periodo).
+          </li>
+          <li class="list__object">
+            <strong>estimar:</strong> Es la estimación de la tasa de interes. Es opcional, si se omite se considera 10.
+          </li>
+        </ul>
+      </ul>
+
+      <p class="content__title">Funciones Matemáticas y Trigonométria</p>
+      <p class="content__paragraph">
+        Estas son funciones que son aplicadas a Matemáticas y Trigonométria, estas son mayoritariamente sencillas cómo sumar, restar, multiplicar u otras valores, 
+        pero estas acciones sencillas son muy utiles y ahorradoras de tiempo para grandes cantidades de orperaciones.
+      </p>
+      <p class="content__paragraph">
+        Estas son algunas de las formulas de Matemáticas y Trigonométria:
+      </p>
+      <ul class="list list--arrows">
+        <p class="list--semi__title">Función SUMA(num)</p>
+        <li class="list__object">
+          Es una función en donde se suma el rango, celdas o valores que se tiene como argumento de la función.
+        </li>
+        <p class="list--semi__title">Función PRODUCTO(num)</p>
+        <li class="list__object">
+          Es una función en donde se multiplica el rango, celdas o valores que se tiene como argumento de la función.
+        </li>
+        <p class="list--semi__title">Función ABS(num)</p>
+        <li class="list__object">
+          Es una funcón devuelve el valor Absoluto de un número.
+        </li>
+        <p class="list--semi__title">Función M.C.D(num_1, num_2,... num_i)</p>
+        <li class="list__object">
+          Es una función que devuelve el máximo común divisor de 2 o más números.
+        </li>
+        <p class="list--semi__title">Función M.C.M(num_1, num_2,... num_i)</p>
+        <li class="list__object">
+          Es una función que devuelve el minimo común multiplo de 2 o más números.
+        </li>
+        <p class="list--semi__title">Función RADIANES(grados)</p>
+        <li class="list__object">
+          Es una función que vuelve el valor de grados a radianes.
+        </li>
+        <p class="list--semi__title">Función GRADOS(radianes)</p>
+        <li class="list__object">
+          Es una función que vuelve el valor de radianes a grados.
+        </li>
+        <p class="list--semi__title">Función SENO(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>sin()</i> de un número.
+        </li>
+        <p class="list--semi__title">Función COS(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>cos()</i> de un número.
+        </li>
+        <p class="list--semi__title">Función TAN(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>tan()</i> de un número.
+        </li>
+        <p class="list--semi__title">Función ASENO(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>ArcSin()</i> de un número.
+        </li>
+        <p class="list--semi__title">Función ACOS(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>ArcCos()</i> de un número.
+        </li>
+        <p class="list--semi__title">Función ATAN(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>ArcTan()</i> de un número.
+        </li>
+        <p class="list--semi__title">Función CSC(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>csc()</i> de un número.
+        </li>
+        <p class="list--semi__title">Función SEC(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>sec()</i> de un número.
+        </li>
+        <p class="list--semi__title">Función COT(num)</p>
+        <li class="list__object">
+          Es una función que devuelve el <i>cot()</i> de un número.
+        </li>
+      </ul>
+
+      <p class="content__title">Funciones de Fecha y Hora</p>
+      <p class="content__paragraph">
+        Son fuciones que nos permite calcular o convertir diferentes tiempos, horas y fechas en variados formatos. Es importante aclarar que cada fecha de Excel tiene 
+        su número serial, es decir un identificador unico además de su fecha propio número. Digamos el número serial 1 es el 01/01/1900, el número serial 2 es el 02/01/1900 
+        y así, con esto sabemos que el número serial depende de que tantos días han pasado desde el 01/01/1900.
+      </p>
+      <p class="content__paragraph">
+        Algunas de las funciones de Fecha y Hora son:
+      </p>
+      <ul class="list list--arrows">
+        <p class="list--semi__title">Función FECHA(año, mes, dia)</p>
+        <li class="list__object">
+          Toma los valores de año, mes y dia para unirlos en un formato especificado, cómo dia/mes/año o mes/dia/año.
+        </li>
+        <p class="list--semi__title">Función AÑO(fecha)</p>
+        <li class="list__object">
+          Toma una fecha y devuelve su año. No funciona si la fecha no tiene un año puesto.
+        </li>
+        <p class="list--semi__title">Función MES(fecha)</p>
+        <li class="list__object">
+          Toma una fecha y devuelve su mes. No funciona si la fecha no tiene un mes puesto.
+        </li>
+        <p class="list--semi__title">Función DIA(fecha)</p>
+        <li class="list__object">
+          Toma una fecha y devuelve su día. No funciona si la fehca no tiene un día puesto.
+        </li>
+        <p class="list--semi__title">DIAS(fecha_1, fecha_2)</p>
+        <li class="list__object">
+          Toma dos fechas y devuelve la cantidad de días que han pasado entre ambas.
+        </li>
+      </ul>
+
+      <p class="content__title">Funciones de Estadistica</p>
+      <p class="content__paragraph">
+        Son funciones que nos permite obtener diferentes datos y información de variados grupos de datos, celdas o rangos. Es mejor usarla cuando tenemos una 
+        cantidad modesta de datos para tener los mejores resultados.
+      </p>
+      <p class="content__paragraph">
+        Algunas de las funciones de Estadistica son:
+      </p>
+      <ul class="list list--arrows">
+        <p class="list--semi__title">Funcion MEDIANA(dato_1, dato_2,... dato_i)</p>
+        <li class="list__object">
+          Es una función que toma los datos dados y encuentra la mediana de estos datos. Es mejor dar valores númericos, pero acepta diferentes tipos de datos cómo 
+          nombres, matrices o referencias que contengan números.
+        </li>
+        <p class="list--semi__title">Función MODA.UNO(dato_1, dato_2,... dato_i)</p>
+        <li class="list__object">
+          Es una función que toma los datos dados y encuentra la moda de estos datos, generalmente los datos con mayor repetición y de primeras son el dato mostrado. 
+          Ya que puede haber dos datos repetidos igualmente, pero solo se tomara el primero que se encuentre en el rango o celdas de los datos. Puede usar nombres, matrices 
+          o referencias que contengan números, pero los mejores resultado que podemos tener es usando datos de tipo números.
+        </li>
+        <p class="list--semi__title">Función FECUENCIA(datos, grupos)</p>
+        <li class="list__object">
+          Es una función que nos permite ver de unos datos la frecuencia de estos en diferentes categorias o grupos. Digamos podemos tener un grupo de notas de un curso 
+          y los vamos a dividr en otros grupos dependiendo de algunas categorias de notas, cómo bajo, básico, alto y superior. Y gracias a la función a los parametros 
+          dados, nos va a decir que tanta frecuencia o datos entran en cada categoria. Esta función usa dos parametros:
+        </li>
+        <ul class="list">
+          <li class="list__object">
+            <strong>datos:</strong> Son los datos que vamos a repartir en grupos por categorias o parametros datos por el otro parametro. Es <mark>Obligatorio</mark>.
+          </li>
+          <li class="list__object">
+            <strong>grupos:</strong> Son los grupos que van a repartir los datos, se pueden crear para números simplemente poniendo el máximo número de cada categoria.
+          </li>
+        </ul>
+      </ul>
+      
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP2-1raActividadModulo" class="activity__title">1ra Actividad del Módulo</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data">06/04/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="activity__task">
+          Realiza tres ejercicios de cada una de las siguientes formulas en Excel y explicando cada una de ellas:
+          <ul class="list list--arrows list--flat">
+            <li class="list__object">Financiera.</li>
+            <li class="list__object">Fecha y Hora</li>
+            <li class="list__object">Matemáticas y de Trigonométria</li>
+            <li class="list__object">Estadistica</li>
+          </ul>
+        </div>
+        <p class="content__paragraph">
+          No voy a subir el archivo de la actividad por la página web, ya que lo voy a enviar por Microsoft Teams, pero si es necesario, me puede contactar para 
+          reenviarlo por correo o Microsoft Teams.
+        </p>
       </section>
     </div>
   </article>
