@@ -2,3 +2,6 @@
 vsc/
 # JavaScript "cache" Files
 src/js/dist/
+
+# Others Files (Excel, Word and DFD) 
+src/others/
