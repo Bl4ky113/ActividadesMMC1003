@@ -45,6 +45,13 @@
           <li class="nav-sublist__link"><a href="#actP1-3raActividadModulo">3ra Actividad del Módulo <em>(04/11/21)</em></a></li>
         </ul>
       </ul>
+      <h3 class="nav__title">2da Entrega del Módulo</h3>
+      <ul class="nav-list">
+        <li class="nav-list__link"><a href="#claseP2-notas1raActividadModulo">Notas 1ra Actividad del Módulo <em>(06/08/21)</em></a></li>
+        <ul class="nav-sublist">
+          <li class="nav-sublist__link"><a href="#actP2-1raActividadModulo">1ra Actividad del Módulo <em>(06/08/21)</em></a></li>
+        </ul>
+      </ul>
     </nav>
     <!-- Home -->
     <section class="section ">
@@ -1037,6 +1044,406 @@
           0 &or; 1
           1
         </pre>
+      </section>
+    </div>
+  </article>
+
+  <article class="article">
+    <h3 id="claseP2-compuertasLogicas" class="article__title">Compuertas Lógicas</h3>
+    <span class="article__date">06/08/2021</span>
+    <div class="content">
+      <p class="content__title">Compuertas Lógicas</p>
+      <p class="content__paragraph">
+        Las Compuertas Lógicas son la forma en que vamos a poder interactuar y crear diferentes circuitos con diferetes funcionalidades usando 
+        la matemáticas booleana.
+      </p>
+      <p class="content__paragraph">
+        Estas compuertas, toman una señal o corriente en binario por una entrada y mediante un sistema de circuitos, generalmente hechos a partir de transistores y 
+        resistecias, manipulan y alteran la señal en binario.
+      </p>
+      <p class="content__paragraph">
+        El funcionamiento general y común de las compuerta es:
+      </p>
+      <ol class="list">
+        <li class="list__object">Tomar 2 señales binarias mediante una entrada.</li>
+        <li class="list__object">Dependiendo de los valores de estas y del tipo de compuerta, alterar la señal.</li>
+        <li class="list__object">Dar la señal mediante una salida.</li>
+      </ol>
+      <p class="content__paragraph">
+        Existen variados tipos y variatens de esos tipos y blah blah, pero estos son los más importantes:
+      </p>
+      <p class="content__semititle">Compuerta AND</p>
+      <p class="content__paragraph">
+        Es una compuerta que toma dos señales en su entrada, sí ambas son 1, true o 5v, la salida va a ser true, 1 o 5v. si no son 1, la 
+        salida va a ser false, 0 o 0v.
+      </p>
+      <p class="content__semititle">Compuerta OR</p>
+      <p class="content__paragraph">
+        Es una compuerta que toma dos señales en su entrada. Si alguna es true, la salida es true.
+      </p>
+      <p class="content__semititle">Compuerta NOT</p>
+      <p class="content__paragraph">
+        Es una compuerta que solo toma una señal y invierte esta, es decir pasa de true a false y false a true.
+      </p>
+      <p class="content__semititle">Compuerta NAND</p>
+      <p class="content__paragraph">
+        Es igual a la compuerta AND, pero la salida la invierte. Es una compuerta AND y tiene otra compuerta NOT en la salida.
+      </p>
+      <p class="content__semititle">Compuerta NOR</p>
+      <p class="content__paragraph">
+        Es igual a la compuerta OR, pero la salida esta invertida. Es una compuerta OR y tiene otra compuerta NOT en la salida.
+      </p>
+      <p class="content__semititle">Compuerta XOR</p>
+      <p class="content__paragraph">
+        Es una compuerta OR, pero si solo una de sus entradas es true, su salida es true. Y si ambas entradas son true o false, su salida es false.
+      </p>
+      <p class="content__semititle">Compuerta XNOR</p>
+      <p class="content__paragraph">
+        Es una compuerta XOR, pero la salida esta invertida. O es una compuerta NOR y su salida es "exclusiva".
+      </p>
+      <p class="content__semititle">Compuerta IF</p>
+      <p class="content__paragraph">
+        Es una compuerta que tiene una entrada y su salida es el valor de esta misma entrada.
+      </p>
+
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP2-1raActividadModulo" class="activity__title">1ra Actividad del Módulo</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data">06/08/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="activity__task">
+          Realice a mano Graficas de Compuertas lógicas con sus respectivas tablas de verdad.
+        </p>
+
+        <p class="content__title">Compuerta AND</p>
+        <div class="content-images content-images--xs">
+          <picture>
+            <img src="./src/img/electronica/and.png" alt="Esquema de la compuerta AND" class="content-images__img">
+          </picture>
+        </div>
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__title" colspan="3">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="theader__category">A</th>
+              <th class="theader__category">B</th>
+              <th class="theader__category">Q</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content__title">Compuerta OR</p>
+        <div class="content-images content-images--xs">
+          <picture>
+            <img src="./src/img/electronica/or.png" alt="Esquema de la compuerta OR" class="content-images__img">
+          </picture>
+        </div>
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__title" colspan="3">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="theader__category">A</th>
+              <th class="theader__category">B</th>
+              <th class="theader__category">Q</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content__title">Compuerta NOT</p>
+        <div class="content-images content-images--xs">
+          <picture>
+            <img src="./src/img/electronica/not.png" alt="Esquema de la compuerta NOT" class="content-images__img">
+          </picture>
+        </div>
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__title" colspan="2">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="theader__category">A</th>
+              <th class="theader__category">Q</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content__title">Compuerta NAND</p>
+        <div class="content-images content-images--xs">
+          <picture>
+            <img src="./src/img/electronica/nand.png" alt="Esquema de la compuerta NAND" class="content-images__img">
+          </picture>
+        </div>
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__title" colspan="3">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="theader__category">A</th>
+              <th class="theader__category">B</th>
+              <th class="theader__category">Q</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content__title">Compuerta NOR</p>
+        <div class="content-images content-images--xs">
+          <picture>
+            <img src="./src/img/electronica/nor.png" alt="Esquema de la compuerta NOR" class="content-images__img">
+          </picture>
+        </div>
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__title" colspan="3">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="theader__category">A</th>
+              <th class="theader__category">B</th>
+              <th class="theader__category">Q</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content__title">Compuerta XOR</p>
+        <div class="content-images content-images--xs">
+          <picture>
+            <img src="./src/img/electronica/xor.png" alt="Esquema de la compuerta XOR" class="content-images__img">
+          </picture>
+        </div>
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__title" colspan="3">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="theader__category">A</th>
+              <th class="theader__category">B</th>
+              <th class="theader__category">Q</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content__title">Compuerta XNOR</p>
+        <div class="content-images content-images--xs">
+          <picture>
+            <img src="./src/img/electronica/xnor.png" alt="Esquema de la compuerta XNOR" class="content-images__img">
+          </picture>
+        </div>
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__title" colspan="3">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="theader__category">A</th>
+              <th class="theader__category">B</th>
+              <th class="theader__category">Q</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="content__title">Compuerta IF</p>
+        <div class="content-images content-images--xs">
+          <picture>
+            <img src="./src/img/electronica/if.png" alt="Esquema de la compuerta IF" class="content-images__img">
+          </picture>
+        </div>
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__title" colspan="3">Tabla de Verdad</th>
+            </tr>
+            <tr>
+              <th class="theader__category">A</th>
+              <th class="theader__category">Q</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </div>
   </article>
