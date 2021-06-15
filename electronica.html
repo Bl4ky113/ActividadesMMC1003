@@ -51,6 +51,7 @@
         <ul class="nav-sublist">
           <li class="nav-sublist__link"><a href="#actP2-1raActividadModulo">1ra Actividad del Módulo <em>(06/08/21)</em></a></li>
         </ul>
+        <li class="nav-list__link"><a href="#claseP2-codigoGray">Código Gray <em>(06/15/21)</em></a></li>
       </ul>
     </nav>
     <!-- Home -->
@@ -1447,6 +1448,39 @@
       </section>
     </div>
   </article>
+  <article class="article">
+    <h3 id="claseP2-codigoGray" class="article__title">Código Binario Gray</h3>
+    <span class="article__date">Martes | 06/15/21</span>
+    <div class="content">
+      <p class="content__paragraph">
+        Volvímos a volver a ver las compuertas lógicas más sencillas cómo <strong>AND</strong> y <strong>OR</strong>. Pero finalmente 
+        toca volver a ver algo interesante y importante. Vamos a ver el Código Gray.
+      </p>
+      <p class="content__title">Código Gray</p>
+      <p class="content__paragraph">
+        El Código Gray, es una forma de conversión de los números en código Binario. Para esto vamos a seguir las siguientes reglas:
+      </p>
+      <ol class="list">
+        <li class="list__object">
+          El Bit más signifiativo o <abbr title="Most Significant Bit">MSB</abbr>, se mantiene.
+        </li>
+        <li class="list__object">
+          De izquierda a derecha se suma en binario cada par de bits adyacentes, y el acarreo se descarta. Es decir cómo si fuera 
+          una compuerta XOR.
+        </li>
+      </ol>
+      <p class="content__paragraph">
+        Es importante resaltar con un subindice el tipo o base del número ya sea base 10, 2 o gray. 
+      </p>
+      <p class="content__paragraph">
+        Vamos a convertir a (100110)<sub>2</sub> a (?)<sub>gray</sub>:
+      </p>
+      <p class="content__paragraph">
+        <strong>100110<sub>2</sub> &rarr; 110101<sub>gray</sub></strong>
+      </p>
+    </div>
+  </article>
+
 </main>
 
 <footer class="footer">
