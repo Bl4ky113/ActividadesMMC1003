@@ -511,11 +511,12 @@
 
    /* Links in the Class Notes */ 
    .content__link {
-    max-width: 40%;
+    max-width: 45%;
 
     margin: 0.25em;
     border-radius: 0.25em;
     padding: 0.5em;
+    padding-left: 1em;
 
     background-color: $color-base2;
 
@@ -526,9 +527,20 @@
     transition: all 650ms ease;
     display: block;
 
-    &:hover{
+    &:hover {
      padding-right: 10%;
     }
+   }
+
+   .content__link--small {
+     color: $color-dark1;
+     font: 600 1em 'Montserrat', sans-serif;
+     text-decoration: underline solid inherit;
+
+     transition: color 350ms ease;
+     display: inline-block;
+
+     &:hover { color: $color-base1; }
    }
 
    /* Images in Class Notes */
@@ -1005,6 +1017,8 @@
    .content {
     .content__title { font-size: 1.5em; }
     .content__semititle { font-size: 1.25em; }
+
+    .content__link { max-width: 90%; }
 
     .list {
      .list__title { font-size: 1.5em; }

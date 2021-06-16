@@ -441,10 +441,11 @@
   clear: both;
 }
 .main .article .content .content__link {
-  max-width: 40%;
+  max-width: 45%;
   margin: 0.25em;
   border-radius: 0.25em;
   padding: 0.5em;
+  padding-left: 1em;
   background-color: #0000bb;
   color: #fff;
   font: 300 1.25em "Oswald", sans-serif;
@@ -454,6 +455,16 @@
 }
 .main .article .content .content__link:hover {
   padding-right: 10%;
+}
+.main .article .content .content__link--small {
+  color: #000066;
+  font: 600 1em "Montserrat", sans-serif;
+  text-decoration: underline solid inherit;
+  transition: color 350ms ease;
+  display: inline-block;
+}
+.main .article .content .content__link--small:hover {
+  color: #0000e6;
 }
 .main .article .content .content-images {
   margin: 0.4em auto;
@@ -845,6 +856,9 @@
   }
   .main .article .content .content__semititle {
     font-size: 1.25em;
+  }
+  .main .article .content .content__link {
+    max-width: 90%;
   }
   .main .article .content .list .list__title {
     font-size: 1.5em;
