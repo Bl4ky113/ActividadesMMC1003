@@ -52,6 +52,10 @@
           <li class="nav-sublist__link"><a href="#actP2-1raActMod">1ra Actividad del Módulo <em>(06/08/21)</em></a></li>
         </ul>
         <li class="nav-list__link"><a href="#claseP2-codigoGray">Código Gray <em>(06/15/21)</em></a></li>
+        <li class="nav-list__link"><a href="#claseP2-mapasKarnaugh">Mapas de Karnaugh <em>(07/13/21)</em></a></li>
+        <ul class="nav-sublist">
+          <li class="nav-sublist__link"><a href="#actP2-2daActMod">2da Actividad del Módulo <em>(07/14/21)</em></a></li>
+        </ul>
       </ul>
     </nav>
     <!-- Home -->
@@ -1480,7 +1484,303 @@
       </p>
     </div>
   </article>
-
+  <artile class="article">
+    <h3 id="claseP2-mapasKarnaugh" class="article__title">Mapas de Karnaugh</h3>
+    <span class="article__date">7/13/2021</span>
+    <div class="content">
+      <p class="content__paragraph">
+        Los Mapas, tabla o diagrama de Karnaugh es una forma de hacer una simplifación de funciones booleanas. En que una tabla 
+        ponemos en cada celda un valor binario de las variables de entrada de una función. Es decir, en cada celda va a estar el 
+        resultado de la función, por lo tanto la tabla va a tener el mismo número de celdas que el número de resultados posibles de 
+        esa función. Y esta función debe tener 2 o más variables, ya que solo serían 2 celdas tristes. 
+      </p>
+      <p class="content__paragraph">
+        Para saber cuantos resultados tiene una función o cuantas celdas va a tener nuestra tabla de Karnaugh, simplemente vamos a tomar 
+        el número de variables y vamos a elevar 2 por este número, por ejemplo: 3 variables => 2<sup>3</sup> = 8 resultados. O en una 
+        formula simple siendo: 2<sup>n</sup>, donde n es el número de variables.
+      </p>
+      <p class="content__paragraph">
+        Bueno, ya sabemos cuantas celdas va a tener nuestra tabla. Pero la pregunta ahora es, cómo las vamos a organizar y cómo o cuales 
+        van a ser categorias, ya que para organizar los datos las debemos dividir en estas y no solo organizarlos cómo caigan en cualquier 
+        categoria. 
+      </p>
+      <pre class="content__pre">
+Dios, me acabo de dar de cuenta que podría hacer un generador de tablas de Karnaugh programando,
+sera una buena idea para un tiempo libre. Si es que llego a tenerlo.
+      </pre>
+      <p class="content__paragraph">
+        Entonces lo sencillo es tomar el número de variables y de celdas, vamos a hacer un cuadrado con estas. En un caso de tener dos 
+        variables vamos a hacer un cuadrado o un rectangulo de 2x2. En sus categorias vamos a poner un 1 y un 0, estas en un lado horizontal y otra 
+        vertical, cada lado le va a pertenecer a una variable, por ahora que solo tenemos 2 de estas. Y ahora simplemente vamos 
+        a resolver con las categorias. Es decir si la función es una suma, 1 y 1 da 1 ponemos 1 en su celda, 1 y 0 da 1 también ponemos 
+        1 en su celda y así.
+      </p>
+      <p class="content__paragraph">
+        Si no puedes con mi explicación, estos mapas son muy parecidos a los esquemas de Mendel en la Genetica, en el que se combinan 
+        dos o más genes y se escriben los resultados en una tabla igual pero con diferentes datos.
+      </p>
+      <p class="content__semititle">Mapa de Karnaugh de 2 Variables | 2x2 | 4 Celdas</p>
+      <p class="content__paragraph">
+        Vamos a hacer una función sencilla para este mapa, siendo esta: 
+        <strong>
+          <span style="text-decoration: overline solid;">A</span> + B
+        </strong>
+      </p>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__category">A \ B</th>
+              <th class="theader__category">1</th>
+              <th class="theader__category">0</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <th class="tcontent__category">1</th>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <th class="tcontent__category">0</th>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="content__paragraph">
+        Listo!!! Esto es una tabla de Karnaugh sencilla de solo 2x2 celdas o 4 celdas o 2 variables. Pero se vuelve un poco dificil a 
+        agregar más, pero es solo tomarle el tiro a hacerlas.
+      </p>
+      <p class="content__semititle">Mapas de Karnaugh de 3 Variables | 2x4 | 8 </p>
+      <p class="content__paragraph">
+        Ahora las cosas se vuelven un poco más dificil, ahora en nuestra tabla vamos a usar un lado para dos variables, es decir antes 
+        era un lado para A y un lado para B, ahora es un lado para A y un lado para B y C o BC. Esto nos hace doblar lo largo de 
+        este lado haciendo la tabla 4x2 o 2x4. Y en este vamos a poner los resultados posibles de estas dos variables que serían 4 en 
+        total, ya que se puede usar la misma función de antes. 2 ^ El número de variables; 2<sup>2</sup> = 4.
+      </p>
+      <p class="content__paragraph">
+        Pero ojo que en este espacio lo mejor es ir avanzando en número en número. Es decir podemos ir de 00 a 01, pero no de 11 a 00 o 
+        01 a 10. Solo podemos modificar una variable a el tiempo, esto lo hacemos ya que en caso contrario tendríamos que doblar 
+        también el número de celdas y variables y demás del lado de A, cosa que no queremos. Entonces seguimos el siguiente orden para 
+        evitar este problema:
+      </p>
+      <ol class="list">
+        <li class="list__object">00</li>
+        <li class="list__object">01</li>
+        <li class="list__object">11</li>
+        <li class="list__object">10</li>
+      </ol>
+      <p class="content__paragraph">
+        Teniendo en cuenta estos nuevos datos para hacer nuestra tabla, vamos a escribirla y llenarla de sus resultados. En este caso la 
+        formula de esta tabla va a ser: <strong>(AB) + C</strong>
+      </p>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__category">A \ BC</th>
+              <th class="theader__category">00</th>
+              <th class="theader__category">01</th>
+              <th class="theader__category">11</th>
+              <th class="theader__category">10</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <th class="tcontent__category">1</th>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+            </tr>
+            <tr>
+              <th class="tcontent__category">0</th>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">1</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="content__paragraph">
+        Pero y ahora para las tablas de 4 variables? Es el mismo proceso solo que se hace en ambos lados. Pero la verdadera forma 
+        más dificil es hacerla de 5 o más variables, pero hoy no la voy a explicar por acá y talvez nunca, pero la podría buscar y 
+        verla.
+      </p>
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP2-2daActMod" class="activity__title">2da Actividad del Módulo</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data">07/14/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="activity__task">
+          Realice tres ejercicios de su elección Mapas de Karnaugh ejercicios paso a paso. 
+        </p>
+        <pre class="content__pre">Voy a usar los mismos ejemplos dados anteriormente ya que son mis ejercicios, pero los voy a explicar mejor, paso a paso.</pre>
+        <p class="content__semititle">Mapa de Karnaugh de 2 Variables</p>
+        <p class="content__paragraph">
+          Primero que todo vamos a buscar cuantos resultados puede haber de esas dos variables. Siguiendo la formula de resultados: 
+          2 <sup>n</sup>, siendo n el número de varialbes. 2<sup>2</sup> = 4.
+        </p>
+        <p class="content__paragraph">
+          Hacemos la cuadricula de 2x2 y escribimos a los lados los posibles valores binarios de las variables. 1 o 0.
+        </p>
+        <p class="content__paragraph">
+          Ahora a cada lado se le asigna una de las variables, y resolvemos cada resultado tomando el valor de la variable de cada columna y fila.
+        </p>
+        <p class="content__paragraph">
+          Ejemplo de esta tabla con la Formula: <strong><span style="text-decoration: overline solid;">A</span> + B</strong>
+        </p>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__category">A \ B</th>
+                <th class="theader__category">1</th>
+                <th class="theader__category">0</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">1</th>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">0</th>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="content__semititle">Mapa de Karnaugh de 3 Variables</p>
+        <p class="content__paragraph">
+          Volvemos a calcular el número de resultados. 2<sup>3</sup> = 8. 
+        </p>
+        <p class="content__paragraph">
+          Hacemos una cuadricula de 2x4, un lado más largo que el otro.
+        </p>
+        <p class="content__paragraph">
+          A el lado corto se le asigna una variable, generalmente la primera. Y a el lado largo se le asigna las 2 variables restantes. 
+          Quedando un lado A y un lado BC. Vamos a escribir los posibles resultados en el lado largo de una forma que solo cambie un digito a 
+          la vez: 00 => 01 || 00 => 10 || 11 => 01 || 11 => 10 Bien. 00 => 11 || 11 => 00 || 01 => 10 || 10 => 01 Mal. Esto es para ahorrarnos 
+          el tener que hacer más celdas de resultado para el lado A y esto también resultaria que se repitan algunos resultados y sus procesos.
+        </p>
+        <p class="content__paragraph">
+          Ejemplo de la tabla con la formula: <strong>(AB) + C</strong>
+        </p>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__category">A \ BC</th>
+                <th class="theader__category">00</th>
+                <th class="theader__category">01</th>
+                <th class="theader__category">11</th>
+                <th class="theader__category">10</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">1</th>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">0</th>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+        <p class="content__semititle">Mapa de Karnaugh de 4 variables</p>
+        <p class="content__paragraph">
+          Se tiene que hacer el mismo proceso que con el anterior, pero ahora a ambos lados.
+        </p>
+        <p class="content__paragraph">
+          Ejemplo de la tabla con la formula: <strong>(A + B) * (C + D)</strong>
+        </p>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__category">AB \ CD</th>
+                <th class="theader__category">00</th>
+                <th class="theader__category">01</th>
+                <th class="theader__category">11</th>
+                <th class="theader__category">10</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">00</th>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">01</th>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">11</th>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">10</th>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </artile>
 </main>
 
 <footer class="footer">
