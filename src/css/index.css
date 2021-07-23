@@ -414,6 +414,12 @@
   padding: 0 0.4em;
   background-color: #99ccff;
 }
+.main .article .content .checkbox {
+  border-radius: 0.5em;
+  padding: 0.5rem 1rem;
+  background-color: #99ccff;
+  display: inline-block;
+}
 .main .article .content .conf-ele {
   padding: 0.15em 0.25em;
   border: 0.15em solid #000066;
