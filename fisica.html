@@ -1641,6 +1641,12 @@
         <p class="activity__task">
           Medir periódicamente (aproximadamente cada 3 días) el tamaño de nuestra planta para poder establecer la velocidad yaceleración del proceso. Cada medición se debe acompañar de su respectiva foto.
         </p>
+
+        <hr>
+
+        <p class="content__paragraph" id="growthrate_output">
+          El crecimiento del tipo de planta es de: 
+        </p>
         <div class="table-wrapper">
           <table class="table">
             <thead class="theader">
@@ -1651,12 +1657,12 @@
                 <th class="theader__category">Aceleración de la Velocidad de Crecimientos</th>
               </tr>
             </thead>
-            <tbody class="tcontent">
+            <tbody class="tcontent" id="plants_table">
               <tr>
                 <td class="tcontent__data">0</td>
-                <td class="tcontent__data"></td>
-                <td class="tcontent__data"></td>
-                <td class="tcontent__data"></td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0<sup>cm</sup>/<sub>día</sub></td>
+                <td class="tcontent__data">0<sup>cm</sup>/<sub>día<sup>2</sup></sub></td>
               </tr>
               <tr>
                 <td class="tcontent__data">3</td>
@@ -2102,6 +2108,7 @@
 </footer>
 
 <script src="./src/js/perimetro.js"></script>
+<script src="./src/js/crecimiento_planta.js"></script>
 </div>
 </body>
 </html>
