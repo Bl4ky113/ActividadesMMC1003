@@ -35,7 +35,9 @@ window.onload = () => {
   calcSize(plant, plant.total_size, plant.sizes_arr, plant.growth_arr, plant.growth_rate, MAX_DAYS);
   calcVelocity(plant, plant.sizes_arr, DAYS_COUNTING, MAX_DAYS);
   calcAceleration(plant, plant.velocity_growth, DAYS_COUNTING);
-  console.log(plant);
+
+  sendData(plant, DAYS_COUNTING);
+  console.log(output_table)
 }
 
 function calcSize (obj, total_size, sizes_array, growth_arr, grow_rate, days_num = 10) {
@@ -44,7 +46,7 @@ function calcSize (obj, total_size, sizes_array, growth_arr, grow_rate, days_num
   let total_growth = 0;
   for (let i = 0; i < days_num; i += 1) {
     random_growth = (Math.floor(Math.random() * 10) / 10);
-    add_or_subtract = Math.floor(Math.random()) >= 1;
+    add_or_subtract = Math.floor(Math.random() * 2) < 1;
     if (add_or_subtract) {
       total_growth = grow_rate + random_growth;
     } else {
@@ -74,5 +76,24 @@ function calcAceleration (obj, velocity_arr, days_counting = 1) {
   for (let i = 0; i < velocity_arr.length; i += 1) {
     aceleration_growth = velocity_arr[i] / days_counting;
     obj.aceleration_growth.push(aceleration_growth);
+  }
+}
+
+function sendData (obj, days_counting) {
+  let skip_row = false;
+  for (let i = 0; i < output_table.rows.length; i += 1) {
+    if (output_table.rows[i].cells[0].innerHTML == 0) { skip_row = true; }
+    else { skip_row = false; }
+    
+    let sizes_arr_output = [];
+    for (let o = days_counting - 1; o < obj.sizes_arr.length; o += days_counting) {
+      sizes_arr_output.push(obj.sizes_arr[o]);
+    }
+
+    if (!skip_row) {
+      output_table.rows[i].cells[1].innerHTML = `${sizes_arr_output[i - 1]}${UNITS.SIZE}`;
+      output_table.rows[i].cells[2].innerHTML = `${obj.velocity_growth[i - 1]}${UNITS.VELOCITY}`;
+      output_table.rows[i].cells[3].innerHTML = `${obj.aceleration_growth[i - 1]}${UNITS.ACELERATION}`;
+    }
   }
 }
