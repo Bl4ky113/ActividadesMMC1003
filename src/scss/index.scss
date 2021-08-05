@@ -357,7 +357,7 @@
 
     list-style: none;
 
-    .classinfo-list__object {
+    .classinfo-list__obj {
      margin-left: 0.75em;
 
      color: $color-black1;
@@ -710,7 +710,7 @@
      text-decoration: underline solid $color-dark2 0.1em;
     }
     
-    .list--semi__title {
+    .list__semititle {
      margin: 0.1rem;
      padding-inline-start: 0.45rem;
      
@@ -719,7 +719,7 @@
      text-decoration: underline solid $color-dark1 0.1em;
     }
 
-    .list__object {
+    .list__obj {
      margin: 0.25em;
      padding-left: 0.25em;
 
@@ -738,7 +738,7 @@
    }
 
    ol.list {
-    .list__object {
+    .list__obj {
      list-style-type: inherit;
      list-style-position: inside;
 
@@ -752,16 +752,16 @@
    /* Diferent Markers for the Ulist */
 
    /* Arrows ">>>" */
-   .list--arrows { .list__object { &::before { content: "\f101"; } } }
+   .list--arrows { .list__obj { &::before { content: "\f101"; } } }
 
    /* long Arrow "---->" */
-   .list--longarrow { .list__object { &::before { content: "\f178"; } } }
+   .list--longarrow { .list__obj { &::before { content: "\f178"; } } }
 
    /* Lines "---" */
-   .list--lines { .list__object { &::before { content: '\f141'; } } }
+   .list--lines { .list__obj { &::before { content: '\f141'; } } }
 
    /* Diamond "<>" */
-   .list--diamond { .list__object { &::before { content: '\f07e' } } }
+   .list--diamond { .list__obj { &::before { content: '\f07e' } } }
 
    /* Flat Lists */
    .list--flat {
@@ -772,8 +772,8 @@
     justify-content: space-around;
 
     .list__title { width: 100% ;}
-    .list--semi__title { width: 100%; }
-    .list__object { margin: 0.4em 1.05em; }
+    .list__semititle { width: 100%; }
+    .list__obj { margin: 0.4em 1.05em; }
    }
 
    /* Reference */
@@ -1040,7 +1040,7 @@
 
     .list {
      .list__title { font-size: 1.5em; }
-     .list--semi__title { font-size: 1.25em; }
+     .list__semititle { font-size: 1.25em; }
     }
     
     .table {
