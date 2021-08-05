@@ -40,87 +40,92 @@
 .activity {
   /* Fichas Bibliograficas de los filosofos */
 }
-.activity .fichaFilosofos {
+.activity .ficha-filosofos {
   width: 80%;
-  min-height: 400px;
-  margin: 20px auto;
-  border: 5px outset #3399ff;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 2.5em;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 2.5em;
-  padding: 1cm;
+  margin: 1rem auto;
+  border: 0.15rem outset #3399ff;
+  padding: 2rem;
   background-color: #99ccff;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template: 1fr/35% 1fr;
+  grid-area: "header header " "image  content" "footer footer ";
+  grid-gap: 0.25rem;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
   /* Header de la ficha bibliografica */
   /* Cuerpo de la ficha biblio grafica */
   /* Footer de la ficha bibliografica */
 }
-.activity .fichaFilosofos .activity-header {
+.activity .ficha-filosofos .fheader {
   width: 90%;
-  padding: 10px;
   border-radius: 0.25em;
-  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: #3399ff;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.activity .ficha-filosofos .fheader .fheader__title {
+  font: 700 2em "Oswald", sans-serif;
+  text-align: center;
+  text-decoration: underline solid #0000bb 0.15rem;
+  text-transform: capitalize;
+}
+.activity .ficha-filosofos .fpicture {
+  width: 95%;
+  height: auto;
+  padding: 0.25rem;
   background-color: #3399ff;
 }
-.activity .fichaFilosofos .activity-header .activity-header__title {
-  font: 700 24px "Oswald", sans-serif;
-  text-align: center;
-  text-decoration: underline solid #0000bb 5px;
-  text-transform: capitalize;
-}
-.activity .fichaFilosofos .activity-content {
-  width: 95%;
-  padding: 25px;
+.activity .ficha-filosofos .fcontent {
+  width: 90%;
+  margin: 0 auto;
   border-radius: 0.5em;
-  margin: 10px auto;
+  padding: 1rem;
   background-color: #cce5ff;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
-.activity .fichaFilosofos .activity-content .activity-content__title {
-  padding-left: 5px;
+.activity .ficha-filosofos .fcontent .fcontent__title {
+  padding-left: 0.25rem;
   color: #000044;
-  font: 500 20px "Oswald", sans-serif;
+  font: 500 1.5em "Oswald", sans-serif;
   text-transform: capitalize;
-  text-decoration: underline solid #000044 2px;
+  text-decoration: underline solid #000044 0.1rem;
 }
-.activity .fichaFilosofos .activity-content .activity-content__paragraph {
-  padding-left: 10px;
+.activity .ficha-filosofos .fcontent .fcontent__paragraph {
+  padding-left: 0.25rem;
   color: #000;
-  font: 500 15px "Montserrat", sans-serif;
+  font: 500 1em "Montserrat", sans-serif;
 }
-.activity .fichaFilosofos .activity-content .activity-content__list {
-  font: 500 15px "Montserrrat", sans-serif;
-  list-style-position: inside;
+.activity .ficha-filosofos .fcontent .fcontent__list {
+  border-left: 0.2rem solid #99ccff;
+  padding-left: 0.25rem;
+  color: #000;
+  font: 500 1em "Montserrat", sans-serif;
+  list-style: none;
 }
-.activity .fichaFilosofos .activity-content .activity-content__list li::marker {
+.activity .ficha-filosofos .fcontent .fcontent__list li::before {
+  margin-right: 0.15rem;
   color: #3399ff;
+  content: "";
+  font: 800 1em "FontAwesome";
 }
-.activity .fichaFilosofos .activity-content .activity-content__picture {
-  width: 30%;
-  height: auto;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  float: left;
-}
-.activity .fichaFilosofos .activity-footer {
-  width: 100%;
-  padding: 5px 10px;
+.activity .ficha-filosofos .ffooter {
+  width: 95%;
   border-radius: 0.5em;
-  margin: 10px auto;
+  padding: 0.5rem;
   background-color: #0000e6;
-  align-self: flex-end;
+  grid-column: 1/-1;
+  grid-row: span 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: baseline;
-}
-.activity .fichaFilosofos .activity-footer .activity-footer__label {
-  padding: 0 5px;
   color: #fff;
-  font: 700 18px "Oswald", sans-serif;
+  font: 500 1em "MontSerrat", sans-serif;
 }
-.activity .fichaFilosofos .activity-footer .activity-footer__content {
-  color: #fff;
-  font: 500 16px "MontSerrat", sans-serif;
-  text-decoration: underline solid #fff 2px;
+.activity .ficha-filosofos .ffooter .ffooter__label {
+  font-weight: 800;
+  text-decoration: underline solid #fff 0.1rem;
 }

@@ -5,117 +5,128 @@
 
 .activity {
 
- /* Fichas Bibliograficas de los filosofos */
- .fichaFilosofos {
-  width: 80%;
-  min-height: 400px;
+  /* Fichas Bibliograficas de los filosofos */
+  .ficha-filosofos {
+    width: 80%;
 
-  margin: 20px auto;
-  border: 5px outset $color-light2;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 2.5em;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 2.5em;
-  padding: 1cm;
-  
-  background-color: $color-light1;
+    margin: 1rem auto;
+    border: 0.15rem outset $color-light2;
+    padding: 2rem;
+    
+    background-color: $color-light1;
 
-  display: flex;
-  flex-flow: row wrap;
+    display: grid;
+    grid-template: 1fr / 35% 1fr;
+    grid-area: "header header "
+               "image  content"
+               "footer footer ";
+    grid-gap: 0.25rem;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 
   /* Header de la ficha bibliografica */
-  .activity-header {
-   width: 90%;
+  .fheader {
+    width: 90%;
 
-   padding: 10px;
-   border-radius: 0.25em;
-   margin: 0 auto;
+    border-radius: 0.25em;
+    padding: 0.5rem;
 
-   background-color: $color-light2;
+    background-color: $color-light2;
 
-   .activity-header__title {
-    font: 700 24px 'Oswald', sans-serif;
-    text-align: center;
-    text-decoration: underline solid $color-base2 5px;
-    text-transform: capitalize;
-   }
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    .fheader__title {
+      font: 700 2em 'Oswald', sans-serif;
+      text-align: center;
+      text-decoration: underline solid $color-base2 0.15rem;
+      text-transform: capitalize;
+    }
+  }
+  
+  .fpicture {
+    width: 95%;
+    height: auto;
+
+    padding: 0.25rem;
+
+    background-color: $color-light2;
   }
   
   /* Cuerpo de la ficha biblio grafica */
-  .activity-content {
-   width: 95%;
+  .fcontent {
+    width: 90%;
 
-   padding: 25px;
-   border-radius: 0.5em;
-   margin: 10px auto;
+    margin: 0 auto;
+    border-radius: 0.5em;
+    padding: 1rem;
 
-   background-color: $color-light3;
-   
-   .activity-content__title {
-    padding-left: 5px;
+    background-color: $color-light3;
 
-    color: $color-dark2;
-    font: 500 20px 'Oswald', sans-serif;
-    text-transform: capitalize;
-    text-decoration: underline solid $color-dark2 2px;
-   }
-  
-   .activity-content__paragraph {
-    padding-left: 10px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+    .fcontent__title {
+      padding-left: 0.25rem;
 
-    color: $color-black1;
-    font: 500 15px 'Montserrat', sans-serif;
-   }
-
-   .activity-content__list {
-    font: 500 15px 'Montserrrat', sans-serif;
-
-    list-style-position: inside;
-
-    li::marker {
-     color: $color-light2;
+      color: $color-dark2;
+      font: 500 1.5em 'Oswald', sans-serif;
+      text-transform: capitalize;
+      text-decoration: underline solid $color-dark2 0.1rem;
     }
-   }
+    
+    .fcontent__paragraph {
+      padding-left: 0.25rem;
 
-   .activity-content__picture {
-     width: 30%;
-     height: auto;
+      color: $color-black1;
+      font: 500 1em 'Montserrat', sans-serif;
+    }
 
-     margin-right: 10px;
-     margin-bottom: 10px; 
+    .fcontent__list {
+      border-left: 0.2rem solid $color-light1;
+      padding-left: 0.25rem;
 
-     float: left;
-   }
+      color: $color-black1;
+      font: 500 1em 'Montserrat', sans-serif;
+
+      list-style: none;
+
+      li::before {
+        margin-right: 0.15rem;
+
+        color: $color-light2;
+        content: "\f101";
+        font: 800 1em "FontAwesome";
+      }
+    }
   }
 
-  /* Footer de la ficha bibliografica */
-  .activity-footer {
-   width: 100%;
+    /* Footer de la ficha bibliografica */
+    .ffooter {
+      width: 95%;
 
-   padding: 5px 10px;
-   border-radius: 0.5em;
-   margin: 10px auto;
+      border-radius: 0.5em;
+      padding: 0.5rem;
 
-   background-color: $color-base1;
+      background-color: $color-base1;
+      
+      grid-column: 1 / -1;
+      grid-row: span 1;
 
-   align-self: flex-end;
-   
-   display: flex;
-   justify-content: center;
-   align-content: baseline;
+      display: flex;
+      justify-content: space-around;
+      align-content: baseline;
 
-   .activity-footer__label {
-    padding: 0 5px;
-
-    color: $color-white1;
-    font: 700 18px 'Oswald', sans-serif;
-   }
-   
-   .activity-footer__content {
-    color: $color-white1;
-    font: 500 16px 'MontSerrat', sans-serif;
-    text-decoration: underline solid $color-white1 2px;
-   }
+      color: $color-white1;
+      font: 500 1em 'MontSerrat', sans-serif;
+      
+      .ffooter__label {
+        font-weight: 800;
+        text-decoration: underline solid $color-white1 0.1rem;
+      }
+    }
   }
- }
 }
