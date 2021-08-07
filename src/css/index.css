@@ -472,25 +472,25 @@
 .main .article .content .content__link--small:hover {
   color: #0000e6;
 }
-.main .article .content .content-images {
+.main .article .content .image {
   margin: 0.4em auto;
   border-radius: 0.25em;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.main .article .content .content-images picture {
+.main .article .content .image picture {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main .article .content .content-images .content-images__img {
+.main .article .content .image .image__img {
   width: 100%;
   height: auto;
   border: 0.125em solid #0000e6;
   border-radius: 0.2em;
 }
-.main .article .content .content-images .content-images__quote {
+.main .article .content .image .image__quote {
   width: 80%;
   padding: 0.4em 0;
   border-right: 0.125em solid #0000e6;
@@ -501,34 +501,34 @@
   text-align: center;
   font: 400 1em "Montserrat", sans-serif;
 }
-.main .article .content .content-images .content-images__quote cite {
+.main .article .content .image .image__quote cite {
   font: italic 400 1em "Newsreader", serif;
 }
-.main .article .content .content-images--s {
+.main .article .content .image--s {
   width: 20%;
 }
-.main .article .content .content-images--xs {
+.main .article .content .image--xs {
   width: 30%;
 }
-.main .article .content .content-images--xxs {
+.main .article .content .image--xxs {
   width: 40%;
 }
-.main .article .content .content-images--m {
+.main .article .content .image--m {
   width: 50%;
 }
-.main .article .content .content-images--xm {
+.main .article .content .image--xm {
   width: 60%;
 }
-.main .article .content .content-images--xxm {
+.main .article .content .image--xxm {
   width: 70%;
 }
-.main .article .content .content-images--l {
+.main .article .content .image--l {
   width: 80%;
 }
-.main .article .content .content-images--xl {
+.main .article .content .image--xl {
   width: 90%;
 }
-.main .article .content .content-images--xxl {
+.main .article .content .image--xxl {
   width: 100%;
 }
 .main .article .content .table-wrapper {
@@ -542,11 +542,11 @@
   margin: 0 auto;
 }
 .main .article .content .table .theader .theader__title {
-  border-radius: 0.2em;
-  padding: 0.4em;
+  border-radius: 0.5em;
+  padding: 0.8em;
   background-color: #0000bb;
   color: #fff;
-  font: 700 1.8em "Oswald", sans-serif;
+  font: 700 1.75em "Oswald", sans-serif;
   text-align: center;
   text-transform: capitalize;
 }
@@ -559,7 +559,7 @@
   text-align: center;
 }
 .main .article .content .table .theader .theader__data {
-  border-radius: 0.25em;
+  border-radius: 0.5em;
   padding: 0.4em;
   background-color: #f0f0f0;
   color: #000;
@@ -573,11 +573,11 @@
   background-color: #cfcfcf;
 }
 .main .article .content .table .tcontent .tcontent__category {
-  border-radius: 0.25em;
+  border-radius: 0.5em;
   padding: 0.8em;
   background-color: #3399ff;
   color: #000;
-  font: 500 1.1em "Oswald", sans-serif;
+  font: 500 1.2em "Oswald", sans-serif;
   text-align: center;
 }
 .main .article .content .table .tcontent .tcontent__data {
@@ -620,6 +620,7 @@
   list-style: none;
 }
 .main .article .content .list .list__obj::before {
+  content: "";
   margin-right: 0.5em;
   color: #0000e6;
   font: 800 1em "FontAwesome";
@@ -627,6 +628,10 @@
 .main .article .content ol.list .list__obj {
   list-style-type: inherit;
   list-style-position: inside;
+}
+.main .article .content ol.list .list__obj::before {
+  content: none;
+  margin: 0;
 }
 .main .article .content ol.list .list__obj::marker {
   color: #0000e6;
@@ -641,8 +646,8 @@
 .main .article .content .list--lines .list__obj::before {
   content: "";
 }
-.main .article .content .list--diamond .list__obj::before {
-  content: "";
+.main .article .content .list--cube .list__obj::before {
+  content: "";
 }
 .main .article .content .list--flat {
   border-right: 0.15em solid #0000e6;
@@ -814,21 +819,49 @@
   .main .article {
     width: 100%;
   }
+  .main .article .content .label {
+    padding: 0.4em;
+  }
+  .main .article .content .input {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.25em;
+  }
+  .main .article .content .input--button {
+    padding: 0.25em;
+  }
 }
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 486px) {
+  .header {
+    padding: 0.25rem 0;
+  }
   .header .button {
-    display: none;
+    margin: 0;
+  }
+  .header .button i {
+    font-size: 2em;
+  }
+  .header .title {
+    padding: 0;
   }
   .header .title .title__text {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 
+  .main {
+    padding: 0;
+    border: none;
+  }
+  .main .nav-classinfo-wrapper {
+    padding: 0;
+  }
   .main .nav-classinfo-wrapper .section .section__className {
     font-size: 1.35em;
   }
   .main .nav-classinfo-wrapper .section .table {
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   .main .nav-classinfo-wrapper .section .table tr,
 .main .nav-classinfo-wrapper .section .table .table__category,
@@ -837,7 +870,6 @@
     width: 100%;
   }
   .main .nav-classinfo-wrapper .section .table .table__title {
-    font-size: 1.25em;
     display: none;
   }
   .main .nav-classinfo-wrapper .section .table .table__category,
@@ -855,14 +887,15 @@
     font-size: 1em;
   }
   .main .article .article__title {
-    width: 90%;
+    width: 95%;
     padding: 0.15em;
-    font-size: 1.75em;
+    font-size: 1.5em;
+    text-align: center;
   }
   .main .article .article__date {
     width: 80%;
-    padding: 0.15em;
-    font-size: 1.2em;
+    padding: 0.15rem;
+    font-size: 1.25em;
   }
   .main .article .content .content__title {
     font-size: 1.5em;
@@ -879,6 +912,13 @@
   .main .article .content .list .list__semititle {
     font-size: 1.25em;
   }
+  .main .article .content .list--flat {
+    border-right: none;
+    display: block;
+  }
+  .main .article .content .list--flat .list__obj {
+    margin: 0.25em;
+  }
   .main .article .content .table .theader .theader__title {
     font-size: 1.45em;
   }
@@ -893,11 +933,17 @@
     font-size: 1em;
     padding: 0.2em;
   }
-  .main .article .content .content-images--s,
-.main .article .content .content-images--xs,
-.main .article .content .content-images--xxs,
-.main .article .content .content-images--m {
-    width: 60%;
+  .main .article .content .image--s,
+.main .article .content .image--xs,
+.main .article .content .image--xxs,
+.main .article .content .image--m,
+.main .article .content .image--xm,
+.main .article .content .image--xxm {
+    width: 80%;
+  }
+  .main .article .content .ytvideo-wrapper {
+    width: 100%;
+    height: auto;
   }
   .main .article .content .ref {
     width: 80%;

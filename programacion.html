@@ -185,11 +185,11 @@
           Como la noticia que 20 Abogados no puedieron ganar un Juicio contra una AI especializada en leyes. <br>
         </p>
       
-        <div class="content-images content-images--xxs">
+        <div class="image image--xxs">
           <picture>
-            <img class="content-images__img" src="./src/img/programacionbasica/LawGeex Logo.png" alt="LawGexx AI logo">
+            <img class="image__img" src="./src/img/programacionbasica/LawGeex Logo.png" alt="LawGexx AI logo">
           </picture>
-          <span class="content-images__quote">
+          <span class="image__quote">
             <cite>LawGeex Logo</cite>, hecho por LawGeex.
           </span>
         </div>
@@ -200,11 +200,11 @@
           Y pueden ser usados para invadir su privacidad y su derecho de libre expreción <br>
         </p>
 
-        <div class="content-images content-images--m">
+        <div class="image image--m">
           <picture>
-            <img class="content-images__img" src="./src/img/programacionbasica/chinesse_cameras.jpg" alt="Camaras de las calles chinas">
+            <img class="image__img" src="./src/img/programacionbasica/chinesse_cameras.jpg" alt="Camaras de las calles chinas">
           </picture>
-          <span class="content-images__quote">
+          <span class="image__quote">
             <cite>Chinesse Cameras</cite>, en alguna ciudad de China.
           </span>
         </div>
@@ -226,7 +226,7 @@
       </p>
 
       <p class="content__title">Tipos de Datos</p>
-      <ul class="list list--diamond">
+      <ul class="list list--cube">
         <li class="list__obj">Numéricos</li>
         <ul class="list">
           <li class="list__obj">int: Números enteros</li>
@@ -292,11 +292,11 @@
         </p>
 
         <p class="content__title">2048</p>
-        <div class="content-images content-images--xs right">
+        <div class="image image--xs right">
           <picture>
-            <img class="content-images__img" src="./src/img/programacionbasica/2048_icon.png" alt="Icono del juego 2048">
+            <img class="image__img" src="./src/img/programacionbasica/2048_icon.png" alt="Icono del juego 2048">
           </picture>
-          <span class="content-images__quote">
+          <span class="image__quote">
             <cite>Icono de 2048</cite>
           </span>
         </div>
@@ -356,11 +356,11 @@
           <li class="list__obj">Pueden bloquear la cuadricula, al llenar totalmente una parte de la cuadricula</li>
         </ul>
 
-        <div class="content-images content-images--m">
+        <div class="image image--m">
           <picture>
-            <img class="content-images__img" src="./src/img/programacionbasica/2048_ui.png" alt="Foto de la interfaz de Usuario de 2048">
+            <img class="image__img" src="./src/img/programacionbasica/2048_ui.png" alt="Foto de la interfaz de Usuario de 2048">
           </picture>
-          <span class="content-images__quote">
+          <span class="image__quote">
             <cite>Interfaz de Usuario de 2048</cite>
           </span>
         </div>
@@ -386,15 +386,15 @@
 
         <p class="content__title">Como Cocinar Changua</p>
 
-        <div class="content-images content-images--m">
+        <div class="image image--m">
           <picture>
-            <img class="content-images__img" src="./src/img/programacionbasica/changua.png" alt="foto de una changua">
+            <img class="image__img" src="./src/img/programacionbasica/changua.png" alt="foto de una changua">
           </picture>
         </div>
 
-        <div class="content-images content-images--xxl">
+        <div class="image image--xxl">
           <picture>
-            <img class="content-images__img" src="./src/img/programacionbasica/comohacerchangua.png" alt="Diagrama de Fuljo de Datos, sobre como hacer changua">
+            <img class="image__img" src="./src/img/programacionbasica/comohacerchangua.png" alt="Diagrama de Fuljo de Datos, sobre como hacer changua">
           </picture>
         </div>
 
@@ -748,15 +748,14 @@
           Realice un <em>Script</em> ejercicios de suma, resta multiplicación y división.
         </p>
 
-        <div style="display: flex; justify-content: center;">
+        <div class="center-wrapper">
           <label class="label" for="input-num1_op">Ingresa el <strong>1er Número</strong></label>
           <input class="input" type="number" id="input-num1_op">
-          
           <label class="label" for="input-num2_op">Ingresa el <strong>2do Número</strong></label>
           <input class="input" type="number" id="input-num2_op">
         </div>
         
-        <table class="table" style="width: 70%">
+        <table class="table">
           <thead class="theader">
             <tr>
               <th class="theader__category">Operación</th>
@@ -788,7 +787,7 @@
           la suma es superior a 20 y de lo contrario diga la suma no alcanzo a ser mayor de 20.
         </p>
 
-        <div style="display: flex; justify-content: center;">
+        <div class="center-wrapper">
           <label class="label" for="input-num1_20">Ingresa el <strong>1er Número</strong></label>
           <input class="input" type="number" id="input-num1_20">
           
@@ -805,7 +804,7 @@
           dependiendo de seleccionar la función deseada e imprima su resultado.
         </p>
         
-        <div style="display: flex; justify-content: center;">
+        <div class="center-wrapper">
           <label class="label" for="input-num1_mn">Ingresa el <strong>1er Número</strong></label>
           <input class="input" type="number" id="input-num1_mn">
           
@@ -815,7 +814,7 @@
 
         <p class="content__paragraph">Ahora ingresa la Operación que quieras hacer:</p>
 
-        <div style="display: flex; justify-content: space-evenly">
+        <div class="center-wrapper">
           <button class="input input--button" onclick="changeOperator('sum')">+</button>
           <button class="input input--button" onclick="changeOperator('sub')">-</button>
           <button class="input input--button" onclick="changeOperator('mult')">x</button>
@@ -1024,10 +1023,12 @@
           de $106.454 si gana $908.526 pesos mensuales hasta $1.817.052 y si su sueldo es mayor no tiene auxilio de transporte, el programa debe indicar que
           si se obtuvo o no dicha cantidad de acuerdo con los márgenes de dinero antes mencionados.
         </p>
-        <label for="input-num_transporte" class="label">
-          Ingresa tu Salario, para ver si puedes recibir el <strong>Auxilio de Transporte</strong>
-        </label>
-        <input class="input" type="number" id="input-num_transporte">
+        <div class="center-wrapper">
+          <label for="input-num_transporte" class="label">
+            Ingresa tu Salario, para ver si puedes recibir el <strong>Auxilio de Transporte</strong>
+          </label>
+          <input class="input" type="number" id="input-num_transporte">
+        </div>
 
         <p id="output_transporte" class="content__paragraph">
           Ingresa primero tu salario para saber si puedes recibir el <strong>Auxilio de Transporte</strong>.
@@ -1136,10 +1137,12 @@
         <p class="content__paragraph"><em>
           No uso exactamente los ciclos for o while, pero supongo que funciona (?)
         </em></p>
-        <p class="content__paragraph">
-          Para ganar, debes introducir un 0, cero o Zero. Se te va a contar cuantos errores tenga antes de ingresarlo.
-        </p>
-        <input type="number" id="input-checkzero" class="input">
+        <div class="center-wrapper">
+          <p class="content__paragraph">
+            Para ganar, debes introducir un 0, cero o Zero. Se te va a contar cuantos errores tenga antes de ingresarlo.
+          </p>
+          <input type="number" id="input-checkzero" class="input">
+        </div>
         <p id="output-checkzero" class="content__paragraph">
           Primero, ingresa un número.
         </p>
