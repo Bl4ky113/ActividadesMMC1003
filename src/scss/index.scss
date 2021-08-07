@@ -731,7 +731,7 @@
      &::before {
       margin-right: 0.5em;
 
-      color: $color-light2;
+      color: $color-base1;
       font: 800 1em 'FontAwesome';
      }
     }
@@ -743,7 +743,7 @@
      list-style-position: inside;
 
      &::marker {
-      color: $color-light2;
+      color: $color-base1;
       font: 800 1em 'Oswald', sans-serif;
      }
     }

@@ -621,7 +621,7 @@
 }
 .main .article .content .list .list__obj::before {
   margin-right: 0.5em;
-  color: #3399ff;
+  color: #0000e6;
   font: 800 1em "FontAwesome";
 }
 .main .article .content ol.list .list__obj {
@@ -629,7 +629,7 @@
   list-style-position: inside;
 }
 .main .article .content ol.list .list__obj::marker {
-  color: #3399ff;
+  color: #0000e6;
   font: 800 1em "Oswald", sans-serif;
 }
 .main .article .content .list--arrows .list__obj::before {
