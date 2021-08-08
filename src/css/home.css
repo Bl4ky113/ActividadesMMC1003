@@ -230,21 +230,64 @@
   border-left: 0.15rem solid #0000e6;
   padding: 0.25rem;
   padding-left: 0.25rem;
-  list-style: none;
 }
 .main .section .content .list .list__obj {
   margin: 0.25rem;
   color: #000;
   font: 500 1em "Montserrat", sans-serif;
+  list-style: none;
 }
 .main .section .content .list .list__obj::before {
-  margin: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  border-right: 0.15rem solid #0000e6;
+  padding: 0 0.25rem;
   content: "";
   color: #0000e6;
   font: 800 1em "FontAwesome";
 }
 .main .section .content .list--fat {
-  width: 85%;
+  margin: 0.25rem;
+  margin-left: 1.5rem;
+  padding: 0.25rem;
+  padding-left: 0.25rem;
+}
+.main .section .content .list--fat .list__obj {
+  margin: 0.25rem;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background-color: #0000e6;
+  color: #fff;
+  font: 500 1em "Montserrat", sans-serif;
+  list-style: none;
+}
+.main .section .content .list--fat .list__obj::before {
+  border-left: 0.15rem solid #fff;
+  padding: 0 0.5rem;
+  content: "";
+  color: #fff;
+  font: 800 1em "FontAwesome";
+}
+.main .section .content ol.list .list__obj {
+  list-style-type: inherit;
+  list-style-position: inside;
+}
+.main .section .content ol.list .list__obj::before {
+  content: none;
+}
+.main .section .content ol.list .list__obj::marker {
+  color: #0000e6;
+  font: 800 1em "Montserrat", sans-serif;
+}
+.main .section .content ol.list--fat .list__obj {
+  list-style-type: inherit;
+  list-style-position: inside;
+}
+.main .section .content ol.list--fat .list__obj::before {
+  content: none;
+}
+.main .section .content ol.list--fat .list__obj::marker {
+  color: #fff;
+  font: 800 1em "Montserrat", sans-serif;
 }
 .main .section .content .content__link {
   width: 60%;

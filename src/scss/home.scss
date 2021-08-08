@@ -83,17 +83,19 @@
       padding: 0.25rem;
       padding-left: 0.25rem;
 
-      list-style: none;
-
-      .list__obj {
       
+      .list__obj {
         margin: 0.25rem;
-
+        
         color: $color-black1;
         font: 500 1em 'Montserrat', sans-serif;
 
+        list-style: none;
+
         &::before {
-          margin: 0.25rem 0.5rem; 
+          margin: 0.25rem; 
+          border-right: 0.15rem solid $color-base1;
+          padding: 0 0.25rem;
 
           content: "\f101";
           color: $color-base1;
@@ -103,7 +105,64 @@
     }
 
     .list--fat {
-      width: 85%;
+      margin: 0.25rem;
+      margin-left: 1.5rem;
+      padding: 0.25rem;
+      padding-left: 0.25rem;
+      
+      .list__obj {
+        margin: 0.25rem;
+        border-radius: 0.25rem;
+        padding: 0.5rem; 
+        
+        background-color: $color-base1;
+        
+        color: $color-white1;
+        font: 500 1em 'Montserrat', sans-serif;
+        
+        list-style: none;
+
+        &::before {
+          border-left: 0.15rem solid $color-white1;
+          padding: 0 0.5rem;
+
+          content: "\f101";
+          color: $color-white1;
+          font: 800 1em 'FontAwesome';
+        }
+      }
+    }
+
+    ol.list {
+      .list__obj {
+        list-style-type: inherit;
+        list-style-position: inside;
+
+        &::before {
+          content: none;
+        }
+
+        &::marker {
+          color: $color-base1;
+          font: 800 1em 'Montserrat', sans-serif;
+        }
+      }
+    }
+
+    ol.list--fat {
+      .list__obj {
+        list-style-type: inherit;
+        list-style-position: inside;
+        
+        &::before {
+          content: none;
+        }
+
+        &::marker {
+          color: $color-white1;
+          font: 800 1em 'Montserrat', sans-serif;
+        }
+      }
     }
    
     /* Links Styles */
