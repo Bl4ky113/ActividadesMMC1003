@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* Scroll Bar in the document */
+/* --- Variables Globales --- */
+/* -- Base Colors -- */
+/* Blue */
+/* Darker Blue */
+/* Sky */
+/* Darker Sky */
+/* Even More light Sky*/
+/* Midnight */
+/* Even Darker Midnight */
+/* -- Classes Colors -- */
+/* Química */
+/* Artes */
+/* Inglés */
+/* Religión */
+/* Tecnología */
+/* Filosofía */
+/* Gestión Social */
+/* Ed. Física */
+/* Matemáticas */
+/* Español */
+/* Política y Economía */
+/* Física */
+/* Ética */
+/* Articulación */
+/* Excel */
+/* Programación Básica */
+/* Electrónica Digital */
+/* Gestión Básica de la Informatíca */
+/* Investigación */
+/* -- General Colors -- */
+/* White */
+/* Smoke */
+/* A little bit dark White */
+/* Black */
+/* Dark Grey */
+/* Grey */
+::-webkit-scrollbar {
+  width: 1.2vw;
+  height: 1.8vh;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.25em;
+  background-color: #cce5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25em;
+  background-color: #99ccff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3399ff;
+}

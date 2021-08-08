@@ -36,33 +36,7 @@
 /* Black */
 /* Dark Grey */
 /* Grey */
-/* Scroll Bar in the document */
-::-webkit-scrollbar {
-  width: 1.2vw;
-  height: 1.8vh;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 0.25em;
-  background-color: #cce5ff;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 0.25em;
-  background-color: #99ccff;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #3399ff;
-}
-
-.wrapper {
-  width: 100%;
-  display: grid;
-  grid-template: auto 1fr auto/repeat(3, 1fr);
-  grid-template-areas: "header header header" "content content content" "footer footer footer";
-  overflow: hidden;
-}
-
+/* Header Import */
 /* ----- Header Style ----- */
 .header {
   padding: 0.25em;
@@ -70,7 +44,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  grid-column: span 3;
+  grid-column: 1/-1;
   grid-row: span 1;
   grid-area: header;
   /* Buttons in the Header */
@@ -112,6 +86,60 @@
 .header .title .title--info__text {
   color: #fff;
   font: italic 400 1em "Montserrat", sans-serif;
+}
+
+/* Responvise Style */
+@media screen and (max-width: 486px) {
+  .header {
+    padding: 0.25rem 0;
+  }
+  .header .button {
+    margin: 0;
+  }
+  .header .button i {
+    font-size: 2em;
+  }
+  .header .title {
+    padding: 0;
+  }
+  .header .title .title__text {
+    font-size: 1.5em;
+  }
+}
+/* ----- Footer Style ----- */
+.footer {
+  padding: 1em 1.8em;
+  background-color: #000066;
+  grid-column: span 3;
+  grid-row: span 1;
+  grid-area: footer;
+}
+
+/* Scroll Bar in the document */
+::-webkit-scrollbar {
+  width: 1.2vw;
+  height: 1.8vh;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.25em;
+  background-color: #cce5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25em;
+  background-color: #99ccff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3399ff;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template: auto 1fr auto/repeat(3, 1fr);
+  grid-template-areas: "header  header  header" "content content content" "footer  footer  footer";
+  overflow: hidden;
 }
 
 /* Main Content of the Doc */
@@ -347,7 +375,8 @@
 }
 .main .article .content {
   /* Class Notes */
-  /* Semantics in the Content */
+  /* Get Text Semantics */
+  /* Text Semantics */
   /* Electronic Configuration Quimica */
   /* Pre Texts */
   /* Titles in the Class Notes*/
@@ -394,13 +423,13 @@
   font-weight: 700;
 }
 .main .article .content em {
-  font: italic 300 0.95em "Montserrat", sans-serif;
+  font: italic 400 inherit "Montserrat", sans-serif;
 }
 .main .article .content i {
-  font: italic 500 0.95em "Newsreader", serif;
+  font: italic 500 inherit "Newsreader", serif;
 }
 .main .article .content i.fa {
-  font: 500 1.1em "FontAwesome";
+  font: 500 1em "FontAwesome";
 }
 .main .article .content abbr {
   border-radius: 0.25em;
@@ -448,7 +477,7 @@
   clear: both;
 }
 .main .article .content .content__link {
-  max-width: 45%;
+  max-width: 75%;
   margin: 0.25em;
   border-radius: 0.25em;
   padding: 0.5em;
@@ -602,28 +631,28 @@
   margin: 0.1rem;
   padding-inline-start: 0.45rem;
   color: #000044;
-  font: 500 1.75em "Oswald", sans-serif;
+  font: 500 1.75rem "Oswald", sans-serif;
   text-decoration: underline solid #000044 0.1em;
 }
 .main .article .content .list .list__semititle {
   margin: 0.1rem;
   padding-inline-start: 0.45rem;
   color: #000066;
-  font: 300 1.35em "Oswald", sans-serif;
+  font: 300 1.35rem "Oswald", sans-serif;
   text-decoration: underline solid #000066 0.1em;
 }
 .main .article .content .list .list__obj {
   margin: 0.25em;
   padding-left: 0.25em;
   color: #000;
-  font: 500 1em "Montserrat", sans-serif;
+  font: 500 1rem "Montserrat", sans-serif;
   list-style: none;
 }
 .main .article .content .list .list__obj::before {
   content: "";
   margin-right: 0.5em;
   color: #0000e6;
-  font: 800 1em "FontAwesome";
+  font: 800 1rem "FontAwesome";
 }
 .main .article .content ol.list .list__obj {
   list-style-type: inherit;
@@ -787,24 +816,9 @@
   content: "Punto N°" counter(section) ". ";
 }
 
-.footer {
-  padding: 1em 1.8em;
-  background-color: #000066;
-  grid-column: span 3;
-  grid-row: span 1;
-  grid-area: footer;
-}
-
 @media screen and (max-width: 900px) {
   .wrapper {
     font-size: 14px;
-  }
-
-  .header .button i {
-    font-size: 2.5em;
-  }
-  .header .title--info__text {
-    display: none;
   }
 
   .main .nav-classinfo-wrapper {
@@ -819,6 +833,14 @@
   .main .article {
     width: 100%;
   }
+  .main .article .content .content__link {
+    max-width: 90%;
+    width: 90%;
+  }
+  .main .article .content .content__link:hover {
+    padding: 0.5em;
+    text-decoration: underline solid inherit 0.15rem;
+  }
   .main .article .content .label {
     padding: 0.4em;
   }
@@ -832,22 +854,6 @@
   }
 }
 @media screen and (max-width: 486px) {
-  .header {
-    padding: 0.25rem 0;
-  }
-  .header .button {
-    margin: 0;
-  }
-  .header .button i {
-    font-size: 2em;
-  }
-  .header .title {
-    padding: 0;
-  }
-  .header .title .title__text {
-    font-size: 1.5em;
-  }
-
   .main {
     padding: 0;
     border: none;
@@ -903,9 +909,6 @@
   .main .article .content .content__semititle {
     font-size: 1.25em;
   }
-  .main .article .content .content__link {
-    max-width: 90%;
-  }
   .main .article .content .list .list__title {
     font-size: 1.5em;
   }
@@ -959,6 +962,6 @@
     font-size: 1.5em;
   }
   .main .article .content .activity .activity__task {
-    font-size: 1em;
+    font-size: 1.15em;
   }
 }

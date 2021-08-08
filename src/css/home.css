@@ -35,20 +35,38 @@
 /* A little bit dark White */
 /* Black */
 /* Dark Grey */
-/* The Header */
-.doc-header {
-  height: 80px;
-  padding: 5px;
+/* Grey */
+/* Imports */
+/* ----- Header Style ----- */
+.header {
+  padding: 0.25em;
   background-color: #000066;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  grid-column: 1/-1;
+  grid-row: span 1;
+  grid-area: header;
+  /* Buttons in the Header */
   /* Title of the Header */
 }
-.doc-header .header-title {
-  width: 800px;
-  border: 2px solid #0000bb;
-  padding: 10px 0;
+.header .button {
+  margin: 0 0.5em;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  background-color: #0000e6;
+  display: block;
+}
+.header .button i {
+  color: #fff;
+  font-size: 4.5em;
+  text-align: center;
+}
+.header .title {
+  width: 70vw;
+  border-radius: 0.25em;
+  padding: 0.6em 0.25em;
   background-color: #0000e6;
   display: flex;
   align-items: baseline;
@@ -56,179 +74,233 @@
   /* Text */
   /* Info */
 }
-.doc-header .header-title .header-title__text {
+.header .title .title__text {
   color: #fff;
-  font: 700 32px "Oswald", sans-serif;
+  font: 700 1.8em "Oswald", sans-serif;
+  text-align: center;
   /* Name of The Class */
 }
-.doc-header .header-title .header-title__text span {
-  font-size: 40px;
+.header .title .title__text span {
+  font-size: 1.2em;
 }
-.doc-header .header-title .header-title--info__text {
-  color: #99ccff;
-  font: italic 200 12px "Montserrat", sans-serif;
+.header .title .title--info__text {
+  color: #fff;
+  font: italic 400 1em "Montserrat", sans-serif;
+}
+
+/* Responsive Style */
+@media screen and (max-width: 900px) {
+  .header .button i {
+    font-size: 2.5em;
+  }
+  .header .title--info__text {
+    display: none;
+  }
+}
+@media screen and (max-width: 486px) {
+  .header {
+    padding: 0.25rem 0;
+  }
+  .header .button {
+    margin: 0;
+  }
+  .header .button i {
+    font-size: 2em;
+  }
+  .header .title {
+    padding: 0;
+  }
+  .header .title .title__text {
+    font-size: 1.5em;
+  }
+}
+/* ----- Footer Style ----- */
+.footer {
+  padding: 1em 1.8em;
+  background-color: #000066;
+  grid-column: span 3;
+  grid-row: span 1;
+  grid-area: footer;
+}
+
+/* Scroll Bar in the document */
+::-webkit-scrollbar {
+  width: 1.2vw;
+  height: 1.8vh;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.25em;
+  background-color: #cce5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25em;
+  background-color: #99ccff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3399ff;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template: auto 1fr auto/repeat(3, 1fr);
+  grid-template-areas: "header  header  header " "content content content" "footer  footer  footer ";
+  overflow: hidden;
 }
 
 /* Main of the Home */
-.doc-main {
-  margin-right: 5px;
-  margin-left: 5px;
-  border-right: 2px outset #353535;
-  border-left: 2px outset #353535;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+.main {
+  display: grid;
+  grid-template: 1fr/repeat(2, 1fr);
+  grid-area: content;
   /* Sections in the Main */
   /* Wellcome Section */
   /* Schedule Section */
 }
-.doc-main .main-section {
-  max-width: 50%;
-  margin: 10px;
-  border-radius: 0.25em;
+.main .section {
+  margin: 0.5rem;
   padding: 5px;
+  grid-column: span 1;
+  grid-row: span 1;
   /* Title of the section */
   /* Content of the section */
 }
-.doc-main .main-section .main-section__title {
+.main .section .section__title {
   width: 90%;
-  height: 60px;
-  margin: 10px;
-  border: 5px solid #0000bb;
-  border-radius: 0.1em;
-  padding-inline-start: 30px;
+  margin: 0.25rem auto;
+  border-radius: 0.15em;
+  padding: 0.5rem;
+  padding-left: 3rem;
   background-color: #0000bb;
   display: flex;
   align-items: center;
   color: #fff;
-  font: 700 32px "Oswald", sans-serif;
+  font: 700 2.25rem "Oswald", sans-serif;
 }
-.doc-main .main-section .section-content {
+.main .section .content {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  /* Import Text Semantics */
+  /* Text Semantics */
+  /* Lists Styles */
+  /* Links Styles */
   /* Alerts in the Sections */
-  /* Lists in the Sections */
-  /* Unorder Lists */
   /* Advises in the sections */
 }
-.doc-main .main-section .section-content .section-content__paragraph {
+.main .section .content .content__paragraph {
   width: 85%;
-  margin: 0 auto;
-  border-right: 1px solid #353535;
-  border-left: 1px solid #353535;
-  padding: 10px;
+  margin: 0 2rem 0 auto;
+  border-right: 0.05rem solid #353535;
+  border-left: 0.05rem solid #353535;
+  padding: 0.65rem;
   color: #000;
-  font: 500 18px "Montserrat", sans-serif;
+  font: 500 1em "Montserrat", sans-serif;
 }
-.doc-main .main-section .section-content .section-content__paragraph strong {
-  font: 700 18px "Montserrat", sans-serif;
+.main .section .content strong {
+  font-weight: 700;
 }
-.doc-main .main-section .section-content .section-content__paragraph em {
-  font: italic 400 18px "Montserrat", sans-serif;
+.main .section .content em {
+  font: italic 400 inherit "Montserrat", sans-serif;
 }
-.doc-main .main-section .section-content .section-content__paragraph i {
-  font: italic 300 18px "Newsreader", serif;
+.main .section .content i {
+  font: italic 500 inherit "Newsreader", serif;
 }
-.doc-main .main-section .section-content .section-content__paragraph abbr {
+.main .section .content i.fa {
+  font: 500 1em "FontAwesome";
+}
+.main .section .content abbr {
   border-radius: 0.25em;
-  padding: 2px 5px;
+  padding: 0.2em 0.4em;
   background-color: #000066;
   color: #fff;
-  font: italic 200 18px "Montserrat", sans-serif;
+  font: italic 400 1.15em "Montserrat", sans-serif;
   text-decoration: underline #99ccff;
 }
-.doc-main .main-section .section-content .section-content__paragraph mark {
+.main .section .content mark {
   border-radius: 0.25em;
-  padding: 2px 5px;
+  padding: 0 0.4em;
   background-color: #99ccff;
 }
-.doc-main .main-section .section-content .section-content__link {
+.main .section .content .list {
+  margin: 0.25rem;
+  margin-left: 1.5rem;
+  border-left: 0.15rem solid #0000e6;
+  padding: 0.25rem;
+  padding-left: 0.25rem;
+  list-style: none;
+}
+.main .section .content .list .list__obj {
+  margin: 0.25rem;
+  color: #000;
+  font: 500 1em "Montserrat", sans-serif;
+}
+.main .section .content .list .list__obj::before {
+  margin: 0.25rem 0.5rem;
+  content: "";
+  color: #0000e6;
+  font: 800 1em "FontAwesome";
+}
+.main .section .content .list--fat {
+  width: 85%;
+}
+.main .section .content .content__link {
   width: 60%;
-  margin: 10px;
-  margin-inline-start: 30px;
-  border: 2px solid #000066;
+  margin: 0.65rem 1.5rem;
   border-radius: 0.25em;
-  padding: 5px;
-  padding-inline-start: 25px;
+  padding: 0.25rem;
+  padding-left: 1rem;
   background-color: #0000e6;
   color: #fff;
-  font: 300 20px "Oswald", sans-serif;
+  font: 300 1.25rem "Oswald", sans-serif;
   text-decoration: none;
   display: block;
   transition-duration: 500ms;
   transition-timing-function: ease;
-  transition-property: width, color, background-color;
+  transition-property: padding, color, background-color;
 }
-.doc-main .main-section .section-content .section-content__link:hover {
-  width: 80%;
+.main .section .content .content__link:hover {
+  padding-right: 20%;
   background-color: #000066;
   color: #99ccff;
   text-decoration: underline #99ccff;
 }
-.doc-main .main-section .section-content .section-content__alert {
+.main .section .content .content__link--small {
+  color: #000;
+  font: 400 1em "Montserrat", sans-serif;
+  text-decoration: none;
+}
+.main .section .content .content__link--small:hover {
+  color: #0000e6;
+  text-decoration: under solid #0000e6;
+}
+.main .section .content .alert {
   width: 90%;
   margin: 0 auto;
-  border: 5px solid #0000bb;
-  border-radius: 1em;
-  padding: 15px;
-  background-color: #fff;
+  border: 0.25rem solid #0000bb;
+  border-top-right-radius: 0.75em;
+}
+.main .section .content .alert .alert__title {
+  padding: 0.5rem 0.75rem;
+  background-color: #0000bb;
+  color: #fff;
+  font: 500 1.5rem "Oswald", sans-serif;
+}
+.main .section .content .alert .alert__paragraph {
+  width: 95%;
+  padding: 0.75rem;
   color: #000;
-  font: 500 16px "Montserrat", sans-serif;
+  font: 500 1em "Montserrat", sans-serif;
 }
-.doc-main .main-section .section-content .section-content__alert .section-content--title__alert {
-  width: 60%;
-  border: 2px solid #000066;
-  border-radius: 0.25em;
-  padding: 5px;
-  background-color: #0000bb;
-  color: #fff;
-  font: 500 20px "Oswald", sans-serif;
-  display: block;
-}
-.doc-main .main-section .section-content .section-content__alert strong {
-  font: 700 18px "Montserrat", sans-serif;
-}
-.doc-main .main-section .section-content .section-content__alert em {
-  font: italic 400 18px "Montserrat", sans-serif;
-}
-.doc-main .main-section .section-content .section-content__alert i {
-  font: italic 300 18px "Newsreader", serif;
-}
-.doc-main .main-section .section-content .section-content__alert abbr {
-  border-radius: 0.25em;
-  padding: 2px 5px;
-  background-color: #000066;
-  color: #fff;
-  font: italic 200 18px "Montserrat", sans-serif;
-  text-decoration: underline #99ccff;
-}
-.doc-main .main-section .section-content .section-content__alert mark {
-  border-radius: 0.25em;
-  padding: 2px 5px;
-  background-color: #99ccff;
-}
-.doc-main .main-section .section-content .content-list {
-  width: 70%;
-  margin: 10px;
-  margin-inline-start: 20px;
-  padding: 10px;
-  list-style-position: inside;
-}
-.doc-main .main-section .section-content .content-list .ulist-object {
-  margin: 5px;
-  border: 2px outset #99ccff;
-  padding: 10px;
-  background-color: #0000bb;
-  color: #fff;
-  font: 500 16px "Montserrat", sans-serif;
-}
-.doc-main .main-section .section-content .content-advise {
+.main .section .content .content-advise {
   /* Content of the advise */
 }
-.doc-main .main-section .section-content .content-advise:hover .advise-content {
+.main .section .content .content-advise:hover .advise-content {
   display: block;
 }
-.doc-main .main-section .section-content .content-advise .content-advise__text {
+.main .section .content .content-advise .content-advise__text {
   border-radius: 0.5em;
   padding: 10px 20px;
   background-color: #0000bb;
@@ -236,7 +308,7 @@
   font: 500 20px "Oswald", sans-serif;
   display: inline-block;
 }
-.doc-main .main-section .section-content .content-advise .advise-content {
+.main .section .content .content-advise .advise-content {
   margin-inline-start: 5px;
   border-radius: 0.5em;
   padding: 10px;
@@ -246,75 +318,76 @@
   position: absolute;
   z-index: 1;
 }
-.doc-main .main-section .section-content .content-advise .advise-content .advise-content__paragraph {
+.main .section .content .content-advise .advise-content .advise-content__paragraph {
   border-radius: 0.25em;
   padding: 5px;
   background-color: #fff;
   color: #000;
   font: 300 14px "Montserrat", sans-serif;
 }
-.doc-main .main-section--wellcome {
+.main .section--wellcome {
   width: 45%;
   border: 2px solid #3399ff;
   border-radius: 0.5em;
   background-color: #99ccff;
 }
-.doc-main .main-section--wellcome .section-images {
+.main .section--wellcome .section-images {
+  width: 90%;
   margin: 10px;
   border-radius: 0.5em;
   padding: 5px;
 }
-.doc-main .main-section--wellcome .section-images .section-images__img {
+.main .section--wellcome .section-images .section-images__img {
   width: 100%;
   height: 300px;
 }
-.doc-main .main-section--wellcome .section-content {
+.main .section--wellcome .section-content {
   margin: 5px;
   border: 2px outset #3399ff;
   border-radius: 1em;
   padding: 10px;
   background-color: #fff;
 }
-.doc-main .main-section--wellcome .section-content .section-content__paragraph {
+.main .section--wellcome .section-content .section-content__paragraph {
   width: 95%;
   border: none;
   padding: 5px;
 }
-.doc-main .main-section--wellcome .section-content .section-content__paragraph .saludo {
+.main .section--wellcome .section-content .section-content__paragraph .saludo {
   font: 700 20px "Montserrat", sans-serif;
   text-decoration: underline #0000bb;
 }
-.doc-main .main-section--wellcome .section-content .section-content__paragraph .Bl4ky113 {
+.main .section--wellcome .section-content .section-content__paragraph .Bl4ky113 {
   color: #0000bb;
   text-decoration: underline #0000bb;
   text-shadow: 1px 1px 1px #000;
 }
-.doc-main .main-section--wellcome .section-content .section-content__paragraph .commentary {
+.main .section--wellcome .section-content .section-content__paragraph .commentary {
   color: #353535;
   font: 100 10px "Montserrat", sans-serif;
 }
-.doc-main .main-section--schedule {
+.main .main-section--schedule {
   max-width: 95%;
   margin: 10px auto;
 }
-.doc-main .main-section--schedule .section-content {
+.main .main-section--schedule .section-content {
   /* Calendar Table */
 }
-.doc-main .main-section--schedule .section-content .content-calendar {
+.main .main-section--schedule .section-content .content-calendar {
   margin: 5px auto;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .content-calendar__day {
+.main .main-section--schedule .section-content .content-calendar .content-calendar__day {
   width: 200px;
   padding: 20px;
   background-color: #0000e6;
   font: 700 32px "Oswald", sans-serif;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .content-calendar__time {
+.main .main-section--schedule .section-content .content-calendar .content-calendar__time {
   padding: 10px;
   background-color: #99ccff;
   font: 500 20px "Oswald", sans-serif;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data {
+.main .main-section--schedule .section-content .content-calendar .calendar-data {
   height: 65px;
   border-radius: 0.5em;
   background-color: #f0f0f0;
@@ -322,7 +395,7 @@
   transition-timing-function: ease-in-out;
   transition-property: background-color, color, border-color, width;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data .calendar-data__link {
   height: 60%;
   width: 70%;
   margin: 0 auto;
@@ -337,296 +410,296 @@
   justify-content: center;
   transition: inherit;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data[rowspan="2"] {
+.main .main-section--schedule .section-content .content-calendar .calendar-data[rowspan="2"] {
   height: 130px;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data[rowspan="2"] .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data[rowspan="2"] .calendar-data__link {
   font-size: 24px;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--quimica {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--quimica {
   background-color: #944dff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--quimica .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--quimica .calendar-data__link {
   border-color: #8533ff;
   background-color: #d1b3ff;
   color: #8533ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--quimica:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--quimica:hover {
   background-color: #d1b3ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--quimica:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--quimica:hover .calendar-data__link {
   border-color: #944dff;
   background-color: #944dff;
   color: #d1b3ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--artes {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--artes {
   background-color: #ff66cc;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--artes .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--artes .calendar-data__link {
   border-color: #cc0088;
   background-color: #ffb3e6;
   color: #cc0088;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--artes:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--artes:hover {
   background-color: #ffb3e6;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--artes:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--artes:hover .calendar-data__link {
   border-color: #ff66cc;
   background-color: #ff66cc;
   color: #ffb3e6;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--ingles {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--ingles {
   background-color: #ffcc00;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--ingles .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--ingles .calendar-data__link {
   border-color: #e6b800;
   background-color: #ffe680;
   color: #e6b800;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--ingles:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--ingles:hover {
   background-color: #ffe680;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--ingles:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--ingles:hover .calendar-data__link {
   border-color: #ffcc00;
   background-color: #ffcc00;
   color: #ffe680;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--religion {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--religion {
   background-color: #ff99ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--religion .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--religion .calendar-data__link {
   border-color: #ff33ff;
   background-color: #ffccff;
   color: #ff33ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--religion:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--religion:hover {
   background-color: #ffccff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--religion:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--religion:hover .calendar-data__link {
   border-color: #ff99ff;
   background-color: #ff99ff;
   color: #ffccff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia {
   background-color: #b3d9ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia .calendar-data__link {
   border-color: #3396ff;
   background-color: #e6f2ff;
   color: #3396ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia:hover {
   background-color: #e6f2ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia:hover .calendar-data__link {
   border-color: #b3d9ff;
   background-color: #b3d9ff;
   color: #e6f2ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia {
   background-color: #cc00cc;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia .calendar-data__link {
   border-color: #800080;
   background-color: #ff00ff;
   color: #800080;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia:hover {
   background-color: #ff00ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia:hover .calendar-data__link {
   border-color: #cc00cc;
   background-color: #cc00cc;
   color: #ff00ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--gestion {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--gestion {
   background-color: #ff751a;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--gestion .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--gestion .calendar-data__link {
   border-color: #cc5200;
   background-color: #ff944d;
   color: #cc5200;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--gestion:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--gestion:hover {
   background-color: #ff944d;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--gestion:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--gestion:hover .calendar-data__link {
   border-color: #ff751a;
   background-color: #ff751a;
   color: #ff944d;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica {
   background-color: #66ff66;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica .calendar-data__link {
   border-color: #00e600;
   background-color: #b3ffb3;
   color: #00e600;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica:hover {
   background-color: #b3ffb3;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica:hover .calendar-data__link {
   border-color: #66ff66;
   background-color: #66ff66;
   color: #b3ffb3;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas {
   background-color: #4d4dff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas .calendar-data__link {
   border-color: #000099;
   background-color: #9999ff;
   color: #000099;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas:hover {
   background-color: #9999ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas:hover .calendar-data__link {
   border-color: #4d4dff;
   background-color: #4d4dff;
   color: #9999ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--espanol {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--espanol {
   background-color: #ff704d;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--espanol .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--espanol .calendar-data__link {
   border-color: #e62e00;
   background-color: #ffad99;
   color: #e62e00;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--espanol:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--espanol:hover {
   background-color: #ffad99;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--espanol:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--espanol:hover .calendar-data__link {
   border-color: #ff704d;
   background-color: #ff704d;
   color: #ffad99;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--economia {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--economia {
   background-color: #00a3cc;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--economia .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--economia .calendar-data__link {
   border-color: #008fb3;
   background-color: #1ad1ff;
   color: #008fb3;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--economia:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--economia:hover {
   background-color: #1ad1ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--economia:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--economia:hover .calendar-data__link {
   border-color: #00a3cc;
   background-color: #00a3cc;
   color: #1ad1ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--fisica {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--fisica {
   background-color: #ff66b3;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--fisica .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--fisica .calendar-data__link {
   border-color: #e60073;
   background-color: #ffb3d9;
   color: #e60073;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--fisica:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--fisica:hover {
   background-color: #ffb3d9;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--fisica:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--fisica:hover .calendar-data__link {
   border-color: #ff66b3;
   background-color: #ff66b3;
   color: #ffb3d9;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--etica {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--etica {
   background-color: #99ccff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--etica .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--etica .calendar-data__link {
   border-color: #3396ff;
   background-color: #cce5ff;
   color: #3396ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--etica:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--etica:hover {
   background-color: #cce5ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--etica:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--etica:hover .calendar-data__link {
   border-color: #99ccff;
   background-color: #99ccff;
   color: #cce5ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--excel {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--excel {
   background-color: #009933;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--excel .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--excel .calendar-data__link {
   border-color: #006622;
   background-color: #00e64d;
   color: #006622;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--excel:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--excel:hover {
   background-color: #00e64d;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--excel:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--excel:hover .calendar-data__link {
   border-color: #009933;
   background-color: #009933;
   color: #00e64d;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--programacion {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--programacion {
   background-color: #3366ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--programacion .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--programacion .calendar-data__link {
   border-color: #001a66;
   background-color: #99b3ff;
   color: #001a66;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--programacion:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--programacion:hover {
   background-color: #99b3ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--programacion:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--programacion:hover .calendar-data__link {
   border-color: #3366ff;
   background-color: #3366ff;
   color: #99b3ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--electronica {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--electronica {
   background-color: #f9f900;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--electronica .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--electronica .calendar-data__link {
   border-color: #999900;
   background-color: #ffff99;
   color: #999900;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--electronica:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--electronica:hover {
   background-color: #ffff99;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--electronica:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--electronica:hover .calendar-data__link {
   border-color: #f9f900;
   background-color: #f9f900;
   color: #ffff99;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica {
   background-color: #4dc3ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica .calendar-data__link {
   border-color: #006699;
   background-color: #b3e6ff;
   color: #006699;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica:hover {
   background-color: #b3e6ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica:hover .calendar-data__link {
   border-color: #4dc3ff;
   background-color: #4dc3ff;
   color: #b3e6ff;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion {
   background-color: #a6a6a6;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion .calendar-data__link {
   border-color: #8c8c8c;
   background-color: #ccc;
   color: #8c8c8c;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion:hover {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion:hover {
   background-color: #ccc;
 }
-.doc-main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion:hover .calendar-data__link {
+.main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion:hover .calendar-data__link {
   border-color: #a6a6a6;
   background-color: #a6a6a6;
   color: #ccc;

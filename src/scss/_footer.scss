@@ -1,0 +1,12 @@
+/* ----- Footer Style ----- */
+
+.footer {
+  padding: 1em 1.8em;
+ 
+  background-color: $color-dark1;
+ 
+  grid-column: span 3;
+  grid-row: span 1;
+  grid-area: footer;
+ }
+ 

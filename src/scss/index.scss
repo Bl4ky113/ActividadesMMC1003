@@ -1,29 +1,10 @@
 /* Variables */
 @import "./master";
 
-/* Scroll Bar in the document */
-
-::-webkit-scrollbar {
- width: 1.2vw;
- height: 1.8vh;
-
-}
-
-::-webkit-scrollbar-track {
- border-radius: 0.25em;
-
- background-color: $color-light3;
-}
-
-::-webkit-scrollbar-thumb {
- border-radius: 0.25em;
- 
- background-color: $color-light1;
-
- &:hover {
-  background-color: $color-light2;
- }
-}
+/* Header Import */
+@import "./header";
+@import "footer";
+@import "./scrollbar";
 
 .wrapper {
  width: 100%;
@@ -32,74 +13,10 @@
 
  grid-template: auto 1fr auto / repeat(3, 1fr);
 
- grid-template-areas: "header header header"
+ grid-template-areas: "header  header  header"
                       "content content content"
-                      "footer footer footer";
+                      "footer  footer  footer";
  overflow: hidden;
-}
-
-/* ----- Header Style ----- */
-
-.header {
- padding: 0.25em;
-
- background-color: $color-dark1;
-
- display: flex;
- justify-content: space-evenly;
- align-items: center;
-
- grid-column: span 3;
- grid-row: span 1;
- grid-area: header;
-
- /* Buttons in the Header */
- .button {
-  margin: 0 0.5em;
-  border: none;
-  border-radius: 0.25em;
-  padding: 0.5em;
-
-  background-color: $color-base1;
-
-  display: block;
-
-  i {
-   color: $color-white1;
-   font-size: 4.5em;
-   text-align: center;
-  }
- }
-
- /* Title of the Header */
- .title {
-  width: 70vw;
-
-  border-radius: 0.25em;
-  padding: 0.6em 0.25em;
-
-  background-color: $color-base1;
-
-  display: flex;
-  align-items: baseline;
-  justify-content: space-evenly;
-
-  /* Text */
-  .title__text {
-   color: $color-white1;
-   font: 700 1.8em 'Oswald', sans-serif;
-   text-align: center;
-
-   /* Name of The Class */
-   span { font-size: 1.2em; }
-  }
-
-  /* Info */
-  .title--info__text {
-   color: $color-white1;
-   font: italic 400 1em 'Montserrat', sans-serif;
-  }
- }
 }
 
 /* Main Content of the Doc */
@@ -439,33 +356,8 @@
     clear: both;
    }
 
-   /* Semantics in the Content */
-
-   strong { font-weight: 700; }
-
-   em { font: italic 300 0.95em 'Montserrat', sans-serif; }
-
-   i { font: italic 500 0.95em 'Newsreader', serif; }
-
-   i.fa { font: 500 1.1em 'FontAwesome'; }
-
-   abbr {
-    border-radius: 0.25em;
-    padding: 0.2em 0.4em;
-
-    background-color: $color-dark1;
-
-    color: $color-white1;
-    font: italic 400 1.15em 'Montserrat', sans-serif;
-    text-decoration: underline $color-light1;
-   }
-
-   mark {
-    border-radius: 0.25em;
-    padding: 0 0.4em;
-
-    background-color: $color-light1;
-   }
+   /* Get Text Semantics */
+   @import "./textsemantics";
 
    .checkbox {
      border-radius: 0.5em;
@@ -520,7 +412,7 @@
 
    /* Links in the Class Notes */ 
    .content__link {
-    max-width: 45%;
+    max-width: 75%;
 
     margin: 0.25em;
     border-radius: 0.25em;
@@ -706,7 +598,7 @@
      padding-inline-start: 0.45rem;
 
      color: $color-dark2;
-     font: 500 1.75em 'Oswald', sans-serif;
+     font: 500 1.75rem 'Oswald', sans-serif;
      text-decoration: underline solid $color-dark2 0.1em;
     }
     
@@ -715,7 +607,7 @@
      padding-inline-start: 0.45rem;
      
      color: $color-dark1;
-     font: 300 1.35em 'Oswald', sans-serif;
+     font: 300 1.35rem 'Oswald', sans-serif;
      text-decoration: underline solid $color-dark1 0.1em;
     }
 
@@ -724,7 +616,7 @@
      padding-left: 0.25em;
 
      color: $color-black1;
-     font: 500 1em 'Montserrat', sans-serif;
+     font: 500 1rem 'Montserrat', sans-serif;
 
      list-style: none;
 
@@ -733,7 +625,7 @@
       margin-right: 0.5em;
 
       color: $color-base1;
-      font: 800 1em 'FontAwesome';
+      font: 800 1rem 'FontAwesome';
      }
     }
    }
@@ -940,24 +832,8 @@
  }
 }
 
-.footer {
- padding: 1em 1.8em;
-
- background-color: $color-dark1;
-
- grid-column: span 3;
- grid-row: span 1;
- grid-area: footer;
-}
-
 @media screen and (max-width: 900px) {
  .wrapper { font-size: 14px; }
-
- .header {
-  .button { i { font-size: 2.5em; } }
-
-  .title--info__text { display: none; }
- }
 
  .main {
   .nav-classinfo-wrapper {
@@ -971,6 +847,17 @@
    width: 100%; 
 
    .content {
+
+    .content__link {
+      max-width: 90%;
+      width: 90%;
+
+      &:hover {
+        padding: 0.5em;
+
+        text-decoration: underline solid inherit 0.15rem;
+      }
+    }
     
     .label { padding: 0.4em; }
 
@@ -990,24 +877,6 @@
 }
 
 @media screen and (max-width: 486px) {
- .header {
-  padding: 0.25rem 0;
-
-  .button { 
-    margin: 0;
-
-    i { font-size: 2em; }
-   }
-
-  .title {
-   padding: 0;
-
-   .title__text { 
-    font-size: 1.5em; 
-   }
-  }
- }
-
  .main {
   padding: 0;
   border: none;
@@ -1079,8 +948,6 @@
     .content__title { font-size: 1.5em; }
     .content__semititle { font-size: 1.25em; }
 
-    .content__link { max-width: 90%; }
-
     .list {
      .list__title { font-size: 1.5em; }
      .list__semititle { font-size: 1.25em; }
@@ -1131,7 +998,7 @@
     .activity { 
      .activity__title { font-size: 1.5em; }
 
-     .activity__task { font-size: 1em; } 
+     .activity__task { font-size: 1.15em; } 
     }
    }
   }

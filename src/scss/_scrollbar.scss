@@ -1,0 +1,22 @@
+/* Scroll Bar in the document */
+
+::-webkit-scrollbar {
+  width: 1.2vw;
+  height: 1.8vh;
+}
+ 
+::-webkit-scrollbar-track {
+  border-radius: 0.25em;
+ 
+  background-color: $color-light3;
+}
+ 
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25em;
+  
+  background-color: $color-light1;
+ 
+  &:hover {
+   background-color: $color-light2;
+  }
+}

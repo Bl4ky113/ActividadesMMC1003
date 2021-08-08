@@ -1,0 +1,27 @@
+   /* Text Semantics */
+
+   strong { font-weight: 700; }
+
+   em { font: italic 400 inherit 'Montserrat', sans-serif; }
+
+   i { font: italic 500 inherit 'Newsreader', serif; }
+
+   i.fa { font: 500 1em 'FontAwesome'; }
+
+   abbr {
+    border-radius: 0.25em;
+    padding: 0.2em 0.4em;
+
+    background-color: $color-dark1;
+
+    color: $color-white1;
+    font: italic 400 1.15em 'Montserrat', sans-serif;
+    text-decoration: underline $color-light1;
+   }
+
+   mark {
+    border-radius: 0.25em;
+    padding: 0 0.4em;
+
+    background-color: $color-light1;
+   }
