@@ -153,7 +153,7 @@
       .list__obj {
         list-style-type: inherit;
         list-style-position: inside;
-        
+
         &::before {
           content: none;
         }
@@ -184,15 +184,14 @@
       display: block;
       transition-duration: 500ms;
       transition-timing-function: ease;
-      transition-property: padding, color, background-color;
+      transition-property: padding, background-color;
 
       &:hover {
         padding-right: 20%;
         
         background-color: $color-dark1;
         
-        color: $color-light1;
-        text-decoration: underline $color-light1;
+        text-decoration: underline solid $color-white1;
       }
     }
 
@@ -206,6 +205,65 @@
         text-decoration: under solid $color-base1
       }
     }
+
+    /* Images Style */
+
+    .fig {
+      width: auto;
+
+      margin: 0.65rem auto;
+      padding-bottom: 0.25rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+
+      .fig-wrapper {
+        width: 100%;
+
+        border: 0.15rem solid $color-base1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .fig__img { 
+        width: 100%;
+        height: auto; 
+
+        background-color: $color-base1;
+
+        color: $color-white1;
+        font: 600 1em 'Roboto Mono', monospace;
+        text-align: justify;
+      }
+
+      .fit__cap {
+        border: 0.15rem solid $color-base1;
+        border-top: none;
+        padding: 0.15rem 0.25rem;
+
+        color: $color-black1;
+        font: 400 0.85rem 'Montserrat', sans-serif;
+        text-align: center;
+      }
+    }
+
+    /* Obj's Sizes */
+    /* Can be images, tables or others */
+    .s {width: 20%;} /* Smallest */
+    .xs {width: 30%;} /* Very Small */
+    .xxs {width: 40%;} /* Small */
+
+    .m {width: 50%;} /* Medium */
+    .xm {width: 60%;} /* Medium Big */
+    .xxm {width: 70%;} /* Medium Large */
+
+    .l {width: 80%;} /* Large */
+    .xl {width: 90%;} /* Very Large */
+    .xxl {width: 100%;} /* Max Size */
 
     /* Alerts in the Sections */
 

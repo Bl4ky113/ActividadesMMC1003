@@ -187,6 +187,18 @@
   /* Text Semantics */
   /* Lists Styles */
   /* Links Styles */
+  /* Images Style */
+  /* Obj's Sizes */
+  /* Can be images, tables or others */
+  /* Smallest */
+  /* Very Small */
+  /* Small */
+  /* Medium */
+  /* Medium Big */
+  /* Medium Large */
+  /* Large */
+  /* Very Large */
+  /* Max Size */
   /* Alerts in the Sections */
   /* Advises in the sections */
 }
@@ -302,13 +314,12 @@
   display: block;
   transition-duration: 500ms;
   transition-timing-function: ease;
-  transition-property: padding, color, background-color;
+  transition-property: padding, background-color;
 }
 .main .section .content .content__link:hover {
   padding-right: 20%;
   background-color: #000066;
-  color: #99ccff;
-  text-decoration: underline #99ccff;
+  text-decoration: underline solid #fff;
 }
 .main .section .content .content__link--small {
   color: #000;
@@ -318,6 +329,65 @@
 .main .section .content .content__link--small:hover {
   color: #0000e6;
   text-decoration: under solid #0000e6;
+}
+.main .section .content .fig {
+  width: auto;
+  margin: 0.65rem auto;
+  padding-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.main .section .content .fig .fig-wrapper {
+  width: 100%;
+  border: 0.15rem solid #0000e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .section .content .fig .fig__img {
+  width: 100%;
+  height: auto;
+  background-color: #0000e6;
+  color: #fff;
+  font: 600 1em "Roboto Mono", monospace;
+  text-align: justify;
+}
+.main .section .content .fig .fit__cap {
+  border: 0.15rem solid #0000e6;
+  border-top: none;
+  padding: 0.15rem 0.25rem;
+  color: #000;
+  font: 400 0.85rem "Montserrat", sans-serif;
+  text-align: center;
+}
+.main .section .content .s {
+  width: 20%;
+}
+.main .section .content .xs {
+  width: 30%;
+}
+.main .section .content .xxs {
+  width: 40%;
+}
+.main .section .content .m {
+  width: 50%;
+}
+.main .section .content .xm {
+  width: 60%;
+}
+.main .section .content .xxm {
+  width: 70%;
+}
+.main .section .content .l {
+  width: 80%;
+}
+.main .section .content .xl {
+  width: 90%;
+}
+.main .section .content .xxl {
+  width: 100%;
 }
 .main .section .content .alert {
   width: 90%;
