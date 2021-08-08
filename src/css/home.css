@@ -469,341 +469,423 @@
   font: 700 1.2rem "Montserrat", sans-serif;
   text-decoration: underline #0000bb;
 }
-.main .main-section--schedule {
-  max-width: 95%;
-  margin: 10px auto;
+.main .section--schedule {
+  grid-column: span 2;
+  grid-row: span 1;
 }
-.main .main-section--schedule .section-content {
+.main .section--schedule .content {
   /* Calendar Table */
 }
-.main .main-section--schedule .section-content .content-calendar {
-  margin: 5px auto;
+.main .section--schedule .content .calendar {
+  width: 95%;
+  max-height: 95vh;
+  margin: 0.2rem auto;
+  display: grid;
+  grid-template: auto repeat(8, 1fr)/5% repeat(5, 1fr);
+  grid-template-areas: "time_header schedule schedule schedule schedule schedule" "time_10     day_1    day_2    day_3    day_4    day_5   " "time_11     day_1    day_2    day_3    day_4    day_5   " "time_12     day_1    day_2    day_3    day_4    day_5   " "time_13     day_1    day_2    day_3    day_4    day_5   " "time_14     day_1    day_2    day_3    day_4    day_5   " "time_15     day_1    day_2    day_3    day_4    day_5   " "time_16     day_1    day_2    day_3    day_4    day_5   " "time_17     day_1    day_2    day_3    day_4    day_5   ";
+  /* Schedule Days */
 }
-.main .main-section--schedule .section-content .content-calendar .content-calendar__day {
-  width: 200px;
-  padding: 20px;
-  background-color: #0000e6;
-  font: 700 32px "Oswald", sans-serif;
+.main .section--schedule .content .calendar .time {
+  border-bottom: 0.15rem solid #0000bb;
+  background-color: #000066;
+  color: #fff;
+  font: 600 0.9rem "Oswald", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 1;
+  grid-row: span 1;
 }
-.main .main-section--schedule .section-content .content-calendar .content-calendar__time {
-  padding: 10px;
-  background-color: #99ccff;
-  font: 500 20px "Oswald", sans-serif;
+.main .section--schedule .content .calendar .time--header {
+  grid-area: time_header;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data {
-  height: 65px;
-  border-radius: 0.5em;
+.main .section--schedule .content .calendar .time--10 {
+  grid-area: time_10;
+}
+.main .section--schedule .content .calendar .time--11 {
+  grid-area: time_11;
+}
+.main .section--schedule .content .calendar .time--12 {
+  grid-area: time_12;
+}
+.main .section--schedule .content .calendar .time--13 {
+  grid-area: time_13;
+}
+.main .section--schedule .content .calendar .time--14 {
+  grid-area: time_14;
+}
+.main .section--schedule .content .calendar .time--15 {
+  grid-area: time_15;
+}
+.main .section--schedule .content .calendar .time--16 {
+  grid-area: time_16;
+}
+.main .section--schedule .content .calendar .time--17 {
+  grid-area: time_17;
+}
+.main .section--schedule .content .calendar .schedule {
+  background-color: #0000bb;
+  grid-area: schedule;
+  grid-column: 2/-1;
+  grid-row: span 1;
+  display: grid;
+  grid-template: 1fr/repeat(5, 1fr);
+  align-items: center;
+  justify-items: stretch;
+}
+.main .section--schedule .content .calendar .schedule .schedule__day {
+  border-right: 0.15rem solid #000066;
+  padding: 0.5rem 0;
+  color: #fff;
+  font: 800 1.5rem "Oswald", sans-serif;
+  text-align: center;
+}
+.main .section--schedule .content .calendar .day {
+  display: grid;
+  grid-template: repeat(8, 1fr)/1fr;
+  align-items: stretch;
+  justify-items: stretch;
+}
+.main .section--schedule .content .calendar .day .clear {
+  content: "";
+  border-top: 0.05rem solid #cfcfcf;
+  border-right: 0.05rem solid #cfcfcf;
+  padding: 2rem;
+  grid-column: 1/-1;
+  grid-row: span 1;
   background-color: #f0f0f0;
-  transition-duration: 500ms;
-  transition-timing-function: ease-in-out;
-  transition-property: background-color, color, border-color, width;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data .calendar-data__link {
-  height: 60%;
-  width: 70%;
-  margin: 0 auto;
-  border: 2px outset transparent;
-  border-radius: 0.5em;
-  padding: 5px;
-  font: 500 20px "Montserrat", sans-serif;
+.main .section--schedule .content .calendar .day .class {
+  padding: 0.5rem;
+  grid-column: 1/-1;
+  grid-row: span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color, color, border-color, text-decoration;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.main .section--schedule .content .calendar .day .class .class__link {
+  width: 75%;
+  height: 75%;
+  border: 0.15rem solid #000;
+  padding: 0.25rem;
+  font: 500 1em "Montserrat", sans-serif;
   text-align: center;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: inherit;
+  transition-property: background-color, color, border-color, text-decoration;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data[rowspan="2"] {
-  height: 130px;
+.main .section--schedule .content .calendar .day .class--span2 {
+  grid-row: span 2;
+  font-size: 1.25rem;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data[rowspan="2"] .calendar-data__link {
-  font-size: 24px;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--quimica {
-  background-color: #944dff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--quimica .calendar-data__link {
-  border-color: #8533ff;
-  background-color: #d1b3ff;
-  color: #8533ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--quimica:hover {
-  background-color: #d1b3ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--quimica:hover .calendar-data__link {
-  border-color: #944dff;
-  background-color: #944dff;
-  color: #d1b3ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--artes {
-  background-color: #ff66cc;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--artes .calendar-data__link {
-  border-color: #cc0088;
-  background-color: #ffb3e6;
-  color: #cc0088;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--artes:hover {
-  background-color: #ffb3e6;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--artes:hover .calendar-data__link {
-  border-color: #ff66cc;
-  background-color: #ff66cc;
-  color: #ffb3e6;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--ingles {
-  background-color: #ffcc00;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--ingles .calendar-data__link {
-  border-color: #e6b800;
-  background-color: #ffe680;
-  color: #e6b800;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--ingles:hover {
-  background-color: #ffe680;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--ingles:hover .calendar-data__link {
-  border-color: #ffcc00;
-  background-color: #ffcc00;
-  color: #ffe680;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--religion {
-  background-color: #ff99ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--religion .calendar-data__link {
-  border-color: #ff33ff;
-  background-color: #ffccff;
-  color: #ff33ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--religion:hover {
-  background-color: #ffccff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--religion:hover .calendar-data__link {
-  border-color: #ff99ff;
-  background-color: #ff99ff;
-  color: #ffccff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia {
-  background-color: #b3d9ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia .calendar-data__link {
-  border-color: #3396ff;
-  background-color: #e6f2ff;
-  color: #3396ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia:hover {
-  background-color: #e6f2ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--tecnologia:hover .calendar-data__link {
-  border-color: #b3d9ff;
-  background-color: #b3d9ff;
-  color: #e6f2ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia {
-  background-color: #cc00cc;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia .calendar-data__link {
-  border-color: #800080;
-  background-color: #ff00ff;
-  color: #800080;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia:hover {
-  background-color: #ff00ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--filosofia:hover .calendar-data__link {
-  border-color: #cc00cc;
-  background-color: #cc00cc;
-  color: #ff00ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--gestion {
-  background-color: #ff751a;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--gestion .calendar-data__link {
-  border-color: #cc5200;
-  background-color: #ff944d;
-  color: #cc5200;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--gestion:hover {
-  background-color: #ff944d;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--gestion:hover .calendar-data__link {
-  border-color: #ff751a;
-  background-color: #ff751a;
-  color: #ff944d;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica {
-  background-color: #66ff66;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica .calendar-data__link {
-  border-color: #00e600;
-  background-color: #b3ffb3;
-  color: #00e600;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica:hover {
-  background-color: #b3ffb3;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--edfisica:hover .calendar-data__link {
-  border-color: #66ff66;
-  background-color: #66ff66;
-  color: #b3ffb3;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas {
-  background-color: #4d4dff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas .calendar-data__link {
-  border-color: #000099;
-  background-color: #9999ff;
-  color: #000099;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas:hover {
-  background-color: #9999ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--matematicas:hover .calendar-data__link {
-  border-color: #4d4dff;
-  background-color: #4d4dff;
-  color: #9999ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--espanol {
-  background-color: #ff704d;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--espanol .calendar-data__link {
-  border-color: #e62e00;
-  background-color: #ffad99;
-  color: #e62e00;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--espanol:hover {
-  background-color: #ffad99;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--espanol:hover .calendar-data__link {
-  border-color: #ff704d;
-  background-color: #ff704d;
-  color: #ffad99;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--economia {
-  background-color: #00a3cc;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--economia .calendar-data__link {
-  border-color: #008fb3;
-  background-color: #1ad1ff;
-  color: #008fb3;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--economia:hover {
-  background-color: #1ad1ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--economia:hover .calendar-data__link {
-  border-color: #00a3cc;
-  background-color: #00a3cc;
-  color: #1ad1ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--fisica {
-  background-color: #ff66b3;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--fisica .calendar-data__link {
-  border-color: #e60073;
-  background-color: #ffb3d9;
-  color: #e60073;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--fisica:hover {
-  background-color: #ffb3d9;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--fisica:hover .calendar-data__link {
-  border-color: #ff66b3;
-  background-color: #ff66b3;
-  color: #ffb3d9;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--etica {
-  background-color: #99ccff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--etica .calendar-data__link {
-  border-color: #3396ff;
-  background-color: #cce5ff;
-  color: #3396ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--etica:hover {
-  background-color: #cce5ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--etica:hover .calendar-data__link {
-  border-color: #99ccff;
-  background-color: #99ccff;
-  color: #cce5ff;
-}
-.main .main-section--schedule .section-content .content-calendar .calendar-data--excel {
+.main .section--schedule .content .calendar .day .class--excel {
   background-color: #009933;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--excel .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--excel .class__link {
   border-color: #006622;
   background-color: #00e64d;
   color: #006622;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--excel:hover {
+.main .section--schedule .content .calendar .day .class--excel:hover {
   background-color: #00e64d;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--excel:hover .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--excel:hover .class__link {
   border-color: #009933;
   background-color: #009933;
   color: #00e64d;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--programacion {
+.main .section--schedule .content .calendar .day .class--tecnologia {
+  background-color: #b3d9ff;
+}
+.main .section--schedule .content .calendar .day .class--tecnologia .class__link {
+  border-color: #3396ff;
+  background-color: #e6f2ff;
+  color: #3396ff;
+}
+.main .section--schedule .content .calendar .day .class--tecnologia:hover {
+  background-color: #e6f2ff;
+}
+.main .section--schedule .content .calendar .day .class--tecnologia:hover .class__link {
+  border-color: #b3d9ff;
+  background-color: #b3d9ff;
+  color: #e6f2ff;
+}
+.main .section--schedule .content .calendar .day .class--matematicas {
+  background-color: #4d4dff;
+}
+.main .section--schedule .content .calendar .day .class--matematicas .class__link {
+  border-color: #000099;
+  background-color: #9999ff;
+  color: #000099;
+}
+.main .section--schedule .content .calendar .day .class--matematicas:hover {
+  background-color: #9999ff;
+}
+.main .section--schedule .content .calendar .day .class--matematicas:hover .class__link {
+  border-color: #4d4dff;
+  background-color: #4d4dff;
+  color: #9999ff;
+}
+.main .section--schedule .content .calendar .day .class--artes {
+  background-color: #ff66cc;
+}
+.main .section--schedule .content .calendar .day .class--artes .class__link {
+  border-color: #cc0088;
+  background-color: #ffb3e6;
+  color: #cc0088;
+}
+.main .section--schedule .content .calendar .day .class--artes:hover {
+  background-color: #ffb3e6;
+}
+.main .section--schedule .content .calendar .day .class--artes:hover .class__link {
+  border-color: #ff66cc;
+  background-color: #ff66cc;
+  color: #ffb3e6;
+}
+.main .section--schedule .content .calendar .day .class--programacion {
   background-color: #3366ff;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--programacion .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--programacion .class__link {
   border-color: #001a66;
   background-color: #99b3ff;
   color: #001a66;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--programacion:hover {
+.main .section--schedule .content .calendar .day .class--programacion:hover {
   background-color: #99b3ff;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--programacion:hover .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--programacion:hover .class__link {
   border-color: #3366ff;
   background-color: #3366ff;
   color: #99b3ff;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--electronica {
+.main .section--schedule .content .calendar .day .class--electronica {
   background-color: #f9f900;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--electronica .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--electronica .class__link {
   border-color: #999900;
   background-color: #ffff99;
   color: #999900;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--electronica:hover {
+.main .section--schedule .content .calendar .day .class--electronica:hover {
   background-color: #ffff99;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--electronica:hover .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--electronica:hover .class__link {
   border-color: #f9f900;
   background-color: #f9f900;
   color: #ffff99;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica {
+.main .section--schedule .content .calendar .day .class--espanol {
+  background-color: #ff704d;
+}
+.main .section--schedule .content .calendar .day .class--espanol .class__link {
+  border-color: #e62e00;
+  background-color: #ffad99;
+  color: #e62e00;
+}
+.main .section--schedule .content .calendar .day .class--espanol:hover {
+  background-color: #ffad99;
+}
+.main .section--schedule .content .calendar .day .class--espanol:hover .class__link {
+  border-color: #ff704d;
+  background-color: #ff704d;
+  color: #ffad99;
+}
+.main .section--schedule .content .calendar .day .class--fisica {
+  background-color: #ff66b3;
+}
+.main .section--schedule .content .calendar .day .class--fisica .class__link {
+  border-color: #e60073;
+  background-color: #ffb3d9;
+  color: #e60073;
+}
+.main .section--schedule .content .calendar .day .class--fisica:hover {
+  background-color: #ffb3d9;
+}
+.main .section--schedule .content .calendar .day .class--fisica:hover .class__link {
+  border-color: #ff66b3;
+  background-color: #ff66b3;
+  color: #ffb3d9;
+}
+.main .section--schedule .content .calendar .day .class--ingles {
+  background-color: #ffcc00;
+}
+.main .section--schedule .content .calendar .day .class--ingles .class__link {
+  border-color: #e6b800;
+  background-color: #ffe680;
+  color: #e6b800;
+}
+.main .section--schedule .content .calendar .day .class--ingles:hover {
+  background-color: #ffe680;
+}
+.main .section--schedule .content .calendar .day .class--ingles:hover .class__link {
+  border-color: #ffcc00;
+  background-color: #ffcc00;
+  color: #ffe680;
+}
+.main .section--schedule .content .calendar .day .class--gestioninformatica {
   background-color: #4dc3ff;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--gestioninformatica .class__link {
   border-color: #006699;
   background-color: #b3e6ff;
   color: #006699;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica:hover {
+.main .section--schedule .content .calendar .day .class--gestioninformatica:hover {
   background-color: #b3e6ff;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--gestioninformatica:hover .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--gestioninformatica:hover .class__link {
   border-color: #4dc3ff;
   background-color: #4dc3ff;
   color: #b3e6ff;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion {
+.main .section--schedule .content .calendar .day .class--religion {
+  background-color: #ff99ff;
+}
+.main .section--schedule .content .calendar .day .class--religion .class__link {
+  border-color: #ff33ff;
+  background-color: #ffccff;
+  color: #ff33ff;
+}
+.main .section--schedule .content .calendar .day .class--religion:hover {
+  background-color: #ffccff;
+}
+.main .section--schedule .content .calendar .day .class--religion:hover .class__link {
+  border-color: #ff99ff;
+  background-color: #ff99ff;
+  color: #ffccff;
+}
+.main .section--schedule .content .calendar .day .class--etica {
+  background-color: #99ccff;
+}
+.main .section--schedule .content .calendar .day .class--etica .class__link {
+  border-color: #3396ff;
+  background-color: #cce5ff;
+  color: #3396ff;
+}
+.main .section--schedule .content .calendar .day .class--etica:hover {
+  background-color: #cce5ff;
+}
+.main .section--schedule .content .calendar .day .class--etica:hover .class__link {
+  border-color: #99ccff;
+  background-color: #99ccff;
+  color: #cce5ff;
+}
+.main .section--schedule .content .calendar .day .class--filosofia {
+  background-color: #cc00cc;
+}
+.main .section--schedule .content .calendar .day .class--filosofia .class__link {
+  border-color: #800080;
+  background-color: #ff00ff;
+  color: #800080;
+}
+.main .section--schedule .content .calendar .day .class--filosofia:hover {
+  background-color: #ff00ff;
+}
+.main .section--schedule .content .calendar .day .class--filosofia:hover .class__link {
+  border-color: #cc00cc;
+  background-color: #cc00cc;
+  color: #ff00ff;
+}
+.main .section--schedule .content .calendar .day .class--investigacion {
   background-color: #a6a6a6;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--investigacion .class__link {
   border-color: #8c8c8c;
   background-color: #ccc;
   color: #8c8c8c;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion:hover {
+.main .section--schedule .content .calendar .day .class--investigacion:hover {
   background-color: #ccc;
 }
-.main .main-section--schedule .section-content .content-calendar .calendar-data--investigacion:hover .calendar-data__link {
+.main .section--schedule .content .calendar .day .class--investigacion:hover .class__link {
   border-color: #a6a6a6;
   background-color: #a6a6a6;
   color: #ccc;
+}
+.main .section--schedule .content .calendar .day .class--gestion {
+  background-color: #ff751a;
+}
+.main .section--schedule .content .calendar .day .class--gestion .class__link {
+  border-color: #cc5200;
+  background-color: #ff944d;
+  color: #cc5200;
+}
+.main .section--schedule .content .calendar .day .class--gestion:hover {
+  background-color: #ff944d;
+}
+.main .section--schedule .content .calendar .day .class--gestion:hover .class__link {
+  border-color: #ff751a;
+  background-color: #ff751a;
+  color: #ff944d;
+}
+.main .section--schedule .content .calendar .day .class--quimica {
+  background-color: #944dff;
+}
+.main .section--schedule .content .calendar .day .class--quimica .class__link {
+  border-color: #8533ff;
+  background-color: #d1b3ff;
+  color: #8533ff;
+}
+.main .section--schedule .content .calendar .day .class--quimica:hover {
+  background-color: #d1b3ff;
+}
+.main .section--schedule .content .calendar .day .class--quimica:hover .class__link {
+  border-color: #944dff;
+  background-color: #944dff;
+  color: #d1b3ff;
+}
+.main .section--schedule .content .calendar .day .class--economia {
+  background-color: #00a3cc;
+}
+.main .section--schedule .content .calendar .day .class--economia .class__link {
+  border-color: #008fb3;
+  background-color: #1ad1ff;
+  color: #008fb3;
+}
+.main .section--schedule .content .calendar .day .class--economia:hover {
+  background-color: #1ad1ff;
+}
+.main .section--schedule .content .calendar .day .class--economia:hover .class__link {
+  border-color: #00a3cc;
+  background-color: #00a3cc;
+  color: #1ad1ff;
+}
+.main .section--schedule .content .calendar .day .class--edfisica {
+  background-color: #66ff66;
+}
+.main .section--schedule .content .calendar .day .class--edfisica .class__link {
+  border-color: #00e600;
+  background-color: #b3ffb3;
+  color: #00e600;
+}
+.main .section--schedule .content .calendar .day .class--edfisica:hover {
+  background-color: #b3ffb3;
+}
+.main .section--schedule .content .calendar .day .class--edfisica:hover .class__link {
+  border-color: #66ff66;
+  background-color: #66ff66;
+  color: #b3ffb3;
+}
+.main .section--schedule .content .calendar .day--1 {
+  grid-area: day_1;
+}
+.main .section--schedule .content .calendar .day--2 {
+  grid-area: day_2;
+}
+.main .section--schedule .content .calendar .day--3 {
+  grid-area: day_3;
+}
+.main .section--schedule .content .calendar .day--4 {
+  grid-area: day_4;
+}
+.main .section--schedule .content .calendar .day--5 {
+  grid-area: day_5;
 }

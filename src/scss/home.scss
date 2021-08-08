@@ -370,509 +370,310 @@
     }
   }
 
- /* Schedule Section */
+  /* Schedule Section */
 
- .main-section--schedule {
-  max-width: 95%;
+  .section--schedule {
+    grid-column: span 2;
+    grid-row: span 1;
 
-  margin: 10px auto;
+    .content {
 
-  .section-content {
+      /* Calendar Table */
+      .calendar {
+        width: 95%;
+        max-height: 95vh;
 
-   /* Calendar Table */
-   .content-calendar {
-    margin: 5px auto;
- 
-    .content-calendar__day {
-     width: 200px;
+        margin: 0.2rem auto;
 
-     padding: 20px;
- 
-     background-color: $color-base1;
- 
-     font: 700 32px 'Oswald', sans-serif;
-    }
- 
-    .content-calendar__time {
-     padding: 10px;
- 
-     background-color: $color-light1;
- 
-     font: 500 20px 'Oswald', sans-serif;
-    }
- 
-    .calendar-data {
-     height: 65px;
- 
-     border-radius: 0.5em;
-   
-     background-color: $color-white3;
-
-     transition-duration: 500ms;
-     transition-timing-function: ease-in-out;
-     transition-property: background-color, color, border-color, width;
- 
-     .calendar-data__link {
-      height: 60%;
-      width: 70%;
- 
-      margin: 0 auto;
-      border: 2px outset transparent;
-      border-radius: 0.5em;
-      padding: 5px;
-      
-      font: 500 20px 'Montserrat', sans-serif;
-      text-align: center;
-      text-decoration: none;
- 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      transition: inherit;
-     }
-    }
- 
-    .calendar-data[rowspan="2"] {
-     height: 130px;
- 
-     .calendar-data__link {
-      font-size: 24px;
-     }
-    }
- 
-    .calendar-data--quimica {
-     background-color: $color-qui-base;
- 
-     .calendar-data__link {
-      border-color: $color-qui-dark;
- 
-      background-color: $color-qui-light;
- 
-      color: $color-qui-dark;
-     }
-
-     &:hover {
-      background-color: $color-qui-light;
-
-      .calendar-data__link {
-       border-color: $color-qui-base;
-
-       background-color: $color-qui-base;
-
-       color: $color-qui-light;
-      }
-     }
-    }
- 
-    .calendar-data--artes {
-     background-color: $color-art-base;
- 
-     .calendar-data__link {
-      border-color: $color-art-dark;
- 
-      background-color: $color-art-light;
- 
-      color: $color-art-dark;
-     }
-
-     &:hover {
-      background-color: $color-art-light;
-
-      .calendar-data__link {
-       border-color: $color-art-base;
-
-       background-color: $color-art-base;
-
-       color: $color-art-light;
-      }
-     }
-    }
- 
-    .calendar-data--ingles {
-     background-color: $color-ing-base;
- 
-     .calendar-data__link {
-      border-color: $color-ing-dark;
- 
-      background-color: $color-ing-light;
- 
-      color: $color-ing-dark;
-     }
-
-     &:hover {
-      background-color: $color-ing-light;
-
-      .calendar-data__link {
-       border-color: $color-ing-base;
-
-       background-color: $color-ing-base;
-
-       color: $color-ing-light;
-      }
-     }
-    }
- 
-    .calendar-data--religion {
-     background-color: $color-reli-base;
- 
-     .calendar-data__link {
-      border-color: $color-reli-dark;
- 
-      background-color: $color-reli-light;
- 
-      color: $color-reli-dark;
-     }
-
-     &:hover {
-      background-color: $color-reli-light;
-
-      .calendar-data__link {
-       border-color: $color-reli-base;
-
-       background-color: $color-reli-base;
-
-       color: $color-reli-light;
-      }
-     }
-    }
- 
-    .calendar-data--tecnologia {
-     background-color: $color-tecno-base;
- 
-     .calendar-data__link {
-      border-color: $color-tecno-dark;
- 
-      background-color: $color-tecno-light;
- 
-      color: $color-tecno-dark;
-     }
-
-     &:hover {
-      background-color: $color-tecno-light;
-
-      .calendar-data__link {
-       border-color: $color-tecno-base;
-
-       background-color: $color-tecno-base;
-
-       color: $color-tecno-light;
-      }
-     }
-    }
+        display: grid;
+        grid-template: auto repeat(8, 1fr) / 5% repeat(5, 1fr);
+        grid-template-areas: "time_header schedule schedule schedule schedule schedule"
+                             "time_10     day_1    day_2    day_3    day_4    day_5   "
+                             "time_11     day_1    day_2    day_3    day_4    day_5   "
+                             "time_12     day_1    day_2    day_3    day_4    day_5   "
+                             "time_13     day_1    day_2    day_3    day_4    day_5   "
+                             "time_14     day_1    day_2    day_3    day_4    day_5   "
+                             "time_15     day_1    day_2    day_3    day_4    day_5   "
+                             "time_16     day_1    day_2    day_3    day_4    day_5   "
+                             "time_17     day_1    day_2    day_3    day_4    day_5   ";
     
-    .calendar-data--filosofia {
-     background-color: $color-filo-base;
- 
-     .calendar-data__link {
-      border-color: $color-filo-dark;
- 
-      background-color: $color-filo-light;
- 
-      color: $color-filo-dark;
-     }
+        .time {
+          border-bottom: 0.15rem solid $color-base2;
 
-     &:hover {
-      background-color: $color-filo-light;
+          background-color: $color-dark1;
 
-      .calendar-data__link {
-       border-color: $color-filo-base;
+          color: $color-white1;
+          font: 600 0.9rem "Oswald", sans-serif;
+          text-align: center;
 
-       background-color: $color-filo-base;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-       color: $color-filo-light;
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+
+        .time--header { grid-area: time_header; }
+        .time--10 { grid-area: time_10; }
+        .time--11 { grid-area: time_11; }
+        .time--12 { grid-area: time_12; }
+        .time--13 { grid-area: time_13; }
+        .time--14 { grid-area: time_14; }
+        .time--15 { grid-area: time_15; }
+        .time--16 { grid-area: time_16; }
+        .time--17 { grid-area: time_17; }
+
+        /* Schedule Days */
+        .schedule {
+          background-color: $color-base2;
+          
+          grid-area: schedule;
+          grid-column: 2 / -1;
+          grid-row: span 1;
+          
+          display: grid;
+          grid-template: 1fr / repeat(5, 1fr);
+          align-items: center;
+          justify-items: stretch;
+          
+          .schedule__day {
+            border-right: 0.15rem solid $color-dark1;
+            padding: 0.5rem 0;
+            
+            color: $color-white1;
+            font: 800 1.5rem "Oswald", sans-serif;
+            text-align: center;
+          }
+        }
+
+        .day {
+          display: grid;
+          grid-template: repeat(8, 1fr) / 1fr;
+          align-items: stretch;
+          justify-items: stretch;
+
+          .clear {
+            content: "";
+
+            border-top: 0.05rem solid $color-white2;
+            border-right: 0.05rem solid $color-white2;
+            padding: 2rem;
+
+            grid-column: 1 / -1;
+            grid-row: span 1;
+            
+            background-color: $color-white3;
+          }
+          
+          .class {
+            padding: 0.5rem;
+
+            grid-column: 1 / -1;
+            grid-row: span 1;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition-property: background-color, color, border-color, text-decoration;
+            transition-duration: 250ms;
+            transition-timing-function: ease;
+            
+            .class__link {
+              width: 75%;
+              height: 75%;
+              
+              border: 0.15rem solid $color-black1;
+              padding: 0.25rem;
+              
+              font: 500 1em "Montserrat", sans-serif;
+              text-align: center;
+              text-decoration: none;
+              
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              transition-property: background-color, color, border-color, text-decoration;
+              transition-duration: 250ms;
+              transition-timing-function: ease;
+            }
+          }
+
+          .class--span2 { grid-row: span 2; font-size: 1.25rem; }
+          
+          @mixin classColor ($base, $dark, $light) {
+            background-color: $base;
+
+            .class__link {
+              border-color: $dark;
+              background-color: $light;
+              color: $dark;
+            }
+
+            &:hover {
+              background-color: $light;
+
+              .class__link {
+                border-color: $base;
+                background-color: $base;
+                color: $light;
+              }
+            }
+          }
+
+          .class--excel { 
+            @include classColor (
+              $color-exc-base, 
+              $color-exc-dark, 
+              $color-exc-light
+            ) 
+          }
+
+          .class--tecnologia { 
+            @include classColor (
+              $color-tecno-base, 
+              $color-tecno-dark, 
+              $color-tecno-light
+            ) 
+          }
+
+          .class--matematicas { 
+            @include classColor (
+              $color-mat-base, 
+              $color-mat-dark, 
+              $color-mat-light
+            ) 
+          }
+
+          .class--artes { 
+            @include classColor (
+              $color-art-base, 
+              $color-art-dark, 
+              $color-art-light
+            ) 
+          }
+
+          .class--programacion { 
+            @include classColor (
+              $color-pro-base, 
+              $color-pro-dark, 
+              $color-pro-light
+            ) 
+          }
+
+          .class--electronica { 
+            @include classColor (
+              $color-elec-base, 
+              $color-elec-dark, 
+              $color-elec-light
+            ) 
+          }
+
+          .class--espanol { 
+            @include classColor (
+              $color-esp-base, 
+              $color-esp-dark, 
+              $color-esp-light
+            ) 
+          }
+
+          .class--fisica { 
+            @include classColor (
+              $color-fis-base, 
+              $color-fis-dark, 
+              $color-fis-light
+            ) 
+          }
+
+          .class--ingles { 
+            @include classColor (
+              $color-ing-base, 
+              $color-ing-dark, 
+              $color-ing-light
+            ) 
+          }
+
+          .class--gestioninformatica { 
+            @include classColor (
+              $color-gbi-base, 
+              $color-gbi-dark, 
+              $color-gbi-light
+            ) 
+          }
+
+          .class--religion { 
+            @include classColor (
+              $color-reli-base, 
+              $color-reli-dark, 
+              $color-reli-light
+            ) 
+          }
+
+          .class--etica { 
+            @include classColor (
+              $color-eti-base, 
+              $color-eti-dark, 
+              $color-eti-light
+            ) 
+          }
+
+          .class--filosofia { 
+            @include classColor (
+              $color-filo-base, 
+              $color-filo-dark, 
+              $color-filo-light
+            ) 
+          }
+
+          .class--investigacion { 
+            @include classColor (
+              $color-ins-base, 
+              $color-ins-dark, 
+              $color-ins-light
+            ) 
+          }
+
+          .class--gestion { 
+            @include classColor (
+              $color-gest-base,
+              $color-gest-dark, 
+              $color-gest-light
+            ) 
+          }
+
+          .class--quimica { 
+            @include classColor (
+              $color-qui-base, 
+              $color-qui-dark, 
+              $color-qui-light
+            ) 
+          }
+
+          .class--economia { 
+            @include classColor (
+              $color-eco-base,
+              $color-eco-dark, 
+              $color-eco-light
+            ) 
+          }
+
+          .class--edfisica { 
+            @include classColor (
+              $color-edf-base, 
+              $color-edf-dark, 
+              $color-edf-light
+            ) 
+          }
+        }
+
+        .day--1 { grid-area: day_1; }
+        .day--2 { grid-area: day_2; }
+        .day--3 { grid-area: day_3; }
+        .day--4 { grid-area: day_4; }
+        .day--5 { grid-area: day_5; }
       }
-     }
     }
- 
-    .calendar-data--gestion {
-     background-color: $color-gest-base;
- 
-     .calendar-data__link {
-      border-color: $color-gest-dark;
- 
-      background-color: $color-gest-light;
- 
-      color: $color-gest-dark;
-     }
-
-     &:hover {
-      background-color: $color-gest-light;
-
-      .calendar-data__link {
-       border-color: $color-gest-base;
-
-       background-color: $color-gest-base;
-
-       color: $color-gest-light;
-      }
-     }
-    }
- 
-    .calendar-data--edfisica {
-     background-color: $color-edf-base;
- 
-     .calendar-data__link {
-      border-color: $color-edf-dark;
- 
-      background-color: $color-edf-light;
- 
-      color: $color-edf-dark;
-     }
-
-     &:hover {
-      background-color: $color-edf-light;
-
-      .calendar-data__link {
-       border-color: $color-edf-base;
-
-       background-color: $color-edf-base;
-
-       color: $color-edf-light;
-      }
-     }
-    }
- 
-    .calendar-data--matematicas {
-     background-color: $color-mat-base;
- 
-     .calendar-data__link {
-      border-color: $color-mat-dark;
- 
-      background-color: $color-mat-light;
- 
-      color: $color-mat-dark;
-     }
-
-     &:hover {
-      background-color: $color-mat-light;
-
-      .calendar-data__link {
-       border-color: $color-mat-base;
-
-       background-color: $color-mat-base;
-
-       color: $color-mat-light;
-      }
-     }
-    }
- 
-    .calendar-data--espanol {
-     background-color: $color-esp-base;
- 
-     .calendar-data__link {
-      border-color: $color-esp-dark;
- 
-      background-color: $color-esp-light;
- 
-      color: $color-esp-dark;
-     }
-
-     &:hover {
-      background-color: $color-esp-light;
-
-      .calendar-data__link {
-       border-color: $color-esp-base;
-
-       background-color: $color-esp-base;
-
-       color: $color-esp-light;
-      }
-     }
-    }
- 
-    .calendar-data--economia {
-     background-color: $color-eco-base;
- 
-     .calendar-data__link {
-      border-color: $color-eco-dark;
- 
-      background-color: $color-eco-light;
- 
-      color: $color-eco-dark;
-     }
-
-     &:hover {
-      background-color: $color-eco-light;
-
-      .calendar-data__link {
-       border-color: $color-eco-base;
-
-       background-color: $color-eco-base;
-
-       color: $color-eco-light;
-      }
-     }
-    }
- 
-    .calendar-data--fisica {
-     background-color: $color-fis-base;
- 
-     .calendar-data__link {
-      border-color: $color-fis-dark;
-      
-      background-color: $color-fis-light;
- 
-      color: $color-fis-dark;
-     }
-
-     &:hover {
-      background-color: $color-fis-light;
-
-      .calendar-data__link {
-       border-color: $color-fis-base;
-
-       background-color: $color-fis-base;
-
-       color: $color-fis-light;
-      }
-     }
-    }
- 
-    .calendar-data--etica {
-     background-color: $color-eti-base;
- 
-     .calendar-data__link {
-      border-color: $color-eti-dark;
-      
-      background-color: $color-eti-light;
- 
-      color: $color-eti-dark;
-     }
-
-     &:hover {
-      background-color: $color-eti-light;
-
-      .calendar-data__link {
-       border-color: $color-eti-base;
-
-       background-color: $color-eti-base;
-
-       color: $color-eti-light;
-      }
-     }
-    }
- 
-    .calendar-data--excel {
-     background-color: $color-exc-base;
- 
-     .calendar-data__link {
-      border-color: $color-exc-dark;
- 
-      background-color: $color-exc-light;
- 
-      color: $color-exc-dark;
-     }
-
-     &:hover {
-      background-color: $color-exc-light;
-
-      .calendar-data__link {
-       border-color: $color-exc-base;
-
-       background-color: $color-exc-base;
-
-       color: $color-exc-light;
-      }
-     }
-    }
- 
-    .calendar-data--programacion {
-     background-color: $color-pro-base;
- 
-     .calendar-data__link {
-      border-color: $color-pro-dark;
- 
-      background-color: $color-pro-light;
- 
-      color: $color-pro-dark;
-     }
-
-     &:hover {
-      background-color: $color-pro-light;
-
-      .calendar-data__link {
-       border-color: $color-pro-base;
-
-       background-color: $color-pro-base;
-
-       color: $color-pro-light;
-      }
-     }
-    }
- 
-    .calendar-data--electronica {
-     background-color: $color-elec-base;
- 
-     .calendar-data__link {
-      border-color: $color-elec-dark;
- 
-      background-color: $color-elec-light;
- 
-      color: $color-elec-dark;
-     }
-
-     &:hover {
-      background-color: $color-elec-light;
-
-      .calendar-data__link {
-       border-color: $color-elec-base;
-
-       background-color: $color-elec-base;
-
-       color: $color-elec-light;
-      }
-     }
-    }
- 
-    .calendar-data--gestioninformatica {
-     background-color: $color-gbi-base;
- 
-     .calendar-data__link {
-      border-color: $color-gbi-dark;
- 
-      background-color: $color-gbi-light;
- 
-      color: $color-gbi-dark;
-     }
-
-     &:hover {
-      background-color: $color-gbi-light;
-
-      .calendar-data__link {
-       border-color: $color-gbi-base;
-
-       background-color: $color-gbi-base;
-
-       color: $color-gbi-light;
-      }
-     }
-    }
- 
-    .calendar-data--investigacion {
-     background-color: $color-ins-base;
- 
-     .calendar-data__link {
-      border-color: $color-ins-dark;
- 
-      background-color: $color-ins-light;
- 
-      color: $color-ins-dark;
-     }
-
-     &:hover {
-      background-color: $color-ins-light;
-
-      .calendar-data__link {
-       border-color: $color-ins-base;
-
-       background-color: $color-ins-base;
-
-       color: $color-ins-light;
-      }
-     }
-    }
-   }
   }
- }
 }
