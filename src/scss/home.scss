@@ -37,20 +37,20 @@
     
     /* Title of the section */ 
     .section__title {
-    width: 90%;
-    
-    margin: 0.25rem auto;
-    border-radius: 0.15em;
-    padding: 0.5rem;
-    padding-left: 3rem;
+      width: 90%;
+      
+      margin: 0.25rem auto;
+      border-radius: 0.15em;
+      padding: 0.5rem;
+      padding-left: 2rem;
 
-    background-color: $color-base2;
+      background-color: $color-base2;
 
-    display: flex;
-    align-items: center;
-    
-    color: $color-white1;
-    font: 700 2.25rem 'Oswald', sans-serif;
+      display: flex;
+      align-items: center;
+      
+      color: $color-white1;
+      font: 700 1.8rem 'Oswald', sans-serif;
     }
 
     /* Content of the section */
@@ -289,7 +289,7 @@
         .alert__paragraph {
           width: 95%;
 
-          padding: 0.75rem;
+          padding: 0.25rem 0.75rem;
 
           color: $color-black1;
           font: 500 1em 'Montserrat', sans-serif;
@@ -373,7 +373,7 @@
   /* Schedule Section */
 
   .section--schedule {
-    grid-column: span 2;
+    grid-column: 1 / -1;
     grid-row: span 1;
 
     .content {
@@ -381,13 +381,13 @@
       /* Calendar Table */
       .calendar {
         width: 95%;
-        max-height: 95vh;
+        max-height: 100vh;
 
         margin: 0.2rem auto;
 
         display: grid;
         grid-template: auto repeat(8, 1fr) / 5% repeat(5, 1fr);
-        grid-template-areas: "time_header schedule schedule schedule schedule schedule"
+        grid-template-areas: "time_header cday_1   cday_2   cday_3   cday_4   cday_5  "
                              "time_10     day_1    day_2    day_3    day_4    day_5   "
                              "time_11     day_1    day_2    day_3    day_4    day_5   "
                              "time_12     day_1    day_2    day_3    day_4    day_5   "
@@ -424,28 +424,26 @@
         .time--16 { grid-area: time_16; }
         .time--17 { grid-area: time_17; }
 
-        /* Schedule Days */
-        .schedule {
+        /* calendar's Days */
+        .calendar__day {
           background-color: $color-base2;
           
-          grid-area: schedule;
-          grid-column: 2 / -1;
+          grid-column: span 1;
           grid-row: span 1;
           
-          display: grid;
-          grid-template: 1fr / repeat(5, 1fr);
-          align-items: center;
-          justify-items: stretch;
+          border-right: 0.15rem solid $color-dark1;
+          padding: 0.5rem 0;
           
-          .schedule__day {
-            border-right: 0.15rem solid $color-dark1;
-            padding: 0.5rem 0;
-            
-            color: $color-white1;
-            font: 800 1.5rem "Oswald", sans-serif;
-            text-align: center;
-          }
+          color: $color-white1;
+          font: 800 1.5rem "Oswald", sans-serif;
+          text-align: center;
         }
+
+        .calendar__day--1 { grid-area: cday_1; }
+        .calendar__day--2 { grid-area: cday_2; }
+        .calendar__day--3 { grid-area: cday_3; }
+        .calendar__day--4 { grid-area: cday_4; }
+        .calendar__day--5 { grid-area: cday_5; }
 
         .day {
           display: grid;
@@ -481,13 +479,13 @@
             transition-timing-function: ease;
             
             .class__link {
-              width: 75%;
+              width: 80%;
               height: 75%;
               
               border: 0.15rem solid $color-black1;
-              padding: 0.25rem;
+              padding: 0.5rem;
               
-              font: 500 1em "Montserrat", sans-serif;
+              font: 600 1em "Montserrat", sans-serif;
               text-align: center;
               text-decoration: none;
               
@@ -677,3 +675,160 @@
     }
   }
 }
+
+@media screen and (max-width: 1048px) {
+  .main {
+    .section {
+      .content {
+        .content__link {
+          width: 95%;
+
+          margin: 0.5rem 0.25rem;
+          padding-left: 0.25rem;
+  
+          &:hover {
+            padding-right: 0.25rem;  
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 856px) {
+  .main {
+    grid-template: repeat(1, 1fr) / 1fr;
+
+    .section {
+      .section__title {
+        padding-left: 0.5rem;
+
+        text-align: center;
+
+        display: block;
+        align-items: none;
+      }
+
+      .content {
+        .content__link {
+          width: 95%;
+
+          margin: 0.65rem 1.5rem;
+          padding: 0.25rem;
+          padding-left: 1rem;
+  
+          &:hover {
+            padding-right: 0.25rem;  
+          }
+        }
+      }
+    }
+
+    .section--schedule {
+      .content {
+        .calendar {
+          width: 70%;
+          max-height: initial;
+
+          grid-template: repeat(1, 1fr) / 1fr;
+          grid-template-areas: "cday_1"
+                               "day_1 "
+                               "cday_2"
+                               "day_2 "
+                               "cday_3"
+                               "day_3 "
+                               "cday_4"
+                               "day_4 "
+                               "cday_5"
+                               "day_5 ";
+
+          .time { display: none; }
+
+          .calendar__day {
+            border: none;
+            border-radius: 0.25rem;
+
+            font-size: 1.8rem;
+            text-decoration: underline solid $color-white1;
+          }
+
+          .day {
+            display: block;
+
+            margin-bottom: 0.25rem;
+            border: 0.15rem dashed $color-white2;
+            border-top: none;
+
+            background-color: $color-white3;
+
+            .clear { display: none; }
+
+            .class {
+              width: 85%;
+              min-height: 10vh;
+
+              margin: 0.25rem auto;
+              border-radius: 0.15rem;
+
+              .class__link {
+                width: 90%;
+                height: 90%;
+
+                padding: 1rem;
+              }
+
+              .class__link,
+              .class__link--span2 {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .main {
+    .section {
+      .section__title {
+        width: 95%;
+      }
+
+      .content {
+        .content__paragraph {
+          width: 90%;
+        }
+        
+        .content__link {
+          width: 95%;
+
+          margin: 0.5rem 0.25rem;
+          padding-left: 0.25rem;
+  
+          &:hover {
+            padding-right: 0.25rem;  
+          }
+        }
+
+        .list {
+          margin-left: 0.5rem;
+        }
+
+        .alert {
+          width: 95%;
+        }
+      }
+    }
+
+    .section--schedule {
+      .content {
+        .calendar {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+ 

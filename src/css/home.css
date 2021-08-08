@@ -173,12 +173,12 @@
   margin: 0.25rem auto;
   border-radius: 0.15em;
   padding: 0.5rem;
-  padding-left: 3rem;
+  padding-left: 2rem;
   background-color: #0000bb;
   display: flex;
   align-items: center;
   color: #fff;
-  font: 700 2.25rem "Oswald", sans-serif;
+  font: 700 1.8rem "Oswald", sans-serif;
 }
 .main .section .content {
   display: flex;
@@ -415,7 +415,7 @@
 }
 .main .section .content .alert .alert__paragraph {
   width: 95%;
-  padding: 0.75rem;
+  padding: 0.25rem 0.75rem;
   color: #000;
   font: 500 1em "Montserrat", sans-serif;
 }
@@ -470,7 +470,7 @@
   text-decoration: underline #0000bb;
 }
 .main .section--schedule {
-  grid-column: span 2;
+  grid-column: 1/-1;
   grid-row: span 1;
 }
 .main .section--schedule .content {
@@ -478,12 +478,12 @@
 }
 .main .section--schedule .content .calendar {
   width: 95%;
-  max-height: 95vh;
+  max-height: 100vh;
   margin: 0.2rem auto;
   display: grid;
   grid-template: auto repeat(8, 1fr)/5% repeat(5, 1fr);
-  grid-template-areas: "time_header schedule schedule schedule schedule schedule" "time_10     day_1    day_2    day_3    day_4    day_5   " "time_11     day_1    day_2    day_3    day_4    day_5   " "time_12     day_1    day_2    day_3    day_4    day_5   " "time_13     day_1    day_2    day_3    day_4    day_5   " "time_14     day_1    day_2    day_3    day_4    day_5   " "time_15     day_1    day_2    day_3    day_4    day_5   " "time_16     day_1    day_2    day_3    day_4    day_5   " "time_17     day_1    day_2    day_3    day_4    day_5   ";
-  /* Schedule Days */
+  grid-template-areas: "time_header cday_1   cday_2   cday_3   cday_4   cday_5  " "time_10     day_1    day_2    day_3    day_4    day_5   " "time_11     day_1    day_2    day_3    day_4    day_5   " "time_12     day_1    day_2    day_3    day_4    day_5   " "time_13     day_1    day_2    day_3    day_4    day_5   " "time_14     day_1    day_2    day_3    day_4    day_5   " "time_15     day_1    day_2    day_3    day_4    day_5   " "time_16     day_1    day_2    day_3    day_4    day_5   " "time_17     day_1    day_2    day_3    day_4    day_5   ";
+  /* calendar's Days */
 }
 .main .section--schedule .content .calendar .time {
   border-bottom: 0.15rem solid #0000bb;
@@ -524,22 +524,30 @@
 .main .section--schedule .content .calendar .time--17 {
   grid-area: time_17;
 }
-.main .section--schedule .content .calendar .schedule {
+.main .section--schedule .content .calendar .calendar__day {
   background-color: #0000bb;
-  grid-area: schedule;
-  grid-column: 2/-1;
+  grid-column: span 1;
   grid-row: span 1;
-  display: grid;
-  grid-template: 1fr/repeat(5, 1fr);
-  align-items: center;
-  justify-items: stretch;
-}
-.main .section--schedule .content .calendar .schedule .schedule__day {
   border-right: 0.15rem solid #000066;
   padding: 0.5rem 0;
   color: #fff;
   font: 800 1.5rem "Oswald", sans-serif;
   text-align: center;
+}
+.main .section--schedule .content .calendar .calendar__day--1 {
+  grid-area: cday_1;
+}
+.main .section--schedule .content .calendar .calendar__day--2 {
+  grid-area: cday_2;
+}
+.main .section--schedule .content .calendar .calendar__day--3 {
+  grid-area: cday_3;
+}
+.main .section--schedule .content .calendar .calendar__day--4 {
+  grid-area: cday_4;
+}
+.main .section--schedule .content .calendar .calendar__day--5 {
+  grid-area: cday_5;
 }
 .main .section--schedule .content .calendar .day {
   display: grid;
@@ -568,11 +576,11 @@
   transition-timing-function: ease;
 }
 .main .section--schedule .content .calendar .day .class .class__link {
-  width: 75%;
+  width: 80%;
   height: 75%;
   border: 0.15rem solid #000;
-  padding: 0.25rem;
-  font: 500 1em "Montserrat", sans-serif;
+  padding: 0.5rem;
+  font: 600 1em "Montserrat", sans-serif;
   text-align: center;
   text-decoration: none;
   display: flex;
@@ -888,4 +896,100 @@
 }
 .main .section--schedule .content .calendar .day--5 {
   grid-area: day_5;
+}
+
+@media screen and (max-width: 1048px) {
+  .main .section .content .content__link {
+    width: 95%;
+    margin: 0.5rem 0.25rem;
+    padding-left: 0.25rem;
+  }
+  .main .section .content .content__link:hover {
+    padding-right: 0.25rem;
+  }
+}
+@media screen and (max-width: 856px) {
+  .main {
+    grid-template: repeat(1, 1fr)/1fr;
+  }
+  .main .section .section__title {
+    padding-left: 0.5rem;
+    text-align: center;
+    display: block;
+    align-items: none;
+  }
+  .main .section .content .content__link {
+    width: 95%;
+    margin: 0.65rem 1.5rem;
+    padding: 0.25rem;
+    padding-left: 1rem;
+  }
+  .main .section .content .content__link:hover {
+    padding-right: 0.25rem;
+  }
+  .main .section--schedule .content .calendar {
+    width: 70%;
+    max-height: initial;
+    grid-template: repeat(1, 1fr)/1fr;
+    grid-template-areas: "cday_1" "day_1 " "cday_2" "day_2 " "cday_3" "day_3 " "cday_4" "day_4 " "cday_5" "day_5 ";
+  }
+  .main .section--schedule .content .calendar .time {
+    display: none;
+  }
+  .main .section--schedule .content .calendar .calendar__day {
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.8rem;
+    text-decoration: underline solid #fff;
+  }
+  .main .section--schedule .content .calendar .day {
+    display: block;
+    margin-bottom: 0.25rem;
+    border: 0.15rem dashed #cfcfcf;
+    border-top: none;
+    background-color: #f0f0f0;
+  }
+  .main .section--schedule .content .calendar .day .clear {
+    display: none;
+  }
+  .main .section--schedule .content .calendar .day .class {
+    width: 85%;
+    min-height: 10vh;
+    margin: 0.25rem auto;
+    border-radius: 0.15rem;
+  }
+  .main .section--schedule .content .calendar .day .class .class__link {
+    width: 90%;
+    height: 90%;
+    padding: 1rem;
+  }
+  .main .section--schedule .content .calendar .day .class .class__link,
+.main .section--schedule .content .calendar .day .class .class__link--span2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 486px) {
+  .main .section .section__title {
+    width: 95%;
+  }
+  .main .section .content .content__paragraph {
+    width: 90%;
+  }
+  .main .section .content .content__link {
+    width: 95%;
+    margin: 0.5rem 0.25rem;
+    padding-left: 0.25rem;
+  }
+  .main .section .content .content__link:hover {
+    padding-right: 0.25rem;
+  }
+  .main .section .content .list {
+    margin-left: 0.5rem;
+  }
+  .main .section .content .alert {
+    width: 95%;
+  }
+  .main .section--schedule .content .calendar {
+    width: 95%;
+  }
 }
