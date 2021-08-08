@@ -28,371 +28,347 @@
 
  /* Sections in the Main */
  .section {
-  margin: 0.5rem;
-  padding: 5px;
+    margin: 0.5rem;
+    padding: 0.15rem;
 
-  grid-column: span 1;
-  grid-row: span 1;
+    grid-column: span 1;
+    grid-row: span 1;
 
-  
-  /* Title of the section */ 
-  .section__title {
-   width: 90%;
-   
-   margin: 0.25rem auto;
-   border-radius: 0.15em;
-   padding: 0.5rem;
-   padding-left: 3rem;
-
-   background-color: $color-base2;
-
-   display: flex;
-   align-items: center;
-   
-   color: $color-white1;
-   font: 700 2.25rem 'Oswald', sans-serif;
-  }
-
-  /* Content of the section */
-  .content {
-    display: flex;
-    flex-flow: row wrap;
-
-    .content__paragraph {
-      width: 85%;
-
-      margin: 0 2rem 0 auto;
-      border-right: 0.05rem solid $color-black2;
-      border-left: 0.05rem solid $color-black2;
-      padding: 0.65rem;
-
-      color: $color-black1;
-      font: 500 1em 'Montserrat', sans-serif;
-    }
-
-    /* Import Text Semantics */
-    @import "./textsemantics";
-
-  
-     /* Lists Styles */
-   
-    .list {
-      margin: 0.25rem;
-      margin-left: 1.5rem;
-      border-left: 0.15rem solid $color-base1;
-      padding: 0.25rem;
-      padding-left: 0.25rem;
-
-      
-      .list__obj {
-        margin: 0.25rem;
-        
-        color: $color-black1;
-        font: 500 1em 'Montserrat', sans-serif;
-
-        list-style: none;
-
-        &::before {
-          margin: 0.25rem; 
-          border-right: 0.15rem solid $color-base1;
-          padding: 0 0.25rem;
-
-          content: "\f101";
-          color: $color-base1;
-          font: 800 1em "FontAwesome";
-        }
-      }
-    }
-
-    .list--fat {
-      margin: 0.25rem;
-      margin-left: 1.5rem;
-      padding: 0.25rem;
-      padding-left: 0.25rem;
-      
-      .list__obj {
-        margin: 0.25rem;
-        border-radius: 0.25rem;
-        padding: 0.5rem; 
-        
-        background-color: $color-base1;
-        
-        color: $color-white1;
-        font: 500 1em 'Montserrat', sans-serif;
-        
-        list-style: none;
-
-        &::before {
-          border-left: 0.15rem solid $color-white1;
-          padding: 0 0.5rem;
-
-          content: "\f101";
-          color: $color-white1;
-          font: 800 1em 'FontAwesome';
-        }
-      }
-    }
-
-    ol.list {
-      .list__obj {
-        list-style-type: inherit;
-        list-style-position: inside;
-
-        &::before {
-          content: none;
-        }
-
-        &::marker {
-          color: $color-base1;
-          font: 800 1em 'Montserrat', sans-serif;
-        }
-      }
-    }
-
-    ol.list--fat {
-      .list__obj {
-        list-style-type: inherit;
-        list-style-position: inside;
-
-        &::before {
-          content: none;
-        }
-
-        &::marker {
-          color: $color-white1;
-          font: 800 1em 'Montserrat', sans-serif;
-        }
-      }
-    }
-   
-    /* Links Styles */
     
-    .content__link {
-      width: 60%;
+    /* Title of the section */ 
+    .section__title {
+    width: 90%;
+    
+    margin: 0.25rem auto;
+    border-radius: 0.15em;
+    padding: 0.5rem;
+    padding-left: 3rem;
 
-      margin: 0.65rem 1.5rem;
-      border-radius: 0.25em;
-      padding: 0.25rem;
-      padding-left: 1rem;
-      
-      background-color: $color-base1;
+    background-color: $color-base2;
 
-      color: $color-white1;
-      font: 300 1.25rem 'Oswald', sans-serif;
-      text-decoration: none;
-      
-      display: block;
-      transition-duration: 500ms;
-      transition-timing-function: ease;
-      transition-property: padding, background-color;
-
-      &:hover {
-        padding-right: 20%;
-        
-        background-color: $color-dark1;
-        
-        text-decoration: underline solid $color-white1;
-      }
+    display: flex;
+    align-items: center;
+    
+    color: $color-white1;
+    font: 700 2.25rem 'Oswald', sans-serif;
     }
 
-    .content__link--small {
-      color: $color-black1;
-      font: 400 1em 'Montserrat', sans-serif;
-      text-decoration: none;
-
-      &:hover {
-        color: $color-base1;
-        text-decoration: under solid $color-base1
-      }
-    }
-
-    /* Images Style */
-
-    .fig {
-      width: auto;
-
-      margin: 0.65rem auto;
-      padding-bottom: 0.25rem;
-
+    /* Content of the section */
+    .content {
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-flow: row wrap;
 
-      .fig-wrapper {
-        width: 100%;
+      .content__paragraph {
+        width: 85%;
 
-        border: 0.15rem solid $color-base1;
+        margin: 0.15rem auto;
+        padding: 0.65rem;
+
+        color: $color-black1;
+        font: 500 1em 'Montserrat', sans-serif;
+      }
+
+      .content__paragraph--borders {
+        border-right: 0.05rem solid $color-black2;
+        border-left: 0.05rem solid $color-black2;
+      }
+
+      /* Import Text Semantics */
+      @import "./textsemantics";
+
+    
+      /* Lists Styles */
+    
+      .list {
+        margin: 0.25rem;
+        margin-left: 1.5rem;
+        border-left: 0.15rem solid $color-base1;
+        padding: 0.25rem;
+        padding-left: 0.25rem;
+
+        
+        .list__obj {
+          margin: 0.25rem;
+          
+          color: $color-black1;
+          font: 500 1em 'Montserrat', sans-serif;
+
+          list-style: none;
+
+          &::before {
+            margin: 0.25rem; 
+            border-right: 0.15rem solid $color-base1;
+            padding: 0 0.25rem;
+
+            content: "\f101";
+            color: $color-base1;
+            font: 800 1em "FontAwesome";
+          }
+        }
+      }
+
+      .list--fat {
+        margin: 0.25rem;
+        margin-left: 1.5rem;
+        padding: 0.25rem;
+        padding-left: 0.25rem;
+        
+        .list__obj {
+          margin: 0.25rem;
+          border-radius: 0.25rem;
+          padding: 0.5rem; 
+          
+          background-color: $color-base1;
+          
+          color: $color-white1;
+          font: 500 1em 'Montserrat', sans-serif;
+          
+          list-style: none;
+
+          &::before {
+            border-left: 0.15rem solid $color-white1;
+            padding: 0 0.5rem;
+
+            content: "\f101";
+            color: $color-white1;
+            font: 800 1em 'FontAwesome';
+          }
+        }
+      }
+
+      ol.list {
+        .list__obj {
+          list-style-type: inherit;
+          list-style-position: inside;
+
+          &::before {
+            content: none;
+          }
+
+          &::marker {
+            color: $color-base1;
+            font: 800 1em 'Montserrat', sans-serif;
+          }
+        }
+      }
+
+      ol.list--fat {
+        .list__obj {
+          list-style-type: inherit;
+          list-style-position: inside;
+
+          &::before {
+            content: none;
+          }
+
+          &::marker {
+            color: $color-white1;
+            font: 800 1em 'Montserrat', sans-serif;
+          }
+        }
+      }
+    
+      /* Links Styles */
+      
+      .content__link {
+        width: 60%;
+
+        margin: 0.65rem 1.5rem;
+        border-radius: 0.25em;
+        padding: 0.25rem;
+        padding-left: 1rem;
+        
+        background-color: $color-base1;
+
+        color: $color-white1;
+        font: 300 1.25rem 'Oswald', sans-serif;
+        text-decoration: none;
+        
+        display: block;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+        transition-property: padding, background-color;
+
+        &:hover {
+          padding-right: 20%;
+          
+          background-color: $color-dark1;
+          
+          text-decoration: underline solid $color-white1;
+        }
+      }
+
+      .content__link--small {
+        color: $color-black1;
+        font: 400 1em 'Montserrat', sans-serif;
+        text-decoration: none;
+
+        &:hover {
+          color: $color-base1;
+          text-decoration: under solid $color-base1
+        }
+      }
+
+      /* Images Style */
+
+      .fig {
+        width: auto;
+
+        margin: 0.65rem auto;
+        padding-bottom: 0.25rem;
 
         display: flex;
         align-items: center;
         justify-content: center;
-      }
+        flex-flow: row wrap;
 
-      .fig__img { 
-        width: 100%;
-        height: auto; 
+        .fig-wrapper {
+          width: 100%;
 
-        background-color: $color-base1;
+          border: 0.15rem solid $color-base1;
 
-        color: $color-white1;
-        font: 600 1em 'Roboto Mono', monospace;
-        text-align: justify;
-      }
-
-      .fit__cap {
-        border: 0.15rem solid $color-base1;
-        border-top: none;
-        padding: 0.15rem 0.25rem;
-
-        color: $color-black1;
-        font: 400 0.85rem 'Montserrat', sans-serif;
-        text-align: center;
-      }
-    }
-
-    /* Obj's Sizes */
-    /* Can be images, tables or others */
-    .s {width: 20%;} /* Smallest */
-    .xs {width: 30%;} /* Very Small */
-    .xxs {width: 40%;} /* Small */
-
-    .m {width: 50%;} /* Medium */
-    .xm {width: 60%;} /* Medium Big */
-    .xxm {width: 70%;} /* Medium Large */
-
-    .l {width: 80%;} /* Large */
-    .xl {width: 90%;} /* Very Large */
-    .xxl {width: 100%;} /* Max Size */
-
-    /* Alerts in the Sections */
-
-    .alert {
-      width: 90%;
-
-      margin: 0 auto;
-      border: 0.25rem solid $color-base2;
-      border-top-right-radius: 0.75em;
-
-      .alert__title {
-        padding: 0.5rem 0.75rem;
-
-        background-color: $color-base2;
-
-        color: $color-white1;
-        font: 500 1.5rem 'Oswald', sans-serif;
-      }
-
-      .alert__paragraph {
-        width: 95%;
-
-        padding: 0.75rem;
-
-        color: $color-black1;
-        font: 500 1em 'Montserrat', sans-serif;
-      }
-    }
-
-    /* Advises in the sections */
-
-    .content-advise {
-
-      &:hover {
-        .advise-content {
-          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
-      }
 
-      .content-advise__text {
-        border-radius: 0.5em;
-        padding: 10px 20px; 
+        .fig__img { 
+          width: 100%;
+          height: auto; 
 
-        background-color: $color-base2;
+          background-color: $color-base1;
 
-        color: $color-white1;
-        font: 500 20px 'Oswald', sans-serif;
+          color: $color-white1;
+          font: 600 1em 'Roboto Mono', monospace;
+          text-align: justify;
+        }
 
-        display: inline-block;
-      }
-
-      /* Content of the advise */
-      .advise-content {
-        margin-inline-start: 5px;
-        border-radius: 0.5em; 
-        padding: 10px;
-
-        background-color: $color-base2;
-
-        display: none; /* Hidden if not hover advise */
-        position: absolute;
-        z-index: 1;
-
-        .advise-content__paragraph {
-          border-radius: 0.25em;
-          padding: 5px;
-
-          background-color: $color-white1;
+        .fit__cap {
+          border: 0.15rem solid $color-base1;
+          border-top: none;
+          padding: 0.15rem 0.25rem;
 
           color: $color-black1;
-          font: 300 14px 'Montserrat', sans-serif;
+          font: 400 0.85rem 'Montserrat', sans-serif;
+          text-align: center;
+        }
+      }
+
+      /* Obj's Sizes */
+      /* Can be images, tables or others */
+      .s {width: 20%;} /* Smallest */
+      .xs {width: 30%;} /* Very Small */
+      .xxs {width: 40%;} /* Small */
+
+      .m {width: 50%;} /* Medium */
+      .xm {width: 60%;} /* Medium Big */
+      .xxm {width: 70%;} /* Medium Large */
+
+      .l {width: 80%;} /* Large */
+      .xl {width: 90%;} /* Very Large */
+      .xxl {width: 100%;} /* Max Size */
+
+      /* Alerts in the Sections */
+
+      .alert {
+        width: 90%;
+
+        margin: 0 auto;
+        border: 0.25rem solid $color-base2;
+        border-top-right-radius: 0.75em;
+
+        .alert__title {
+          padding: 0.5rem 0.75rem;
+
+          background-color: $color-base2;
+
+          color: $color-white1;
+          font: 500 1.5rem 'Oswald', sans-serif;
+        }
+
+        .alert__paragraph {
+          width: 95%;
+
+          padding: 0.75rem;
+
+          color: $color-black1;
+          font: 500 1em 'Montserrat', sans-serif;
+        }
+      }
+
+      /* Advises in the sections */
+
+      .content-advise {
+
+        &:hover {
+          .advise-content {
+            display: block;
+          }
+        }
+
+        .content-advise__text {
+          border-radius: 0.5em;
+          padding: 10px 20px; 
+
+          background-color: $color-base2;
+
+          color: $color-white1;
+          font: 500 20px 'Oswald', sans-serif;
+
+          display: inline-block;
+        }
+
+        /* Content of the advise */
+        .advise-content {
+          margin-inline-start: 5px;
+          border-radius: 0.5em; 
+          padding: 10px;
+
+          background-color: $color-base2;
+
+          display: none; /* Hidden if not hover advise */
+          position: absolute;
+          z-index: 1;
+
+          .advise-content__paragraph {
+            border-radius: 0.25em;
+            padding: 5px;
+
+            background-color: $color-white1;
+
+            color: $color-black1;
+            font: 300 14px 'Montserrat', sans-serif;
+          }
         }
       }
     }
   }
-}
  
- /* Wellcome Section */
- .section--wellcome {
-  width: 45%;
+  /* Wellcome Section */
+  .section--special {
+    border: 0.15rem solid $color-light2;
+    border-radius: 0.25em;
+    padding: 0 0.75rem;
 
-  border: 2px solid $color-light2;
-  border-radius: 0.5em;
+    background-color: $color-light1;
 
-  background-color: $color-light1;
+    .content {
+      border: 0.15rem solid $color-light2;
+      border-radius: 0.15rem;
+      padding: 0.5rem;
+      
+      background-color: $color-white1;
 
-  .section-images {
-    width: 90%;
-    margin: 10px;
-    border-radius: 0.5em;
-    padding: 5px;
+      .content__paragraph {
+        width: 90%;
 
-    .section-images__img {
-      width: 100%;
-      height: 300px;
+        .saludo {
+          font: 700 1.2rem 'Montserrat', sans-serif;
+          text-decoration: underline $color-base2;
+        }
+      }
     }
   }
-
-  .section-content {
-    margin: 5px; 
-    border: 2px outset $color-light2;
-    border-radius: 1em;
-    padding: 10px;
-    
-    background-color: $color-white1;
-
-   .section-content__paragraph {
-    width: 95%;
-    border: none;
-    padding: 5px;
-
-    .saludo {
-     font: 700 20px 'Montserrat', sans-serif;
-     text-decoration: underline $color-base2;
-    }
-
-    .Bl4ky113 {
-     color: $color-base2;
-     text-decoration: underline $color-base2;
-     text-shadow: 1px 1px 1px $color-black1;
-    }
-
-    .commentary {
-     color: $color-black2;
-     font: 100 10px 'Montserrat', sans-serif;
-    }
-   }
-  }
- }
 
  /* Schedule Section */
 

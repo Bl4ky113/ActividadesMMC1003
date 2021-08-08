@@ -1,27 +1,39 @@
-   /* Text Semantics */
+/* Text Semantics */
 
-   strong { font-weight: 700; }
+strong { font-weight: 700; }
 
-   em { font: italic 400 inherit 'Montserrat', sans-serif; }
+em { font: italic 400 inherit 'Montserrat', sans-serif; }
 
-   i { font: italic 500 inherit 'Newsreader', serif; }
+i { font: italic 500 inherit 'Newsreader', serif; }
 
-   i.fa { font: 500 1em 'FontAwesome'; }
+i.fa { font: 500 1em 'FontAwesome'; }
 
-   abbr {
-    border-radius: 0.25em;
-    padding: 0.2em 0.4em;
+abbr {
+  border-radius: 0.25em;
+  padding: 0.2em 0.4em;
 
-    background-color: $color-dark1;
+  background-color: $color-dark1;
 
-    color: $color-white1;
-    font: italic 400 1.15em 'Montserrat', sans-serif;
-    text-decoration: underline $color-light1;
-   }
+  color: $color-white1;
+  font: italic 400 1.15em 'Montserrat', sans-serif;
+  text-decoration: underline $color-light1;
+}
 
-   mark {
-    border-radius: 0.25em;
-    padding: 0 0.4em;
+mark {
+  border-radius: 0.25em;
+  padding: 0 0.4em;
 
-    background-color: $color-light1;
-   }
+  background-color: $color-light1;
+}
+
+.Bl4ky113 {
+  color: $color-base2;
+  font: italic 400 1em 'Roboto Mono', Monospace;
+  text-decoration: underline solid $color-base2 0.15rem;
+  text-shadow: 1px 1px 2px $color-black1;
+}
+
+.commentary {
+  color: $color-black2;
+  font: 100 0.7rem 'Montserrat', sans-serif;
+}
