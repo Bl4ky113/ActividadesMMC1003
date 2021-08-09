@@ -88,7 +88,15 @@
   font: italic 400 1em "Montserrat", sans-serif;
 }
 
-/* Responvise Style */
+/* Responsive Style */
+@media screen and (max-width: 900px) {
+  .header .button i {
+    font-size: 2.5em;
+  }
+  .header .title--info__text {
+    display: none;
+  }
+}
 @media screen and (max-width: 486px) {
   .header {
     padding: 0.25rem 0;
@@ -443,6 +451,16 @@
   border-radius: 0.25em;
   padding: 0 0.4em;
   background-color: #99ccff;
+}
+.main .article .content .Bl4ky113 {
+  color: #0000bb;
+  font: italic 400 1em "Roboto Mono", Monospace;
+  text-decoration: underline solid #0000bb 0.15rem;
+  text-shadow: 1px 1px 2px #000;
+}
+.main .article .content .commentary {
+  color: #353535;
+  font: 100 0.7rem "Montserrat", sans-serif;
 }
 .main .article .content .checkbox {
   border-radius: 0.5em;
