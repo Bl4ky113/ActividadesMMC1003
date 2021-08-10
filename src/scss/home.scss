@@ -199,14 +199,33 @@
       }
 
       .content__link--small {
-        color: $color-black1;
-        font: 400 1em 'Montserrat', sans-serif;
-        text-decoration: none;
+        color: $color-dark1;
+        font: 700 1em 'Montserrat', sans-serif;
+        text-decoration: underline solid $color-dark2 0.15rem;
+
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+        transition-property: color, text-decoration;
 
         &:hover {
           color: $color-base1;
-          text-decoration: under solid $color-base1
+          text-decoration: underline dashed $color-base1 0.15rem;
         }
+      }
+
+      .content__link--class {
+        width: 60%;
+
+        margin: 0.65rem 1.5rem;
+        border-radius: 0.25em;
+        padding: 0.25rem;
+        padding-left: 1rem;
+        
+        background-color: $color-base1;
+
+        color: $color-white1;
+        font: 300 1.25rem 'Oswald', sans-serif;
+        text-decoration: none;
       }
 
       /* Images Style */
@@ -521,149 +540,7 @@
             }
           }
 
-          .class--excel { 
-            @include classColor (
-              $color-exc-base, 
-              $color-exc-dark, 
-              $color-exc-light
-            ) 
-          }
-
-          .class--tecnologia { 
-            @include classColor (
-              $color-tecno-base, 
-              $color-tecno-dark, 
-              $color-tecno-light
-            ) 
-          }
-
-          .class--matematicas { 
-            @include classColor (
-              $color-mat-base, 
-              $color-mat-dark, 
-              $color-mat-light
-            ) 
-          }
-
-          .class--artes { 
-            @include classColor (
-              $color-art-base, 
-              $color-art-dark, 
-              $color-art-light
-            ) 
-          }
-
-          .class--programacion { 
-            @include classColor (
-              $color-pro-base, 
-              $color-pro-dark, 
-              $color-pro-light
-            ) 
-          }
-
-          .class--electronica { 
-            @include classColor (
-              $color-elec-base, 
-              $color-elec-dark, 
-              $color-elec-light
-            ) 
-          }
-
-          .class--espanol { 
-            @include classColor (
-              $color-esp-base, 
-              $color-esp-dark, 
-              $color-esp-light
-            ) 
-          }
-
-          .class--fisica { 
-            @include classColor (
-              $color-fis-base, 
-              $color-fis-dark, 
-              $color-fis-light
-            ) 
-          }
-
-          .class--ingles { 
-            @include classColor (
-              $color-ing-base, 
-              $color-ing-dark, 
-              $color-ing-light
-            ) 
-          }
-
-          .class--gestioninformatica { 
-            @include classColor (
-              $color-gbi-base, 
-              $color-gbi-dark, 
-              $color-gbi-light
-            ) 
-          }
-
-          .class--religion { 
-            @include classColor (
-              $color-reli-base, 
-              $color-reli-dark, 
-              $color-reli-light
-            ) 
-          }
-
-          .class--etica { 
-            @include classColor (
-              $color-eti-base, 
-              $color-eti-dark, 
-              $color-eti-light
-            ) 
-          }
-
-          .class--filosofia { 
-            @include classColor (
-              $color-filo-base, 
-              $color-filo-dark, 
-              $color-filo-light
-            ) 
-          }
-
-          .class--investigacion { 
-            @include classColor (
-              $color-ins-base, 
-              $color-ins-dark, 
-              $color-ins-light
-            ) 
-          }
-
-          .class--gestion { 
-            @include classColor (
-              $color-gest-base,
-              $color-gest-dark, 
-              $color-gest-light
-            ) 
-          }
-
-          .class--quimica { 
-            @include classColor (
-              $color-qui-base, 
-              $color-qui-dark, 
-              $color-qui-light
-            ) 
-          }
-
-          .class--economia { 
-            @include classColor (
-              $color-eco-base,
-              $color-eco-dark, 
-              $color-eco-light
-            ) 
-          }
-
-          .class--edfisica { 
-            @include classColor (
-              $color-edf-base, 
-              $color-edf-dark, 
-              $color-edf-light
-            ) 
-          }
+          @import "./_classColors";
         }
 
         .day--1 { grid-area: day_1; }
@@ -675,6 +552,65 @@
     }
   }
 }
+
+@mixin sectionClassColor ($base, $dark, $light) {
+  .section__title { background-color: $base; }
+
+  .content {
+  
+    /* Lists Styles */
+  
+    .list {
+      border-left-color: $base;
+      .list__obj {
+        &::before {
+          border-right-color: $base;
+          color: $base;
+        }
+      }
+    }
+
+    .list--fat { .list__obj { background-color: $base; } }
+
+    ol.list { .list__obj { &::marker { color: $base; } } }
+  
+    /* Links Styles */
+    
+    .content__link { 
+      background-color: $base;
+      &:hover { background-color: $dark; }
+    }
+
+    .content__link--small {
+      color: $dark;
+      text-decoration-color: $dark;
+
+      &:hover {
+        color: $base;
+        text-decoration-color: $base;
+      }
+    }
+    
+    .content__link--class { background-color: $base; }
+
+    /* Images Style */
+
+    .fig {
+      .fig-wrapper { border-color: $base; }
+      .fig__img { background-color: $base; }
+      .fit__cap { border-color: $base; }
+    }
+
+    /* Alerts in the Sections */
+
+    .alert {
+      border-color: $base;
+      .alert__title { background-color: $base; }
+    }
+  }
+}
+
+@import "./sectionClassColors";
 
 @media screen and (max-width: 1048px) {
   .main {

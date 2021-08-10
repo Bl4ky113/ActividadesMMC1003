@@ -1,0 +1,145 @@
+/* Class Colors */
+
+.class--excel { 
+  @include classColor (
+    $color-exc-base, 
+    $color-exc-dark, 
+    $color-exc-light
+  ) 
+}
+
+.class--tecnologia { 
+  @include classColor (
+    $color-tecno-base, 
+    $color-tecno-dark, 
+    $color-tecno-light
+  ) 
+}
+
+.class--matematicas { 
+  @include classColor (
+    $color-mat-base, 
+    $color-mat-dark, 
+    $color-mat-light
+  ) 
+}
+
+.class--artes { 
+  @include classColor (
+    $color-art-base, 
+    $color-art-dark, 
+    $color-art-light
+  ) 
+}
+
+.class--programacion { 
+  @include classColor (
+    $color-pro-base, 
+    $color-pro-dark, 
+    $color-pro-light
+  ) 
+}
+
+.class--electronica { 
+  @include classColor (
+    $color-elec-base, 
+    $color-elec-dark, 
+    $color-elec-light
+  ) 
+}
+
+.class--espanol { 
+  @include classColor (
+    $color-esp-base, 
+    $color-esp-dark, 
+    $color-esp-light
+  ) 
+}
+
+.class--fisica { 
+  @include classColor (
+    $color-fis-base, 
+    $color-fis-dark, 
+    $color-fis-light
+  ) 
+}
+
+.class--ingles { 
+  @include classColor (
+    $color-ing-base, 
+    $color-ing-dark, 
+    $color-ing-light
+  ) 
+}
+
+.class--gestioninformatica { 
+  @include classColor (
+    $color-gbi-base, 
+    $color-gbi-dark, 
+    $color-gbi-light
+  ) 
+}
+
+.class--religion { 
+  @include classColor (
+    $color-reli-base, 
+    $color-reli-dark, 
+    $color-reli-light
+  ) 
+}
+
+.class--etica { 
+  @include classColor (
+    $color-eti-base, 
+    $color-eti-dark, 
+    $color-eti-light
+  ) 
+}
+
+.class--filosofia { 
+  @include classColor (
+    $color-filo-base, 
+    $color-filo-dark, 
+    $color-filo-light
+  ) 
+}
+
+.class--investigacion { 
+  @include classColor (
+    $color-ins-base, 
+    $color-ins-dark, 
+    $color-ins-light
+  ) 
+}
+
+.class--gestion { 
+  @include classColor (
+    $color-gest-base,
+    $color-gest-dark, 
+    $color-gest-light
+  ) 
+}
+
+.class--quimica { 
+  @include classColor (
+    $color-qui-base, 
+    $color-qui-dark, 
+    $color-qui-light
+  ) 
+}
+
+.class--economia { 
+  @include classColor (
+    $color-eco-base,
+    $color-eco-dark, 
+    $color-eco-light
+  ) 
+}
+
+.class--edfisica { 
+  @include classColor (
+    $color-edf-base, 
+    $color-edf-dark, 
+    $color-edf-light
+  ) 
+}

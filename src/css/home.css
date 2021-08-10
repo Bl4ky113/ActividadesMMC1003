@@ -334,13 +334,27 @@
   text-decoration: underline solid #fff;
 }
 .main .section .content .content__link--small {
-  color: #000;
-  font: 400 1em "Montserrat", sans-serif;
-  text-decoration: none;
+  color: #000066;
+  font: 700 1em "Montserrat", sans-serif;
+  text-decoration: underline solid #000044 0.15rem;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transition-property: color, text-decoration;
 }
 .main .section .content .content__link--small:hover {
   color: #0000e6;
-  text-decoration: under solid #0000e6;
+  text-decoration: underline dashed #0000e6 0.15rem;
+}
+.main .section .content .content__link--class {
+  width: 60%;
+  margin: 0.65rem 1.5rem;
+  border-radius: 0.25em;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background-color: #0000e6;
+  color: #fff;
+  font: 300 1.25rem "Oswald", sans-serif;
+  text-decoration: none;
 }
 .main .section .content .fig {
   width: auto;
@@ -554,6 +568,7 @@
   grid-template: repeat(8, 1fr)/1fr;
   align-items: stretch;
   justify-items: stretch;
+  /* Class Colors */
 }
 .main .section--schedule .content .calendar .day .clear {
   content: "";
@@ -896,6 +911,997 @@
 }
 .main .section--schedule .content .calendar .day--5 {
   grid-area: day_5;
+}
+
+/* Section Class Colors */
+#class--excel .section__title {
+  background-color: #009933;
+}
+#class--excel .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--excel .content .list {
+  border-left-color: #009933;
+}
+#class--excel .content .list .list__obj::before {
+  border-right-color: #009933;
+  color: #009933;
+}
+#class--excel .content .list--fat .list__obj {
+  background-color: #009933;
+}
+#class--excel .content ol.list .list__obj::marker {
+  color: #009933;
+}
+#class--excel .content .content__link {
+  background-color: #009933;
+}
+#class--excel .content .content__link:hover {
+  background-color: #006622;
+}
+#class--excel .content .content__link--small {
+  color: #006622;
+  text-decoration-color: #006622;
+}
+#class--excel .content .content__link--small:hover {
+  color: #009933;
+  text-decoration-color: #009933;
+}
+#class--excel .content .content__link--class {
+  background-color: #009933;
+}
+#class--excel .content .fig .fig-wrapper {
+  border-color: #009933;
+}
+#class--excel .content .fig .fig__img {
+  background-color: #009933;
+}
+#class--excel .content .fig .fit__cap {
+  border-color: #009933;
+}
+#class--excel .content .alert {
+  border-color: #009933;
+}
+#class--excel .content .alert .alert__title {
+  background-color: #009933;
+}
+
+#class--tecnologia .section__title {
+  background-color: #b3d9ff;
+}
+#class--tecnologia .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--tecnologia .content .list {
+  border-left-color: #b3d9ff;
+}
+#class--tecnologia .content .list .list__obj::before {
+  border-right-color: #b3d9ff;
+  color: #b3d9ff;
+}
+#class--tecnologia .content .list--fat .list__obj {
+  background-color: #b3d9ff;
+}
+#class--tecnologia .content ol.list .list__obj::marker {
+  color: #b3d9ff;
+}
+#class--tecnologia .content .content__link {
+  background-color: #b3d9ff;
+}
+#class--tecnologia .content .content__link:hover {
+  background-color: #3396ff;
+}
+#class--tecnologia .content .content__link--small {
+  color: #3396ff;
+  text-decoration-color: #3396ff;
+}
+#class--tecnologia .content .content__link--small:hover {
+  color: #b3d9ff;
+  text-decoration-color: #b3d9ff;
+}
+#class--tecnologia .content .content__link--class {
+  background-color: #b3d9ff;
+}
+#class--tecnologia .content .fig .fig-wrapper {
+  border-color: #b3d9ff;
+}
+#class--tecnologia .content .fig .fig__img {
+  background-color: #b3d9ff;
+}
+#class--tecnologia .content .fig .fit__cap {
+  border-color: #b3d9ff;
+}
+#class--tecnologia .content .alert {
+  border-color: #b3d9ff;
+}
+#class--tecnologia .content .alert .alert__title {
+  background-color: #b3d9ff;
+}
+
+#class--matematicas .section__title {
+  background-color: #4d4dff;
+}
+#class--matematicas .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--matematicas .content .list {
+  border-left-color: #4d4dff;
+}
+#class--matematicas .content .list .list__obj::before {
+  border-right-color: #4d4dff;
+  color: #4d4dff;
+}
+#class--matematicas .content .list--fat .list__obj {
+  background-color: #4d4dff;
+}
+#class--matematicas .content ol.list .list__obj::marker {
+  color: #4d4dff;
+}
+#class--matematicas .content .content__link {
+  background-color: #4d4dff;
+}
+#class--matematicas .content .content__link:hover {
+  background-color: #000099;
+}
+#class--matematicas .content .content__link--small {
+  color: #000099;
+  text-decoration-color: #000099;
+}
+#class--matematicas .content .content__link--small:hover {
+  color: #4d4dff;
+  text-decoration-color: #4d4dff;
+}
+#class--matematicas .content .content__link--class {
+  background-color: #4d4dff;
+}
+#class--matematicas .content .fig .fig-wrapper {
+  border-color: #4d4dff;
+}
+#class--matematicas .content .fig .fig__img {
+  background-color: #4d4dff;
+}
+#class--matematicas .content .fig .fit__cap {
+  border-color: #4d4dff;
+}
+#class--matematicas .content .alert {
+  border-color: #4d4dff;
+}
+#class--matematicas .content .alert .alert__title {
+  background-color: #4d4dff;
+}
+
+#class--artes .section__title {
+  background-color: #ff66cc;
+}
+#class--artes .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--artes .content .list {
+  border-left-color: #ff66cc;
+}
+#class--artes .content .list .list__obj::before {
+  border-right-color: #ff66cc;
+  color: #ff66cc;
+}
+#class--artes .content .list--fat .list__obj {
+  background-color: #ff66cc;
+}
+#class--artes .content ol.list .list__obj::marker {
+  color: #ff66cc;
+}
+#class--artes .content .content__link {
+  background-color: #ff66cc;
+}
+#class--artes .content .content__link:hover {
+  background-color: #cc0088;
+}
+#class--artes .content .content__link--small {
+  color: #cc0088;
+  text-decoration-color: #cc0088;
+}
+#class--artes .content .content__link--small:hover {
+  color: #ff66cc;
+  text-decoration-color: #ff66cc;
+}
+#class--artes .content .content__link--class {
+  background-color: #ff66cc;
+}
+#class--artes .content .fig .fig-wrapper {
+  border-color: #ff66cc;
+}
+#class--artes .content .fig .fig__img {
+  background-color: #ff66cc;
+}
+#class--artes .content .fig .fit__cap {
+  border-color: #ff66cc;
+}
+#class--artes .content .alert {
+  border-color: #ff66cc;
+}
+#class--artes .content .alert .alert__title {
+  background-color: #ff66cc;
+}
+
+#class--programacion .section__title {
+  background-color: #3366ff;
+}
+#class--programacion .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--programacion .content .list {
+  border-left-color: #3366ff;
+}
+#class--programacion .content .list .list__obj::before {
+  border-right-color: #3366ff;
+  color: #3366ff;
+}
+#class--programacion .content .list--fat .list__obj {
+  background-color: #3366ff;
+}
+#class--programacion .content ol.list .list__obj::marker {
+  color: #3366ff;
+}
+#class--programacion .content .content__link {
+  background-color: #3366ff;
+}
+#class--programacion .content .content__link:hover {
+  background-color: #001a66;
+}
+#class--programacion .content .content__link--small {
+  color: #001a66;
+  text-decoration-color: #001a66;
+}
+#class--programacion .content .content__link--small:hover {
+  color: #3366ff;
+  text-decoration-color: #3366ff;
+}
+#class--programacion .content .content__link--class {
+  background-color: #3366ff;
+}
+#class--programacion .content .fig .fig-wrapper {
+  border-color: #3366ff;
+}
+#class--programacion .content .fig .fig__img {
+  background-color: #3366ff;
+}
+#class--programacion .content .fig .fit__cap {
+  border-color: #3366ff;
+}
+#class--programacion .content .alert {
+  border-color: #3366ff;
+}
+#class--programacion .content .alert .alert__title {
+  background-color: #3366ff;
+}
+
+#class--electronica .section__title {
+  background-color: #f9f900;
+}
+#class--electronica .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--electronica .content .list {
+  border-left-color: #f9f900;
+}
+#class--electronica .content .list .list__obj::before {
+  border-right-color: #f9f900;
+  color: #f9f900;
+}
+#class--electronica .content .list--fat .list__obj {
+  background-color: #f9f900;
+}
+#class--electronica .content ol.list .list__obj::marker {
+  color: #f9f900;
+}
+#class--electronica .content .content__link {
+  background-color: #f9f900;
+}
+#class--electronica .content .content__link:hover {
+  background-color: #999900;
+}
+#class--electronica .content .content__link--small {
+  color: #999900;
+  text-decoration-color: #999900;
+}
+#class--electronica .content .content__link--small:hover {
+  color: #f9f900;
+  text-decoration-color: #f9f900;
+}
+#class--electronica .content .content__link--class {
+  background-color: #f9f900;
+}
+#class--electronica .content .fig .fig-wrapper {
+  border-color: #f9f900;
+}
+#class--electronica .content .fig .fig__img {
+  background-color: #f9f900;
+}
+#class--electronica .content .fig .fit__cap {
+  border-color: #f9f900;
+}
+#class--electronica .content .alert {
+  border-color: #f9f900;
+}
+#class--electronica .content .alert .alert__title {
+  background-color: #f9f900;
+}
+
+#class--espanol .section__title {
+  background-color: #ff704d;
+}
+#class--espanol .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--espanol .content .list {
+  border-left-color: #ff704d;
+}
+#class--espanol .content .list .list__obj::before {
+  border-right-color: #ff704d;
+  color: #ff704d;
+}
+#class--espanol .content .list--fat .list__obj {
+  background-color: #ff704d;
+}
+#class--espanol .content ol.list .list__obj::marker {
+  color: #ff704d;
+}
+#class--espanol .content .content__link {
+  background-color: #ff704d;
+}
+#class--espanol .content .content__link:hover {
+  background-color: #e62e00;
+}
+#class--espanol .content .content__link--small {
+  color: #e62e00;
+  text-decoration-color: #e62e00;
+}
+#class--espanol .content .content__link--small:hover {
+  color: #ff704d;
+  text-decoration-color: #ff704d;
+}
+#class--espanol .content .content__link--class {
+  background-color: #ff704d;
+}
+#class--espanol .content .fig .fig-wrapper {
+  border-color: #ff704d;
+}
+#class--espanol .content .fig .fig__img {
+  background-color: #ff704d;
+}
+#class--espanol .content .fig .fit__cap {
+  border-color: #ff704d;
+}
+#class--espanol .content .alert {
+  border-color: #ff704d;
+}
+#class--espanol .content .alert .alert__title {
+  background-color: #ff704d;
+}
+
+#class--fisica .section__title {
+  background-color: #ff66b3;
+}
+#class--fisica .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--fisica .content .list {
+  border-left-color: #ff66b3;
+}
+#class--fisica .content .list .list__obj::before {
+  border-right-color: #ff66b3;
+  color: #ff66b3;
+}
+#class--fisica .content .list--fat .list__obj {
+  background-color: #ff66b3;
+}
+#class--fisica .content ol.list .list__obj::marker {
+  color: #ff66b3;
+}
+#class--fisica .content .content__link {
+  background-color: #ff66b3;
+}
+#class--fisica .content .content__link:hover {
+  background-color: #e60073;
+}
+#class--fisica .content .content__link--small {
+  color: #e60073;
+  text-decoration-color: #e60073;
+}
+#class--fisica .content .content__link--small:hover {
+  color: #ff66b3;
+  text-decoration-color: #ff66b3;
+}
+#class--fisica .content .content__link--class {
+  background-color: #ff66b3;
+}
+#class--fisica .content .fig .fig-wrapper {
+  border-color: #ff66b3;
+}
+#class--fisica .content .fig .fig__img {
+  background-color: #ff66b3;
+}
+#class--fisica .content .fig .fit__cap {
+  border-color: #ff66b3;
+}
+#class--fisica .content .alert {
+  border-color: #ff66b3;
+}
+#class--fisica .content .alert .alert__title {
+  background-color: #ff66b3;
+}
+
+#class--ingles .section__title {
+  background-color: #ffcc00;
+}
+#class--ingles .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--ingles .content .list {
+  border-left-color: #ffcc00;
+}
+#class--ingles .content .list .list__obj::before {
+  border-right-color: #ffcc00;
+  color: #ffcc00;
+}
+#class--ingles .content .list--fat .list__obj {
+  background-color: #ffcc00;
+}
+#class--ingles .content ol.list .list__obj::marker {
+  color: #ffcc00;
+}
+#class--ingles .content .content__link {
+  background-color: #ffcc00;
+}
+#class--ingles .content .content__link:hover {
+  background-color: #e6b800;
+}
+#class--ingles .content .content__link--small {
+  color: #e6b800;
+  text-decoration-color: #e6b800;
+}
+#class--ingles .content .content__link--small:hover {
+  color: #ffcc00;
+  text-decoration-color: #ffcc00;
+}
+#class--ingles .content .content__link--class {
+  background-color: #ffcc00;
+}
+#class--ingles .content .fig .fig-wrapper {
+  border-color: #ffcc00;
+}
+#class--ingles .content .fig .fig__img {
+  background-color: #ffcc00;
+}
+#class--ingles .content .fig .fit__cap {
+  border-color: #ffcc00;
+}
+#class--ingles .content .alert {
+  border-color: #ffcc00;
+}
+#class--ingles .content .alert .alert__title {
+  background-color: #ffcc00;
+}
+
+#class--gestioninformatica .section__title {
+  background-color: #4dc3ff;
+}
+#class--gestioninformatica .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--gestioninformatica .content .list {
+  border-left-color: #4dc3ff;
+}
+#class--gestioninformatica .content .list .list__obj::before {
+  border-right-color: #4dc3ff;
+  color: #4dc3ff;
+}
+#class--gestioninformatica .content .list--fat .list__obj {
+  background-color: #4dc3ff;
+}
+#class--gestioninformatica .content ol.list .list__obj::marker {
+  color: #4dc3ff;
+}
+#class--gestioninformatica .content .content__link {
+  background-color: #4dc3ff;
+}
+#class--gestioninformatica .content .content__link:hover {
+  background-color: #006699;
+}
+#class--gestioninformatica .content .content__link--small {
+  color: #006699;
+  text-decoration-color: #006699;
+}
+#class--gestioninformatica .content .content__link--small:hover {
+  color: #4dc3ff;
+  text-decoration-color: #4dc3ff;
+}
+#class--gestioninformatica .content .content__link--class {
+  background-color: #4dc3ff;
+}
+#class--gestioninformatica .content .fig .fig-wrapper {
+  border-color: #4dc3ff;
+}
+#class--gestioninformatica .content .fig .fig__img {
+  background-color: #4dc3ff;
+}
+#class--gestioninformatica .content .fig .fit__cap {
+  border-color: #4dc3ff;
+}
+#class--gestioninformatica .content .alert {
+  border-color: #4dc3ff;
+}
+#class--gestioninformatica .content .alert .alert__title {
+  background-color: #4dc3ff;
+}
+
+#class--religion .section__title {
+  background-color: #ff99ff;
+}
+#class--religion .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--religion .content .list {
+  border-left-color: #ff99ff;
+}
+#class--religion .content .list .list__obj::before {
+  border-right-color: #ff99ff;
+  color: #ff99ff;
+}
+#class--religion .content .list--fat .list__obj {
+  background-color: #ff99ff;
+}
+#class--religion .content ol.list .list__obj::marker {
+  color: #ff99ff;
+}
+#class--religion .content .content__link {
+  background-color: #ff99ff;
+}
+#class--religion .content .content__link:hover {
+  background-color: #ff33ff;
+}
+#class--religion .content .content__link--small {
+  color: #ff33ff;
+  text-decoration-color: #ff33ff;
+}
+#class--religion .content .content__link--small:hover {
+  color: #ff99ff;
+  text-decoration-color: #ff99ff;
+}
+#class--religion .content .content__link--class {
+  background-color: #ff99ff;
+}
+#class--religion .content .fig .fig-wrapper {
+  border-color: #ff99ff;
+}
+#class--religion .content .fig .fig__img {
+  background-color: #ff99ff;
+}
+#class--religion .content .fig .fit__cap {
+  border-color: #ff99ff;
+}
+#class--religion .content .alert {
+  border-color: #ff99ff;
+}
+#class--religion .content .alert .alert__title {
+  background-color: #ff99ff;
+}
+
+#class--etica .section__title {
+  background-color: #99ccff;
+}
+#class--etica .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--etica .content .list {
+  border-left-color: #99ccff;
+}
+#class--etica .content .list .list__obj::before {
+  border-right-color: #99ccff;
+  color: #99ccff;
+}
+#class--etica .content .list--fat .list__obj {
+  background-color: #99ccff;
+}
+#class--etica .content ol.list .list__obj::marker {
+  color: #99ccff;
+}
+#class--etica .content .content__link {
+  background-color: #99ccff;
+}
+#class--etica .content .content__link:hover {
+  background-color: #3396ff;
+}
+#class--etica .content .content__link--small {
+  color: #3396ff;
+  text-decoration-color: #3396ff;
+}
+#class--etica .content .content__link--small:hover {
+  color: #99ccff;
+  text-decoration-color: #99ccff;
+}
+#class--etica .content .content__link--class {
+  background-color: #99ccff;
+}
+#class--etica .content .fig .fig-wrapper {
+  border-color: #99ccff;
+}
+#class--etica .content .fig .fig__img {
+  background-color: #99ccff;
+}
+#class--etica .content .fig .fit__cap {
+  border-color: #99ccff;
+}
+#class--etica .content .alert {
+  border-color: #99ccff;
+}
+#class--etica .content .alert .alert__title {
+  background-color: #99ccff;
+}
+
+#class--filosofia .section__title {
+  background-color: #cc00cc;
+}
+#class--filosofia .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--filosofia .content .list {
+  border-left-color: #cc00cc;
+}
+#class--filosofia .content .list .list__obj::before {
+  border-right-color: #cc00cc;
+  color: #cc00cc;
+}
+#class--filosofia .content .list--fat .list__obj {
+  background-color: #cc00cc;
+}
+#class--filosofia .content ol.list .list__obj::marker {
+  color: #cc00cc;
+}
+#class--filosofia .content .content__link {
+  background-color: #cc00cc;
+}
+#class--filosofia .content .content__link:hover {
+  background-color: #800080;
+}
+#class--filosofia .content .content__link--small {
+  color: #800080;
+  text-decoration-color: #800080;
+}
+#class--filosofia .content .content__link--small:hover {
+  color: #cc00cc;
+  text-decoration-color: #cc00cc;
+}
+#class--filosofia .content .content__link--class {
+  background-color: #cc00cc;
+}
+#class--filosofia .content .fig .fig-wrapper {
+  border-color: #cc00cc;
+}
+#class--filosofia .content .fig .fig__img {
+  background-color: #cc00cc;
+}
+#class--filosofia .content .fig .fit__cap {
+  border-color: #cc00cc;
+}
+#class--filosofia .content .alert {
+  border-color: #cc00cc;
+}
+#class--filosofia .content .alert .alert__title {
+  background-color: #cc00cc;
+}
+
+#class--investigacion .section__title {
+  background-color: #a6a6a6;
+}
+#class--investigacion .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--investigacion .content .list {
+  border-left-color: #a6a6a6;
+}
+#class--investigacion .content .list .list__obj::before {
+  border-right-color: #a6a6a6;
+  color: #a6a6a6;
+}
+#class--investigacion .content .list--fat .list__obj {
+  background-color: #a6a6a6;
+}
+#class--investigacion .content ol.list .list__obj::marker {
+  color: #a6a6a6;
+}
+#class--investigacion .content .content__link {
+  background-color: #a6a6a6;
+}
+#class--investigacion .content .content__link:hover {
+  background-color: #8c8c8c;
+}
+#class--investigacion .content .content__link--small {
+  color: #8c8c8c;
+  text-decoration-color: #8c8c8c;
+}
+#class--investigacion .content .content__link--small:hover {
+  color: #a6a6a6;
+  text-decoration-color: #a6a6a6;
+}
+#class--investigacion .content .content__link--class {
+  background-color: #a6a6a6;
+}
+#class--investigacion .content .fig .fig-wrapper {
+  border-color: #a6a6a6;
+}
+#class--investigacion .content .fig .fig__img {
+  background-color: #a6a6a6;
+}
+#class--investigacion .content .fig .fit__cap {
+  border-color: #a6a6a6;
+}
+#class--investigacion .content .alert {
+  border-color: #a6a6a6;
+}
+#class--investigacion .content .alert .alert__title {
+  background-color: #a6a6a6;
+}
+
+#class--gestion .section__title {
+  background-color: #ff751a;
+}
+#class--gestion .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--gestion .content .list {
+  border-left-color: #ff751a;
+}
+#class--gestion .content .list .list__obj::before {
+  border-right-color: #ff751a;
+  color: #ff751a;
+}
+#class--gestion .content .list--fat .list__obj {
+  background-color: #ff751a;
+}
+#class--gestion .content ol.list .list__obj::marker {
+  color: #ff751a;
+}
+#class--gestion .content .content__link {
+  background-color: #ff751a;
+}
+#class--gestion .content .content__link:hover {
+  background-color: #cc5200;
+}
+#class--gestion .content .content__link--small {
+  color: #cc5200;
+  text-decoration-color: #cc5200;
+}
+#class--gestion .content .content__link--small:hover {
+  color: #ff751a;
+  text-decoration-color: #ff751a;
+}
+#class--gestion .content .content__link--class {
+  background-color: #ff751a;
+}
+#class--gestion .content .fig .fig-wrapper {
+  border-color: #ff751a;
+}
+#class--gestion .content .fig .fig__img {
+  background-color: #ff751a;
+}
+#class--gestion .content .fig .fit__cap {
+  border-color: #ff751a;
+}
+#class--gestion .content .alert {
+  border-color: #ff751a;
+}
+#class--gestion .content .alert .alert__title {
+  background-color: #ff751a;
+}
+
+#class--quimica .section__title {
+  background-color: #944dff;
+}
+#class--quimica .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--quimica .content .list {
+  border-left-color: #944dff;
+}
+#class--quimica .content .list .list__obj::before {
+  border-right-color: #944dff;
+  color: #944dff;
+}
+#class--quimica .content .list--fat .list__obj {
+  background-color: #944dff;
+}
+#class--quimica .content ol.list .list__obj::marker {
+  color: #944dff;
+}
+#class--quimica .content .content__link {
+  background-color: #944dff;
+}
+#class--quimica .content .content__link:hover {
+  background-color: #8533ff;
+}
+#class--quimica .content .content__link--small {
+  color: #8533ff;
+  text-decoration-color: #8533ff;
+}
+#class--quimica .content .content__link--small:hover {
+  color: #944dff;
+  text-decoration-color: #944dff;
+}
+#class--quimica .content .content__link--class {
+  background-color: #944dff;
+}
+#class--quimica .content .fig .fig-wrapper {
+  border-color: #944dff;
+}
+#class--quimica .content .fig .fig__img {
+  background-color: #944dff;
+}
+#class--quimica .content .fig .fit__cap {
+  border-color: #944dff;
+}
+#class--quimica .content .alert {
+  border-color: #944dff;
+}
+#class--quimica .content .alert .alert__title {
+  background-color: #944dff;
+}
+
+#class--economia .section__title {
+  background-color: #00a3cc;
+}
+#class--economia .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--economia .content .list {
+  border-left-color: #00a3cc;
+}
+#class--economia .content .list .list__obj::before {
+  border-right-color: #00a3cc;
+  color: #00a3cc;
+}
+#class--economia .content .list--fat .list__obj {
+  background-color: #00a3cc;
+}
+#class--economia .content ol.list .list__obj::marker {
+  color: #00a3cc;
+}
+#class--economia .content .content__link {
+  background-color: #00a3cc;
+}
+#class--economia .content .content__link:hover {
+  background-color: #008fb3;
+}
+#class--economia .content .content__link--small {
+  color: #008fb3;
+  text-decoration-color: #008fb3;
+}
+#class--economia .content .content__link--small:hover {
+  color: #00a3cc;
+  text-decoration-color: #00a3cc;
+}
+#class--economia .content .content__link--class {
+  background-color: #00a3cc;
+}
+#class--economia .content .fig .fig-wrapper {
+  border-color: #00a3cc;
+}
+#class--economia .content .fig .fig__img {
+  background-color: #00a3cc;
+}
+#class--economia .content .fig .fit__cap {
+  border-color: #00a3cc;
+}
+#class--economia .content .alert {
+  border-color: #00a3cc;
+}
+#class--economia .content .alert .alert__title {
+  background-color: #00a3cc;
+}
+
+#class--edfisica .section__title {
+  background-color: #66ff66;
+}
+#class--edfisica .content {
+  /* Lists Styles */
+  /* Links Styles */
+  /* Images Style */
+  /* Alerts in the Sections */
+}
+#class--edfisica .content .list {
+  border-left-color: #66ff66;
+}
+#class--edfisica .content .list .list__obj::before {
+  border-right-color: #66ff66;
+  color: #66ff66;
+}
+#class--edfisica .content .list--fat .list__obj {
+  background-color: #66ff66;
+}
+#class--edfisica .content ol.list .list__obj::marker {
+  color: #66ff66;
+}
+#class--edfisica .content .content__link {
+  background-color: #66ff66;
+}
+#class--edfisica .content .content__link:hover {
+  background-color: #00e600;
+}
+#class--edfisica .content .content__link--small {
+  color: #00e600;
+  text-decoration-color: #00e600;
+}
+#class--edfisica .content .content__link--small:hover {
+  color: #66ff66;
+  text-decoration-color: #66ff66;
+}
+#class--edfisica .content .content__link--class {
+  background-color: #66ff66;
+}
+#class--edfisica .content .fig .fig-wrapper {
+  border-color: #66ff66;
+}
+#class--edfisica .content .fig .fig__img {
+  background-color: #66ff66;
+}
+#class--edfisica .content .fig .fit__cap {
+  border-color: #66ff66;
+}
+#class--edfisica .content .alert {
+  border-color: #66ff66;
+}
+#class--edfisica .content .alert .alert__title {
+  background-color: #66ff66;
 }
 
 @media screen and (max-width: 1048px) {
