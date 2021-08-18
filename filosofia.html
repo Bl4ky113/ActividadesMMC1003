@@ -78,6 +78,7 @@
           <li class="nav-sublist__link"><a href="#actP2-4taActMod">4ta Actividad del Módulo <em>(08/05/21)</em></a></li>
           <li class="nav-sublist__link"><a href="#actP2-5taActMod">5ta Actividad del Módulo <em>(08/05/21)</em></a></li>
         </ul>
+        <li class="nav-list__link"><a href="#claseP2-repasoLogica">Repaso de la Lógica <em>(08/11/21)</em></a></li>
       </ul>
     </nav>
     <!-- Home -->
@@ -880,7 +881,7 @@
           Pasamos a el colegio, donde Sofia le da una lección a su profesor sobre el importante apoyo que fueron las muejeres en la revolución francesa.
         </p>
         <p class="content__paragraph">
-          Pasamos a ver a Nietzche, quien decia que Dios habia muerto en esta sociedad compleja en el que vivimos sin puntos fijos, en el que los deviles no dejan pasar a los fuertes. 
+          Pasamos a ver a Nietzche, quien decia que Dios habia muerto en esta sociedad compleja en el que vivimos sin puntos fijos, en el que los debiles no dejan pasar a los fuertes. 
           Pensando como escapar del libro Sofia y el filosofo, Sofía hace el plan de intentar meterse a el espejo mientras que el filosofo se lanzaba a el rio(?). 
         </p>
         <p class="content__paragraph">
@@ -2352,19 +2353,24 @@
       </p>
       <p class="content__semititle">Proposiciones Simples</p>
       <p class="content__paragraph">
-        Son proposiciones que no tienen ningún proceso o operador lógico, es solo el enunciado simple, ejemplo:
+        Son proposiciones que solo tienen un sujeto, y que no tienen un operador lógico que solo necesite uno, cómo la negación. 
+        Algunos pueden tener un operador lógico que use 2 sujetos pero si se reusa con otra oración al mismo sujeto, esta proposición 
+        es simple. Es algo complejo, pero es culpa de quién nos enseño <em>;p</em>. Ejemplos de proposiciones simples:
       </p>
       <ul class="list list--lines">
         <li class="list__obj">El Perro come comida</li>
         <li class="list__obj">El Pajaro canta</li>
+        <li class="list__obj">Luisa va a ir al parque o a la feria (con &or; pero solo un sujeto)</li>
+        <li class="list__obj">Pedro va a comer pizza de pollo y champiñones (con &and; pero solo un sujeto)</li>
       </ul>
       <p class="content__semititle">Proposiciones Compuestas</p>
       <p class="content__paragraph">
-        Son propocisiones que tiene diferentes procesos o operadores lógicos, puede tener varios enunciados, ejemplos: 
+        Son proposiciones que tienen 2 o más sujetos, deben tener un operador lógico que necesite dos sujetos. O si se usa el operador de 
+        negación y solo se tiene un sujeto, esta sera compuesta.
       </p>
       <ul class="list list--lines">
-        <li class="list__obj"><strong>No</strong> todo lo que brilla es oro</li>
-        <li class="list__obj">Todos en la cama <strong>o</strong> todos en el suelo</li>
+        <li class="list__obj"><strong>No</strong> todo lo que brilla es oro (Solo un sujeto, pero con &not;)</li>
+        <li class="list__obj">Nosotros vamos a ganar <strong>o</strong> ellos van a ganar</li>
         <li class="list__obj">El hielo es frio <strong>y</strong> el vapor caliente</li>
         <li class="list__obj"><strong>Si</strong> aprendemos diariamente, <strong>entonces</strong> conseguiras lo que quieres</li>
         <li class="list__obj">Carlos es un excelente estudiante, <strong>si y solo si</strong> tiene un promedio superior a 450</li>
@@ -2816,7 +2822,7 @@
           Diga tres ejemplos de saber filosófico:
         </p>
         <ul class="list list--lines">
-          <li class="list__obj">El saber las estrucutras de pensamiento de uno mismo</li>
+          <li class="list__obj">El saber las estructuras de pensamiento de uno mismo</li>
           <li class="list__obj">El saber diferenciar entre una cosa verdadera y falsa mediante sus mismos sensores de la realidad</li>
           <li class="list__obj">El saber el inició de todo o Arjé</li>
         </ul>
@@ -3009,7 +3015,7 @@
         </p>
         <p class="content__paragraph"><ins>
           El garantizar protección a la agencia humana de otros abusos hechos por otros humanos principalmente, pero además de protección 
-          se puede garantizar vias que nos permite acceder de forma más sencillas a cosas de gran necesidad cómo el internet y el agua.
+          se puede garantizar vías que nos permite acceder de forma más sencillas a cosas de gran necesidad cómo el internet y el agua.
         </ins></p>
         <p class="activity__task">
           Explica con tus propias palabras el mapa menta de los derechos humanos en Colombia:
@@ -3225,7 +3231,7 @@
               <tr>
                 <td class="tcontent__data">Ningún pez respira fuera del agua</td>
                 <td class="tcontent__data">Ningún pez no respira fuera del agua</td>
-                <td class="tcontent__data">Ningún pez &not; respira fuera del agua || Ningún pez &not;p || &not;p</td>
+                <td class="tcontent__data">Ningún pez &not; respira fuera del agua || (Ningún pez) &not;p || &not;(&not;p)</td>
               </tr>
               <tr>
                 <td class="tcontent__data">Todos los leones son feroces</td>
@@ -3515,19 +3521,43 @@
           <header class="fheader">
             <h4 class="fheader__title">Juan Escoto Erígena</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/juanEscoto.jpg" alt="Imagen de Juan Escoto">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
-              
+              No se sabe mucho de su origen y en parte su nombre, dado que la parte de su nombre "Escoto Erígena" se pordía 
+              traducir a Scotish from Scotland o Irish from Ireland. Que es el escoces o irlandes de escocia o irlanda. Se tiene 
+              claro que su origen es Irlandes, donde estudio hasta irse a Francia en 845 por la invitación del rey de la disnastia "carolingian",
+              tomando y liderando la eduación del Renaciomiento Carolingio, cómo la cabeza de varias escuelas de la dinastia. La reputación 
+              y calidad de estas escuelas incremento bajo el liderazgo de Juan Escoto. 
+            </p>
+            <p class="fcontent__paragraph">
+              Siendo que el era un estudioso de la antigua Grecia, cosa muy rara en esta epoca en Europa del Oeste. Estuvo en Francia por 
+              lo menos 30 años, pero despues se tiene poco registro sobre si viajo a dictar clases en Oxford por invitación o si siguio 
+              dictando clases en la dinastia Carolingia. Pero se aproxima que murio el 877 D.C. No se pudo determinar que rango pudo 
+              ser en la religión, pero se aproxima que pudo ser un monje.
             </p>
             <p class="fcontent__title">Importancia de Juan Escoto Erígena en la Historia</p>
             <p class="fcontent__paragraph">
-              
+              Juan Escoto fue un importante Irlandes, catolico, filósofo, teólogo y poeta de la edad media en el siglo IX. Siendo reconocido cómo
+              "la persona más asombrosa de ese siglo", y siendo nombrado por la enciclopedia de filosofía de Stanford cómo "El más significante 
+              irlandes intelectual de la era pre-monastic".
+            </p>
+            <p class="fcontent__paragraph">
+              Escribio varios trabajos, el más conocido De Divisione Natuare o la división de la naturaleza. El cual es llamado el ultimo logro de 
+              la filosofía antigua, dado a que sintetiza los logros filósoficos de 15 siglos. Pero el problema de este trabajo es intenta aprobar  
+              cómo verdadera la salvación de crito.
+            </p>
+            <p class="fcontent__paragraph">
+              Ademas de esto, mejoro y levanto la reputación de las escuelas carolingias al ser su lider y cabeza principal.
             </p>
             <p class="fcontent__title">Frases Célebes de Juan Escoto Erígena</p>
             <ul class="fcontent__list">
-
+              <li>Nadie entra a el paraiso, excepto que usen la filosofía</li>
+              <li>Cuando nos dicen que Dios es el creador de todas las cosas, entendemos que Dios esta en todas las cosas, entonces él es la escencial substancial de todas las cosas</li>
+              <li>La autoridad viene de la verdadera Razón, pero ciertamente la Razón no viene de la autoridad</li>
+              <li>Cada autoridad que no es sostenida por verdadera Razón, esta es debil.</li>
+              <li>Cada Verdadera Razón donde es firme y inmutable por su propio poder, no necesita ser confirmada por cualquier autoridad</li>
             </ul>
           </div>
           <footer class="ffooter">
@@ -3545,19 +3575,42 @@
           <header class="fheader">
             <h4 class="fheader__title">Avicena</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/avicena.jpg" alt="Imagen de Avicena">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
-              
+              Nació en 980 D.C, en una villa cercana a lo que hoy es Uzbekistan. De niño se intereso demasiado por su religión, Musulmana Sunni,
+              que se aprendió totalmente el Quoran o el libro sagrado de su religión, a la edad de 10 años. Despues con una copia de 
+              <strong>metafisicas</strong> de Aristotle, se introdujo a la Filósofia. Además de esto ya sabia diferentes cosas sobre matemáticas y 
+              ayudaba a los enfermos y enseñando a los jovenes. 
+            </p>
+            <p class="fcontent__paragraph">
+              A la edad de 16, se introdujo a la medicina, pero no solo eso, si no que habia descubierto diferentes nuevos metodos de 
+              tratamientos, volviendose un practicante de esta a los 18 y haciendolo voluntariamente sin cobrarle a sus pacientes.
+            </p>
+            <p class="fcontent__paragraph">
+              Exploro, estudio, enseño y dió sus servicios en toda la peninsula arabica. Pasando por varias personas importantes cómo reyes y lideres de 
+              diferentes grupos. En un momento se tuvo que esconder durante 40 días ya que una de estas personas lo queria muerto o fuera de sus tierras, 
+              quitandole su puesto y impartiendo una busqueda y caza de él. Pero el en esos 40 días no paro de enseñar y asistir medicamente a las personas y 
+              poco despues la persona se enfermeraria y le devolveria el puesto a Avicena, para que esté le ayude a recuperarse.
+            </p>
+            <p class="fcontent__paragraph">
+              Murió en la ciudad de Hamadan. Por unos severos colicos, en el cual lo enfermo dos veces, pero en la segunda esta enfermedad habia conseguido 
+              declarar el fin de Avicena, causandole la muerte en Junio de 1037.
             </p>
             <p class="fcontent__title">Importancia de Avicena en la Historia</p>
             <p class="fcontent__paragraph">
-              
+              Ibn Sina o Avicenna en el Oeste, fue el más significativo astronomo, pensador, escritor y filósofico de la Era Dorada Islamica. 
+              Fue el padre de la pre-moderna medicina. Su filosofía fue influenciada por la filosofía de Aristotle. Escribió y desarrollo 
+              aproximadamente 450 escritos, pero de esos solos 240 han sobrevivido al pasar del tiempo, siendo 150 de filosofía y 40 de medicina.
             </p>
             <p class="fcontent__title">Frases Célebes de Avicena</p>
             <ul class="fcontent__list">
-
+              <li>El mundo está dividido en hombres con ingenio y sin religión y hombres con religión y sin ingenio.</li>
+              <li>Un médico ignorante es el ayudante de campo de la muerte.</li>
+              <li>La medicina considera el cuerpo humano en cuanto a los medios por los cuales se cura y por el cual es expulsado de la salud.</li>
+              <li>Dios, el ser supremo, no está circunscrito por el espacio ni tocado por el tiempo; no se puede encontrar en una dirección particular, y su esencia no puede cambiar.</li>
+              <li>Ahora se establece en las ciencias que no se adquiere conocimiento salvo a través del estudio de sus causas y comienzos, si ha tenido causas y comienzos; ni completado excepto por el conocimiento de sus accidentes y los elementos esenciales que lo acompañan.</li>
             </ul>
           </div>
           <footer class="ffooter">
@@ -3575,11 +3628,12 @@
           <header class="fheader">
             <h4 class="fheader__title">Hildegarda von Bingen</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/hildegardBingen.jpg" alt="imagen de Hildegarda">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
-              
+              Hildegarda nació el verano de 1098 D.C. Desde pequeña Hildegarda tenía diferentes visiones, pero se incrementaron a la 
+              edad de 40, en la cual una de estas visiones le dijo que escribiera lo que veía en estas mismas visiones. 
             </p>
             <p class="fcontent__title">Importancia de Hildegarda von Bingen en la Historia</p>
             <p class="fcontent__paragraph">
@@ -3605,7 +3659,7 @@
           <header class="fheader">
             <h4 class="fheader__title">René Descartes</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/reneDescartes.jpg" alt="Imagen Rene Descartes">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
@@ -3635,7 +3689,7 @@
           <header class="fheader">
             <h4 class="fheader__title">Baruch Spinoza</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/baruchSpinoza.jpg" alt="Imagen Baruch Spinoza">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
@@ -3665,7 +3719,7 @@
           <header class="fheader">
             <h4 class="fheader__title">Gottfried Wilhelm Leibniz</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/gottfried.jpg" alt="Imagen de Getfried">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
@@ -3695,7 +3749,7 @@
           <header class="fheader">
             <h4 class="fheader__title">John Locke</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/johnLocke.jpg" alt="Imagen de John Locke">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
@@ -3725,7 +3779,7 @@
           <header class="fheader">
             <h4 class="fheader__title">Immanuel Kant</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/immanuelKant.jpg" alt="Immanuel Kant">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
@@ -3755,7 +3809,7 @@
           <header class="fheader">
             <h4 class="fheader__title">Voltaire</h4>
           </header>
-          <img class="fpicture" src="./src/img/filosofia/" alt="">
+          <img class="fpicture" src="./src/img/filosofia/voltaire.png" alt="Imagen de Voltaire">
           <div class="fcontent">
             <p class="fcontent__title">Biografía</p>
             <p class="fcontent__paragraph">
@@ -3818,7 +3872,164 @@
           Realiza exposición sobre: La Metafísica o la Ontología, para lo cual haces un vídeo NO mayor a 2 minutos, puedes 
           utilizar los medios que mejor consideres y enviarlo por Telegram o correo institucional. No necesitas editar el vídeo.
         </p>
+        <p class="content__title">Script del Video:</p>
+        <pre class="content__pre">
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Inicio del video:
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Saludo :
+            Buenos días, tardes, noche o lo que sea. 
+          
+          Index:
+            Vamos a hablar de la Metafísica o especificamente la Ontología. Para eso vamos a explicarlo por partes.
+            - Vamos a ver primero qué es la Metafísica y la Ontología. 
+            - Representantes de la Ontologia por era historia y parte de su aporte.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Que es la Metafísica
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Introducción: 
+            La Metafísica es una rama de la filosofía que se encarga de estudiar los primeros principios de ser, 
+            la identidad y el cambio, espacio y tiempo, casualidad, necesidad y posibilidad. Su nombre traducido 
+            de las palabras griegas que lo forman significa: "antes, despues o entre el estudio de lo natural".
+            El cual es tomado porqué un editor de trabajos de Aristotle, en una pequeña sección llamada así. 
+            Esto también puede significar "Despues de la Física", que era otra sección en la cual Aristotle también
+            trabajaba.
+
+          Explicación:
+            Es decir la Metafísica es un estudio de lo anterior dicho, usando la deducción o "a priori", que es un
+            conocimiento que se obtiene antes de una experiencia que dicte la posible respuesta. En la metafísica
+            se debe definir objetos, propiedades para estos, conceptos, entidades, estados o eventos que van a
+            interactuar con estos objetos. Y el pensar, razonar y estudiar estos objetos es filosofar metafísicamente.
+            Esta filosofía puede ser con objetos y cosas del mundo real o realista, o puede ser con objetos y fenomenos 
+            no reales o irreales.
+
+          Ejemplos:
+            - Pensar en un objeto pesado cayendo hacia una lamina de vidrio. Desde ahí sabemos que al impactar el vidrio 
+            se va a romper. O puede que este cayendo tan lento que no le haga nada a el espejo.
+            - Pensar en una planta con el pasar del tiempo. Sabemos que las plantas crecen con el tiempo, entonces la planta
+            va a crecer lo suficiente para dar frutos y flores. O puede que se marchite y muera.
+            - Un objeto inmovible choca contra un objeto inmparable, acá no hay respuesta unica, pero se podría decir que se
+            niegan las propiedades de cada uno, o puede ser otra respuesta.
+            - Un número, el cual es usado para una operación de suma. Puede que dé un número positivo, negativo, decimal
+             u otro tipo de número.
+            // Posible ejemplo
+            cómo el poder hacer una operación de matemáticas, 5 + 5, sin tener una situación en la cual se tenga 
+            que probar cómo cierta, tengo que juntar estas 5 sandias y estas otras 5. He inclusive se puede decir
+            que las fondaciones de las matemáticas, el tener que imaginar una cifra númerica y hacer diferentes procesos 
+            y operaciones con esté o estos. 
+          
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Que es la Ontología
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Introducción:
+            La Ontologia es la rama de la Metafísica que se encarga del ser de las cosas o entes. Y la relación que hay entre
+            estos mismos entes o objetos. Pueden existir diferentes tipos de Ontologías, dependiendo de cómo y que significado
+            les demos a las relaciones entre los entes u objetos.
+
+          Explicación: 
+            Es decir en la Ontología cómo tenemos que ver siempre las relaciones entre un objeto, por ejemplo, esferico que
+            rebota de color rojo y otro objeto que es cubico, es rigido de color rojo también. Estos tienen una relación 
+            entre un valor constante universal que podria ser el color, una forma y una textura - contextura. Pero al ver
+            que tienen diferentes relaciones con estos valores, son diferentes? tomando que lo sean, cómo los diferencio?
+            Para esto se tiene el concepto de <strong>Categorias</strong>, podriamos crear ahora una categoria para 
+            los valores de textura y de forma. Así cada uno tendría su categoria, pero si lo hacemos con solo color, 
+            ambos estarían en esta categoria, aún que tienen otras diferencias. Por eso se mantiene una lista de posibles 
+            caracteristicas para crear categorias generales, cuales pueden mantener gran parte de los entes u objetos,
+            cuales son:
+            - Sustancias: hecho de agua, tierra, metal, madera, plantas
+            - Propiedades: colores, formas
+            - Relaciones: con otros objetos
+            - estados de cosas: físicos, químicos, posiciones, si esta en movimiento
+            - eventos: hace x o y cosa por x o y cosa
+            - entre otros.
+
+            Y apartir de las categorias que formemos se pueden ir a diferentes variantes de ontología, cuales son:
+
+            - Monocategoricas: Solo existe una sola categoria para todos los entes y objetos existentes y no existentes.
+            - Policategoricas: Existen varias categorias para los entes. 
+
+            De esta ultima puede variar otras dos:
+            - jerarquicas: Existen unas categorias o entes con nivel más fundamental que otras entidades que 
+            dependen de ellas.
+            - planas: No existen categorias o entes con nivel más fundamental, todas son iguales en ese aspecto.
+
+          Ejemplos:
+          - El dividir personas por sus puestos de trabajo, dado a que cada uno tiene su rol y tareas especificas.
+          - El separar las frutas por sus propiedades.
+          - El formar grupos de relaciones dependiendo del trato con las personas.
+          - El tomar todo cómo, eso mismo, todo.
+        
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Representantes de la Ontología 2 * cada Edad
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Introducción: 
+             La Ontología ha pasado por todas las eras de la humanidad, y a lo largo de esta ha formado diferentes
+             representantes en cada una. Siendo estas:
+
+          Edad Antigua: 
+            El mundo es un cosmos, haciendo que un cuerpo se manifieste una primera forma y despues de otra totalmente 
+            distinta, en su manifestación hay un cierto orden, según su escencia o naturaleza.
+
+            - Aristotle: manifestación con la Sustancia.
+            - Socrates: manifestación con la razón.
+            - Plato: manifestación con el alma.
+
+          Edad Media:
+            Se consideraba al ser de todo cómo Dios, que era el ser supremo de toda la 
+            creación y a quien el hombre le debe fidelidad y obedencia.
+
+            - Santo Tomas: siendo dios la sustancia, pero esta siendo la escencia de la existencia.
+            - Boecio: siendo dios lo universal, lo antimaterial que existía unido y confuso a los accidentes de las cosas
+
+          Edad Moderna: 
+            Se transgiverso mucho el significado del ser, ahora pasando a ser revelante la idea de esté y no solo él.
+
+            - Rene Descartes: "Pienso luego existo"
+            - Arthur Shopenhauser: "El mundo es mi representación"
+
+          Edad Contemporánea:
+            Casí siendo olvidada, se volvio a hablar del ser, pero uno que poseé una razón para vivir.
+
+            - Zubiri: "El hombre cómo animal"
+            - Friedrich Nietzche: "transmutación de los valores de la cultura occidental"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+          Fin
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+          
+          Gracias por ver el video sobre la Ontología y la Metafísica, yo he sido Martín Steven Hernández Ortiz del 
+          curso 1003 Jornada Tarde, y hasta luego.
+        </pre>
+        <div class="ytvideo-wrapper">
+          <iframe class="ytvideo" width="560" height="315" src="https://www.youtube-nocookie.com/embed/64XvyA5MGGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </section>
+    </div>
+  </article>
+  <article class="article">
+    <h3 id="claseP2-repasoLogica" class="article__title">Repaso por la Lógica</h3>
+    <span class="article__date">08/11/2021</span>
+    <div class="content">
+      <p class="content__paragraph">
+        Existen diferentes tipos de filosofos
+      </p>
+      <ul class="list list--lines">
+        <li class="list__obj">Clasicos: Los más importantes filósofos cómo Aristotle, Socrates y Plato</li>
+        <li class="list__obj">Sofístas: Filósofos pagaos para enseñar oratoria</li>
+      </ul>
+      <p class="content__title">La Oratoria</p>
+      <p class="content__paragraph">
+        Es la tecnica de hablar en público para convencer a las personas, no confundir con la elocuencia. Se usaba algunas veces para 
+        buenas cosas, cómo testificar, o para malas cosas, cómo mentir.
+      </p>
+      <p class="content__paragraph">
+        Aristotle, invento la lógica para que los Sofístas para que se pueda ver sí la oratoria de los filósofos era cierto. 
+      </p>
+      <p class="content__semititle">Silogismos</p>
+      <p class="content__paragraph">
+        Es la forma de razonamiento deductivo en la cual se toma dos premisas las cuales van a formar una tercera premisa. 
+      </p>
     </div>
   </article>
 </main>
