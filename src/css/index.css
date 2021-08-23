@@ -536,6 +536,8 @@
   height: auto;
   border: 0.125em solid #0000e6;
   border-radius: 0.2em;
+  color: #000;
+  font: 400 1em "Roboto Mono", monospace;
 }
 .main .article .content .image .image__quote {
   width: 80%;
@@ -544,7 +546,6 @@
   border-left: 0.125em solid #0000e6;
   border-bottom: 0.1em solid #0000e6;
   border-radius: 0.2em;
-  background-color: #fff;
   text-align: center;
   font: 400 1em "Montserrat", sans-serif;
 }

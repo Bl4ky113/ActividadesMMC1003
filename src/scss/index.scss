@@ -467,6 +467,9 @@
 
      border: 0.125em solid $color-base1;
      border-radius: 0.2em;
+
+     color: $color-black1;
+     font: 400 1em 'Roboto Mono', monospace;
     }
 
     .image__quote {
@@ -477,8 +480,6 @@
      border-left: 0.125em solid $color-base1;
      border-bottom: 0.1em solid $color-base1;
      border-radius: 0.2em;
-
-     background-color: $color-white1;
 
      text-align: center;
      font: 400 1em 'Montserrat', sans-serif;
