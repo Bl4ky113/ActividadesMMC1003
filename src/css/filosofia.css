@@ -48,7 +48,7 @@
   background-color: #99ccff;
   display: grid;
   grid-template: 1fr/35% 1fr;
-  grid-area: "header header " "image  content" "footer footer ";
+  grid-template-areas: "header header " "image  content" "footer footer ";
   grid-gap: 0.25rem;
   justify-content: center;
   justify-items: center;
@@ -65,6 +65,7 @@
   background-color: #3399ff;
   grid-column: 1/-1;
   grid-row: 1/2;
+  grid-area: header;
 }
 .activity .ficha-filosofos .fheader .fheader__title {
   font: 700 2em "Oswald", sans-serif;
@@ -77,6 +78,9 @@
   height: auto;
   padding: 0.25rem;
   background-color: #3399ff;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  grid-area: image;
 }
 .activity .ficha-filosofos .fcontent {
   width: 90%;
@@ -86,6 +90,7 @@
   background-color: #cce5ff;
   grid-column: 2/3;
   grid-row: 2/3;
+  grid-area: content;
 }
 .activity .ficha-filosofos .fcontent .fcontent__title {
   padding-left: 0.25rem;
@@ -119,13 +124,28 @@
   background-color: #0000e6;
   grid-column: 1/-1;
   grid-row: span 1;
+  grid-area: footer;
   display: flex;
   justify-content: space-around;
-  align-content: baseline;
+  align-content: center;
+  flex-flow: row wrap;
   color: #fff;
   font: 500 1em "MontSerrat", sans-serif;
 }
 .activity .ficha-filosofos .ffooter .ffooter__label {
   font-weight: 800;
   text-decoration: underline solid #fff 0.1rem;
+}
+
+@media screen and (max-width: 956px) {
+  .activity .ficha-filosofos {
+    grid-template-areas: "header  header " "image   image  " "content content" "footer  footer ";
+  }
+  .activity .ficha-filosofos .fpicture {
+    width: 50vw;
+  }
+  .activity .ficha-filosofos .ffooter {
+    justify-content: center;
+    flex-flow: column wrap;
+  }
 }
