@@ -13,21 +13,16 @@ for i in range(NUM_NOTAS):
 				break
 
 			nota_input = int(input("Ingrese su Nota:  "))
-			print(nota_input > 50 and nota_input < 0)
 
 			if not nota_input > 50 and not nota_input < 0:
 				notas.append(nota_input)
 			else:
 				print("Ingresa una Nota entre 50 y 0")
-
-			print(notas)
-			print(len(notas))
 		except:
 			print("Ingresa un Número Valido")
 
 for i in range(NUM_NOTAS):
 	nota_promedio += notas[i - 1]
-	print(nota_promedio)
 
 nota_promedio /= NUM_NOTAS
 print("Nota promedio es de:  ", nota_promedio)
