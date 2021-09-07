@@ -67,6 +67,14 @@
           <li class="nav-sublist__link"><a href="#actP2-3raActMod">3ra Actividad del Módulo <em>(08/04/2021)</em></a></li>
         </ul>
       </ul>
+      <h3 class="nav__title">3ra Entrega del Módulo</h3>
+      <ul class="nav-list">
+        <li class="nav-list__link"><a href="#claseP3-display7Segmentos">Display de 7 Segmentos y Decodificador 4:7 <em>(09/06/21)</em></a></li>
+        <ul class="nav-sublist">
+          <li class="nav-sublist__link"><a href="#actP3-1raActMod">1ra Actividad del Módulo <em>(09/06/21)</em></a></li>
+          <li class="nav-sublist__link"><a href="#actP3-multiplexores">Actividad Multiplexores <em>(09/07/21)</em></a></li>
+        </ul>
+      </ul>
     </nav>
     <!-- Home -->
     <section class="section ">
@@ -1409,6 +1417,363 @@
           <span class="image__quote">
             Hecho en Crocodile Clips.
           </span>
+        </div>
+      </section>
+    </div>
+  </article>
+  <article class="article">
+    <h3 id="claseP3-display7Segmentos" class="article__title">Display de 7 Segmentos y Decoficador 4:7</h3>
+    <span class="article__date">09/06/2021</span>
+    <div class="content">
+      <p class="content__title">Decodificador 4:7</p>
+      <p class="content__paragraph">
+        El Decodificador 74-47, es un decodificar que convierte 4 Inputs a una salida de 7 outputs. Creo que convierte los valores del 
+        input a un valor decimal (binario &rarr; decimal), sobretodo cuando los outputs se ponen en un Display de 7 Segmentos o un Display de un 
+        número sencillo.
+      </p>
+      <p class="content__paragraph">
+        Tiene los clasicos pines 5v y gnd, Dos pines especiales que necesitan estar conectados a 5v y a gnd con una resistencia de 10k &ohm;. 
+        Los inputs necesitan unos 5v, con conección a gnd con una resistencia de 10k &ohm; también.
+      </p>
+      <p class="content__title">Display de 7 Segmentos</p>
+      <p class="content__paragraph">
+        Los Display de segmentos 7, generalmente con los LEDS puestos cómo si fueran un número, 
+        tienen 8 inputs que necesitan resistencia de 220 &ohm; y un pin para ser conectado a gnd o a 5v,
+        dependiendo de si es cátodo o ánodo común el Display. 7 de los inputs son para darle corriente o
+        electricidad a las partes principales del número, teniendo generalmente enumeración alfabetica para
+        poner los outputs de un Decodificador 4:7. 
+      </p>
+      <p class="content__paragraph">
+        El otro input, el 8vo, funciona para darle corriente a un punto junto a el número, no es necesario darle un uso.
+      </p>
+      <p class="content__semititle">Cátodo Común</p>
+      <p class="content__paragraph">
+        Es cuando todos los LEDs del display tienen el Cátodo conectado entre si. Necesita solo estar conectado a gnd. Los inputs del Display necesitan 
+        cada uno una resistencia de 200 &ohm;.
+      </p>
+      <p class="content__semititle">Ánodo Común</p>
+      <p class="content__paragraph">
+        Es cuando todos los LEDs del display tienen el Ánodo conectado entre si. Necesita solo estar conectado a 5v con una resistencia de 200 &ohm;. 
+        Los inputs del Display necesitan estar solo conectados a gnd.
+      </p>
+
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP3-1raActMod" class="activity__title">1ra Actividad del Módulo</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data">09/06/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="activity__task">
+          Realizar la simulación del siguiente circuito digital en el simulador crocodile:
+        </p>
+        <div class="image image--xxm">
+          <picture>
+            <img src="./src/img/tecnologia/cd1_base.png" alt="Circutio Digital" class="image__img">
+          </picture>
+        </div>
+        <p class="content__paragraph"><em>
+          Me quedo bonito, no?
+        </em></p>
+        <p class="activity__task">
+          Probar las siguientes combinaciones en los interruptores:
+        </p>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__category">A</th>
+                <th class="theader__category">B</th>
+                <th class="theader__category">C</th>
+                <th class="theader__category">D</th>
+                <th class="theader__category">Output Display (En números decimal)</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">"0"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">"1"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">"2"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">"3"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">"4"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">"5"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">"6"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">"7"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">"8"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">"9"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">"error"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">"error"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">"error"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">"error"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">"error"</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">"error"</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="center-wrapper">
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_0.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_1.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_2.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_3.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_4.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_5.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_6.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_7.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_8.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_9.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd1_base.png" alt="Resultado de decodificador 4:7" class="image__img"></picture>
+          </div>
+        </div>
+        <p class="content__paragraph">
+          No va a dar ningun output en el display si tiene un imput mayor a 1001, o va a dar solo "error",
+          ya que solo puede mostrar hasta los 9 digitos y 9 en binario es 1001. (DCBA).
+        </p>
+      </section>
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP3-multiplexores" class="activity__title">Actividad sobre Multiplexores</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data">09/07/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="activity__task">
+          Realizar el Cricuito de un Multiplexor de 4 inputs a 1 solo output.
+        </p>
+        <div class="image image--xm">
+          <picture><img src="./src/img/tecnologia/cd2_base.png" alt="Circuito de Multiplexor" class="image__img"></picture>
+        </div>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__category">Input 0</th>
+                <th class="theader__category">Input 1</th>
+                <th class="theader__category">Input 2</th>
+                <th class="theader__category">Input 3</th>
+                <th class="theader__category">S 0</th>
+                <th class="theader__category">S 1</th>
+                <th class="theader__category">Output</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">Input 0 &rarr; 1</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">Input 1 &rarr; 1</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">Input 2 &rarr; 1</td>
+              </tr>
+              <tr>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">0</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">1</td>
+                <td class="tcontent__data">Input 3 &rarr; 1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="center-wrapper">
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd2_00.png" alt="resultado del Multiplexor" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd2_01.png" alt="resultado del Multiplexor" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd2_10.png" alt="resultado del Multiplexor" class="image__img"></picture>
+          </div>
+          <div class="image image--xs">
+            <picture><img src="./src/img/tecnologia/cd2_11.png" alt="resultado del Multiplexor" class="image__img"></picture>
+          </div>
         </div>
       </section>
     </div>
