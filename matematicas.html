@@ -78,6 +78,10 @@
         <ul class="nav-sublist">
           <li class="nav-sublist__link"><a href="#actP2-3raActMod">3ra Actividad del Módulo <em>(09/03/21)</em></a></li>
         </ul>
+        <li class="nav-list__link"><a href="#claseP3-areaAlturaTriangulo">Área y Altura de un Triángulo<em>(09/09/2021)</em></a></li>
+        <ul class="nav-sublist">
+          <li class="nav-sublist__link"><a href="#actP3-trianguloClase">Triángulo en Clase <em>(09/09/2021)</em></a></li>
+        </ul>
       </ul>
     </nav>
     <!-- Home -->
@@ -4876,6 +4880,234 @@ a = 12m |   \ h
           c = 59.6343
         </pre>
         <a href="https://www.geogebra.org/geometry/cg7ft8js" class="content__link">Link Para ver El Teorema de la Cancha. Digo Coseno en GeoGebra</a>
+      </section>
+    </div>
+  </article>
+  <article class="article">
+    <h3 id="claseP3-areaAlturaTriangulo" class="article__title">Área y Altura de un Triángulo</h3>
+    <span class="article__date">09/09/2021</span>
+    <div class="content">
+
+      <p class="content__paragraph">
+        Hemos visto diferentes formas para encontrar el Área y Altura de un triángulo en las clases, sin embargo vamos a verlo a profundidad hoy.
+      </p>
+      <p class="content__title">Las 3 Alturas de un Triángulo</p>
+      <p class="content__semititle">¿Qué es la Altura de un Triángulo?</p>
+      <p class="content__paragraph">
+        Ya sabiamos que la altura de un triángulo es la linea perpetincular entre el ángulo que tiene "mayor" altura o largura. Siembargo 
+        el usar esta descripcción nos puede traer diferentes problemas, ya que puede que nos de diferentes alturas desde nuestras perspectivas o 
+        simplemente que no sepamos que hacer correctamente.
+      </p>
+      <p class="content__paragraph">
+        Para salir del concepto de la "única altura" de un triángulo, vamos a tomar la altura que tiene cada ángulo o vertice del triángulo. 
+        Vamos a seguir con los pasos descritos anteriormente, vamos a hacer una linea perpenticular desde cada vertice a cada lado opuesto. 
+        Al hacer esto, se van a "formar" o identificar diferentes triángulos rectangulos dentro del mismo triángulo, uno para cada altura, o 
+        puede que hayan más, pero solo necesitamos 3.
+      </p>
+      <p class="content__paragraph">
+        En estos 3 vamos a calcularles la altura usando la Formula de Herón. He estado buscando una forma de hacerlo solo teniendo el Ortocentro, pero 
+        al parecer tocaría embolatarce con las variables de los lados restantes, y pues a mi me gusta mi tiempo.
+      </p>
+      <p class="content__paragraph">
+        Pero primero vamos a mirar que es la Formula de Herón.
+      </p>
+      <p class="content__semititle">Formula de Herón</p>
+      <p class="content__paragraph">
+        La Formula de Herón es una formula que nos permite encontrar el Área de un triángulo. Cosa que vamos a necesitar depues pero sí queremos.
+        Esta formula necesita los 3 lados del triángulo, una variable llamada <strong>SemiPerimetro</strong> y nada más. La Formula es:
+      </p>
+      <pre class="content__pre">
+        // Formula Principal
+
+        Área = &radic;s (s - a) (s - b) (s - c)
+        
+        // Formula del <strong>SemiPerimetro</strong>
+
+        s = (a + b + c) / 2
+
+        Donde: 
+          - s es el <strong>SemiPerimetro</strong>
+          - a es el lado a
+          - b es el lado b
+          - c es el lado c
+      </pre>
+      <p class="content__paragraph">
+        Pero esto al solo devolver y solucionar <strong>solo una área del triángulo</strong> 
+        (nisiquera sé si va a dar igual que las áreas con las alturas), ya que se puede encontrar 
+        varias áreas de un solo triángulo usando las 3 alturas. Pero por ahora solo vamos a encontrar la altura del triángulo, usando 
+        una formula que también se usa para encontar el área. Esta formula si no tiene nombre.
+      </p>
+      <pre class="content__pre">
+        // Forumal del Área de un triángulo
+
+        Área = bh / 2
+        
+        // Pero nosotros vamos a cambiarla para depejar las alturas del triángulo
+        a = bh / 2
+        2a = bh
+        2a / b = h
+        
+        Donde:
+          - b es la base o de donde sale la linea perpenticular de la altura o la linea opuesta a el ángulo de la altura.
+          - h es una de las alturas del triángulo
+      </pre>
+      <p class="content__paragraph">
+        Vamos a cambiar las variables que tengamos ahorita para despejar la altura y listo!!! 
+        Lo tenemos que hacer por cada lado o base para tener todas las alturas. 
+      </p>
+      <p class="content__paragraph">
+        Despues de encontrar las alturas, vamos a usar la misma formula de área anterior, pero buscando el área del triángulo. Y ya. No hay 
+        nada más, hasta que llegue el profe y me ponga a rehacer todo.
+      </p>
+
+      <div class="ref">
+        <p class="ref__title">Referencias de las Notas</p>
+        <a href="https://www.omnicalculator.com/math/triangle-height" class="ref__link"><cite>Triangle Height Calculator</cite>. Omni Calculator</a>
+        <a href="https://blogs.ua.es/matesfacil/secundaria-geometria/area-de-un-triangulo/" class="ref__link"><cite>Área De Un Triángulo</cite>. Matemáticas Fáciles</a>
+        <a href="https://www.youtube.com/watch?v=ghAlIG_ZOKs" class="ref__link"><cite>Alturas de un triangulo y ortocentro | Todo tipo de triángulo</cite>. Matemáticas Profe Alex</a>
+        <a href="https://www.youtube.com/watch?v=a1PR9O1Va84" class="ref__link"><cite>How To Calculate The Height of a Triangle Using Heron's Formula</cite>. The Organic Chemistry Tutor</a>
+      </div>
+
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP3-trianguloClase" class="activity__title">Triángulos en Clase</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="activity__task">
+          Vamos a encontrar el área y sus 3 alturas de un triángulo con los lados: a = 8, b = 7, c = 9.
+        </p>
+        <pre class="content__pre">
+          triángulo {
+            lados {
+              a: 8,
+              b: 7,
+              c: 9
+            }, 
+            ángulos {
+              &alpha;: ,
+              &beta;: ,
+              &gamma;: 
+            }, 
+            alturas {
+              h<sub>a</sub>: 6.7082,
+              h<sub>b</sub>: 7.6665,
+              h<sub>c</sub>: 5.9628
+            },
+            areas {
+              a<sub>ha</sub>: ,
+              a<sub>hb</sub>: ,
+              a<sub>hc</sub>: ,
+              a<sub>Herón</sub>: 26.8328
+            }
+            semi_perimetro: 12
+          }
+
+          // Area con Formula de Herón
+          s = 8 + 7 + 9 / 2
+          s = 24 / 2
+          s = 12
+
+          a^2 = 12 * (12 - 8) * (12 - 7) * (12 - 9)
+          a^2 = 12 * (4) * (5) * (3)
+          a =  &radic;4 * &radic;5 * &radic;36
+          a =  2 * &radic;5 * 6
+          a =  12 &radic;5
+          a =  26.8328
+          
+          // Altura del Vertice / ángulo C
+          h = 26.8328 * 2 / 9
+          h = 52.6656 / 9
+          h = 5.9628
+          
+          // Altura del Vertice / ángulo B
+          h = 26.8328 * 2 / 7
+          h = 52.6656 / 7
+          h = 7.6665
+          
+          // Altura del Vertice / ángulo A
+          h = 26.8328 * 2 / 8
+          h = 52.6656 / 8
+          h = 6.7082
+
+          // Area del Vertice / ángulo C
+          a = 5.9628 * 9 / 2
+          
+          // Area del Vertice / ángulo B
+          a = 7.6665 * 7 / 2
+          
+          // Area del Vertice / ángulo A
+          a = 6.7082 * 8 / 2
+
+
+          // Son casí iguales... Obviamente por que se "revierte" el proceso... Creo que acabo de romperme el cerebro.
+          // Verlo y hacerlo en GeoGebra me va a sacar de dudas.
+          // Creo que si son los mismos, pero igualmente quiero practicar con algo que me dí de cuenta, no usar ese 
+          // decimal infinito feo pero usar un número irracional más horrible
+
+          // Area del Vertice / ángulo C
+          a = 2.6~&radic;5 * 9 / 2 // Me fuí del mundo de los decimales para encontrarme más...
+          a = 2.6~&radic;5 * 9 / 2 
+          a = 24&radic;5 / 2 
+          a = 12&radic;5
+          
+          // Area del Vertice / ángulo B
+          a = 3.4285&radic;5 * 7 / 2
+          a = 24&radic;5 / 2
+          a = 12&radic;5
+          
+          // Area del Vertice / ángulo A
+          a = 3&radic;5 * 8 / 2 // Finalmente algo legible por el humano, sin morir de viejo
+          a = 24&radic;5 / 2
+          a = 12&radic;5
+
+
+          // Vea inclusive al hacerlo así simplemente me auto confirme
+          // Pero espere, esto me cofunde más, ya que le pregunte a una compañera lo que habian hecho y me dijo que habian sacado 3 
+          // áreas con las alturas que sacamos del triángulo. Sin embargo acabo de demostrar que solo existe una sola área, depronto 
+          // aproximando y con decimales feos, si no, en realidad estaban midiendo un triángulo cuantico o algo.
+
+          // La Compañera era Galindo, por si se lo pregunta.
+        </pre>
+        <div class="image image--m">
+          <picture>
+            <img src="./src/img/matematicas/trianguloAlturaArea.png" alt="Triangulo con sus alturas" class="image__img">
+          </picture>
+        </div>
+        <div class="activity__task">
+          Buscar los siguientes conceptos, con dibujos:
+          <ul class="list list--lines">
+            <li class="list__obj">Mediana Geometricas</li>
+            <li class="list__obj">Bicectriz</li>
+            <li class="list__obj">Mediatriz</li>
+          </ul>
+        </div>
       </section>
     </div>
   </article>
