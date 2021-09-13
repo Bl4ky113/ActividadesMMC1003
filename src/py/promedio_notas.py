@@ -21,15 +21,15 @@ for i in range(NUM_NOTAS):
 		except:
 			print("Ingresa un Número Valido")
 
-for i in range(NUM_NOTAS):
-	nota_promedio += notas[i - 1]
+for nota in notas:
+	nota_promedio += nota
 
 nota_promedio /= NUM_NOTAS
 print("Nota promedio es de:  ", nota_promedio)
 
-if nota_promedio >= 0 and nota_promedio <= 29:
+if nota_promedio >= 0 and nota_promedio <= 34:
 	print("Debes mejorar para pasar")
-elif nota_promedio >= 30 and nota_promedio <= 45:
+elif nota_promedio >= 35 and nota_promedio <= 45:
 	print("Pasaste, pero deberias considerar mejorar")
 elif nota_promedio >= 46 and nota_promedio <= 50:
 	print("Felicidades has pasado de la mejor forma!!!")
