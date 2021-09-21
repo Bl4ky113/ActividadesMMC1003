@@ -519,6 +519,7 @@
           }
 
           .class--span2 { grid-row: span 2; font-size: 1.25rem; }
+          .class--span3 { grid-row: span 3; font-size: 1.30rem; }
           
           @mixin classColor ($base, $dark, $light) {
             background-color: $base;

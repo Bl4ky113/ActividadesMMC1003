@@ -609,6 +609,10 @@
   grid-row: span 2;
   font-size: 1.25rem;
 }
+.main .section--schedule .content .calendar .day .class--span3 {
+  grid-row: span 3;
+  font-size: 1.3rem;
+}
 .main .section--schedule .content .calendar .day .class--excel {
   background-color: #009933;
 }
