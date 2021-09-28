@@ -1778,6 +1778,527 @@
       </section>
     </div>
   </article>
+  <article class="article">
+    <h3 id="claseP3-mapasKarnaugh" class="article__title">Mapas de Karnaugh</h3>
+    <span class="article__date">09/28/2021</span>
+    <div class="content">
+      <p class="content__paragraph">
+        Son una metología de comprimir o minimizar nuestras tablas de verdad en un circuito combinancional. Estos siguen una lista 
+        de reglas para realizarlos.
+      </p>
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP3-reglasMapasKarnaugh" class="activity__title">Reglas de Simplificación de los Mapas de Karnaugh</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data">09/28/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="activity__task">
+          Escribir las reglas de simplificación de los Mapas de Karnaugh
+        </p>
+        <p class="content__title">Reglas de Simplificación</p>
+        <ol class="list">
+          <li class="list__obj">
+            <strong>Las agrupaciones son exclusivamente de unos.</strong> Esto implica que ningún grupo puede contener ningún cero.
+            <div class="center-wrapper">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">B/A</th>
+                      <th class="theader__category">0</th>
+                      <th class="theader__category">1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">B/A</th>
+                      <th class="theader__category">0</th>
+                      <th class="theader__category">1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li class="list__obj">
+            <strong>Las agrupaciones únicamente pueden hacerse en horizontal y vertical.</strong> Esto implica que las diagonales están prohibidas.
+            <div class="center-wrapper">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">B/A</th>
+                      <th class="theader__category">0</th>
+                      <th class="theader__category">1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">B/A</th>
+                      <th class="theader__category">0</th>
+                      <th class="theader__category">1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li class="list__obj">
+            <strong>Los grupos han de contener 2<sup>n</sup> elementos.</strong> Es decir que cada grupo tendrá 1, 2, 4, 8... Número de unos.
+            <div class="center-wrapper">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">B/A</th>
+                      <th class="theader__category">0</th>
+                      <th class="theader__category">1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">10</th>
+                      <th class="theader__category">11</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">B/A</th>
+                      <th class="theader__category">0</th>
+                      <th class="theader__category">1</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">B/A</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">10</th>
+                      <th class="theader__category">11</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li class="list__obj">
+            <strong>Cada grupo ha de ser tan grande como sea posible.</strong> Tal y como lo ilustramos en el ejemplo
+            <div class="center-wrapper">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">11</th>
+                      <th class="theader__category">10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">11</th>
+                      <th class="theader__category">10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li class="list__obj">
+            <strong>Todos los unos que tienen que pertenecer como mínimo a un grupo.</strong> Aunque pueden pertenecer a más de uno.
+            <div class="center-wrapper">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">11</th>
+                      <th class="theader__category">10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li class="list__obj">
+            <strong>Pueden existir solapamiento de grupos</strong>
+            <div class="center-wrapper">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">11</th>
+                      <th class="theader__category">10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">11</th>
+                      <th class="theader__category">10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li class="list__obj">
+            <strong>La formación de grupos también se pueden producir con las celdas extremas de la tabla.s</strong>
+            De tal forma que la parte inferior se podría agrupar con la superior y la izquierda con la 
+            derecha tal y cómo se explica en el ejemplo.
+            <div class="center-wrapper">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">11</th>
+                      <th class="theader__category">10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+          <li class="list__obj">
+            <strong>Tiene que resultar el menor número de grupos posibles siempre y cuando no 
+            contradiga ninguna de las reglas anteriores.</strong> 
+            Esto es el número de grupos ha de ser minimal.
+            <div class="center-wrapper">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">11</th>
+                      <th class="theader__category">10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                      <td class="tcontent__data"><mark>1</mark></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead class="theader">
+                    <tr>
+                      <th class="theader__category">C/AB</th>
+                      <th class="theader__category">00</th>
+                      <th class="theader__category">01</th>
+                      <th class="theader__category">11</th>
+                      <th class="theader__category">10</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tcontent">
+                    <tr>
+                      <th class="tcontent__category">0</th>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                    <tr>
+                      <th class="tcontent__category">1</th>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">0</td>
+                      <td class="tcontent__data">1</td>
+                      <td class="tcontent__data">1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </article>
 </main>
 
 <footer class="footer">
