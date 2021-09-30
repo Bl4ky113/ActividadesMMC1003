@@ -76,10 +76,11 @@
       <ul class="nav-list">
         <li class="nav-list__link"><a href="#claseP3-fuerza">La Fuerza <em>(09/02/21)</em></a></li>
         <ul class="nav-sublist">
-          <li class="nav-sublist__link"><a href="#actP3-1raActMod">1ra Actividad del Módulo <em>(09/02/2021)</em></a></li>
-          <li class="nav-sublist__link"><a href="#actP3-relacionAceleracionVelocidad">Relación Aceleración Velocidad <em>(09/09/2021)</em></a></li>
-          <li class="nav-sublist__link"><a href="#actP3-actReposicionContenidos28">Reposición Contenidos <em>(09/28/2021)</em></a></li>
+          <li class="nav-sublist__link"><a href="#actP3-1raActMod">1ra Actividad del Módulo <em>(09/02/21)</em></a></li>
+          <li class="nav-sublist__link"><a href="#actP3-relacionAceleracionVelocidad">Relación Aceleración Velocidad <em>(09/09/21)</em></a></li>
+          <li class="nav-sublist__link"><a href="#actP3-actReposicionContenidos28">Reposición Contenidos <em>(09/28/21)</em></a></li>
         </ul>
+        <li class="nav-list__link"><a href="#claseP3-calibracionDinanometro">Calibración Dinanometro <em>(09/29/21)</em></a></li>
       </ul>
     </nav>
     <!-- Home -->
@@ -2657,6 +2658,134 @@
           <a href="https://www.bbc.com/mundo/noticias-internacional-57905891" class="ref__link"><cite>"Todos nuestros maridos se fueron": el impacto real del cambio climático en el bosque de manglar más grande del mundo</cite>. BBC News</a>
         </div>
       </section>
+    </div>
+  </article>
+  <article class="article">
+    <h3 id="claseP3-calibracionDinamometro" class="article__title">Calibración Dinamometro</h3>
+    <span class="article__date">09/28/2021</span>
+    <div class="content">
+      <p class="content__semititle">Medidas</p>
+      <pre class="content__pre">
+        0g = 48.3cm de palo restantes
+        (0 * 9.8) / 0
+        K = 0
+
+        1g = 48.2cm de palo restantes
+        (0.001kg * 9.8) / (0.483 - 0.482)
+        0.0098 / 0.001
+        K = 9.8
+
+        5g = 47.8cm de palo restantes
+        (0.005kg * 9.8) / (0.483 - 0.478)
+        0.049 / 0.005
+        K = 9.8
+
+        10g = 47.1cm de palo restantes
+        (0.01kg * 9.8) / (0.483 - 0.471)
+        0.098 / 0.015
+        K = 6.53~
+
+        50g = 45.2cm de palo restantes
+        (0.05kg * 9.8) / (0.483 - 0.452)
+        0.49 / 0.032
+        K = 15.3125
+        
+        100g = 43.1cm de palo restantes
+        (0.1kg * 9.8) / (0.483 - 0.431)
+        0.98 / 0.052
+        K = 18.8461
+
+        430g = 12.5cm de palo restantes
+        (0.43 * 9.8) / (0.483 - 0.125)
+        4.214 / 0.358
+        K = 11.7709
+
+        Promedio:
+        0
+        9.8
+        9.8
+        6.5333
+       15.3125
+       18.8461
+       11.7709
+       =
+       72.0628
+       72.0628 / 6
+       12        12.01046~
+        00
+         06
+          028
+           040
+             4
+
+        <mark>k = 12.01046</mark>
+      </pre>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead class="theader">
+            <tr>
+              <th class="theader__category">Masa (kg)</th>
+              <th class="theader__category">Fuerza (N)</th>
+              <th class="theader__category">Estiramiento del caucho (m)</th>
+              <th class="theader__category">Constante elástica (K)</th>
+            </tr>
+          </thead>
+          <tbody class="tcontent">
+            <tr>
+              <td class="tcontent__data">kg</td>
+              <td class="tcontent__data">kg * g</td>
+              <td class="tcontent__data">m</td>
+              <td class="tcontent__data">N / m</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+              <td class="tcontent__data">0</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0.001</td>
+              <td class="tcontent__data">0.0098</td>
+              <td class="tcontent__data">0.001</td>
+              <td class="tcontent__data">9.8</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0.005</td>
+              <td class="tcontent__data">0.049</td>
+              <td class="tcontent__data">0.005</td>
+              <td class="tcontent__data">9.8</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0.01</td>
+              <td class="tcontent__data">0.098</td>
+              <td class="tcontent__data">0.015</td>
+              <td class="tcontent__data">6.53~</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0.05</td>
+              <td class="tcontent__data">0.49</td>
+              <td class="tcontent__data">0.032</td>
+              <td class="tcontent__data">15.3125</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0.1</td>
+              <td class="tcontent__data">0.98</td>
+              <td class="tcontent__data">0.052</td>
+              <td class="tcontent__data">18.8461</td>
+            </tr>
+            <tr>
+              <td class="tcontent__data">0.43</td>
+              <td class="tcontent__data">4.214</td>
+              <td class="tcontent__data">0.358</td>
+              <td class="tcontent__data">11.7709</td>
+            </tr>
+            <tr>
+              <th class="tcontent__category" colspan="3">Promedio K: </th>
+              <td class="tcontent__data">12.01046~</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </article>
 </main>
