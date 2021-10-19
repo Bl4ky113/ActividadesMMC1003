@@ -441,7 +441,7 @@
 }
 .main .article .content abbr {
   border-radius: 0.25em;
-  padding: 0.2em 0.4em;
+  padding: 0 0.4em;
   background-color: #000066;
   color: #fff;
   font: italic 400 1.15em "Montserrat", sans-serif;
