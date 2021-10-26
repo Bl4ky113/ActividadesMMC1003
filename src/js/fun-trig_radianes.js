@@ -49,7 +49,7 @@ window.onload = () => {
       `;
     });
 
-    HTML_obj += `</tr>`
+    HTML_obj += `</tr>`;
 
     table_output.innerHTML += HTML_obj;
   });
