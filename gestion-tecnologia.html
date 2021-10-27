@@ -62,6 +62,10 @@
           <li class="nav-sublist__link"><a href="#actP2-2daActMod">2da Actividad del Módulo <em>(07/31/21)</em></a></li>
         </ul>
       </ul>
+      <h3 class="nav__title">3ra Entrega del Módulo</h3>
+      <ul class="nav-list">
+        <li class="nav-list__link"><a href="#actP3-1raActMod">Guion Literario <em>(10/26/21)</em></a></li>
+      </ul>
     </nav>
     <!-- Home -->
     <section class="section ">
@@ -761,6 +765,104 @@
           He decidido hacer un Blog sobre la Energía Nuclear y cómo va a cambiar el mundo. Puede ir a <a href="https://la-energia-nuclear-es-el-futuro.blogspot.com/" class="content__link--small">ver el blog acá</a> 
         </p>
         <a href="https://la-energia-nuclear-es-el-futuro.blogspot.com/" class="content__link">Ir a el Blog la Energía Nuclear es el Futuro</a>
+      </section>
+      <section class="activity">
+        <!-- Info de Actividades -->
+        <h3 id="actP3-1raActMod" class="activity__title">Guión Literario</h3>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead class="theader">
+              <tr>
+                <th class="theader__title" colspan="4">Datos del Estudiante</th>
+              </tr>
+            </thead>
+            <tbody class="tcontent">
+              <tr>
+                <th class="tcontent__category">Curso</th>
+                <td class="tcontent__data">1003 Jornada Tarde</td>
+                <th class="tcontent__category">Estudiante</th>
+                <td class="tcontent__data">Martín Steven Hernández Ortiz</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">No. de Documento</th>
+                <td class="tcontent__data">1.013.107.870</td>
+                <th class="tcontent__category">Telefono</th>
+                <td class="tcontent__data">313 3391259</td>
+              </tr>
+              <tr>
+                <th class="tcontent__category">Correo Electronico</th>
+                <td class="tcontent__data">martinstevenhernandezortiz@gmail.com</td>
+                <th class="tcontent__category">Fecha de Entrega</th>
+                <td class="tcontent__data">10/26/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="activity__task">
+          Realice un guion literario y cree un video que debe subir a youtube.
+        </p>
+        <p class="content__title">Cómo Usar LEDs Thinkercad</p>
+        <p class="content__semititle">¿Que es Thinkerdac?</p>
+        <p class="content__paragraph">
+          Thinkercad es una aplicación web que nos permite simular diferentes circuitos electronicos 
+          sencillos, especialmente circuitos que tengan uso del microprocesasdor Arduino u otros microprocesasdores. Y 
+          estos tendremos la oportunidad de programarlos de dos formas, usando bloques, o escribiendo el código en C++.
+        </p>
+        <p class="content__paragraph">
+          Thinkercad tambien permite simular diseños 3D y tiene diferentes lecciónes & tutoriales sobre cómo usar 
+          las diferentes simulaciones que ofrecen y electronica e programación sencilla, 
+          pero en esto no nos vamos a enfocar hoy.
+        </p>
+        <p class="content__semititle">Usar Thinkercad</p>
+        <p class="content__paragraph">
+          Para usar Thinkercad, vamos a tener que crear una cuenta en su sitio web. Al tener ya lista nuestra cuenta, vamos a 
+          ingresar a la sección de circutos en el menu izquierdo. Y en esté menu podemos elegir un proyecto que ya hemos realizado o 
+          crear uno nuevo.
+        </p>
+        <p class="content__paragraph">
+          Al crear un nuevo circuito nos dara un espacio en blanco para hacer nuestro circuito, un menu en la parte derecha donde podremos 
+          elegir nuestros circuitos electronicos y en la parte de arriba un menu pequeño para configurar los circuitos en la parte izquierda 
+          y en la parte derecha unos botones para mostrar y escribir el código del circuito, y ejecutar el circuito. 
+        </p>
+        <p class="content__semititle">Circutio de LEDs sencillo</p>
+        <p class="content__paragraph">
+          Al estar en un nuevo proyecto, vamos a ir a el menu de circuitos y vamos a elegir los siguientes componentes:
+        </p>
+        <ul class="list list--lines">
+          <li class="list__obj">Arduino Uno R3</li>
+          <li class="list__obj">Breadboard Small</li>
+          <li class="list__obj">3 LEDs</li>
+          <li class="list__obj">3 Resistencias de 1k &ohm;</li>
+        </ul>
+        <p class="content__paragraph">
+          Vamos a conectar las resistencias a el catodo de los LEDs, una a cada LED, y vamos a conectar el Anodo a los pines 
+          digitales del Arduino Uno. Podemos hacer esto sin la Breadboard, pero es mucho más conodo de esta forma.
+        </p>
+        <p class="content__paragraph">
+          Despues de tener nuestro circuito hecho, vamos a ir a el apartado de código y vamos a usar los bloques de código para 
+          hacer las funciones que van a tener los LEDs.
+        </p>
+        <p class="content__paragraph">
+          Vamos a borrar lo que Thinkercad haya hecho predeterminadamente. Y vamos a buscar la estructura:
+        </p>
+        <ol class="list">
+          <li class="list__obj">set pin [pin_led] to [HIGH]</li>
+          <li class="list__obj">wait [1] [secs]</li>
+          <li class="list__obj">set pin [pin_led] to [LOW]</li>
+          <li class="list__obj">wait [1] [secs]</li>
+        </ol>
+        <p class="content__paragraph">
+          Donde "pin_led" es un pin donde se conectaron los LEDs. Vamos a repetir esta estructura 
+          con cada LED y su respectivo pin en el Arduino.
+        </p>
+        <p class="content__paragraph">
+          Una vez ya hecho el código y el circuito podemos iniciar la simulación. Y habremos hecho un circuito sencillo
+          usando LEDs.
+        </p>
+        <p class="content__paragraph">
+          Se pueden hacer muchas más simulaciones, más complejas y más grandes, pero para iniciar te recomiendo 
+          ver los tutoriales y lecciones que Thinkercad te ofrece.
+        </p>
       </section>
     </div>
   </article>
